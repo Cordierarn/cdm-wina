@@ -4,3 +4,4 @@ data/odds_history.jsonl
 data/page.html
 data/match_test.html
 .claude/
+config.json

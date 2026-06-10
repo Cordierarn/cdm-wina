@@ -167,7 +167,8 @@ Rythme conseillé pendant la CDM : un `update.bat` chaque matin, les cotes bouge
 | `build_strengths.py` | forces Glicko-2 (mu−sigma) + calibration MLE → `data/strengths_dataset.json` |
 | `export_model.py` | calendrier + λ Poisson + probas par match → `data/model.json` (s'exécute dans le venv ScoutFootball) |
 | `scrape_winamax.py` | cotes 1N2 + tous marchés pricables → `data/odds.json` (+ historique 1N2 dans `odds_history.jsonl`) |
-| `scrape_pinnacle.py` | cotes 1N2 Pinnacle dé-viguées (référence sharp) → `data/pinnacle.json` |
+| `scrape_oddsapi.py` | cotes Pinnacle via The Odds API (clé dans `config.json`, non versionné) → `data/pinnacle.json` + archive `closing_history.jsonl` |
+| `scrape_pinnacle.py` | secours sans clé : API invitée Pinnacle → `data/pinnacle.json` |
 | `make_picks.py` | matrice de scores → probas par marché → EV/Kelly → `data/picks.json` |
 | `dashboard/index.html` | interface web (statique, localStorage pour le suivi) |
 | `data/dataset/` | parquets du soccer-dataset (non versionnés, voir Installation) |
