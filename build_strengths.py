@@ -76,6 +76,11 @@ def main() -> None:
 
     rating = {tid: mu - sig for tid, mu, sig in zip(nat.id, nat.rating_mu, nat.rating_sigma)}
     rec = intl[(intl.date >= "2023-01-01") & intl.goals_home.notna()]
+
+    # Cible = buts reels. Le xG du soccer-dataset a ete teste comme cible mais
+    # ecarte : sur les matchs internationaux, 897/2389 lignes ont xG 0-0
+    # (donnees manquantes codees 0) et la moyenne xG (0.66) est incoherente
+    # avec les buts (1.37) -> inutilisable pour calibrer des lambdas de buts.
     rows = []
     for _, r in rec.iterrows():
         rh, ra = rating.get(r.home_team_id), rating.get(r.away_team_id)
@@ -85,6 +90,7 @@ def main() -> None:
         rows.append((r.goals_away, ra - rh))
     goals = np.array([g for g, _ in rows], dtype=float)
     diffs = np.array([d for _, d in rows], dtype=float)
+    true_goals = goals
 
     best_b, best_ll = 0.0, -np.inf
     for b in np.arange(0.0, 0.0081, 0.0002):
@@ -98,7 +104,7 @@ def main() -> None:
 
     # Correction Dixon-Coles : le Poisson independant sous-estime les nuls
     # 0-0/1-1. On ajuste rho par MLE sur les memes matchs (tau de DC 1997).
-    gh = goals[0::2]; ga = goals[1::2]; dh = diffs[0::2]
+    gh = true_goals[0::2]; ga = true_goals[1::2]; dh = diffs[0::2]
     lh = base_lambda * np.exp(best_b * dh)
     la = base_lambda * np.exp(-best_b * dh)
     best_rho, best_rll = 0.0, -np.inf

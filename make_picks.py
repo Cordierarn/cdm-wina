@@ -244,6 +244,7 @@ def main() -> None:
             pin_index[(p["home_en"], p["away_en"])] = p
 
     value_bets, picks_1n2 = [], []
+    all_rows = []  # toutes les issues pricees, pour les propositions par match
     matched = n_priced = 0
 
     for o in odds["matches"]:
@@ -298,6 +299,7 @@ def main() -> None:
                     "kelly_pct": round(kelly(p, cote) * 100, 2),
                     "ref": ref,
                 }
+                all_rows.append(row)
                 if ev >= MIN_EV:
                     value_bets.append(row)
                 if norm(bet["marche"]) == "resultat":
@@ -307,12 +309,30 @@ def main() -> None:
     # tri par Kelly plutot qu'EV brut : un EV enorme sur une cote 50 (queue de
     # distribution douteuse) vaut moins qu'un EV correct sur une cote 3.
     value_bets.sort(key=lambda x: (-x["kelly_pct"], -x["ev"]))
+    # propositions par match : pour CHAQUE match, les 5 meilleures issues
+    # (EV decroissant, proba >= 10% pour rester jouable) + le 1N2 le plus probable
+    par_match: dict[str, dict] = {}
+    for r in all_rows:
+        par_match.setdefault(r["match"], {"kickoff": r["kickoff"], "group": r["group"],
+                                          "props": [], "favori_1n2": None})
+    for r in all_rows:
+        if r["proba"] >= 0.10:
+            par_match[r["match"]]["props"].append(r)
+    for p in picks_1n2:
+        slot = par_match[p["match"]]
+        if slot["favori_1n2"] is None or p["proba"] > slot["favori_1n2"]["proba"]:
+            slot["favori_1n2"] = p
+    for m in par_match.values():
+        m["props"].sort(key=lambda x: -x["ev"])
+        m["props"] = m["props"][:5]
+
     out = {
         "generated_at": int(time.time()),
         "matched_matches": matched,
         "priced_markets": n_priced,
         "value_bets": value_bets,
         "all_picks": picks_1n2,
+        "par_match": par_match,
     }
     (DATA_DIR / "picks.json").write_text(json.dumps(out, indent=1, ensure_ascii=False), encoding="utf-8")
     n_pin = sum(1 for p in value_bets if p["ref"] == "pinnacle")
