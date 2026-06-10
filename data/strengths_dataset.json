@@ -3,6 +3,7 @@
  "avg_goals_per_team": 1.343,
  "base_lambda": 1.1832,
  "spread": 1.2106,
+ "rho": -0.105,
  "ratings_mu": {
   "Argentina": 1997.0,
   "Spain": 1893.4,

@@ -46,6 +46,9 @@ MAX_GOALS = 10
 
 # Melange modele / probas implicites du marche (de-margees) pour calibrer.
 # Forces Glicko-2 du soccer-dataset depuis la v2.
+# Quand data/pinnacle.json existe, la reference marche des marches 1N2 et
+# derives devient Pinnacle de-vige (book sharp ≈ closing line) au lieu de la
+# marge de Winamax : strategie classique "sharp reference vs book mou".
 MODEL_WEIGHT = 0.40
 
 
@@ -66,10 +69,26 @@ def kelly(p: float, cote: float) -> float:
     return max((p * b - (1 - p)) / b, 0.0) * KELLY_FRACTION
 
 
-def score_matrix(lh: float, la: float) -> list[list[float]]:
+def dc_tau(h: int, a: int, lh: float, la: float, rho: float) -> float:
+    """Correction Dixon-Coles (1997) sur les scores bas (nuls sous-estimes)."""
+    if h == 0 and a == 0:
+        return 1 - lh * la * rho
+    if h == 0 and a == 1:
+        return 1 + lh * rho
+    if h == 1 and a == 0:
+        return 1 + la * rho
+    if h == 1 and a == 1:
+        return 1 - rho
+    return 1.0
+
+
+def score_matrix(lh: float, la: float, rho: float = 0.0) -> list[list[float]]:
     ph = [math.exp(-lh) * lh**k / math.factorial(k) for k in range(MAX_GOALS + 1)]
     pa = [math.exp(-la) * la**k / math.factorial(k) for k in range(MAX_GOALS + 1)]
-    return [[ph[h] * pa[a] for a in range(MAX_GOALS + 1)] for h in range(MAX_GOALS + 1)]
+    mat = [[ph[h] * pa[a] * dc_tau(h, a, lh, la, rho)
+            for a in range(MAX_GOALS + 1)] for h in range(MAX_GOALS + 1)]
+    total = sum(sum(row) for row in mat)
+    return [[v / total for v in row] for row in mat]
 
 
 def p_sum(mat, cond) -> float:
@@ -181,6 +200,25 @@ def price_bet(marche: str, issues: list[dict], mat, home_fr: str, away_fr: str):
     return None
 
 
+def pinnacle_probs(marche_norm: str, issues, pin, flipped: bool):
+    """Probas de reference Pinnacle (de-vigees) pour les marches derivables du 1N2.
+
+    pin = {fair_p1, fair_pX, fair_p2} dans le sens Pinnacle ; flipped indique
+    que le sens Winamax est inverse. Retourne une liste alignee sur issues,
+    ou None si le marche n'est pas derivable du 1N2.
+    """
+    p1, px, p2 = pin["fair_p1"], pin["fair_pX"], pin["fair_p2"]
+    if flipped:
+        p1, p2 = p2, p1
+    if marche_norm == "resultat" and len(issues) == 3:
+        return [p1, px, p2]
+    if marche_norm == "double chance" and len(issues) == 3:
+        return [p1 + px, p1 + p2, px + p2]
+    if marche_norm == "vainqueur (rembourse si match nul)" and len(issues) == 2:
+        return [p1, p2]
+    return None
+
+
 def blend_with_market(model_probs, issues):
     """Melange modele/marche en gardant la masse totale du modele
     (gere les marches a issues non exclusives comme la double chance)."""
@@ -199,6 +237,12 @@ def main() -> None:
 
     pred_index = {(m["home"], m["away"]): m for m in model["matches"]}
 
+    pin_index = {}
+    pin_file = DATA_DIR / "pinnacle.json"
+    if pin_file.exists():
+        for p in json.loads(pin_file.read_text(encoding="utf-8"))["matches"]:
+            pin_index[(p["home_en"], p["away_en"])] = p
+
     value_bets, picks_1n2 = [], []
     matched = n_priced = 0
 
@@ -212,8 +256,15 @@ def main() -> None:
         flipped = (home_en, away_en) not in pred_index
         lh = pred["lambda_away"] if flipped else pred["lambda_home"]
         la = pred["lambda_home"] if flipped else pred["lambda_away"]
-        mat = score_matrix(lh, la)
+        mat = score_matrix(lh, la, model.get("rho", 0.0))
         matched += 1
+
+        # reference sharp : Pinnacle dans le meme sens que Winamax si dispo
+        pin = pin_index.get((home_en, away_en))
+        pin_flipped = False
+        if pin is None:
+            pin = pin_index.get((away_en, home_en))
+            pin_flipped = pin is not None
 
         for bet in o.get("bets", []):
             issues = bet["issues"]
@@ -221,7 +272,14 @@ def main() -> None:
             if model_probs is None or len(model_probs) != len(issues):
                 continue
             n_priced += 1
-            probs = blend_with_market(model_probs, issues)
+            ref = "winamax"
+            pin_p = pinnacle_probs(norm(bet["marche"]), issues, pin, pin_flipped) if pin else None
+            if pin_p is not None:
+                probs = [(MODEL_WEIGHT * p + (1 - MODEL_WEIGHT) * q, push)
+                         for (p, push), q in zip(model_probs, pin_p)]
+                ref = "pinnacle"
+            else:
+                probs = blend_with_market(model_probs, issues)
             for (p, push), issue in zip(probs, issues):
                 cote = issue["cote"]
                 if not cote or p < MIN_PROBA:
@@ -238,6 +296,7 @@ def main() -> None:
                     "cote": cote,
                     "ev": round(ev, 4),
                     "kelly_pct": round(kelly(p, cote) * 100, 2),
+                    "ref": ref,
                 }
                 if ev >= MIN_EV:
                     value_bets.append(row)
@@ -256,7 +315,9 @@ def main() -> None:
         "all_picks": picks_1n2,
     }
     (DATA_DIR / "picks.json").write_text(json.dumps(out, indent=1, ensure_ascii=False), encoding="utf-8")
-    print(f"OK: {matched} matchs, {n_priced} marches prices, {len(value_bets)} value bets -> data/picks.json")
+    n_pin = sum(1 for p in value_bets if p["ref"] == "pinnacle")
+    print(f"OK: {matched} matchs, {n_priced} marches prices ({len(pin_index)} matchs avec ref Pinnacle), "
+          f"{len(value_bets)} value bets dont {n_pin} vs Pinnacle -> data/picks.json")
     for p in value_bets[:12]:
         print(f"  {p['match'][:34]:34s} {p['marche'][:28]:28s} {str(p['selection_name'])[:18]:18s} "
               f"cote {p['cote']:>5.2f} proba {p['proba']:.0%} EV {p['ev']:+.1%}")

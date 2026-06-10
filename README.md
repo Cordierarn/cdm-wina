@@ -66,7 +66,7 @@ Détail amusant : `urllib` Python se prend un **403** (filtrage par empreinte TL
 
 ## Le modèle
 
-### Poisson indépendant sur terrain neutre
+### Poisson + correction Dixon-Coles sur terrain neutre
 
 Pour un match entre forces `s_home` et `s_away` (0–1) :
 
@@ -75,7 +75,7 @@ Pour un match entre forces `s_home` et `s_away` (0–1) :
 λ_away = base_lambda · exp(−spread · (s_home − s_away))
 ```
 
-Les buts de chaque équipe suivent une loi de Poisson indépendante → **matrice de probabilités de scores** 11×11 (0 à 10 buts). Tous les marchés s'en déduisent par sommation :
+Les buts de chaque équipe suivent une loi de Poisson, corrigée par le **tau de Dixon-Coles (1997)** sur les scores bas — le Poisson indépendant sous-estime les nuls 0-0/1-1. Le paramètre `rho` est ajusté par MLE sur les mêmes 1 941 matchs internationaux que la calibration (rho ≈ −0,105 : nuls boostés). Résultat : **matrice de probabilités de scores** 11×11 (0 à 10 buts), renormalisée. Tous les marchés s'en déduisent par sommation :
 
 | Marché Winamax | Calcul |
 |---|---|
@@ -91,15 +91,24 @@ Les buts de chaque équipe suivent une loi de Poisson indépendante → **matric
 
 Marchés **non** pricés (pas de modèle) : buteurs, passes décisives, mi-temps, tirs, corners, minute du but…
 
-### Mélange avec le marché (40/60)
+### Mélange avec le marché (40/60) — référence Pinnacle quand disponible
 
-Le Poisson indépendant calibré reste un modèle simple. Pour chaque marché, la proba finale est :
+Le Poisson calibré reste un modèle simple. Pour chaque marché, la proba finale est :
 
 ```
-p = 0,40 · p_modèle + 0,60 · p_marché_dé-margée
+p = 0,40 · p_modèle + 0,60 · p_référence_marché
 ```
 
-La dé-marge conserve la masse totale du modèle (`Σ p_modèle`), ce qui gère correctement les marchés à issues non exclusives comme la double chance. Le poids est réglable (`MODEL_WEIGHT` dans `make_picks.py`).
+**La référence marché dépend du marché :**
+
+- **1N2, double chance, vainqueur remboursé si nul** : cotes **Pinnacle dé-viguées** (`scrape_pinnacle.py` → `data/pinnacle.json`). Pinnacle est le book sharp de référence — marges faibles, sharps acceptés, sa closing line est considérée comme la meilleure estimation publique des vraies probabilités. C'est la stratégie classique « référence sharp contre book grand public » : quand la cote Winamax dépasse la proba Pinnacle dé-viguée, il y a de la value indépendamment du modèle.
+- **Autres marchés** (totaux, score exact, handicap…) : probas implicites Winamax dé-margées, en conservant la masse totale du modèle (gère les marchés à issues non exclusives comme la double chance).
+
+Le poids est réglable (`MODEL_WEIGHT` dans `make_picks.py`).
+
+### Suivi du CLV (Closing Line Value)
+
+Le CLV est considéré comme le meilleur prédicteur de rentabilité long terme : si tes cotes prises battent régulièrement la cote de clôture, tu es gagnant — bien avant que ton ROI soit statistiquement significatif. L'onglet Suivi du dashboard affiche pour chaque pari le **CLV vs dernière cote scrapée** (≈ closing line si tu relances `update.bat` près du coup d'envoi) et le **CLV moyen** du portefeuille. CLV moyen positif = le process marche, même si la variance court terme fait mal.
 
 ### Value bets et mise
 
@@ -158,17 +167,19 @@ Rythme conseillé pendant la CDM : un `update.bat` chaque matin, les cotes bouge
 | `build_strengths.py` | forces Glicko-2 (mu−sigma) + calibration MLE → `data/strengths_dataset.json` |
 | `export_model.py` | calendrier + λ Poisson + probas par match → `data/model.json` (s'exécute dans le venv ScoutFootball) |
 | `scrape_winamax.py` | cotes 1N2 + tous marchés pricables → `data/odds.json` (+ historique 1N2 dans `odds_history.jsonl`) |
+| `scrape_pinnacle.py` | cotes 1N2 Pinnacle dé-viguées (référence sharp) → `data/pinnacle.json` |
 | `make_picks.py` | matrice de scores → probas par marché → EV/Kelly → `data/picks.json` |
 | `dashboard/index.html` | interface web (statique, localStorage pour le suivi) |
 | `data/dataset/` | parquets du soccer-dataset (non versionnés, voir Installation) |
 
 ## Limites connues (lisez ça avant de parier)
 
-1. **Poisson indépendant** : pas de corrélation entre les buts des deux équipes (pas de Dixon-Coles), queues de distribution peu fiables → les EV élevés sur score exact / gros totaux sont systématiquement suspects.
+1. **Queues de distribution** : la correction Dixon-Coles règle les nuls, mais les queues (score exact 4-3, gros totaux) restent peu fiables → les EV élevés sur cotes > 20 sont systématiquement suspects.
 2. **Comparabilité inter-confédérations** : même avec la pénalité mu−sigma, comparer l'Iran (qualifs asiatiques) à la Belgique reste imprécis. Les « values » récurrentes sur les outsiders de petites confédérations en sont le symptôme.
 3. **Pas d'info effectifs** : blessures, suspensions, rotations de fin de poule — le marché les connaît, le modèle non. C'est une raison de plus pour le poids marché à 60 %.
-4. **Pré-match uniquement** : les cotes scrapées sont celles du moment du scrape, pas du coup d'envoi (closing odds).
+4. **Pré-match uniquement** : les cotes scrapées sont celles du moment du scrape, pas du coup d'envoi — relance `update.bat` près du kickoff pour que le CLV approche le vrai closing.
 5. **Phase de poules uniquement** pour l'instant — les matchs à élimination directe seront ajoutés quand les affiches seront connues.
+6. **Gagner = se faire limiter** : les bookmakers grand public (Winamax inclus) limitent les comptes qui battent régulièrement la closing line. C'est le signe que le process marche, et la principale limite pratique de toute stratégie value.
 
 ## Licence / conformité
 

@@ -95,14 +95,34 @@ def main() -> None:
     base_lambda = float(goals.sum() / np.exp(best_b * diffs).sum())
     spread = best_b * (hi - lo)  # par unite de force normalisee 0-1
     avg_goals = float(goals.mean())
+
+    # Correction Dixon-Coles : le Poisson independant sous-estime les nuls
+    # 0-0/1-1. On ajuste rho par MLE sur les memes matchs (tau de DC 1997).
+    gh = goals[0::2]; ga = goals[1::2]; dh = diffs[0::2]
+    lh = base_lambda * np.exp(best_b * dh)
+    la = base_lambda * np.exp(-best_b * dh)
+    best_rho, best_rll = 0.0, -np.inf
+    for rho in np.arange(-0.15, 0.151, 0.005):
+        tau = np.ones(len(gh))
+        m00 = (gh == 0) & (ga == 0); tau[m00] = 1 - lh[m00] * la[m00] * rho
+        m01 = (gh == 0) & (ga == 1); tau[m01] = 1 + lh[m01] * rho
+        m10 = (gh == 1) & (ga == 0); tau[m10] = 1 + la[m10] * rho
+        m11 = (gh == 1) & (ga == 1); tau[m11] = 1 - rho
+        if (tau <= 0).any():
+            continue
+        rll = float(np.log(tau).sum())
+        if rll > best_rll:
+            best_rho, best_rll = float(rho), rll
+
     print(f"calibration: {len(rows)//2} matchs, base_lambda={base_lambda:.3f}, "
-          f"b={best_b:.4f}/pt Glicko, spread={spread:.3f}/force")
+          f"b={best_b:.4f}/pt Glicko, spread={spread:.3f}/force, rho={best_rho:.3f}")
 
     out = {
         "source": "eatpizzanot/soccer-dataset (Glicko-2)",
         "avg_goals_per_team": round(avg_goals, 3),
         "base_lambda": round(base_lambda, 4),
         "spread": round(spread, 4),
+        "rho": round(best_rho, 4),
         "ratings_mu": {t: round(m, 1) for t, m in sorted(mus.items(), key=lambda x: -x[1])},
         "strengths": dict(sorted(strengths.items(), key=lambda x: -x[1])),
     }

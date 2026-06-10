@@ -175,6 +175,7 @@ function addBet(p, stake) {
   const bets = store.bets;
   bets.push({
     id: Date.now(), match: p.match,
+    marche: p.marche || 'Résultat', sel: p.selection_name,
     selection: (p.marche ? p.marche + ' : ' : '') + p.selection_name,
     cote: p.cote, stake: parseFloat(stake), kickoff: p.kickoff, result: null,
   });
@@ -200,6 +201,30 @@ function setBank() {
   if (v) { store.bank = parseFloat(v); render(); }
 }
 
+// CLV : compare la cote prise a la derniere cote scrapee (≈ closing line si
+// scrape proche du coup d'envoi). CLV positif régulier = edge réel, bien avant
+// que le ROI soit significatif.
+function currentCote(bet) {
+  const m = ODDS.matches.find(o => `${o.home_fr} - ${o.away_fr}` === bet.match);
+  if (!m) return null;
+  for (const b of (m.bets || [])) {
+    if (b.marche !== bet.marche) continue;
+    const issue = b.issues.find(i => i.label === bet.sel);
+    if (issue && issue.cote) return issue.cote;
+  }
+  if (bet.marche === 'Résultat') {
+    if (bet.sel === m.home_fr) return m.odds_1;
+    if (bet.sel === 'Match nul') return m.odds_X;
+    if (bet.sel === m.away_fr) return m.odds_2;
+  }
+  return null;
+}
+
+function clvPct(bet) {
+  const cur = currentCote(bet);
+  return cur ? (bet.cote / cur - 1) * 100 : null;
+}
+
 function renderSuivi() {
   const bets = store.bets.sort((a, b) => a.kickoff - b.kickoff);
   const done = bets.filter(b => b.result);
@@ -208,19 +233,25 @@ function renderSuivi() {
   const returns = done.reduce((s, b) => s + (b.result === 'W' ? b.stake * b.cote : 0), 0);
   const profit = returns - staked;
   const roi = staked ? profit / staked * 100 : 0;
+  const clvs = bets.map(clvPct).filter(v => v !== null);
+  const avgClv = clvs.length ? clvs.reduce((s, v) => s + v, 0) / clvs.length : null;
   let html = `<div class="stats">
     <div class="stat"><div class="v">${store.bank.toFixed(0)}€</div><div class="l">bankroll départ <button class="ghost small" onclick="setBank()">modifier</button></div></div>
     <div class="stat"><div class="v">${bets.length}</div><div class="l">paris suivis</div></div>
     <div class="stat"><div class="v">${done.length ? won.length + '/' + done.length : '–'}</div><div class="l">gagnés / réglés</div></div>
     <div class="stat"><div class="v ${profit >= 0 ? 'green' : 'red'}">${profit >= 0 ? '+' : ''}${profit.toFixed(2)}€</div><div class="l">profit</div></div>
     <div class="stat"><div class="v ${roi >= 0 ? 'green' : 'red'}">${roi.toFixed(1)}%</div><div class="l">ROI</div></div>
+    <div class="stat"><div class="v ${avgClv === null ? 'muted' : (avgClv >= 0 ? 'green' : 'red')}">${avgClv === null ? '–' : (avgClv >= 0 ? '+' : '') + avgClv.toFixed(1) + '%'}</div><div class="l">CLV moyen (vs dernière cote)</div></div>
   </div>
   <div class="card"><canvas id="bankrollChart"></canvas></div>`;
   if (!bets.length) return html + `<p class="muted">Aucun pari suivi. Ajoute-les depuis l'onglet Picks.</p>`;
-  html += `<table><tr><th>Match</th><th>Pari</th><th>Cote</th><th>Mise</th><th>Date</th><th>Résultat</th><th></th></tr>`;
+  html += `<table><tr><th>Match</th><th>Pari</th><th>Cote</th><th>CLV</th><th>Mise</th><th>Date</th><th>Résultat</th><th></th></tr>`;
   for (const b of bets) {
+    const clv = clvPct(b);
     html += `<tr>
-      <td>${b.match}</td><td>${b.selection}</td><td>${b.cote.toFixed(2)}</td><td>${b.stake.toFixed(2)}€</td>
+      <td>${b.match}</td><td>${b.selection}</td><td>${b.cote.toFixed(2)}</td>
+      <td class="${clv === null ? 'muted' : (clv >= 0 ? 'green' : 'red')}">${clv === null ? '–' : (clv >= 0 ? '+' : '') + clv.toFixed(1) + '%'}</td>
+      <td>${b.stake.toFixed(2)}€</td>
       <td class="muted">${fmtDate(b.kickoff)}</td>
       <td>
         <button class="small ${b.result === 'W' ? 'act' : 'ghost'}" onclick="setResult(${b.id},'W')">✔</button>

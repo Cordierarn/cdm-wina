@@ -22,8 +22,22 @@ DATASET_STRENGTHS = Path(__file__).parent / "data" / "strengths_dataset.json"
 # Valeurs par defaut ecrasees par la calibration MLE de strengths_dataset.json.
 BASE_LAMBDA = 1.38
 SPREAD = 1.65
+RHO = 0.0  # correction Dixon-Coles (nuls 0-0/1-1 sous-estimes par Poisson pur)
 LAMBDA_CAP = 3.5  # garde-fou : pas d'equipe a plus de 3,5 buts esperes
 MAX_GOALS = 10
+
+
+def dc_tau(h: int, a: int, lh: float, la: float, rho: float) -> float:
+    """Correction Dixon-Coles (1997) sur les scores bas."""
+    if h == 0 and a == 0:
+        return 1 - lh * la * rho
+    if h == 0 and a == 1:
+        return 1 + lh * rho
+    if h == 1 and a == 0:
+        return 1 + la * rho
+    if h == 1 and a == 1:
+        return 1 - rho
+    return 1.0
 
 
 def match_probs(s_home: float, s_away: float) -> dict:
@@ -37,10 +51,14 @@ def match_probs(s_home: float, s_away: float) -> dict:
     ph = [pois(lh, k) for k in range(MAX_GOALS + 1)]
     pa = [pois(la, k) for k in range(MAX_GOALS + 1)]
 
+    mat = [[ph[h] * pa[a] * dc_tau(h, a, lh, la, RHO)
+            for a in range(MAX_GOALS + 1)] for h in range(MAX_GOALS + 1)]
+    total = sum(sum(row) for row in mat)
+
     p1 = px = p2 = over25 = btts = 0.0
     for h in range(MAX_GOALS + 1):
         for a in range(MAX_GOALS + 1):
-            p = ph[h] * pa[a]
+            p = mat[h][a] / total
             if h > a:
                 p1 += p
             elif h == a:
@@ -64,7 +82,7 @@ def match_probs(s_home: float, s_away: float) -> dict:
 
 
 def main() -> None:
-    global BASE_LAMBDA, SPREAD
+    global BASE_LAMBDA, SPREAD, RHO
     strengths = compute_team_strengths()
     source = "scoutfootball (squads placeholder)"
     if DATASET_STRENGTHS.exists():
@@ -75,6 +93,7 @@ def main() -> None:
         source = ds["source"]
         BASE_LAMBDA = ds.get("base_lambda", BASE_LAMBDA)
         SPREAD = ds.get("spread", SPREAD)
+        RHO = ds.get("rho", RHO)
     matches = []
     for m in generate_group_stage_matches():
         probs = match_probs(strengths.get(m.home, 0.2), strengths.get(m.away, 0.2))
@@ -92,6 +111,7 @@ def main() -> None:
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps({
         "strengths_source": source,
+        "rho": RHO,
         "strengths": {k: round(v, 4) for k, v in sorted(strengths.items(), key=lambda x: -x[1])},
         "groups": GROUPS,
         "matches": matches,

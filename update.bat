@@ -9,6 +9,7 @@ if "%1"=="--model" (
   popd
 )
 python scrape_winamax.py
+python scrape_pinnacle.py
 python make_picks.py
 echo.
 echo Termine. Ouvre le dashboard avec serve.bat
