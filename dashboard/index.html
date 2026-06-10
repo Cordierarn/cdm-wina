@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pronos CDM 2026</title>
+<style>
+  :root {
+    --bg: #0d1117; --panel: #161b22; --panel2: #1c2330; --border: #2d333b;
+    --text: #e6edf3; --muted: #8b949e; --green: #3fb950; --red: #f85149;
+    --gold: #d29922; --blue: #58a6ff; --accent: #1f6feb;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--bg); color: var(--text); font: 14px/1.5 'Segoe UI', sans-serif; padding-bottom: 60px; }
+  header { padding: 18px 24px; border-bottom: 1px solid var(--border); display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+  header h1 { font-size: 20px; }
+  header .sub { color: var(--muted); font-size: 12px; }
+  nav { display: flex; gap: 4px; padding: 10px 24px; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+  nav button { background: none; border: 1px solid transparent; color: var(--muted); padding: 7px 16px; border-radius: 8px; cursor: pointer; font-size: 14px; }
+  nav button.active { background: var(--panel2); color: var(--text); border-color: var(--border); }
+  main { padding: 20px 24px; max-width: 1100px; margin: 0 auto; }
+  .card { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; }
+  .muted { color: var(--muted); } .green { color: var(--green); } .red { color: var(--red); } .gold { color: var(--gold); }
+  .row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .grow { flex: 1; }
+  .odds { display: inline-flex; gap: 6px; }
+  .odd { background: var(--panel2); border: 1px solid var(--border); border-radius: 6px; padding: 3px 9px; font-size: 13px; min-width: 58px; text-align: center; }
+  .odd small { display: block; color: var(--muted); font-size: 10px; }
+  .odd.value { border-color: var(--green); }
+  .bar { height: 6px; border-radius: 3px; display: flex; overflow: hidden; margin-top: 6px; }
+  .bar div:nth-child(1) { background: var(--blue); }
+  .bar div:nth-child(2) { background: var(--muted); }
+  .bar div:nth-child(3) { background: var(--gold); }
+  h2 { font-size: 16px; margin: 18px 0 10px; }
+  .datehead { margin: 22px 0 8px; font-size: 15px; color: var(--blue); border-bottom: 1px solid var(--border); padding-bottom: 4px; }
+  .pill { background: var(--panel2); border-radius: 12px; padding: 1px 10px; font-size: 11px; color: var(--muted); }
+  .evpill { border-radius: 6px; padding: 2px 8px; font-weight: 600; font-size: 13px; }
+  .evpill.pos { background: rgba(63,185,80,.15); color: var(--green); }
+  button.act { background: var(--accent); color: #fff; border: 0; border-radius: 6px; padding: 6px 14px; cursor: pointer; }
+  button.small { font-size: 12px; padding: 4px 10px; }
+  button.ghost { background: var(--panel2); border: 1px solid var(--border); color: var(--text); }
+  input, select { background: var(--panel2); border: 1px solid var(--border); color: var(--text); border-radius: 6px; padding: 6px 8px; font-size: 13px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--border); }
+  th { color: var(--muted); font-weight: 500; font-size: 12px; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin-bottom: 16px; }
+  .stat { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 12px; }
+  .stat .v { font-size: 22px; font-weight: 700; }
+  .stat .l { color: var(--muted); font-size: 12px; }
+  #bankrollChart { width: 100%; height: 160px; }
+  .strengthbar { height: 8px; background: var(--accent); border-radius: 4px; }
+  .warn { background: rgba(210,153,34,.1); border: 1px solid rgba(210,153,34,.4); border-radius: 8px; padding: 10px 14px; font-size: 13px; color: var(--gold); margin-bottom: 14px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>⚽ Pronos CDM 2026</h1>
+  <span class="sub" id="meta">chargement…</span>
+</header>
+<nav>
+  <button data-tab="picks" class="active">💎 Picks du jour</button>
+  <button data-tab="cal">📅 Calendrier</button>
+  <button data-tab="suivi">📒 Suivi</button>
+  <button data-tab="teams">🏆 Équipes</button>
+</nav>
+<main id="main"></main>
+
+<script>
+let MODEL, ODDS, PICKS;
+let tab = 'picks';
+const fmtDate = ts => new Date(ts * 1000).toLocaleString('fr-FR', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+const dayKey = ts => new Date(ts * 1000).toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' });
+const pct = x => (x * 100).toFixed(0) + '%';
+
+const store = {
+  get bets() { return JSON.parse(localStorage.getItem('wc_bets') || '[]'); },
+  set bets(v) { localStorage.setItem('wc_bets', JSON.stringify(v)); },
+  get bank() { return parseFloat(localStorage.getItem('wc_bank') || '100'); },
+  set bank(v) { localStorage.setItem('wc_bank', v); },
+};
+
+async function load() {
+  [MODEL, ODDS, PICKS] = await Promise.all([
+    fetch('../data/model.json').then(r => r.json()),
+    fetch('../data/odds.json').then(r => r.json()),
+    fetch('../data/picks.json').then(r => r.json()),
+  ]);
+  document.getElementById('meta').textContent =
+    `cotes Winamax du ${new Date(ODDS.scraped_at * 1000).toLocaleString('fr-FR')} · ${ODDS.matches.length} matchs · ${PICKS.value_bets.length} value bets`;
+  render();
+}
+
+document.querySelector('nav').onclick = e => {
+  if (!e.target.dataset.tab) return;
+  tab = e.target.dataset.tab;
+  document.querySelectorAll('nav button').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
+  render();
+};
+
+function render() {
+  const m = document.getElementById('main');
+  if (tab === 'picks') m.innerHTML = renderPicks();
+  if (tab === 'cal') m.innerHTML = renderCal();
+  if (tab === 'suivi') { m.innerHTML = renderSuivi(); drawBankroll(); }
+  if (tab === 'teams') m.innerHTML = renderTeams();
+}
+
+// ── Picks ──────────────────────────────────────────────────────────────
+function renderPicks() {
+  const now = Date.now() / 1000;
+  const horizon = now + 48 * 3600;
+  const upcoming = PICKS.value_bets.filter(p => p.kickoff > now && p.kickoff < horizon);
+  const later = PICKS.value_bets.filter(p => p.kickoff >= horizon);
+  let html = `<div class="warn">⚠️ Paris = risque réel. EV basé sur un modèle mélangé 40% modèle / 60% marché — mises Kelly ¼ suggérées sur bankroll de ${store.bank.toFixed(0)}€. Joue responsable (09 74 75 13 13).</div>`;
+  html += `<h2>Prochaines 48h</h2>`;
+  html += upcoming.length ? upcoming.map(pickCard).join('') : `<p class="muted">Aucun value bet dans les prochaines 48h.</p>`;
+  if (later.length) html += `<h2>Plus tard</h2>` + later.slice(0, 15).map(pickCard).join('');
+  return html;
+}
+
+function pickCard(p) {
+  const stake = (p.kelly_pct / 100 * store.bank).toFixed(2);
+  return `<div class="card row">
+    <div class="grow">
+      <div><strong>${p.match}</strong> <span class="pill">Gr. ${p.group || '–'}</span> <span class="pill">${p.marche}</span></div>
+      <div class="muted">${fmtDate(p.kickoff)} · pari : <strong>${p.selection_name}</strong></div>
+    </div>
+    <div class="odds">
+      <span class="odd value">${p.cote.toFixed(2)}<small>cote</small></span>
+      <span class="odd">${pct(p.proba)}<small>proba</small></span>
+      <span class="odd">${stake}€<small>mise ¼K</small></span>
+    </div>
+    <span class="evpill pos">EV ${(p.ev * 100).toFixed(1)}%</span>
+    <button class="act small" onclick='addBet(${JSON.stringify(p)}, ${stake})'>+ Suivre</button>
+  </div>`;
+}
+
+// ── Calendrier ─────────────────────────────────────────────────────────
+function renderCal() {
+  const predIdx = {};
+  MODEL.matches.forEach(m => predIdx[m.home + '|' + m.away] = m);
+  const en = {};
+  PICKS.all_picks.forEach(p => en[p.match] = [p.home_en, p.away_en]);
+  let html = '', lastDay = '';
+  for (const o of ODDS.matches) {
+    const day = dayKey(o.kickoff);
+    if (day !== lastDay) { html += `<div class="datehead">${day}</div>`; lastDay = day; }
+    const names = en[o.title + ''] || en[o.home_fr + ' - ' + o.away_fr] || [];
+    let pred = names.length ? (predIdx[names[0] + '|' + names[1]] || predIdx[names[1] + '|' + names[0]]) : null;
+    let flipped = pred && pred.home !== names[0];
+    const p1 = pred ? (flipped ? pred.p2 : pred.p1) : null;
+    const p2 = pred ? (flipped ? pred.p1 : pred.p2) : null;
+    html += `<div class="card">
+      <div class="row">
+        <div class="grow"><strong>${o.home_fr}</strong> – <strong>${o.away_fr}</strong>
+          <span class="muted" style="margin-left:8px">${new Date(o.kickoff * 1000).toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })}</span>
+          ${pred && pred.group ? `<span class="pill">Gr. ${pred.group}</span>` : ''}
+        </div>
+        <div class="odds">
+          <span class="odd">${o.odds_1 ?? '–'}<small>1</small></span>
+          <span class="odd">${o.odds_X ?? '–'}<small>N</small></span>
+          <span class="odd">${o.odds_2 ?? '–'}<small>2</small></span>
+        </div>
+      </div>
+      ${pred ? `<div class="bar" title="modèle : 1 ${pct(p1)} / N ${pct(pred.pX)} / 2 ${pct(p2)}">
+        <div style="width:${p1 * 100}%"></div><div style="width:${pred.pX * 100}%"></div><div style="width:${p2 * 100}%"></div>
+      </div>` : ''}
+    </div>`;
+  }
+  return html;
+}
+
+// ── Suivi ──────────────────────────────────────────────────────────────
+function addBet(p, stake) {
+  const bets = store.bets;
+  bets.push({
+    id: Date.now(), match: p.match,
+    selection: (p.marche ? p.marche + ' : ' : '') + p.selection_name,
+    cote: p.cote, stake: parseFloat(stake), kickoff: p.kickoff, result: null,
+  });
+  store.bets = bets;
+  alert('Pari ajouté au suivi ✔');
+}
+
+function setResult(id, r) {
+  const bets = store.bets;
+  const b = bets.find(x => x.id === id);
+  if (b) b.result = b.result === r ? null : r;
+  store.bets = bets;
+  render();
+}
+
+function delBet(id) {
+  store.bets = store.bets.filter(x => x.id !== id);
+  render();
+}
+
+function setBank() {
+  const v = prompt('Bankroll de départ (€) :', store.bank);
+  if (v) { store.bank = parseFloat(v); render(); }
+}
+
+function renderSuivi() {
+  const bets = store.bets.sort((a, b) => a.kickoff - b.kickoff);
+  const done = bets.filter(b => b.result);
+  const won = done.filter(b => b.result === 'W');
+  const staked = done.reduce((s, b) => s + b.stake, 0);
+  const returns = done.reduce((s, b) => s + (b.result === 'W' ? b.stake * b.cote : 0), 0);
+  const profit = returns - staked;
+  const roi = staked ? profit / staked * 100 : 0;
+  let html = `<div class="stats">
+    <div class="stat"><div class="v">${store.bank.toFixed(0)}€</div><div class="l">bankroll départ <button class="ghost small" onclick="setBank()">modifier</button></div></div>
+    <div class="stat"><div class="v">${bets.length}</div><div class="l">paris suivis</div></div>
+    <div class="stat"><div class="v">${done.length ? won.length + '/' + done.length : '–'}</div><div class="l">gagnés / réglés</div></div>
+    <div class="stat"><div class="v ${profit >= 0 ? 'green' : 'red'}">${profit >= 0 ? '+' : ''}${profit.toFixed(2)}€</div><div class="l">profit</div></div>
+    <div class="stat"><div class="v ${roi >= 0 ? 'green' : 'red'}">${roi.toFixed(1)}%</div><div class="l">ROI</div></div>
+  </div>
+  <div class="card"><canvas id="bankrollChart"></canvas></div>`;
+  if (!bets.length) return html + `<p class="muted">Aucun pari suivi. Ajoute-les depuis l'onglet Picks.</p>`;
+  html += `<table><tr><th>Match</th><th>Pari</th><th>Cote</th><th>Mise</th><th>Date</th><th>Résultat</th><th></th></tr>`;
+  for (const b of bets) {
+    html += `<tr>
+      <td>${b.match}</td><td>${b.selection}</td><td>${b.cote.toFixed(2)}</td><td>${b.stake.toFixed(2)}€</td>
+      <td class="muted">${fmtDate(b.kickoff)}</td>
+      <td>
+        <button class="small ${b.result === 'W' ? 'act' : 'ghost'}" onclick="setResult(${b.id},'W')">✔</button>
+        <button class="small ${b.result === 'L' ? 'act' : 'ghost'}" onclick="setResult(${b.id},'L')">✘</button>
+      </td>
+      <td><button class="ghost small" onclick="delBet(${b.id})">🗑</button></td>
+    </tr>`;
+  }
+  return html + `</table>`;
+}
+
+function drawBankroll() {
+  const cv = document.getElementById('bankrollChart');
+  if (!cv) return;
+  const ctx = cv.getContext('2d');
+  const W = cv.width = cv.parentElement.clientWidth - 32, H = cv.height = 160;
+  const done = store.bets.filter(b => b.result).sort((a, b) => a.kickoff - b.kickoff);
+  let bank = store.bank;
+  const pts = [bank];
+  for (const b of done) { bank += b.result === 'W' ? b.stake * (b.cote - 1) : -b.stake; pts.push(bank); }
+  const min = Math.min(...pts) * 0.97, max = Math.max(...pts) * 1.03;
+  ctx.strokeStyle = '#3fb950'; ctx.lineWidth = 2; ctx.beginPath();
+  pts.forEach((v, i) => {
+    const x = pts.length > 1 ? i / (pts.length - 1) * (W - 20) + 10 : W / 2;
+    const y = H - 15 - (v - min) / (max - min || 1) * (H - 30);
+    i ? ctx.lineTo(x, y) : ctx.moveTo(x, y);
+  });
+  ctx.stroke();
+  ctx.fillStyle = '#8b949e'; ctx.font = '11px sans-serif';
+  ctx.fillText(max.toFixed(0) + '€', 4, 12);
+  ctx.fillText(min.toFixed(0) + '€', 4, H - 4);
+}
+
+// ── Équipes ────────────────────────────────────────────────────────────
+function renderTeams() {
+  const max = Math.max(...Object.values(MODEL.strengths));
+  let html = `<h2>Force des 48 équipes</h2>
+  <p class="muted" style="margin-bottom:12px">source : ${MODEL.strengths_source || 'modèle ScoutFootball'}</p>`;
+  for (const [team, s] of Object.entries(MODEL.strengths)) {
+    html += `<div class="row" style="margin-bottom:6px">
+      <span style="width:190px">${team}</span>
+      <div class="grow"><div class="strengthbar" style="width:${s / max * 100}%"></div></div>
+      <span class="muted" style="width:50px;text-align:right">${(s * 100).toFixed(0)}</span>
+    </div>`;
+  }
+  return html;
+}
+
+load();
+</script>
+</body>
+</html>

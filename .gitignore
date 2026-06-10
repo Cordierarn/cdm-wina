@@ -1,0 +1,6 @@
+__pycache__/
+data/dataset/*.parquet
+data/odds_history.jsonl
+data/page.html
+data/match_test.html
+.claude/
