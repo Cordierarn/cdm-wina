@@ -67,7 +67,7 @@
 <main id="main"></main>
 
 <script>
-let MODEL, ODDS, PICKS;
+let MODEL, ODDS, PICKS, LINEUPS = {};
 let tab = 'picks';
 const fmtDate = ts => new Date(ts * 1000).toLocaleString('fr-FR', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
 const dayKey = ts => new Date(ts * 1000).toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' });
@@ -86,6 +86,7 @@ async function load() {
     fetch('../data/odds.json').then(r => r.json()),
     fetch('../data/picks.json').then(r => r.json()),
   ]);
+  LINEUPS = await fetch('../data/lineups.json').then(r => r.json()).then(d => d.lineups || {}).catch(() => ({}));
   document.getElementById('meta').textContent =
     `cotes Winamax du ${new Date(ODDS.scraped_at * 1000).toLocaleString('fr-FR')} · ${ODDS.matches.length} matchs · ${PICKS.value_bets.length} value bets`;
   render();
@@ -149,11 +150,14 @@ function renderParMatch() {
     const day = dayKey(m.kickoff);
     if (day !== lastDay) { html += `<div class="datehead">${day}</div>`; lastDay = day; }
     const fav = m.favori_1n2;
+    const p0 = m.props[0] || fav;
+    const lu = p0 ? LINEUPS[p0.home_en + '|' + p0.away_en] || LINEUPS[p0.away_en + '|' + p0.home_en] : null;
     html += `<div class="card">
       <div class="row" style="margin-bottom:6px">
         <strong>${match}</strong> <span class="pill">Gr. ${m.group || '–'}</span>
         <span class="muted">${new Date(m.kickoff * 1000).toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })}</span>
         ${fav ? `<span class="pill" title="favori du modèle">⭐ ${fav.selection_name} ${pct(fav.proba)}</span>` : ''}
+        ${lu ? (lu.confirmed ? `<span class="pill" style="color:var(--green)">📋 XI confirmés</span>` : `<span class="pill">🕐 XI pas encore publiés</span>`) : ''}
       </div>
       ${m.props.map(p => `
         <div class="row" style="padding:4px 0;border-top:1px solid var(--border)">

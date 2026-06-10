@@ -1,5 +1,5 @@
 {
- "scraped_at": 1781121419,
+ "scraped_at": 1781127305,
  "matches": [
   {
    "winamax_id": "66456904",
@@ -7,8 +7,8 @@
    "home_fr": "Mexique",
    "away_fr": "Afrique du Sud",
    "kickoff": 1781204400,
-   "odds_1": 1.38,
-   "odds_X": 4.5,
+   "odds_1": 1.4,
+   "odds_X": 4.3,
    "odds_2": 7.75,
    "status": "PREMATCH",
    "bets": [
@@ -30,11 +30,11 @@
      "issues": [
       {
        "label": "Mexique",
-       "cote": 1.38
+       "cote": 1.4
       },
       {
        "label": "Match nul",
-       "cote": 4.5
+       "cote": 4.3
       },
       {
        "label": "Afrique du Sud",
@@ -51,7 +51,7 @@
       },
       {
        "label": "Moins de 1",
-       "cote": 6.25
+       "cote": 6
       }
      ]
     },
@@ -112,11 +112,11 @@
      "issues": [
       {
        "label": "Plus de 0,5",
-       "cote": 1.03
+       "cote": 1.04
       },
       {
        "label": "Moins de 0,5",
-       "cote": 7.75
+       "cote": 7.5
       }
      ]
     },
@@ -125,7 +125,7 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 1.31
+       "cote": 1.3
       },
       {
        "label": "Moins de 1,5",
@@ -142,7 +142,7 @@
       },
       {
        "label": "Moins de 3,5",
-       "cote": 1.18
+       "cote": 1.19
       }
      ]
     },
@@ -164,7 +164,7 @@
      "issues": [
       {
        "label": "1-2",
-       "cote": 1.56
+       "cote": 1.58
       },
       {
        "label": "1-3",
@@ -172,7 +172,7 @@
       },
       {
        "label": "2-3",
-       "cote": 1.96
+       "cote": 1.98
       },
       {
        "label": "4 et plus",
@@ -189,11 +189,11 @@
      "issues": [
       {
        "label": "Plus de 0,5",
-       "cote": 2
+       "cote": 1.98
       },
       {
        "label": "Moins de 0,5",
-       "cote": 1.54
+       "cote": 1.56
       }
      ]
     },
@@ -215,7 +215,7 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 30
+       "cote": 29
       },
       {
        "label": "Moins de 2,5",
@@ -258,11 +258,11 @@
       },
       {
        "label": "1-3",
-       "cote": 2
+       "cote": 1.98
       },
       {
        "label": "2-3",
-       "cote": 6.75
+       "cote": 6.5
       },
       {
        "label": "4 et plus",
@@ -270,7 +270,7 @@
       },
       {
        "label": "0",
-       "cote": 1.54
+       "cote": 1.56
       }
      ]
     },
@@ -292,11 +292,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 1.58
+       "cote": 1.6
       },
       {
        "label": "Moins de 1,5",
-       "cote": 1.92
+       "cote": 1.9
       }
      ]
     },
@@ -305,11 +305,11 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 2.9
+       "cote": 2.95
       },
       {
        "label": "Moins de 2,5",
-       "cote": 1.27
+       "cote": 1.26
       }
      ]
     },
@@ -348,7 +348,7 @@
       },
       {
        "label": "Non",
-       "cote": 1.4
+       "cote": 1.41
       }
      ]
     },
@@ -361,11 +361,11 @@
       },
       {
        "label": "Mexique ou Afrique du Sud",
-       "cote": 1.17
+       "cote": 1.18
       },
       {
        "label": "Afrique du Sud ou match nul",
-       "cote": 2.65
+       "cote": 2.55
       }
      ]
     },
@@ -387,15 +387,15 @@
      "issues": [
       {
        "label": "0 - 0",
-       "cote": 7.75
+       "cote": 7.5
       },
       {
        "label": "1 - 0",
-       "cote": 4.5
+       "cote": 4.6
       },
       {
        "label": "2 - 0",
-       "cote": 4.9
+       "cote": 5
       },
       {
        "label": "3 - 0",
@@ -403,11 +403,11 @@
       },
       {
        "label": "4 - 0",
-       "cote": 14.5
+       "cote": 15
       },
       {
        "label": "5 - 0",
-       "cote": 34
+       "cote": 36
       },
       {
        "label": "0 - 1",
@@ -415,7 +415,7 @@
       },
       {
        "label": "1 - 1",
-       "cote": 7.5
+       "cote": 7.25
       },
       {
        "label": "2 - 1",
@@ -443,11 +443,11 @@
       },
       {
        "label": "2 - 2",
-       "cote": 25
+       "cote": 24
       },
       {
        "label": "3 - 2",
-       "cote": 38
+       "cote": 36
       },
       {
        "label": "4 - 2",
@@ -471,11 +471,11 @@
       },
       {
        "label": "3 - 3",
-       "cote": 100
+       "cote": 95
       },
       {
        "label": "4 - 3",
-       "cote": 170
+       "cote": 160
       },
       {
        "label": "5 - 3",
@@ -487,15 +487,15 @@
       },
       {
        "label": "1 - 4",
-       "cote": 275
+       "cote": 250
       },
       {
        "label": "2 - 4",
-       "cote": 300
+       "cote": 275
       },
       {
        "label": "3 - 4",
-       "cote": 450
+       "cote": 400
       },
       {
        "label": "4 - 4",
@@ -536,11 +536,11 @@
      "issues": [
       {
        "label": "0",
-       "cote": 7.75
+       "cote": 7.5
       },
       {
        "label": "1",
-       "cote": 3.7
+       "cote": 3.75
       },
       {
        "label": "2",
@@ -564,7 +564,7 @@
       },
       {
        "label": "7",
-       "cote": 55
+       "cote": 50
       },
       {
        "label": "8",
@@ -581,11 +581,11 @@
      "issues": [
       {
        "label": "Mexique -2.5",
-       "cote": 3.9
+       "cote": 3.95
       },
       {
        "label": "Afrique du Sud +2.5",
-       "cote": 1.16
+       "cote": 1.15
       }
      ]
     },
@@ -598,7 +598,7 @@
       },
       {
        "label": "Afrique du Sud +1.5",
-       "cote": 1.52
+       "cote": 1.5
       }
      ]
     },
@@ -7299,7 +7299,7 @@
    "kickoff": 1781539200,
    "odds_1": 1.05,
    "odds_X": 12,
-   "odds_2": 20,
+   "odds_2": 21,
    "status": "PREMATCH",
    "bets": [
     {
@@ -7307,7 +7307,7 @@
      "issues": [
       {
        "label": "Espagne ou match nul",
-       "cote": 1.01
+       "cote": 1
       },
       {
        "label": "Espagne ou Cap-Vert",
@@ -7328,7 +7328,7 @@
       },
       {
        "label": "Cap-Vert",
-       "cote": 6.25
+       "cote": 6.5
       }
      ]
     },
@@ -7345,7 +7345,7 @@
       },
       {
        "label": "Cap-Vert",
-       "cote": 20
+       "cote": 21
       }
      ]
     },
@@ -7354,7 +7354,7 @@
      "issues": [
       {
        "label": "1-2",
-       "cote": 2.5
+       "cote": 2.55
       },
       {
        "label": "1-3",
@@ -7362,15 +7362,15 @@
       },
       {
        "label": "2-3",
-       "cote": 1.98
+       "cote": 2
       },
       {
        "label": "4 et plus",
-       "cote": 2.1
+       "cote": 2.05
       },
       {
        "label": "0",
-       "cote": 16
+       "cote": 17
       }
      ]
     },
@@ -7379,11 +7379,11 @@
      "issues": [
       {
        "label": "Plus de 0,5",
-       "cote": 2.4
+       "cote": 2.5
       },
       {
        "label": "Moins de 0,5",
-       "cote": 1.37
+       "cote": 1.35
       }
      ]
     },
@@ -7392,7 +7392,7 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 9.5
+       "cote": 10
       },
       {
        "label": "Moins de 1,5",
@@ -7418,15 +7418,15 @@
      "issues": [
       {
        "label": "1-2",
-       "cote": 2.5
+       "cote": 2.55
       },
       {
        "label": "1-3",
-       "cote": 2.4
+       "cote": 2.5
       },
       {
        "label": "2-3",
-       "cote": 9.5
+       "cote": 10.5
       },
       {
        "label": "4 et plus",
@@ -7434,7 +7434,7 @@
       },
       {
        "label": "0",
-       "cote": 1.37
+       "cote": 1.35
       }
      ]
     },
@@ -7469,11 +7469,11 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 2.1
+       "cote": 2.05
       },
       {
        "label": "Moins de 3,5",
-       "cote": 1.49
+       "cote": 1.5
       }
      ]
     },
@@ -7638,11 +7638,11 @@
      "issues": [
       {
        "label": "Oui",
-       "cote": 2.5
+       "cote": 2.6
       },
       {
        "label": "Non",
-       "cote": 1.34
+       "cote": 1.33
       }
      ]
     },
@@ -7663,7 +7663,7 @@
       },
       {
        "label": "3 - 0",
-       "cote": 5.1
+       "cote": 5
       },
       {
        "label": "4 - 0",
@@ -7671,7 +7671,7 @@
       },
       {
        "label": "5 - 0",
-       "cote": 9
+       "cote": 8.5
       },
       {
        "label": "0 - 1",
@@ -7683,7 +7683,7 @@
       },
       {
        "label": "2 - 1",
-       "cote": 11
+       "cote": 11.5
       },
       {
        "label": "3 - 1",
@@ -7691,7 +7691,7 @@
       },
       {
        "label": "4 - 1",
-       "cote": 12.5
+       "cote": 13
       },
       {
        "label": "5 - 1",
@@ -7707,15 +7707,15 @@
       },
       {
        "label": "2 - 2",
-       "cote": 48
+       "cote": 50
       },
       {
        "label": "3 - 2",
-       "cote": 40
+       "cote": 42
       },
       {
        "label": "4 - 2",
-       "cote": 46
+       "cote": 48
       },
       {
        "label": "5 - 2",
@@ -7727,23 +7727,23 @@
       },
       {
        "label": "1 - 3",
-       "cote": 180
+       "cote": 190
       },
       {
        "label": "2 - 3",
-       "cote": 130
+       "cote": 140
       },
       {
        "label": "3 - 3",
-       "cote": 140
+       "cote": 150
       },
       {
        "label": "4 - 3",
-       "cote": 140
+       "cote": 150
       },
       {
        "label": "5 - 3",
-       "cote": 190
+       "cote": 200
       },
       {
        "label": "0 - 4",
@@ -7759,7 +7759,7 @@
       },
       {
        "label": "3 - 4",
-       "cote": 450
+       "cote": 500
       },
       {
        "label": "4 - 4",
@@ -7849,7 +7849,7 @@
       },
       {
        "label": "Cap-Vert +3.5",
-       "cote": 1.35
+       "cote": 1.37
       }
      ]
     },
@@ -7858,11 +7858,11 @@
      "issues": [
       {
        "label": "Espagne -2.5",
-       "cote": 1.62
+       "cote": 1.6
       },
       {
        "label": "Cap-Vert +2.5",
-       "cote": 1.86
+       "cote": 1.9
       }
      ]
     },
@@ -7871,11 +7871,11 @@
      "issues": [
       {
        "label": "Espagne -1.5",
-       "cote": 1.23
+       "cote": 1.22
       },
       {
        "label": "Cap-Vert +1.5",
-       "cote": 3.2
+       "cote": 3.3
       }
      ]
     },
@@ -9748,8 +9748,8 @@
    "home_fr": "France",
    "away_fr": "Sénégal",
    "kickoff": 1781636400,
-   "odds_1": 1.43,
-   "odds_X": 4.4,
+   "odds_1": 1.44,
+   "odds_X": 4.3,
    "odds_2": 6.25,
    "status": "PREMATCH",
    "bets": [
@@ -9762,11 +9762,11 @@
       },
       {
        "label": "France ou Sénégal",
-       "cote": 1.17
+       "cote": 1.18
       },
       {
        "label": "Sénégal ou match nul",
-       "cote": 2.45
+       "cote": 2.4
       }
      ]
     },
@@ -9779,7 +9779,7 @@
       },
       {
        "label": "Sénégal",
-       "cote": 3.95
+       "cote": 3.9
       }
      ]
     },
@@ -9788,11 +9788,11 @@
      "issues": [
       {
        "label": "France",
-       "cote": 1.43
+       "cote": 1.44
       },
       {
        "label": "Match nul",
-       "cote": 4.4
+       "cote": 4.3
       },
       {
        "label": "Sénégal",
@@ -9817,11 +9817,11 @@
       },
       {
        "label": "4 et plus",
-       "cote": 5.6
+       "cote": 5.7
       },
       {
        "label": "0",
-       "cote": 5.1
+       "cote": 5
       }
      ]
     },
@@ -9830,11 +9830,11 @@
      "issues": [
       {
        "label": "Plus de 0,5",
-       "cote": 1.7
+       "cote": 1.68
       },
       {
        "label": "Moins de 0,5",
-       "cote": 1.76
+       "cote": 1.78
       }
      ]
     },
@@ -9843,7 +9843,7 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 4.7
+       "cote": 4.6
       },
       {
        "label": "Moins de 1,5",
@@ -9869,11 +9869,11 @@
      "issues": [
       {
        "label": "1-2",
-       "cote": 1.82
+       "cote": 1.8
       },
       {
        "label": "1-3",
-       "cote": 1.72
+       "cote": 1.7
       },
       {
        "label": "2-3",
@@ -9885,7 +9885,7 @@
       },
       {
        "label": "0",
-       "cote": 1.76
+       "cote": 1.78
       }
      ]
     },
@@ -9898,7 +9898,7 @@
       },
       {
        "label": "Moins de 0,5",
-       "cote": 5.1
+       "cote": 5
       }
      ]
     },
@@ -9920,7 +9920,7 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 2.7
+       "cote": 2.75
       },
       {
        "label": "Moins de 2,5",
@@ -9933,7 +9933,7 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 5.6
+       "cote": 5.7
       },
       {
        "label": "Moins de 3,5",
@@ -9963,7 +9963,7 @@
       },
       {
        "label": "Moins de 1",
-       "cote": 7.75
+       "cote": 7.5
       }
      ]
     },
@@ -10067,7 +10067,7 @@
       },
       {
        "label": "Moins de 3,5",
-       "cote": 1.25
+       "cote": 1.26
       }
      ]
     },
@@ -10089,11 +10089,11 @@
      "issues": [
       {
        "label": "Oui",
-       "cote": 1.96
+       "cote": 1.94
       },
       {
        "label": "Non",
-       "cote": 1.56
+       "cote": 1.58
       }
      ]
     },
@@ -10106,11 +10106,11 @@
       },
       {
        "label": "1 - 0",
-       "cote": 5.4
+       "cote": 5.5
       },
       {
        "label": "2 - 0",
-       "cote": 5.6
+       "cote": 5.7
       },
       {
        "label": "3 - 0",
@@ -10118,7 +10118,7 @@
       },
       {
        "label": "4 - 0",
-       "cote": 15
+       "cote": 16
       },
       {
        "label": "5 - 0",
@@ -10130,7 +10130,7 @@
       },
       {
        "label": "1 - 1",
-       "cote": 7.25
+       "cote": 7
       },
       {
        "label": "2 - 1",
@@ -10138,7 +10138,7 @@
       },
       {
        "label": "3 - 1",
-       "cote": 10.5
+       "cote": 11
       },
       {
        "label": "4 - 1",
@@ -10198,7 +10198,7 @@
       },
       {
        "label": "0 - 4",
-       "cote": 250
+       "cote": 225
       },
       {
        "label": "1 - 4",
@@ -10214,7 +10214,7 @@
       },
       {
        "label": "4 - 4",
-       "cote": 400
+       "cote": 350
       },
       {
        "label": "5 - 4",
@@ -10255,7 +10255,7 @@
       },
       {
        "label": "1",
-       "cote": 4.1
+       "cote": 4.2
       },
       {
        "label": "2",
@@ -10263,7 +10263,7 @@
       },
       {
        "label": "3",
-       "cote": 3.65
+       "cote": 3.7
       },
       {
        "label": "4",
@@ -10283,7 +10283,7 @@
       },
       {
        "label": "8",
-       "cote": 75
+       "cote": 70
       },
       {
        "label": "9 ou plus",
@@ -10300,7 +10300,7 @@
       },
       {
        "label": "Sénégal +2.5",
-       "cote": 1.16
+       "cote": 1.15
       }
      ]
     },
@@ -10313,7 +10313,7 @@
       },
       {
        "label": "Sénégal +1.5",
-       "cote": 1.49
+       "cote": 1.48
       }
      ]
     },
@@ -10322,7 +10322,7 @@
      "issues": [
       {
        "label": "France -3.5",
-       "cote": 8
+       "cote": 8.5
       },
       {
        "label": "Sénégal +3.5",
@@ -12186,7 +12186,7 @@
    "home_fr": "Portugal",
    "away_fr": "RD Congo",
    "kickoff": 1781715600,
-   "odds_1": 1.24,
+   "odds_1": 1.25,
    "odds_X": 5.7,
    "odds_2": 9,
    "status": "PREMATCH",
@@ -12200,11 +12200,11 @@
       },
       {
        "label": "Portugal ou RD Congo",
-       "cote": 1.1
+       "cote": 1.11
       },
       {
        "label": "RD Congo ou match nul",
-       "cote": 3.4
+       "cote": 3.35
       }
      ]
     },
@@ -12217,7 +12217,7 @@
       },
       {
        "label": "RD Congo",
-       "cote": 5.1
+       "cote": 5
       }
      ]
     },
@@ -12226,7 +12226,7 @@
      "issues": [
       {
        "label": "Portugal",
-       "cote": 1.24
+       "cote": 1.25
       },
       {
        "label": "Match nul",
@@ -12255,11 +12255,11 @@
       },
       {
        "label": "4 et plus",
-       "cote": 3.8
+       "cote": 3.85
       },
       {
        "label": "0",
-       "cote": 7.25
+       "cote": 7
       }
      ]
     },
@@ -12268,7 +12268,7 @@
      "issues": [
       {
        "label": "Plus de 0,5",
-       "cote": 1.88
+       "cote": 1.86
       },
       {
        "label": "Moins de 0,5",
@@ -12281,7 +12281,7 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 5.8
+       "cote": 5.7
       },
       {
        "label": "Moins de 1,5",
@@ -12307,7 +12307,7 @@
      "issues": [
       {
        "label": "1-2",
-       "cote": 1.98
+       "cote": 1.96
       },
       {
        "label": "1-3",
@@ -12315,7 +12315,7 @@
       },
       {
        "label": "2-3",
-       "cote": 5.9
+       "cote": 5.8
       },
       {
        "label": "4 et plus",
@@ -12336,7 +12336,7 @@
       },
       {
        "label": "Moins de 0,5",
-       "cote": 7.25
+       "cote": 7
       }
      ]
     },
@@ -12371,7 +12371,7 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 3.8
+       "cote": 3.85
       },
       {
        "label": "Moins de 3,5",
@@ -12531,7 +12531,7 @@
       },
       {
        "label": "Non",
-       "cote": 1.5
+       "cote": 1.52
       }
      ]
     },
@@ -12560,7 +12560,7 @@
       },
       {
        "label": "5 - 0",
-       "cote": 20
+       "cote": 21
       },
       {
        "label": "0 - 1",
@@ -12592,7 +12592,7 @@
       },
       {
        "label": "1 - 2",
-       "cote": 26
+       "cote": 25
       },
       {
        "label": "2 - 2",
@@ -12612,7 +12612,7 @@
       },
       {
        "label": "0 - 3",
-       "cote": 120
+       "cote": 110
       },
       {
        "label": "1 - 3",
@@ -12620,11 +12620,11 @@
       },
       {
        "label": "2 - 3",
-       "cote": 65
+       "cote": 60
       },
       {
        "label": "3 - 3",
-       "cote": 75
+       "cote": 70
       },
       {
        "label": "4 - 3",
@@ -12632,7 +12632,7 @@
       },
       {
        "label": "5 - 3",
-       "cote": 180
+       "cote": 170
       },
       {
        "label": "0 - 4",
@@ -12640,11 +12640,11 @@
       },
       {
        "label": "1 - 4",
-       "cote": 250
+       "cote": 225
       },
       {
        "label": "2 - 4",
-       "cote": 225
+       "cote": 200
       },
       {
        "label": "3 - 4",
@@ -12680,7 +12680,7 @@
       },
       {
        "label": "Autre",
-       "cote": 19
+       "cote": 20
       }
      ]
     },
@@ -12734,11 +12734,11 @@
      "issues": [
       {
        "label": "Portugal -2.5",
-       "cote": 2.75
+       "cote": 2.8
       },
       {
        "label": "RD Congo +2.5",
-       "cote": 1.3
+       "cote": 1.29
       }
      ]
     },
@@ -12751,7 +12751,7 @@
       },
       {
        "label": "RD Congo +1.5",
-       "cote": 1.82
+       "cote": 1.8
       }
      ]
     },
@@ -12760,7 +12760,7 @@
      "issues": [
       {
        "label": "Portugal -3.5",
-       "cote": 5.1
+       "cote": 5.2
       },
       {
        "label": "RD Congo +3.5",
@@ -32007,9 +32007,9 @@
    "home_fr": "Afrique du Sud",
    "away_fr": "Corée du Sud",
    "kickoff": 1782349200,
-   "odds_1": 3.3,
+   "odds_1": 3.4,
    "odds_X": 3.05,
-   "odds_2": 1.8,
+   "odds_2": 1.76,
    "status": "PREMATCH",
    "bets": [
     {
@@ -32017,7 +32017,7 @@
      "issues": [
       {
        "label": "Afrique du Sud",
-       "cote": 3.3
+       "cote": 3.4
       },
       {
        "label": "Match nul",
@@ -32025,7 +32025,7 @@
       },
       {
        "label": "Corée du Sud",
-       "cote": 1.8
+       "cote": 1.76
       }
      ]
     },
@@ -32034,7 +32034,7 @@
      "issues": [
       {
        "label": "Afrique du Sud ou match nul",
-       "cote": 1.68
+       "cote": 1.7
       },
       {
        "label": "Afrique du Sud ou Corée du Sud",
@@ -32042,7 +32042,7 @@
       },
       {
        "label": "Corée du Sud ou match nul",
-       "cote": 1.21
+       "cote": 1.2
       }
      ]
     },
@@ -32051,11 +32051,11 @@
      "issues": [
       {
        "label": "Afrique du Sud",
-       "cote": 2.4
+       "cote": 2.45
       },
       {
        "label": "Corée du Sud",
-       "cote": 1.35
+       "cote": 1.33
       }
      ]
     },
@@ -32068,11 +32068,11 @@
       },
       {
        "label": "1-3",
-       "cote": 1.47
+       "cote": 1.48
       },
       {
        "label": "2-3",
-       "cote": 3.45
+       "cote": 3.5
       },
       {
        "label": "4 et plus",
@@ -32093,7 +32093,7 @@
       },
       {
        "label": "Moins de 0,5",
-       "cote": 3.55
+       "cote": 3.6
       }
      ]
     },
@@ -32102,7 +32102,7 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 1.98
+       "cote": 1.96
       },
       {
        "label": "Moins de 1,5",
@@ -32115,7 +32115,7 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 4.2
+       "cote": 4.1
       },
       {
        "label": "Moins de 2,5",
@@ -32128,7 +32128,7 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 10.5
+       "cote": 10
       },
       {
        "label": "Moins de 3,5",
@@ -32166,11 +32166,11 @@
       },
       {
        "label": "4 et plus",
-       "cote": 10.5
+       "cote": 10
       },
       {
        "label": "0",
-       "cote": 3.55
+       "cote": 3.6
       }
      ]
     },
@@ -32179,7 +32179,7 @@
      "issues": [
       {
        "label": "Plus de 0,5",
-       "cote": 1.44
+       "cote": 1.45
       },
       {
        "label": "Moins de 0,5",
@@ -32192,11 +32192,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 3.25
+       "cote": 3.35
       },
       {
        "label": "Moins de 1,5",
-       "cote": 1.22
+       "cote": 1.21
       }
      ]
     },
@@ -32205,11 +32205,11 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 9
+       "cote": 9.5
       },
       {
        "label": "Moins de 2,5",
-       "cote": 1.03
+       "cote": 1.02
       }
      ]
     },
@@ -32261,7 +32261,7 @@
       },
       {
        "label": "Moins de 3",
-       "cote": 1.28
+       "cote": 1.29
       }
      ]
     },
@@ -32352,7 +32352,7 @@
       },
       {
        "label": "Moins de 4,5",
-       "cote": 1.04
+       "cote": 1.05
       }
      ]
     },
@@ -32382,11 +32382,11 @@
       },
       {
        "label": "2 - 0",
-       "cote": 16
+       "cote": 17
       },
       {
        "label": "3 - 0",
-       "cote": 42
+       "cote": 44
       },
       {
        "label": "4 - 0",
@@ -32406,11 +32406,11 @@
       },
       {
        "label": "2 - 1",
-       "cote": 11
+       "cote": 11.5
       },
       {
        "label": "3 - 1",
-       "cote": 30
+       "cote": 32
       },
       {
        "label": "4 - 1",
@@ -32418,7 +32418,7 @@
       },
       {
        "label": "5 - 1",
-       "cote": 200
+       "cote": 225
       },
       {
        "label": "0 - 2",
@@ -32434,23 +32434,23 @@
       },
       {
        "label": "3 - 2",
-       "cote": 38
+       "cote": 40
       },
       {
        "label": "4 - 2",
-       "cote": 85
+       "cote": 90
       },
       {
        "label": "5 - 2",
-       "cote": 275
+       "cote": 300
       },
       {
        "label": "0 - 3",
-       "cote": 14
+       "cote": 13.5
       },
       {
        "label": "1 - 3",
-       "cote": 14.5
+       "cote": 14
       },
       {
        "label": "2 - 3",
@@ -32474,7 +32474,7 @@
       },
       {
        "label": "1 - 4",
-       "cote": 34
+       "cote": 32
       },
       {
        "label": "2 - 4",
@@ -32502,11 +32502,11 @@
       },
       {
        "label": "2 - 5",
-       "cote": 110
+       "cote": 100
       },
       {
        "label": "3 - 5",
-       "cote": 250
+       "cote": 225
       },
       {
        "label": "4 - 5",
@@ -32527,7 +32527,7 @@
       },
       {
        "label": "1",
-       "cote": 3.85
+       "cote": 3.9
       },
       {
        "label": "2",
@@ -32555,7 +32555,7 @@
       },
       {
        "label": "8",
-       "cote": 100
+       "cote": 95
       },
       {
        "label": "9 ou plus",
@@ -32568,11 +32568,11 @@
      "issues": [
       {
        "label": "Afrique du Sud +1.5",
-       "cote": 1.21
+       "cote": 1.22
       },
       {
        "label": "Corée du Sud -1.5",
-       "cote": 3.35
+       "cote": 3.3
       }
      ]
     },
@@ -32581,7 +32581,7 @@
      "issues": [
       {
        "label": "Afrique du Sud -1.5",
-       "cote": 8
+       "cote": 8.5
       },
       {
        "label": "Corée du Sud +1.5",
@@ -32598,7 +32598,7 @@
       },
       {
        "label": "Corée du Sud -2.5",
-       "cote": 7.25
+       "cote": 7
       }
      ]
     }

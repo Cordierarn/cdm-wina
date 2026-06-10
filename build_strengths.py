@@ -69,6 +69,21 @@ def main() -> None:
     lo, hi = min(mus.values()), max(mus.values())
     strengths = {t: round((m - lo) / (hi - lo), 4) for t, m in mus.items()}
 
+    # 2e composante : valeur marchande de l'effectif (Transfermarkt, echelle
+    # log car de 1,5 Mrd a ~10 M). 70% Glicko (resultats) / 30% valeur (talent).
+    sv_file = DATA / "squad_values.json"
+    if sv_file.exists():
+        import math
+        vals = json.loads(sv_file.read_text(encoding="utf-8"))["values_eur"]
+        logs = {t: math.log(v) for t, v in vals.items() if t in strengths}
+        if len(logs) >= 40:
+            vlo, vhi = min(logs.values()), max(logs.values())
+            for t in strengths:
+                if t in logs:
+                    tm_norm = (logs[t] - vlo) / (vhi - vlo)
+                    strengths[t] = round(0.70 * strengths[t] + 0.30 * tm_norm, 4)
+            print(f"forces: melange 70% Glicko / 30% valeur Transfermarkt ({len(logs)} equipes)")
+
     # Calibration Poisson sur les matchs internationaux recents :
     # buts ~ exp(a + b * (rating_for - rating_against)), ratings = mu - sigma.
     # MLE : a en forme fermee pour b donne, grid search sur b.

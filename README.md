@@ -168,6 +168,8 @@ Rythme conseillé pendant la CDM : un `update.bat` chaque matin, les cotes bouge
 | `export_model.py` | calendrier + λ Poisson + probas par match → `data/model.json` (s'exécute dans le venv ScoutFootball) |
 | `scrape_winamax.py` | cotes 1N2 + tous marchés pricables → `data/odds.json` (+ historique 1N2 dans `odds_history.jsonl`) |
 | `scrape_oddsapi.py` | cotes Pinnacle via The Odds API (clé dans `config.json`, non versionné) → `data/pinnacle.json` + archive `closing_history.jsonl` |
+| `scrape_transfermarkt.py` | valeurs marchandes des 48 effectifs (page participants FIWC, 1 requête) → `data/squad_values.json`, mélangées 30 % dans les forces |
+| `check_lineups.py` | XI officiels via l'API publique ESPN (publiés ~1h avant kickoff) → `data/lineups.json`, badge dans l'onglet Par match |
 | `scrape_pinnacle.py` | secours sans clé : API invitée Pinnacle → `data/pinnacle.json` |
 | `make_picks.py` | matrice de scores → probas par marché → EV/Kelly → `data/picks.json` |
 | `dashboard/index.html` | interface web (statique, localStorage pour le suivi) |
