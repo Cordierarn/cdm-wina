@@ -321,8 +321,8 @@ def closing_lookup(
     date_val: pd.Timestamp,
     home_name: str,
     away_name: str,
-) -> list[float] | None:
-    """Cherche les probas de clôture dans closing_backtest pour un match donné.
+) -> dict | None:
+    """Cherche l'entrée de clôture complète (h2h + totals) pour un match donné.
 
     Essaie date exacte puis ±1 jour (décalage UTC/local), et applique le mapping
     dataset→closing-norm pour les noms d'équipes non canoniques (USA, Türkiye…).
@@ -336,7 +336,7 @@ def closing_lookup(
         d = (date_val + pd.Timedelta(days=delta)).strftime("%Y-%m-%d")
         key = f"{d}|{h}|{a}"
         if key in closing:
-            return closing[key]["h2h"]
+            return closing[key]
     return None
 
 
@@ -373,13 +373,17 @@ def build_team_name_index(fixtures: pd.DataFrame, home_id_col: str, away_id_col:
     return name_index
 
 
-def predict_row(base_lambda: float, spread: float, rho: float, diff: float) -> dict[str, list[float]]:
+def predict_row(base_lambda: float, spread: float, rho: float, diff: float) -> tuple[dict[str, list[float]], list[list[float]]]:
     mat, _, _ = score_probs(base_lambda, spread, rho, diff)
     p1 = sum(mat[h][a] for h in range(11) for a in range(11) if h > a)
     px = sum(mat[h][a] for h in range(11) for a in range(11) if h == a)
     p2 = sum(mat[h][a] for h in range(11) for a in range(11) if h < a)
     over = sum(mat[h][a] for h in range(11) for a in range(11) if h + a > 2.5)
-    return {"1n2": [p1, px, p2], "totals": [over, 1 - over]}
+    return {"1n2": [p1, px, p2], "totals": [over, 1 - over]}, mat
+
+
+def model_over_prob(mat: list[list[float]], line: float) -> float:
+    return sum(mat[h][a] for h in range(11) for a in range(11) if h + a > line)
 
 
 def tournament_title(key: str) -> str:
@@ -543,25 +547,38 @@ def main() -> None:
             s_home = (rh - lo) / (hi - lo)
             s_away = (ra - lo) / (hi - lo)
             diff = s_home - s_away
-            probs = predict_row(base_lambda, spread, rho, diff)
+            probs, mat = predict_row(base_lambda, spread, rho, diff)
             gh = int(row[goals_home_col])
             ga = int(row[goals_away_col])
             y_1n2 = [1.0 if gh > ga else 0.0, 1.0 if gh == ga else 0.0, 1.0 if gh < ga else 0.0]
             y_tot = [1.0 if gh + ga > 2.5 else 0.0, 1.0 if gh + ga <= 2.5 else 0.0]
+            model_tot = probs["totals"]
             market_1n2 = market_lines(fixtures, "1n2", row)
             market_totals = market_lines(fixtures, "totals", row)
             # Enrichissement depuis closing_backtest.json si disponible
-            if closing and market_1n2 is None:
+            if closing:
                 h_id = int(row[home_id_col])
                 a_id = int(row[away_id_col])
                 h_name = team_name_index.get(h_id, "")
                 a_name = team_name_index.get(a_id, "")
-                if h_name and a_name:
-                    market_1n2 = closing_lookup(closing, row[date_col], h_name, a_name)
+                entry = closing_lookup(closing, row[date_col], h_name, a_name) if h_name and a_name else None
+                if entry:
+                    if market_1n2 is None:
+                        market_1n2 = entry.get("h2h")
+                    totals_entry = entry.get("totals")
+                    # ligne stockée (2.5 ou la plus proche) : pricer modèle, marché
+                    # et résultat sur CETTE ligne. Lignes entières ignorées (push).
+                    if market_totals is None and totals_entry and totals_entry.get("probs"):
+                        line = float(totals_entry.get("line", 2.5))
+                        if line != int(line):
+                            market_totals = totals_entry["probs"]
+                            over = model_over_prob(mat, line)
+                            model_tot = [over, 1 - over]
+                            y_tot = [1.0 if gh + ga > line else 0.0, 1.0 if gh + ga <= line else 0.0]
             points.append(BacktestPoint(key, "1n2", y_1n2, probs["1n2"], [1 / 3, 1 / 3, 1 / 3], market_1n2))
-            points.append(BacktestPoint(key, "totals", y_tot, probs["totals"], [0.5, 0.5], market_totals))
+            points.append(BacktestPoint(key, "totals", y_tot, model_tot, [0.5, 0.5], market_totals))
             market_1n2_rows.append((probs["1n2"], y_1n2, market_1n2))
-            market_totals_rows.append((probs["totals"], y_tot, market_totals))
+            market_totals_rows.append((model_tot, y_tot, market_totals))
 
         if not market_1n2_rows and not market_totals_rows:
             continue
@@ -581,33 +598,39 @@ def main() -> None:
 
     summary = summarize_metrics(points)
 
-    # Estimation du poids optimal par marche sur les points ayant une reference marche.
-    # Plancher à 0.05 : avec ~100 matchs la courbe logloss(w) est quasi-plate entre
-    # 0 et 0.15 (Δ < 0.002) ; forcer w=0 effacerait les picks 1N2 alors que l'écart
-    # vs w=0.05 n'est pas statistiquement significatif sur cet échantillon.
-    W_MIN = 0.05
-    model_weights = {"1n2": 0.40, "totals": 0.40}
+    # Estimation du poids optimal par marche sur les points ayant une reference
+    # marche, puis shrinkage bayesien vers le prior : avec ~100 matchs la courbe
+    # logloss(w) est quasi-plate, un w brut n'est pas fiable.
+    #   w_final = (n*w_brut + n0*w_prior) / (n + n0)
+    W_PRIOR = 0.25
+    N0 = 200
+    MIN_N_TOTALS = 50  # en dessous, pas d'estimation : prior seul
+    model_weights = {"1n2": W_PRIOR, "totals": W_PRIOR}
     for market in ("1n2", "totals"):
         refs = [p for p in points if p.market == market and p.market_probs]
-        if not refs:
+        n = len(refs)
+        detail = {"n": n, "w_prior": W_PRIOR, "n0": N0}
+        if not refs or (market == "totals" and n < MIN_N_TOTALS):
+            detail.update({"raw_best_weight": None, "w_final": W_PRIOR,
+                           "note": f"n={n} < {MIN_N_TOTALS} : prior conserve" if refs else "aucune reference marche"})
+            summary.setdefault("__overall__", {})[market] = detail
             continue
-        best_w, best_ll = 0.40, math.inf
+        best_w, best_ll = W_PRIOR, math.inf
         for i in range(21):
             w = i / 20
             ll = 0.0
             for p in refs:
                 mix = [w * m + (1 - w) * r for m, r in zip(p.model, p.market_probs or p.baseline)]
                 ll += log_loss(mix, p.y)
-            ll /= len(refs)
+            ll /= n
             if ll < best_ll:
                 best_ll = ll
                 best_w = w
-        model_weights[market] = max(best_w, W_MIN)
-        summary.setdefault("__overall__", {})[market] = {
-            "best_weight": max(best_w, W_MIN),
-            "best_mix_logloss": best_ll,
-            "raw_best_weight": best_w,
-        }
+        w_final = (n * best_w + N0 * W_PRIOR) / (n + N0)
+        model_weights[market] = round(w_final, 4)
+        detail.update({"raw_best_weight": best_w, "w_final": round(w_final, 4),
+                       "best_mix_logloss": best_ll})
+        summary.setdefault("__overall__", {})[market] = detail
 
     out = {
         "generated_at": int(datetime.utcnow().timestamp()),
@@ -620,7 +643,8 @@ def main() -> None:
                 if closing else "n/a — closing_backtest.json absent"
             ),
             "force_source": "fixture rating columns if present, otherwise pre-cutoff Elo fallback",
-            "totals_weight": "fixed at 0.40 (no free closing odds available for O/U 2.5)",
+            "weights": "grid search logloss + shrinkage (n*w_raw + n0*0.25)/(n+n0), n0=200; "
+                       "totals: prior 0.25 conserve si moins de 50 matchs avec cotes O/U",
         },
     }
     DATA_DIR.mkdir(parents=True, exist_ok=True)

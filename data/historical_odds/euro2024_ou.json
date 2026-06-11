@@ -1,0 +1,3602 @@
+[
+    {
+        "scraped_date": "2026-06-11 20:35:11 UTC",
+        "match_date": "2024-07-14 19:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/england-j9N9ZNFA/spain-bLyo6mco/#IFsEWU3F",
+        "home_team": "Spain",
+        "away_team": "England",
+        "league_name": "Euro 2024",
+        "home_score": "2",
+        "away_score": "1",
+        "partial_results": "(0:0, 2:1)",
+        "venue": null,
+        "venue_town": null,
+        "venue_country": "",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.11",
+                "odds_under": "7.00"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.45",
+                "odds_under": "2.68"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.46",
+                "odds_under": "1.53"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "4.50",
+                "odds_under": "1.19"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "9.80",
+                "odds_under": "1.05"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "28.50",
+                "odds_under": "1.01"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "26.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:35:27 UTC",
+        "match_date": "2024-07-09 19:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/france-QkGeVG1n/spain-bLyo6mco/#UJffDWe5",
+        "home_team": "Spain",
+        "away_team": "France",
+        "league_name": "Euro 2024",
+        "home_score": "2",
+        "away_score": "1",
+        "partial_results": "(2:1, 0:0)",
+        "venue": "MHPArena",
+        "venue_town": "Stuttgart",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.10",
+                "odds_under": "7.20"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.44",
+                "odds_under": "2.58"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.41",
+                "odds_under": "1.50"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "4.30",
+                "odds_under": "1.18"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "10.00",
+                "odds_under": "1.05"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "28.00",
+                "odds_under": "1.01"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "26.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:35:43 UTC",
+        "match_date": "2024-06-17 19:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/austria-naHiWdnt/france-QkGeVG1n/#n7T2wHs2",
+        "home_team": "Austria",
+        "away_team": "France",
+        "league_name": "Euro 2024",
+        "home_score": "0",
+        "away_score": "1",
+        "partial_results": "(0:1, 0:0)",
+        "venue": "Merkur Spiel-Arena",
+        "venue_town": "Dsseldorf",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.03",
+                "odds_under": "13.50"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.23",
+                "odds_under": "3.57"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.72",
+                "odds_under": "1.92"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.78",
+                "odds_under": "1.35"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "5.00",
+                "odds_under": "1.12"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "12.00",
+                "odds_under": "1.03"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "15.50",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:36:00 UTC",
+        "match_date": "2024-06-16 19:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/england-j9N9ZNFA/serbia-8Kl6iq0i/#lCoGnLKF",
+        "home_team": "Serbia",
+        "away_team": "England",
+        "league_name": "Euro 2024",
+        "home_score": "0",
+        "away_score": "1",
+        "partial_results": "(0:1, 0:0)",
+        "venue": "Wembley Stadium",
+        "venue_town": "London",
+        "venue_country": "England",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.03",
+                "odds_under": "13.25"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.23",
+                "odds_under": "3.55"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.73",
+                "odds_under": "1.91"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.80",
+                "odds_under": "1.35"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "5.00",
+                "odds_under": "1.12"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "12.25",
+                "odds_under": "1.03"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "16.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:36:17 UTC",
+        "match_date": "2024-07-01 16:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/belgium-GbB957na/france-QkGeVG1n/#K4DPGJgf",
+        "home_team": "France",
+        "away_team": "Belgium",
+        "league_name": "Euro 2024",
+        "home_score": "1",
+        "away_score": "0",
+        "partial_results": "(0:0, 1:0)",
+        "venue": null,
+        "venue_town": null,
+        "venue_country": "",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.05",
+                "odds_under": "10.25"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.28",
+                "odds_under": "3.13"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.91",
+                "odds_under": "1.73"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "3.13",
+                "odds_under": "1.28"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "6.25",
+                "odds_under": "1.09"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "15.75",
+                "odds_under": "1.02"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "18.50",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:36:33 UTC",
+        "match_date": "2024-07-06 16:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/england-j9N9ZNFA/switzerland-rHJ2vy1B/#0dMzsHxJ",
+        "home_team": "England",
+        "away_team": "Switzerland",
+        "league_name": "Euro 2024",
+        "home_score": "2",
+        "away_score": "1",
+        "partial_results": "0:0, 1:1, 0:0, 5:3",
+        "venue": "Merkur Spiel-Arena",
+        "venue_town": "Dsseldorf",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.09",
+                "odds_under": "6.75"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.46",
+                "odds_under": "2.41"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.43",
+                "odds_under": "1.45"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "4.35",
+                "odds_under": "1.15"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "11.50",
+                "odds_under": "1.03"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "35.00",
+                "odds_under": "1.01"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "29.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:36:49 UTC",
+        "match_date": "2024-06-25 16:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/austria-naHiWdnt/netherlands-WYintcWb/#S26k1KZ8",
+        "home_team": "Netherlands",
+        "away_team": "Austria",
+        "league_name": "Euro 2024",
+        "home_score": "2",
+        "away_score": "3",
+        "partial_results": "(0:1, 2:2)",
+        "venue": "Olympiastadion",
+        "venue_town": "Berlin",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.04",
+                "odds_under": "11.75"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.24",
+                "odds_under": "3.43"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.79",
+                "odds_under": "1.84"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.88",
+                "odds_under": "1.33"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "5.40",
+                "odds_under": "1.11"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "13.25",
+                "odds_under": "1.03"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "16.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:37:06 UTC",
+        "match_date": "2024-06-21 13:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/slovakia-KpLb2q1U/ukraine-j1JtDMwo/#hrTmblCs",
+        "home_team": "Slovakia",
+        "away_team": "Ukraine",
+        "league_name": "Euro 2024",
+        "home_score": "1",
+        "away_score": "2",
+        "partial_results": "(1:0, 0:2)",
+        "venue": "Merkur Spiel-Arena",
+        "venue_town": "Dsseldorf",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.06",
+                "odds_under": "9.40"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.32",
+                "odds_under": "2.90"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.03",
+                "odds_under": "1.65"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "3.45",
+                "odds_under": "1.24"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "7.20",
+                "odds_under": "1.07"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "19.25",
+                "odds_under": "1.01"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "23.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:37:24 UTC",
+        "match_date": "2024-07-05 16:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/germany-ptQide1O/spain-bLyo6mco/#rm0QrnRk",
+        "home_team": "Spain",
+        "away_team": "Germany",
+        "league_name": "Euro 2024",
+        "home_score": "2",
+        "away_score": "1",
+        "partial_results": "0:0, 1:1, 1:0",
+        "venue": "MHPArena",
+        "venue_town": "Stuttgart",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.05",
+                "odds_under": "10.75"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.26",
+                "odds_under": "3.32"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.85",
+                "odds_under": "1.79"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.97",
+                "odds_under": "1.31"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "5.75",
+                "odds_under": "1.10"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "14.00",
+                "odds_under": "1.02"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "18.50",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:37:40 UTC",
+        "match_date": "2024-06-25 19:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/england-j9N9ZNFA/slovenia-tfMf3PoO/#tAQfuwDk",
+        "home_team": "England",
+        "away_team": "Slovenia",
+        "league_name": "Euro 2024",
+        "home_score": "0",
+        "away_score": "0",
+        "partial_results": "(0:0, 0:0)",
+        "venue": "RheinEnergieStadion",
+        "venue_town": "Cologne",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.03",
+                "odds_under": "12.00"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.25",
+                "odds_under": "3.35"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.79",
+                "odds_under": "1.85"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.94",
+                "odds_under": "1.32"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "5.55",
+                "odds_under": "1.11"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "13.75",
+                "odds_under": "1.03"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "15.50",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:37:57 UTC",
+        "match_date": "2024-06-22 16:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/portugal-WvJrjFVN/turkey-QeijuHo5/#lzjYhdsk",
+        "home_team": "Turkey",
+        "away_team": "Portugal",
+        "league_name": "Euro 2024",
+        "home_score": "0",
+        "away_score": "3",
+        "partial_results": "(0:2, 0:1)",
+        "venue": "Signal Iduna Park",
+        "venue_town": "Dortmund",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.02",
+                "odds_under": "16.50"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.17",
+                "odds_under": "4.30"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.58",
+                "odds_under": "2.15"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.40",
+                "odds_under": "1.46"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "4.20",
+                "odds_under": "1.17"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "9.15",
+                "odds_under": "1.05"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "13.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:38:14 UTC",
+        "match_date": "2024-06-26 19:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/georgia-YVovjspA/portugal-WvJrjFVN/#02i6FeDj",
+        "home_team": "Georgia",
+        "away_team": "Portugal",
+        "league_name": "Euro 2024",
+        "home_score": "2",
+        "away_score": "0",
+        "partial_results": "(1:0, 1:0)",
+        "venue": "Veltins Arena",
+        "venue_town": "Gelsenkirchen",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.03",
+                "odds_under": "13.75"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.22",
+                "odds_under": "3.78"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.70",
+                "odds_under": "1.99"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.70",
+                "odds_under": "1.39"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "4.90",
+                "odds_under": "1.14"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "11.50",
+                "odds_under": "1.04"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "15.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:38:30 UTC",
+        "match_date": "2024-07-02 19:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/austria-naHiWdnt/turkey-QeijuHo5/#xAyfhPLb",
+        "home_team": "Austria",
+        "away_team": "Turkey",
+        "league_name": "Euro 2024",
+        "home_score": "1",
+        "away_score": "2",
+        "partial_results": "(0:1, 1:1)",
+        "venue": "Red Bull Arena",
+        "venue_town": "Leipzig",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.06",
+                "odds_under": "9.35"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.29",
+                "odds_under": "3.05"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.97",
+                "odds_under": "1.69"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "3.23",
+                "odds_under": "1.26"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "6.65",
+                "odds_under": "1.08"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "16.80",
+                "odds_under": "1.02"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "19.50",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:38:46 UTC",
+        "match_date": "2024-06-26 19:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/czech-republic-6LHwBDGU/turkey-QeijuHo5/#SQlxhGde",
+        "home_team": "Czech Republic",
+        "away_team": "Turkey",
+        "league_name": "Euro 2024",
+        "home_score": "1",
+        "away_score": "2",
+        "partial_results": "(0:0, 1:2)",
+        "venue": "Volksparkstadion",
+        "venue_town": "Hamburg",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.05",
+                "odds_under": "10.25"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.29",
+                "odds_under": "3.10"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.93",
+                "odds_under": "1.72"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "3.18",
+                "odds_under": "1.27"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "6.30",
+                "odds_under": "1.08"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "16.25",
+                "odds_under": "1.02"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "19.50",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:39:04 UTC",
+        "match_date": "2024-06-29 16:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/italy-hlKvieGH/switzerland-rHJ2vy1B/#p0tqX2qH",
+        "home_team": "Switzerland",
+        "away_team": "Italy",
+        "league_name": "Euro 2024",
+        "home_score": "2",
+        "away_score": "0",
+        "partial_results": "(1:0, 1:0)",
+        "venue": "Olympiastadion",
+        "venue_town": "Berlin",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.10",
+                "odds_under": "6.65"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.45",
+                "odds_under": "2.42"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.44",
+                "odds_under": "1.45"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "4.33",
+                "odds_under": "1.15"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "11.00",
+                "odds_under": "1.03"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "30.00",
+                "odds_under": "1.01"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "31.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:39:21 UTC",
+        "match_date": "2024-06-19 16:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/germany-ptQide1O/hungary-MTVhw6Go/#GbRxZ1jG",
+        "home_team": "Germany",
+        "away_team": "Hungary",
+        "league_name": "Euro 2024",
+        "home_score": "2",
+        "away_score": "0",
+        "partial_results": "(1:0, 1:0)",
+        "venue": "Puskas Arena",
+        "venue_town": "Budapest",
+        "venue_country": "Hungary",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.01",
+                "odds_under": "22.50"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.12",
+                "odds_under": "5.30"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.43",
+                "odds_under": "2.48"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.09",
+                "odds_under": "1.61"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "3.35",
+                "odds_under": "1.25"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "6.60",
+                "odds_under": "1.09"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "9.50",
+                "odds_under": "1.01"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:39:37 UTC",
+        "match_date": "2024-06-20 19:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/italy-hlKvieGH/spain-bLyo6mco/#Egg3kNzc",
+        "home_team": "Spain",
+        "away_team": "Italy",
+        "league_name": "Euro 2024",
+        "home_score": "1",
+        "away_score": "0",
+        "partial_results": "(0:0, 1:0)",
+        "venue": "Veltins Arena",
+        "venue_town": "Gelsenkirchen",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.06",
+                "odds_under": "8.75"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.34",
+                "odds_under": "2.82"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.09",
+                "odds_under": "1.61"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "3.57",
+                "odds_under": "1.22"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "7.65",
+                "odds_under": "1.06"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "21.00",
+                "odds_under": "1.01"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "23.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:39:54 UTC",
+        "match_date": "2024-07-05 19:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/france-QkGeVG1n/portugal-WvJrjFVN/#xf5z0D9j",
+        "home_team": "Portugal",
+        "away_team": "France",
+        "league_name": "Euro 2024",
+        "home_score": "0",
+        "away_score": "1",
+        "partial_results": "0:0, 0:0, 0:0, 3:5",
+        "venue": "Volksparkstadion",
+        "venue_town": "Hamburg",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.08",
+                "odds_under": "7.45"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.40",
+                "odds_under": "2.62"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.27",
+                "odds_under": "1.53"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "3.97",
+                "odds_under": "1.19"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "8.30",
+                "odds_under": "1.05"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "28.50",
+                "odds_under": "1.01"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "23.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:40:11 UTC",
+        "match_date": "2024-06-22 19:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/belgium-GbB957na/romania-IaD8jZpU/#zT9cab4L",
+        "home_team": "Belgium",
+        "away_team": "Romania",
+        "league_name": "Euro 2024",
+        "home_score": "2",
+        "away_score": "0",
+        "partial_results": "(1:0, 1:0)",
+        "venue": "RheinEnergieStadion",
+        "venue_town": "Cologne",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.02",
+                "odds_under": "15.25"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.19",
+                "odds_under": "3.97"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.63",
+                "odds_under": "2.06"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.55",
+                "odds_under": "1.41"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "4.40",
+                "odds_under": "1.15"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "10.00",
+                "odds_under": "1.04"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "12.50",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:40:27 UTC",
+        "match_date": "2024-06-20 16:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/denmark-0KUdxQVi/england-j9N9ZNFA/#MPqOpakS",
+        "home_team": "Denmark",
+        "away_team": "England",
+        "league_name": "Euro 2024",
+        "home_score": "1",
+        "away_score": "1",
+        "partial_results": "(1:1, 0:0)",
+        "venue": "Deutsche Bank Park",
+        "venue_town": "Frankfurt",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.07",
+                "odds_under": "8.30"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.35",
+                "odds_under": "2.78"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.11",
+                "odds_under": "1.60"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "3.62",
+                "odds_under": "1.21"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "7.85",
+                "odds_under": "1.06"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "21.50",
+                "odds_under": "1.01"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "23.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:40:44 UTC",
+        "match_date": "2024-06-18 16:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/georgia-YVovjspA/turkey-QeijuHo5/#GUFZKHkT",
+        "home_team": "Turkey",
+        "away_team": "Georgia",
+        "league_name": "Euro 2024",
+        "home_score": "3",
+        "away_score": "1",
+        "partial_results": "(1:1, 2:0)",
+        "venue": "Kocaeli Stadyumu",
+        "venue_town": "Kocaeli",
+        "venue_country": "Turkey",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.04",
+                "odds_under": "11.50"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.26",
+                "odds_under": "3.25"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.84",
+                "odds_under": "1.80"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "3.03",
+                "odds_under": "1.30"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "5.75",
+                "odds_under": "1.10"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "14.50",
+                "odds_under": "1.02"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "19.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:41:01 UTC",
+        "match_date": "2024-06-20 13:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/serbia-8Kl6iq0i/slovenia-tfMf3PoO/#2JRjtJcq",
+        "home_team": "Slovenia",
+        "away_team": "Serbia",
+        "league_name": "Euro 2024",
+        "home_score": "1",
+        "away_score": "1",
+        "partial_results": "(0:0, 1:1)",
+        "venue": "Allianz Arena",
+        "venue_town": "Munich",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.04",
+                "odds_under": "11.75"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.26",
+                "odds_under": "3.35"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.81",
+                "odds_under": "1.83"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.95",
+                "odds_under": "1.32"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "5.50",
+                "odds_under": "1.10"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "13.75",
+                "odds_under": "1.03"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "19.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:41:18 UTC",
+        "match_date": "2024-07-02 16:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/netherlands-WYintcWb/romania-IaD8jZpU/#xOGS6Ozh",
+        "home_team": "Romania",
+        "away_team": "Netherlands",
+        "league_name": "Euro 2024",
+        "home_score": "0",
+        "away_score": "3",
+        "partial_results": "(0:1, 0:2)",
+        "venue": "Allianz Arena",
+        "venue_town": "Munich",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.03",
+                "odds_under": "12.75"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.26",
+                "odds_under": "3.50"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.79",
+                "odds_under": "1.85"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.97",
+                "odds_under": "1.32"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "5.15",
+                "odds_under": "1.11"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "14.00",
+                "odds_under": "1.03"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "15.50",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:41:35 UTC",
+        "match_date": "2024-06-24 19:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/albania-ELP2K4oB/spain-bLyo6mco/#hph7lsj3",
+        "home_team": "Albania",
+        "away_team": "Spain",
+        "league_name": "Euro 2024",
+        "home_score": "0",
+        "away_score": "1",
+        "partial_results": "(0:1, 0:0)",
+        "venue": "Merkur Spiel-Arena",
+        "venue_town": "Dsseldorf",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.03",
+                "odds_under": "13.50"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.23",
+                "odds_under": "3.67"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.72",
+                "odds_under": "1.95"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.75",
+                "odds_under": "1.37"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "5.00",
+                "odds_under": "1.13"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "11.50",
+                "odds_under": "1.03"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "17.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:41:51 UTC",
+        "match_date": "2024-06-19 19:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/scotland-fZRU25WH/switzerland-rHJ2vy1B/#bNWXZsyA",
+        "home_team": "Scotland",
+        "away_team": "Switzerland",
+        "league_name": "Euro 2024",
+        "home_score": "1",
+        "away_score": "1",
+        "partial_results": "(1:1, 0:0)",
+        "venue": null,
+        "venue_town": null,
+        "venue_country": "",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.07",
+                "odds_under": "8.35"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.37",
+                "odds_under": "2.70"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.16",
+                "odds_under": "1.57"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "3.75",
+                "odds_under": "1.20"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "8.40",
+                "odds_under": "1.05"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "23.50",
+                "odds_under": "1.01"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "26.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:42:08 UTC",
+        "match_date": "2024-07-10 19:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/england-j9N9ZNFA/netherlands-WYintcWb/#v3Rv8Lk2",
+        "home_team": "Netherlands",
+        "away_team": "England",
+        "league_name": "Euro 2024",
+        "home_score": "1",
+        "away_score": "2",
+        "partial_results": "(1:1, 0:1)",
+        "venue": "Signal Iduna Park",
+        "venue_town": "Dortmund",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.10",
+                "odds_under": "7.25"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.44",
+                "odds_under": "2.62"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.41",
+                "odds_under": "1.52"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "4.25",
+                "odds_under": "1.18"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "10.20",
+                "odds_under": "1.05"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "28.50",
+                "odds_under": "1.01"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "26.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:42:25 UTC",
+        "match_date": "2024-06-29 19:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/denmark-0KUdxQVi/germany-ptQide1O/#UmziYSZ0",
+        "home_team": "Germany",
+        "away_team": "Denmark",
+        "league_name": "Euro 2024",
+        "home_score": "2",
+        "away_score": "0",
+        "partial_results": "(0:0, 2:0)",
+        "venue": "Signal Iduna Park",
+        "venue_town": "Dortmund",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.04",
+                "odds_under": "11.25"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.25",
+                "odds_under": "3.35"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.82",
+                "odds_under": "1.82"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.94",
+                "odds_under": "1.32"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "5.55",
+                "odds_under": "1.10"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "13.75",
+                "odds_under": "1.03"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "17.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:42:41 UTC",
+        "match_date": "2024-06-19 13:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/albania-ELP2K4oB/croatia-K8aznggo/#nm5LQwbd",
+        "home_team": "Croatia",
+        "away_team": "Albania",
+        "league_name": "Euro 2024",
+        "home_score": "2",
+        "away_score": "2",
+        "partial_results": "(0:1, 2:1)",
+        "venue": "Volksparkstadion",
+        "venue_town": "Hamburg",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.05",
+                "odds_under": "10.00"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.32",
+                "odds_under": "2.95"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.98",
+                "odds_under": "1.68"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "3.40",
+                "odds_under": "1.24"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "6.50",
+                "odds_under": "1.07"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "19.00",
+                "odds_under": "1.01"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "21.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:42:58 UTC",
+        "match_date": "2024-06-15 13:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/hungary-MTVhw6Go/switzerland-rHJ2vy1B/#KWXTzOL3",
+        "home_team": "Hungary",
+        "away_team": "Switzerland",
+        "league_name": "Euro 2024",
+        "home_score": "1",
+        "away_score": "3",
+        "partial_results": "(0:2, 1:1)",
+        "venue": "RheinEnergieStadion",
+        "venue_town": "Cologne",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.09",
+                "odds_under": "7.30"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.46",
+                "odds_under": "2.52"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.41",
+                "odds_under": "1.51"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "4.35",
+                "odds_under": "1.17"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "9.35",
+                "odds_under": "1.04"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "26.50",
+                "odds_under": "1.01"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "29.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:43:16 UTC",
+        "match_date": "2024-06-26 16:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/romania-IaD8jZpU/slovakia-KpLb2q1U/#Iia2bIJR",
+        "home_team": "Slovakia",
+        "away_team": "Romania",
+        "league_name": "Euro 2024",
+        "home_score": "1",
+        "away_score": "1",
+        "partial_results": "(1:1, 0:0)",
+        "venue": "Teheln pole",
+        "venue_town": "Bratislava",
+        "venue_country": "Slovakia",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.19",
+                "odds_under": "4.33"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.61",
+                "odds_under": "2.09"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "3.08",
+                "odds_under": "1.31"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "5.30",
+                "odds_under": "1.10"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "17.50",
+                "odds_under": "1.01"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "18.00",
+                "odds_under": "1.00"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "34.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:43:33 UTC",
+        "match_date": "2024-06-22 13:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/czech-republic-6LHwBDGU/georgia-YVovjspA/#MBh2Gybp",
+        "home_team": "Georgia",
+        "away_team": "Czech Republic",
+        "league_name": "Euro 2024",
+        "home_score": "1",
+        "away_score": "1",
+        "partial_results": "(1:0, 0:1)",
+        "venue": "Andruv stadion",
+        "venue_town": "Olomouc",
+        "venue_country": "Czech Republic",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.03",
+                "odds_under": "14.00"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.24",
+                "odds_under": "3.82"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.77",
+                "odds_under": "1.99"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.85",
+                "odds_under": "1.39"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "5.35",
+                "odds_under": "1.14"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "12.80",
+                "odds_under": "1.04"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "14.50",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:43:50 UTC",
+        "match_date": "2024-06-24 19:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/croatia-K8aznggo/italy-hlKvieGH/#z9sCm159",
+        "home_team": "Croatia",
+        "away_team": "Italy",
+        "league_name": "Euro 2024",
+        "home_score": "1",
+        "away_score": "1",
+        "partial_results": "(0:0, 1:1)",
+        "venue": "Red Bull Arena",
+        "venue_town": "Leipzig",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.07",
+                "odds_under": "8.20"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.37",
+                "odds_under": "2.69"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.18",
+                "odds_under": "1.56"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "3.77",
+                "odds_under": "1.20"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "8.45",
+                "odds_under": "1.05"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "24.50",
+                "odds_under": "1.01"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "26.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:44:07 UTC",
+        "match_date": "2024-06-15 16:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/croatia-K8aznggo/spain-bLyo6mco/#QXGCSaTq",
+        "home_team": "Spain",
+        "away_team": "Croatia",
+        "league_name": "Euro 2024",
+        "home_score": "3",
+        "away_score": "0",
+        "partial_results": "(3:0, 0:0)",
+        "venue": null,
+        "venue_town": null,
+        "venue_country": "",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.05",
+                "odds_under": "9.60"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.32",
+                "odds_under": "2.93"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.00",
+                "odds_under": "1.67"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "3.40",
+                "odds_under": "1.24"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "6.70",
+                "odds_under": "1.07"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "18.75",
+                "odds_under": "1.01"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "21.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:44:23 UTC",
+        "match_date": "2024-06-16 16:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/denmark-0KUdxQVi/slovenia-tfMf3PoO/#rZpKouzM",
+        "home_team": "Slovenia",
+        "away_team": "Denmark",
+        "league_name": "Euro 2024",
+        "home_score": "1",
+        "away_score": "1",
+        "partial_results": "(0:1, 1:0)",
+        "venue": "MHPArena",
+        "venue_town": "Stuttgart",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.07",
+                "odds_under": "8.30"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.38",
+                "odds_under": "2.67"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.17",
+                "odds_under": "1.57"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "3.80",
+                "odds_under": "1.20"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "8.25",
+                "odds_under": "1.05"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "23.00",
+                "odds_under": "1.01"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "23.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:44:40 UTC",
+        "match_date": "2024-06-17 13:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/romania-IaD8jZpU/ukraine-j1JtDMwo/#GMyM2U3Q",
+        "home_team": "Romania",
+        "away_team": "Ukraine",
+        "league_name": "Euro 2024",
+        "home_score": "3",
+        "away_score": "0",
+        "partial_results": "(1:0, 2:0)",
+        "venue": "Allianz Arena",
+        "venue_town": "Munich",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.05",
+                "odds_under": "9.65"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.31",
+                "odds_under": "2.96"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.99",
+                "odds_under": "1.68"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "3.35",
+                "odds_under": "1.25"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "7.00",
+                "odds_under": "1.07"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "18.25",
+                "odds_under": "1.02"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "21.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:44:57 UTC",
+        "match_date": "2024-07-01 19:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/portugal-WvJrjFVN/slovenia-tfMf3PoO/#6kTAlsLN",
+        "home_team": "Portugal",
+        "away_team": "Slovenia",
+        "league_name": "Euro 2024",
+        "home_score": "1",
+        "away_score": "0",
+        "partial_results": "0:0, 0:0, 0:0, 3:0",
+        "venue": "Deutsche Bank Park",
+        "venue_town": "Frankfurt",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.03",
+                "odds_under": "13.75"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.20",
+                "odds_under": "3.85"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.67",
+                "odds_under": "2.00"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.61",
+                "odds_under": "1.39"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "4.55",
+                "odds_under": "1.14"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "10.50",
+                "odds_under": "1.04"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "14.50",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:45:14 UTC",
+        "match_date": "2024-06-26 16:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/belgium-GbB957na/ukraine-j1JtDMwo/#z7Ihc8Rm",
+        "home_team": "Ukraine",
+        "away_team": "Belgium",
+        "league_name": "Euro 2024",
+        "home_score": "0",
+        "away_score": "0",
+        "partial_results": "(0:0, 0:0)",
+        "venue": "Cegeka Arena",
+        "venue_town": "Genk",
+        "venue_country": "Belgium",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.03",
+                "odds_under": "13.50"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.23",
+                "odds_under": "3.58"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.73",
+                "odds_under": "1.92"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.78",
+                "odds_under": "1.35"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "5.00",
+                "odds_under": "1.12"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "12.00",
+                "odds_under": "1.03"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "15.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:45:30 UTC",
+        "match_date": "2024-06-21 16:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/austria-naHiWdnt/poland-2HzmcynI/#YaubR1rD",
+        "home_team": "Poland",
+        "away_team": "Austria",
+        "league_name": "Euro 2024",
+        "home_score": "1",
+        "away_score": "3",
+        "partial_results": "(1:1, 0:2)",
+        "venue": "Olympiastadion",
+        "venue_town": "Berlin",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.05",
+                "odds_under": "10.50"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.29",
+                "odds_under": "3.05"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.93",
+                "odds_under": "1.72"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "3.23",
+                "odds_under": "1.27"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "6.40",
+                "odds_under": "1.08"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "16.75",
+                "odds_under": "1.02"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "20.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:45:46 UTC",
+        "match_date": "2024-06-16 13:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/netherlands-WYintcWb/poland-2HzmcynI/#vwtfSsT6",
+        "home_team": "Poland",
+        "away_team": "Netherlands",
+        "league_name": "Euro 2024",
+        "home_score": "1",
+        "away_score": "2",
+        "partial_results": "(1:1, 0:1)",
+        "venue": "PGE Narodowy",
+        "venue_town": "Warsaw",
+        "venue_country": "Poland",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.04",
+                "odds_under": "12.00"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.25",
+                "odds_under": "3.35"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.80",
+                "odds_under": "1.84"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.94",
+                "odds_under": "1.32"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "5.50",
+                "odds_under": "1.11"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "13.75",
+                "odds_under": "1.03"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "17.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:46:03 UTC",
+        "match_date": "2024-06-23 19:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/hungary-MTVhw6Go/scotland-fZRU25WH/#lCPpXuLS",
+        "home_team": "Scotland",
+        "away_team": "Hungary",
+        "league_name": "Euro 2024",
+        "home_score": "0",
+        "away_score": "1",
+        "partial_results": "(0:0, 0:1)",
+        "venue": "MHPArena",
+        "venue_town": "Stuttgart",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.02",
+                "odds_under": "16.50"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.19",
+                "odds_under": "4.03"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.61",
+                "odds_under": "2.08"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.51",
+                "odds_under": "1.42"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "4.25",
+                "odds_under": "1.16"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "9.80",
+                "odds_under": "1.05"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "13.50",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:46:20 UTC",
+        "match_date": "2024-06-25 16:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/france-QkGeVG1n/poland-2HzmcynI/#Cjv2QLcJ",
+        "home_team": "France",
+        "away_team": "Poland",
+        "league_name": "Euro 2024",
+        "home_score": "1",
+        "away_score": "1",
+        "partial_results": "(0:0, 1:1)",
+        "venue": "Signal Iduna Park",
+        "venue_town": "Dortmund",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.02",
+                "odds_under": "17.00"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.17",
+                "odds_under": "4.28"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.57",
+                "odds_under": "2.17"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.40",
+                "odds_under": "1.46"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "4.02",
+                "odds_under": "1.17"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "8.95",
+                "odds_under": "1.05"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "12.50",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:46:37 UTC",
+        "match_date": "2024-06-15 19:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/albania-ELP2K4oB/italy-hlKvieGH/#8d6HRJrj",
+        "home_team": "Italy",
+        "away_team": "Albania",
+        "league_name": "Euro 2024",
+        "home_score": "2",
+        "away_score": "1",
+        "partial_results": "(2:1, 0:0)",
+        "venue": "Signal Iduna Park",
+        "venue_town": "Dortmund",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.04",
+                "odds_under": "10.50"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.29",
+                "odds_under": "3.07"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.91",
+                "odds_under": "1.74"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "3.22",
+                "odds_under": "1.27"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "6.35",
+                "odds_under": "1.08"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "16.75",
+                "odds_under": "1.02"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "20.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:46:54 UTC",
+        "match_date": "2024-06-21 19:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/france-QkGeVG1n/netherlands-WYintcWb/#lC7o20K2",
+        "home_team": "Netherlands",
+        "away_team": "France",
+        "league_name": "Euro 2024",
+        "home_score": "0",
+        "away_score": "0",
+        "partial_results": "(0:0, 0:0)",
+        "venue": "Red Bull Arena",
+        "venue_town": "Leipzig",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.06",
+                "odds_under": "9.50"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.31",
+                "odds_under": "2.99"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.99",
+                "odds_under": "1.68"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "3.32",
+                "odds_under": "1.25"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "6.85",
+                "odds_under": "1.07"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "17.75",
+                "odds_under": "1.02"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "21.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:47:11 UTC",
+        "match_date": "2024-06-18 19:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/czech-republic-6LHwBDGU/portugal-WvJrjFVN/#fDjUgxSr",
+        "home_team": "Portugal",
+        "away_team": "Czech Republic",
+        "league_name": "Euro 2024",
+        "home_score": "2",
+        "away_score": "1",
+        "partial_results": "(0:0, 2:1)",
+        "venue": "Red Bull Arena",
+        "venue_town": "Leipzig",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.03",
+                "odds_under": "13.50"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.22",
+                "odds_under": "3.70"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.71",
+                "odds_under": "1.93"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.74",
+                "odds_under": "1.36"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "4.73",
+                "odds_under": "1.13"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "11.75",
+                "odds_under": "1.03"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "15.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:47:28 UTC",
+        "match_date": "2024-06-30 16:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/england-j9N9ZNFA/slovakia-KpLb2q1U/#QZ9sqLro",
+        "home_team": "England",
+        "away_team": "Slovakia",
+        "league_name": "Euro 2024",
+        "home_score": "2",
+        "away_score": "1",
+        "partial_results": "0:1, 1:0, 1:0",
+        "venue": "Veltins Arena",
+        "venue_town": "Gelsenkirchen",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.05",
+                "odds_under": "9.25"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.33",
+                "odds_under": "2.87"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.03",
+                "odds_under": "1.65"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "3.48",
+                "odds_under": "1.23"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "7.20",
+                "odds_under": "1.07"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "19.75",
+                "odds_under": "1.01"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "23.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:47:45 UTC",
+        "match_date": "2024-06-23 19:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/germany-ptQide1O/switzerland-rHJ2vy1B/#fkQtYL5M",
+        "home_team": "Switzerland",
+        "away_team": "Germany",
+        "league_name": "Euro 2024",
+        "home_score": "1",
+        "away_score": "1",
+        "partial_results": "(1:0, 0:1)",
+        "venue": "St. Jakob-Park",
+        "venue_town": "Basel",
+        "venue_country": "Switzerland",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.04",
+                "odds_under": "12.00"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.25",
+                "odds_under": "3.40"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.79",
+                "odds_under": "1.85"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.91",
+                "odds_under": "1.32"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "5.45",
+                "odds_under": "1.11"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "13.50",
+                "odds_under": "1.03"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "17.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:48:03 UTC",
+        "match_date": "2024-06-17 16:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/belgium-GbB957na/slovakia-KpLb2q1U/#dxBg0vkF",
+        "home_team": "Belgium",
+        "away_team": "Slovakia",
+        "league_name": "Euro 2024",
+        "home_score": "0",
+        "away_score": "1",
+        "partial_results": "(0:1, 0:0)",
+        "venue": "Deutsche Bank Park",
+        "venue_town": "Frankfurt",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.03",
+                "odds_under": "14.00"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.21",
+                "odds_under": "3.70"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.69",
+                "odds_under": "1.96"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.70",
+                "odds_under": "1.37"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "4.75",
+                "odds_under": "1.13"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "11.50",
+                "odds_under": "1.04"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "14.50",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:48:20 UTC",
+        "match_date": "2024-07-06 19:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/netherlands-WYintcWb/turkey-QeijuHo5/#naiVz03c",
+        "home_team": "Netherlands",
+        "away_team": "Turkey",
+        "league_name": "Euro 2024",
+        "home_score": "2",
+        "away_score": "1",
+        "partial_results": "(0:1, 2:0)",
+        "venue": "Olympiastadion",
+        "venue_town": "Berlin",
+        "venue_country": "Germany",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.04",
+                "odds_under": "12.00"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.23",
+                "odds_under": "3.55"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.76",
+                "odds_under": "1.89"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.80",
+                "odds_under": "1.35"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "5.15",
+                "odds_under": "1.12"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "12.25",
+                "odds_under": "1.03"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "16.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:48:37 UTC",
+        "match_date": "2024-06-25 19:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/denmark-0KUdxQVi/serbia-8Kl6iq0i/#zXPbvcSe",
+        "home_team": "Denmark",
+        "away_team": "Serbia",
+        "league_name": "Euro 2024",
+        "home_score": "0",
+        "away_score": "0",
+        "partial_results": "(0:0, 0:0)",
+        "venue": "Stadion Duboica",
+        "venue_town": "Leskovac",
+        "venue_country": "Serbia",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.05",
+                "odds_under": "9.65"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.32",
+                "odds_under": "2.94"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.00",
+                "odds_under": "1.67"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "3.38",
+                "odds_under": "1.24"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "7.10",
+                "odds_under": "1.07"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "18.50",
+                "odds_under": "1.01"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "21.00",
+                "odds_under": "1.00"
+            }
+        ]
+    },
+    {
+        "scraped_date": "2026-06-11 20:48:55 UTC",
+        "match_date": "2024-06-30 19:00:00 UTC",
+        "match_link": "https://www.oddsportal.com/football/h2h/georgia-YVovjspA/spain-bLyo6mco/#YyV2j3jB",
+        "home_team": "Spain",
+        "away_team": "Georgia",
+        "league_name": "Euro 2024",
+        "home_score": "4",
+        "away_score": "1",
+        "partial_results": "(1:1, 3:0)",
+        "venue": "Boris Paichadze Dinamo Arena",
+        "venue_town": "Tbilisi",
+        "venue_country": "Georgia",
+        "over_under_2_5_market": [
+            {
+                "submarket_name": "Over/Under +0.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.02",
+                "odds_under": "17.25"
+            },
+            {
+                "submarket_name": "Over/Under +1.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.17",
+                "odds_under": "4.30"
+            },
+            {
+                "submarket_name": "Over/Under +2.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "1.57",
+                "odds_under": "2.17"
+            },
+            {
+                "submarket_name": "Over/Under +3.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "2.40",
+                "odds_under": "1.46"
+            },
+            {
+                "submarket_name": "Over/Under +4.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "4.15",
+                "odds_under": "1.18"
+            },
+            {
+                "submarket_name": "Over/Under +5.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "9.25",
+                "odds_under": "1.05"
+            },
+            {
+                "submarket_name": "Over/Under +6.5",
+                "period": "FullTime",
+                "market_type": "Over/Under",
+                "extraction_mode": "passive",
+                "odds_over": "12.00",
+                "odds_under": "1.00"
+            }
+        ]
+    }
+]

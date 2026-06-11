@@ -13,7 +13,19 @@
       2.88,
       3.75
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.46,
+        1.53
+      ],
+      "probs": [
+        0.383459,
+        0.616541
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-07-10|netherlands|england": {
     "date": "2024-07-10",
@@ -29,7 +41,19 @@
       2.88,
       2.75
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.41,
+        1.52
+      ],
+      "probs": [
+        0.386768,
+        0.613232
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-07-09|spain|france": {
     "date": "2024-07-09",
@@ -45,7 +69,19 @@
       2.88,
       3.35
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.41,
+        1.5
+      ],
+      "probs": [
+        0.383632,
+        0.616368
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-07-06|netherlands|turkey": {
     "date": "2024-07-06",
@@ -61,7 +97,19 @@
       4.1,
       6.25
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.76,
+        1.89
+      ],
+      "probs": [
+        0.517808,
+        0.482192
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-07-06|england|switzerland": {
     "date": "2024-07-06",
@@ -77,7 +125,19 @@
       3.0,
       4.2
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.43,
+        1.45
+      ],
+      "probs": [
+        0.373711,
+        0.626289
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-07-05|portugal|france": {
     "date": "2024-07-05",
@@ -93,7 +153,19 @@
       3.0,
       2.5
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.27,
+        1.53
+      ],
+      "probs": [
+        0.402632,
+        0.597368
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-07-05|spain|germany": {
     "date": "2024-07-05",
@@ -109,7 +181,19 @@
       3.25,
       2.88
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.85,
+        1.79
+      ],
+      "probs": [
+        0.491758,
+        0.508242
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-07-02|austria|turkey": {
     "date": "2024-07-02",
@@ -125,7 +209,19 @@
       3.4,
       4.35
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.97,
+        1.69
+      ],
+      "probs": [
+        0.461749,
+        0.538251
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-07-02|romania|netherlands": {
     "date": "2024-07-02",
@@ -141,7 +237,19 @@
       4.8,
       1.44
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.79,
+        1.85
+      ],
+      "probs": [
+        0.508242,
+        0.491758
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-07-01|portugal|slovenia": {
     "date": "2024-07-01",
@@ -157,7 +265,19 @@
       5.3,
       10.0
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.67,
+        2.0
+      ],
+      "probs": [
+        0.544959,
+        0.455041
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-07-01|france|belgium": {
     "date": "2024-07-01",
@@ -173,7 +293,19 @@
       3.4,
       4.35
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.91,
+        1.73
+      ],
+      "probs": [
+        0.475275,
+        0.524725
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-30|spain|georgia": {
     "date": "2024-06-30",
@@ -189,7 +321,19 @@
       7.5,
       17.0
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.57,
+        2.17
+      ],
+      "probs": [
+        0.580214,
+        0.419786
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-30|england|slovakia": {
     "date": "2024-06-30",
@@ -205,7 +349,19 @@
       4.2,
       9.5
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.03,
+        1.65
+      ],
+      "probs": [
+        0.44837,
+        0.55163
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-29|germany|denmark": {
     "date": "2024-06-29",
@@ -221,7 +377,19 @@
       4.0,
       6.75
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.82,
+        1.82
+      ],
+      "probs": [
+        0.5,
+        0.5
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-29|switzerland|italy": {
     "date": "2024-06-29",
@@ -237,7 +405,19 @@
       2.88,
       2.75
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.44,
+        1.45
+      ],
+      "probs": [
+        0.372751,
+        0.627249
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-26|czech republic|turkey": {
     "date": "2024-06-26",
@@ -253,7 +433,19 @@
       3.35,
       3.05
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.93,
+        1.72
+      ],
+      "probs": [
+        0.471233,
+        0.528767
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-26|georgia|portugal": {
     "date": "2024-06-26",
@@ -269,7 +461,19 @@
       5.3,
       1.38
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.7,
+        1.99
+      ],
+      "probs": [
+        0.539295,
+        0.460705
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-26|ukraine|belgium": {
     "date": "2024-06-26",
@@ -285,7 +489,19 @@
       4.2,
       1.65
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.73,
+        1.92
+      ],
+      "probs": [
+        0.526027,
+        0.473973
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-26|slovakia|romania": {
     "date": "2024-06-26",
@@ -301,7 +517,19 @@
       2.16,
       4.4
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        3.08,
+        1.31
+      ],
+      "probs": [
+        0.298405,
+        0.701595
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-25|denmark|serbia": {
     "date": "2024-06-25",
@@ -317,7 +545,19 @@
       3.4,
       3.4
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.0,
+        1.67
+      ],
+      "probs": [
+        0.455041,
+        0.544959
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-25|england|slovenia": {
     "date": "2024-06-25",
@@ -333,7 +573,19 @@
       5.5,
       13.0
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.79,
+        1.85
+      ],
+      "probs": [
+        0.508242,
+        0.491758
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-25|netherlands|austria": {
     "date": "2024-06-25",
@@ -349,7 +601,19 @@
       3.75,
       5.1
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.79,
+        1.84
+      ],
+      "probs": [
+        0.506887,
+        0.493113
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-25|france|poland": {
     "date": "2024-06-25",
@@ -365,7 +629,19 @@
       6.0,
       13.0
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.57,
+        2.17
+      ],
+      "probs": [
+        0.580214,
+        0.419786
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-24|albania|spain": {
     "date": "2024-06-24",
@@ -381,7 +657,19 @@
       5.1,
       1.42
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.72,
+        1.95
+      ],
+      "probs": [
+        0.531335,
+        0.468665
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-24|croatia|italy": {
     "date": "2024-06-24",
@@ -397,7 +685,19 @@
       3.1,
       2.7
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.18,
+        1.56
+      ],
+      "probs": [
+        0.417112,
+        0.582888
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-23|switzerland|germany": {
     "date": "2024-06-23",
@@ -413,7 +713,19 @@
       4.2,
       1.6
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.79,
+        1.85
+      ],
+      "probs": [
+        0.508242,
+        0.491758
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-23|scotland|hungary": {
     "date": "2024-06-23",
@@ -429,7 +741,19 @@
       4.3,
       2.88
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.61,
+        2.08
+      ],
+      "probs": [
+        0.563686,
+        0.436314
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-22|belgium|romania": {
     "date": "2024-06-22",
@@ -445,7 +769,19 @@
       5.5,
       9.0
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.63,
+        2.06
+      ],
+      "probs": [
+        0.558266,
+        0.441734
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-22|turkey|portugal": {
     "date": "2024-06-22",
@@ -461,7 +797,19 @@
       4.2,
       1.62
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.58,
+        2.15
+      ],
+      "probs": [
+        0.576408,
+        0.423592
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-22|georgia|czech republic": {
     "date": "2024-06-22",
@@ -477,7 +825,19 @@
       4.0,
       1.86
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.77,
+        1.99
+      ],
+      "probs": [
+        0.529255,
+        0.470745
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-21|netherlands|france": {
     "date": "2024-06-21",
@@ -493,7 +853,19 @@
       3.3,
       2.5
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.99,
+        1.68
+      ],
+      "probs": [
+        0.457766,
+        0.542234
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-21|poland|austria": {
     "date": "2024-06-21",
@@ -509,7 +881,19 @@
       3.4,
       2.1
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.93,
+        1.72
+      ],
+      "probs": [
+        0.471233,
+        0.528767
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-21|slovakia|ukraine": {
     "date": "2024-06-21",
@@ -525,7 +909,19 @@
       3.35,
       2.3
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.03,
+        1.65
+      ],
+      "probs": [
+        0.44837,
+        0.55163
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-20|spain|italy": {
     "date": "2024-06-20",
@@ -541,7 +937,19 @@
       3.2,
       3.95
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.09,
+        1.61
+      ],
+      "probs": [
+        0.435135,
+        0.564865
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-20|belgium|slovakia": {
     "date": "2024-06-20",
@@ -573,7 +981,19 @@
       3.6,
       1.78
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.11,
+        1.6
+      ],
+      "probs": [
+        0.431267,
+        0.568733
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-20|slovenia|serbia": {
     "date": "2024-06-20",
@@ -589,7 +1009,19 @@
       3.8,
       1.71
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.81,
+        1.83
+      ],
+      "probs": [
+        0.502747,
+        0.497253
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-19|scotland|switzerland": {
     "date": "2024-06-19",
@@ -605,7 +1037,19 @@
       3.5,
       2.0
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.16,
+        1.57
+      ],
+      "probs": [
+        0.420912,
+        0.579088
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-19|germany|hungary": {
     "date": "2024-06-19",
@@ -621,7 +1065,19 @@
       6.75,
       12.25
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.43,
+        2.48
+      ],
+      "probs": [
+        0.634271,
+        0.365729
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-19|croatia|albania": {
     "date": "2024-06-19",
@@ -637,7 +1093,19 @@
       4.6,
       8.5
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.98,
+        1.68
+      ],
+      "probs": [
+        0.459016,
+        0.540984
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-18|portugal|czech republic": {
     "date": "2024-06-18",
@@ -653,7 +1121,19 @@
       4.5,
       7.5
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.71,
+        1.93
+      ],
+      "probs": [
+        0.53022,
+        0.46978
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-18|turkey|georgia": {
     "date": "2024-06-18",
@@ -669,7 +1149,19 @@
       4.1,
       5.8
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.84,
+        1.8
+      ],
+      "probs": [
+        0.494505,
+        0.505495
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-17|austria|france": {
     "date": "2024-06-17",
@@ -685,7 +1177,19 @@
       4.2,
       1.58
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.72,
+        1.92
+      ],
+      "probs": [
+        0.527473,
+        0.472527
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-17|belgium|slovakia": {
     "date": "2024-06-17",
@@ -701,7 +1205,19 @@
       4.5,
       7.5
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.69,
+        1.96
+      ],
+      "probs": [
+        0.536986,
+        0.463014
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-17|romania|ukraine": {
     "date": "2024-06-17",
@@ -717,7 +1233,19 @@
       3.6,
       1.88
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.99,
+        1.68
+      ],
+      "probs": [
+        0.457766,
+        0.542234
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-16|serbia|england": {
     "date": "2024-06-16",
@@ -733,7 +1261,19 @@
       4.6,
       1.51
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.73,
+        1.91
+      ],
+      "probs": [
+        0.524725,
+        0.475275
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-16|slovenia|denmark": {
     "date": "2024-06-16",
@@ -749,7 +1289,19 @@
       3.85,
       1.73
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.17,
+        1.57
+      ],
+      "probs": [
+        0.419786,
+        0.580214
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-16|poland|netherlands": {
     "date": "2024-06-16",
@@ -765,7 +1317,19 @@
       4.5,
       1.53
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.8,
+        1.84
+      ],
+      "probs": [
+        0.505495,
+        0.494505
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-15|italy|albania": {
     "date": "2024-06-15",
@@ -781,7 +1345,19 @@
       5.1,
       12.0
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.91,
+        1.74
+      ],
+      "probs": [
+        0.476712,
+        0.523288
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-15|spain|croatia": {
     "date": "2024-06-15",
@@ -797,7 +1373,19 @@
       3.55,
       4.5
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.0,
+        1.67
+      ],
+      "probs": [
+        0.455041,
+        0.544959
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-15|hungary|switzerland": {
     "date": "2024-06-15",
@@ -813,7 +1401,19 @@
       3.2,
       2.23
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.41,
+        1.51
+      ],
+      "probs": [
+        0.385204,
+        0.614796
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2024-06-14|germany|scotland": {
     "date": "2024-06-14",
@@ -3869,7 +4469,19 @@
       3.2,
       2.9
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.11,
+        1.59
+      ],
+      "probs": [
+        0.42973,
+        0.57027
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-12-17|croatia|morocco": {
     "date": "2022-12-17",
@@ -3885,7 +4497,19 @@
       3.6,
       3.15
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.73,
+        1.82
+      ],
+      "probs": [
+        0.512676,
+        0.487324
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-12-14|france|morocco": {
     "date": "2022-12-14",
@@ -3901,7 +4525,19 @@
       4.0,
       6.5
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.07,
+        1.55
+      ],
+      "probs": [
+        0.428177,
+        0.571823
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-12-13|argentina|croatia": {
     "date": "2022-12-13",
@@ -3917,7 +4553,19 @@
       3.13,
       4.8
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.23,
+        1.47
+      ],
+      "probs": [
+        0.397297,
+        0.602703
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-12-10|england|france": {
     "date": "2022-12-10",
@@ -3933,7 +4581,19 @@
       3.1,
       2.8
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.14,
+        1.51
+      ],
+      "probs": [
+        0.413699,
+        0.586301
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-12-10|morocco|portugal": {
     "date": "2022-12-10",
@@ -3949,7 +4609,19 @@
       4.0,
       1.61
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.94,
+        1.63
+      ],
+      "probs": [
+        0.456583,
+        0.543417
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-12-09|netherlands|argentina": {
     "date": "2022-12-09",
@@ -3965,7 +4637,19 @@
       3.15,
       2.3
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.23,
+        1.47
+      ],
+      "probs": [
+        0.397297,
+        0.602703
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-12-09|croatia|brazil": {
     "date": "2022-12-09",
@@ -3981,7 +4665,19 @@
       4.8,
       1.4
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.78,
+        1.79
+      ],
+      "probs": [
+        0.501401,
+        0.498599
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-12-06|portugal|switzerland": {
     "date": "2022-12-06",
@@ -3997,7 +4693,19 @@
       3.65,
       4.5
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.8,
+        1.78
+      ],
+      "probs": [
+        0.497207,
+        0.502793
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-12-06|morocco|spain": {
     "date": "2022-12-06",
@@ -4013,7 +4721,19 @@
       4.0,
       1.62
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.03,
+        1.59
+      ],
+      "probs": [
+        0.439227,
+        0.560773
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-12-05|brazil|south korea": {
     "date": "2022-12-05",
@@ -4029,7 +4749,19 @@
       6.75,
       15.0
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.58,
+        2.02
+      ],
+      "probs": [
+        0.561111,
+        0.438889
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-12-05|japan|croatia": {
     "date": "2022-12-05",
@@ -4045,7 +4777,19 @@
       3.25,
       2.15
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.12,
+        1.52
+      ],
+      "probs": [
+        0.417582,
+        0.582418
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-12-04|england|senegal": {
     "date": "2022-12-04",
@@ -4061,7 +4805,19 @@
       3.75,
       7.0
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.25,
+        1.53
+      ],
+      "probs": [
+        0.404762,
+        0.595238
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-12-04|france|poland": {
     "date": "2022-12-04",
@@ -4077,7 +4833,19 @@
       5.1,
       9.0
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.67,
+        2.0
+      ],
+      "probs": [
+        0.544959,
+        0.455041
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-12-03|argentina|australia": {
     "date": "2022-12-03",
@@ -4093,7 +4861,19 @@
       6.5,
       13.0
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.71,
+        1.94
+      ],
+      "probs": [
+        0.531507,
+        0.468493
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-12-03|netherlands|united states": {
     "date": "2022-12-03",
@@ -4109,7 +4889,19 @@
       3.5,
       4.6
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.22,
+        1.54
+      ],
+      "probs": [
+        0.409574,
+        0.590426
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-12-02|cameroon|brazil": {
     "date": "2022-12-02",
@@ -4125,7 +4917,19 @@
       5.5,
       1.37
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.6,
+        2.07
+      ],
+      "probs": [
+        0.564033,
+        0.435967
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-12-02|serbia|switzerland": {
     "date": "2022-12-02",
@@ -4141,7 +4945,19 @@
       3.4,
       2.9
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.86,
+        1.74
+      ],
+      "probs": [
+        0.483333,
+        0.516667
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-12-02|ghana|uruguay": {
     "date": "2022-12-02",
@@ -4157,7 +4973,19 @@
       3.9,
       1.82
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.89,
+        1.72
+      ],
+      "probs": [
+        0.476454,
+        0.523546
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-12-02|south korea|portugal": {
     "date": "2022-12-02",
@@ -4173,7 +5001,19 @@
       3.9,
       1.86
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.82,
+        1.78
+      ],
+      "probs": [
+        0.494444,
+        0.505556
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-12-01|costa rica|germany": {
     "date": "2022-12-01",
@@ -4189,7 +5029,19 @@
       12.0,
       1.12
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.31,
+        2.87
+      ],
+      "probs": [
+        0.686603,
+        0.313397
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-12-01|japan|spain": {
     "date": "2022-12-01",
@@ -4205,7 +5057,19 @@
       4.6,
       1.5
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.8,
+        1.8
+      ],
+      "probs": [
+        0.5,
+        0.5
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-12-01|croatia|belgium": {
     "date": "2022-12-01",
@@ -4221,7 +5085,19 @@
       3.5,
       2.55
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.88,
+        1.73
+      ],
+      "probs": [
+        0.479224,
+        0.520776
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-12-01|canada|morocco": {
     "date": "2022-12-01",
@@ -4237,7 +5113,19 @@
       3.55,
       1.86
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.14,
+        1.55
+      ],
+      "probs": [
+        0.420054,
+        0.579946
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-11-30|poland|argentina": {
     "date": "2022-11-30",
@@ -4253,7 +5141,19 @@
       4.7,
       1.44
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.94,
+        1.68
+      ],
+      "probs": [
+        0.464088,
+        0.535912
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-11-30|saudi arabia|mexico": {
     "date": "2022-11-30",
@@ -4269,7 +5169,19 @@
       4.35,
       1.62
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.8,
+        1.8
+      ],
+      "probs": [
+        0.5,
+        0.5
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-11-30|australia|denmark": {
     "date": "2022-11-30",
@@ -4285,7 +5197,19 @@
       5.0,
       1.44
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.79,
+        1.81
+      ],
+      "probs": [
+        0.502778,
+        0.497222
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-11-30|tunisia|france": {
     "date": "2022-11-30",
@@ -4301,7 +5225,19 @@
       4.0,
       1.64
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.96,
+        1.67
+      ],
+      "probs": [
+        0.460055,
+        0.539945
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-11-29|wales|england": {
     "date": "2022-11-29",
@@ -4317,7 +5253,19 @@
       4.5,
       1.44
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.9,
+        1.71
+      ],
+      "probs": [
+        0.473684,
+        0.526316
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-11-29|iran|united states": {
     "date": "2022-11-29",
@@ -4333,7 +5281,19 @@
       3.5,
       2.0
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.12,
+        1.58
+      ],
+      "probs": [
+        0.427027,
+        0.572973
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-11-29|ecuador|senegal": {
     "date": "2022-11-29",
@@ -4349,7 +5309,19 @@
       3.1,
       3.3
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.43,
+        1.43
+      ],
+      "probs": [
+        0.370466,
+        0.629534
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-11-29|netherlands|qatar": {
     "date": "2022-11-29",
@@ -4365,7 +5337,19 @@
       7.25,
       17.0
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.42,
+        2.45
+      ],
+      "probs": [
+        0.633075,
+        0.366925
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-11-28|portugal|uruguay": {
     "date": "2022-11-28",
@@ -4381,7 +5365,19 @@
       3.4,
       4.6
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.16,
+        1.54
+      ],
+      "probs": [
+        0.416216,
+        0.583784
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-11-28|brazil|switzerland": {
     "date": "2022-11-28",
@@ -4397,7 +5393,19 @@
       4.35,
       8.5
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.96,
+        1.67
+      ],
+      "probs": [
+        0.460055,
+        0.539945
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-11-28|south korea|ghana": {
     "date": "2022-11-28",
@@ -4413,7 +5421,19 @@
       3.2,
       2.88
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.32,
+        1.47
+      ],
+      "probs": [
+        0.387863,
+        0.612137
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-11-28|cameroon|serbia": {
     "date": "2022-11-28",
@@ -4429,7 +5449,19 @@
       3.8,
       1.71
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.9,
+        1.71
+      ],
+      "probs": [
+        0.473684,
+        0.526316
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-11-27|spain|germany": {
     "date": "2022-11-27",
@@ -4445,7 +5477,19 @@
       3.5,
       2.88
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.73,
+        1.88
+      ],
+      "probs": [
+        0.520776,
+        0.479224
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-11-27|croatia|canada": {
     "date": "2022-11-27",
@@ -4461,7 +5505,19 @@
       3.3,
       3.65
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.06,
+        1.6
+      ],
+      "probs": [
+        0.437158,
+        0.562842
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-11-27|belgium|morocco": {
     "date": "2022-11-27",
@@ -4477,7 +5533,19 @@
       3.5,
       4.75
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.17,
+        1.54
+      ],
+      "probs": [
+        0.415094,
+        0.584906
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-11-27|japan|costa rica": {
     "date": "2022-11-27",
@@ -4493,7 +5561,19 @@
       4.33,
       7.75
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.92,
+        1.7
+      ],
+      "probs": [
+        0.469613,
+        0.530387
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-11-26|argentina|mexico": {
     "date": "2022-11-26",
@@ -4509,7 +5589,19 @@
       4.1,
       8.0
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.03,
+        1.62
+      ],
+      "probs": [
+        0.443836,
+        0.556164
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-11-26|france|denmark": {
     "date": "2022-11-26",
@@ -4525,7 +5617,19 @@
       3.6,
       4.8
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.01,
+        1.63
+      ],
+      "probs": [
+        0.447802,
+        0.552198
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-11-26|poland|saudi arabia": {
     "date": "2022-11-26",
@@ -4541,7 +5645,19 @@
       3.65,
       6.0
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.11,
+        1.57
+      ],
+      "probs": [
+        0.42663,
+        0.57337
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-11-26|tunisia|australia": {
     "date": "2022-11-26",
@@ -4557,7 +5673,19 @@
       3.4,
       3.65
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.18,
+        1.54
+      ],
+      "probs": [
+        0.413978,
+        0.586022
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-11-25|england|united states": {
     "date": "2022-11-25",
@@ -4573,7 +5701,19 @@
       4.33,
       8.5
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.95,
+        1.67
+      ],
+      "probs": [
+        0.461326,
+        0.538674
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-11-25|france|denmark": {
     "date": "2022-11-25",
@@ -4605,7 +5745,19 @@
       3.5,
       5.1
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.15,
+        1.55
+      ],
+      "probs": [
+        0.418919,
+        0.581081
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-11-25|qatar|senegal": {
     "date": "2022-11-25",
@@ -4621,7 +5773,19 @@
       3.65,
       1.74
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.19,
+        1.53
+      ],
+      "probs": [
+        0.41129,
+        0.58871
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-11-25|wales|iran": {
     "date": "2022-11-25",
@@ -4637,7 +5801,19 @@
       3.2,
       4.0
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        2.29,
+        1.49
+      ],
+      "probs": [
+        0.39418,
+        0.60582
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-11-24|brazil|serbia": {
     "date": "2022-11-24",
@@ -4653,7 +5829,19 @@
       4.6,
       7.5
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.66,
+        1.97
+      ],
+      "probs": [
+        0.5427,
+        0.4573
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   },
   "2022-11-24|portugal|ghana": {
     "date": "2022-11-24",
@@ -4669,6 +5857,18 @@
       5.75,
       11.0
     ],
-    "source": "oddsportal"
+    "source": "oddsportal",
+    "totals": {
+      "line": 2.5,
+      "odds_raw": [
+        1.65,
+        1.99
+      ],
+      "probs": [
+        0.546703,
+        0.453297
+      ],
+      "source": "oddsportal via oddsharvester (preview)"
+    }
   }
 }

@@ -183,8 +183,90 @@ def build_key(date_iso: str, home: str, away: str) -> str:
     return f"{date_iso}|{norm(home)}|{norm(away)}"
 
 
+def _parse_ou_market(raw) -> list[dict]:
+    """Le champ over_under_2_5_market d'OddsHarvester est une liste de
+    submarkets (toutes les lignes visibles en mode preview)."""
+    if isinstance(raw, list):
+        return raw
+    if isinstance(raw, str):
+        try:
+            import ast
+            parsed = ast.literal_eval(raw)
+            return parsed if isinstance(parsed, list) else []
+        except (ValueError, SyntaxError):
+            return []
+    return []
+
+
+def _pick_ou_line(submarkets: list[dict]) -> tuple[float, float, float] | None:
+    """Choisit la ligne 2.5 si dispo, sinon la demi-ligne la plus proche.
+    Retourne (ligne, cote_over, cote_under)."""
+    import re as _re
+    candidates = []
+    for sub in submarkets:
+        name = str(sub.get("submarket_name", ""))
+        m = _re.search(r"([\d.]+)", name.replace("+", ""))
+        if not m:
+            continue
+        try:
+            line = float(m.group(1))
+            o = float(sub.get("odds_over"))
+            u = float(sub.get("odds_under"))
+        except (TypeError, ValueError):
+            continue
+        if line == int(line):  # lignes entieres : push, hors scope backtest
+            continue
+        if o > 1.0 and u > 1.0:
+            candidates.append((abs(line - 2.5), line, o, u))
+    if not candidates:
+        return None
+    candidates.sort()
+    _, line, o, u = candidates[0]
+    return line, o, u
+
+
+def merge_ou_files(result: dict) -> int:
+    """Merge les fichiers *_ou.json (OddsHarvester) dans les entrées existantes
+    sous la clé "totals". Matching par date(±1j)+noms canoniques."""
+    from datetime import datetime, timedelta
+
+    merged = 0
+    for path in sorted(IN_DIR.glob("*_ou.json")):
+        matches = json.loads(path.read_text(encoding="utf-8"))
+        print(f"{path.name} : {len(matches)} matchs O/U")
+        for m in matches:
+            subs = _parse_ou_market(m.get("over_under_2_5_market"))
+            picked = _pick_ou_line(subs)
+            if not picked:
+                continue
+            line, o_over, o_under = picked
+            probs = de_vig([o_over, o_under])
+            if probs is None:
+                continue
+            raw_date = str(m.get("match_date", ""))[:10]
+            home_c = canonical_name(m.get("home_team", ""))
+            away_c = canonical_name(m.get("away_team", ""))
+            try:
+                base = datetime.strptime(raw_date, "%Y-%m-%d")
+            except ValueError:
+                continue
+            for delta in (0, 1, -1):
+                d = (base + timedelta(days=delta)).strftime("%Y-%m-%d")
+                key = build_key(d, home_c, away_c)
+                if key in result:
+                    result[key]["totals"] = {
+                        "line": line,
+                        "odds_raw": [o_over, o_under],
+                        "probs": probs,
+                        "source": "oddsportal via oddsharvester (preview)",
+                    }
+                    merged += 1
+                    break
+    return merged
+
+
 def main() -> None:
-    in_files = sorted(IN_DIR.glob("*.json"))
+    in_files = sorted(p for p in IN_DIR.glob("*.json") if not p.name.endswith("_ou.json"))
     if not in_files:
         raise SystemExit(
             f"Aucun fichier dans {IN_DIR}.\n"
@@ -233,13 +315,15 @@ def main() -> None:
                 "source": "oddsportal",
             }
 
-    print(f"\nTotal : {total} matchs, {len(result)} retenus, {skipped} ignorés (cotes manquantes)")
+    n_totals = merge_ou_files(result)
+    print(f"\nTotal : {total} matchs, {len(result)} retenus, {skipped} ignorés (cotes manquantes), "
+          f"{n_totals} avec cotes O/U")
 
     OUT_FILE.write_text(
         json.dumps(result, indent=2, ensure_ascii=False),
         encoding="utf-8",
     )
-    print(f"→ {OUT_FILE} ({len(result)} entrées)")
+    print(f"-> {OUT_FILE} ({len(result)} entrees)")
 
 
 if __name__ == "__main__":

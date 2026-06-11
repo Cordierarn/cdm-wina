@@ -119,8 +119,20 @@ console par tournoi et par marché.
 La comparaison au marché nécessite des cotes de clôture historiques absentes du soccer-dataset.
 Source retenue : **[OddsPortal](https://www.oddsportal.com)** (consultation libre, pas de clé API).
 
-Tournois couverts : **FIFA World Cup 2022** et **UEFA Euro 2024** (1X2 uniquement).
-Totaux O/U 2.5 : non disponibles gratuitement — le poids `totals` est fixé à **0,40**.
+Tournois couverts : **FIFA World Cup 2022** et **UEFA Euro 2024** (1X2 + Over/Under).
+Les O/U sont récupérés via **[OddsHarvester](https://github.com/jordantete/OddsHarvester)**
+(`fetch_ou_oddsharvester.py`, mode preview = cotes moyennes, ligne 2.5 ou la plus proche,
+lignes entières ignorées) et mergés dans `closing_backtest.json` sous la clé `totals`.
+
+**Poids de mélange avec shrinkage** : `w_final = (n·ŵ + n₀·0,25) / (n + n₀)` avec n₀ = 200 —
+avec ~100-260 matchs, un poids brut estimé par grid search n'est pas fiable seul.
+Backtest actuel : 1N2 brut 0,00 → **0,11** shrinké (n=262) ; totals brut 0,85 → **0,44**
+shrinké (n=95 — le modèle bat la cote de clôture moyenne sur les O/U des deux tournois).
+Si moins de 50 matchs O/U exploitables, le prior 0,25 est conservé tel quel.
+
+**Marchés non validés** : « Score exact » et « Nombre exact de buts » n'ont aucune cote de
+clôture historique gratuite → exclus des picks par défaut
+(`INCLUDE_UNVALIDATED_MARKETS = True` dans `make_picks.py` pour les réactiver).
 
 **Procédure d'installation des cotes (à faire une fois) :**
 

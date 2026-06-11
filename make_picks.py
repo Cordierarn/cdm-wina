@@ -30,6 +30,11 @@ MIN_EV = 0.03    # seuil minimal pour proposer un pari
 MIN_PROBA = 0.02  # ecarte les tres gros outsiders (modele pas assez fin la-bas)
 MAX_GOALS = 10
 
+# Marches sans backtest possible (pas de cotes de cloture historiques gratuites) :
+# exclus des picks par defaut. Passer a True pour les reactiver.
+INCLUDE_UNVALIDATED_MARKETS = False
+UNVALIDATED_MARKETS = {"score exact", "nombre exact de buts"}
+
 def kelly(p: float, cote: float) -> float:
     b = cote - 1
     if b <= 0:
@@ -75,6 +80,8 @@ def main() -> None:
             pin_flipped = pin is not None
 
         for bet in o.get("bets", []):
+            if not INCLUDE_UNVALIDATED_MARKETS and norm(bet["marche"]) in UNVALIDATED_MARKETS:
+                continue
             issues = bet["issues"]
             model_probs = price_bet(bet["marche"], issues, mat, o["home_fr"], o["away_fr"])
             if model_probs is None or len(model_probs) != len(issues):
