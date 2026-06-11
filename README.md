@@ -104,7 +104,17 @@ p = 0,40 · p_modèle + 0,60 · p_référence_marché
 - **1N2, double chance, vainqueur remboursé si nul** : cotes **Pinnacle dé-viguées** (`scrape_pinnacle.py` → `data/pinnacle.json`). Pinnacle est le book sharp de référence — marges faibles, sharps acceptés, sa closing line est considérée comme la meilleure estimation publique des vraies probabilités. C'est la stratégie classique « référence sharp contre book grand public » : quand la cote Winamax dépasse la proba Pinnacle dé-viguée, il y a de la value indépendamment du modèle.
 - **Autres marchés** (totaux, score exact, handicap…) : probas implicites Winamax dé-margées, en conservant la masse totale du modèle (gère les marchés à issues non exclusives comme la double chance).
 
-Le poids est réglable (`MODEL_WEIGHT` dans `make_picks.py`).
+Le poids est réglable par marché via `MODEL_WEIGHTS` dans `make_picks.py`, avec
+repli sur 0,40 pour les marchés non calibrés par le backtest.
+
+### Backtest historique
+
+`backtest.py` valide le pipeline sur les tournois historiques du dataset en
+reconstruisant les forces et la calibration uniquement à partir des matchs
+antérieurs au tournoi testé. Il produit `data/backtest.json` et un résumé
+console par tournoi et par marché. Quand des cotes historiques exploitables
+sont disponibles dans le dataset, le script estime aussi le meilleur poids de
+mélange par marché.
 
 ### Suivi du CLV (Closing Line Value)
 

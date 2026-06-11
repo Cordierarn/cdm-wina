@@ -6,7 +6,6 @@ A lancer depuis le repo ScoutFootball avec son venv :
 from __future__ import annotations
 
 import json
-import math
 from pathlib import Path
 
 from scoutfootball.worldcup.data import (
@@ -14,6 +13,8 @@ from scoutfootball.worldcup.data import (
     compute_team_strengths,
     generate_group_stage_matches,
 )
+
+from pricing import soft_cap_lambda
 
 OUT = Path(__file__).parent / "data" / "model.json"
 DATASET_STRENGTHS = Path(__file__).parent / "data" / "strengths_dataset.json"
@@ -23,7 +24,6 @@ DATASET_STRENGTHS = Path(__file__).parent / "data" / "strengths_dataset.json"
 BASE_LAMBDA = 1.38
 SPREAD = 1.65
 RHO = 0.0  # correction Dixon-Coles (nuls 0-0/1-1 sous-estimes par Poisson pur)
-LAMBDA_CAP = 3.5  # garde-fou : pas d'equipe a plus de 3,5 buts esperes
 MAX_GOALS = 10
 
 
@@ -41,9 +41,15 @@ def dc_tau(h: int, a: int, lh: float, la: float, rho: float) -> float:
 
 
 def match_probs(s_home: float, s_away: float) -> dict:
+    import math
+
     diff = s_home - s_away
-    lh = min(BASE_LAMBDA * math.exp(SPREAD * diff), LAMBDA_CAP)
-    la = min(BASE_LAMBDA * math.exp(-SPREAD * diff), LAMBDA_CAP)
+    raw_lh = BASE_LAMBDA * math.exp(SPREAD * diff)
+    raw_la = BASE_LAMBDA * math.exp(-SPREAD * diff)
+    # La saturation douce remplace le clip dur: elle reste continue et
+    # differentiable, tout en protegeant les grands ecarts de force.
+    lh = soft_cap_lambda(raw_lh)
+    la = soft_cap_lambda(raw_la)
 
     def pois(lam: float, k: int) -> float:
         return math.exp(-lam) * lam**k / math.factorial(k)
@@ -73,6 +79,8 @@ def match_probs(s_home: float, s_away: float) -> dict:
     return {
         "lambda_home": round(lh, 3),
         "lambda_away": round(la, 3),
+        "lambda_home_raw": round(raw_lh, 3),
+        "lambda_away_raw": round(raw_la, 3),
         "p1": round(p1, 4),
         "pX": round(px, 4),
         "p2": round(p2, 4),
