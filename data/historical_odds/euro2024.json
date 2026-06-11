@@ -1,0 +1,515 @@
+{
+  "tournament": "Euro 2024",
+  "matches": [
+    {
+      "date": "2024-07-14",
+      "home": "Spain",
+      "away": "England",
+      "score_home": 2,
+      "score_away": 1,
+      "odds_home": 2.5,
+      "odds_draw": 2.88,
+      "odds_away": 3.75
+    },
+    {
+      "date": "2024-07-10",
+      "home": "Netherlands",
+      "away": "England",
+      "score_home": 1,
+      "score_away": 2,
+      "odds_home": 3.3,
+      "odds_draw": 2.88,
+      "odds_away": 2.75
+    },
+    {
+      "date": "2024-07-09",
+      "home": "Spain",
+      "away": "France",
+      "score_home": 2,
+      "score_away": 1,
+      "odds_home": 2.75,
+      "odds_draw": 2.88,
+      "odds_away": 3.35
+    },
+    {
+      "date": "2024-07-06",
+      "home": "Netherlands",
+      "away": "Turkey",
+      "score_home": 2,
+      "score_away": 1,
+      "odds_home": 1.62,
+      "odds_draw": 4.1,
+      "odds_away": 6.25
+    },
+    {
+      "date": "2024-07-06",
+      "home": "England",
+      "away": "Switzerland",
+      "score_home": 2,
+      "score_away": 1,
+      "odds_home": 2.23,
+      "odds_draw": 3.0,
+      "odds_away": 4.2
+    },
+    {
+      "date": "2024-07-06",
+      "home": "England",
+      "away": "Switzerland",
+      "score_home": 2,
+      "score_away": 1,
+      "odds_home": 2.23,
+      "odds_draw": 3.0,
+      "odds_away": 4.2
+    },
+    {
+      "date": "2024-07-05",
+      "home": "Portugal",
+      "away": "France",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 3.4,
+      "odds_draw": 3.0,
+      "odds_away": 2.5
+    },
+    {
+      "date": "2024-07-05",
+      "home": "Spain",
+      "away": "Germany",
+      "score_home": 2,
+      "score_away": 1,
+      "odds_home": 2.75,
+      "odds_draw": 3.25,
+      "odds_away": 2.88
+    },
+    {
+      "date": "2024-07-02",
+      "home": "Austria",
+      "away": "Turkey",
+      "score_home": 1,
+      "score_away": 2,
+      "odds_home": 2.0,
+      "odds_draw": 3.4,
+      "odds_away": 4.35
+    },
+    {
+      "date": "2024-07-02",
+      "home": "Romania",
+      "away": "Netherlands",
+      "score_home": 0,
+      "score_away": 3,
+      "odds_home": 8.5,
+      "odds_draw": 4.8,
+      "odds_away": 1.44
+    },
+    {
+      "date": "2024-07-01",
+      "home": "Portugal",
+      "away": "Slovenia",
+      "score_home": 1,
+      "score_away": 0,
+      "odds_home": 1.38,
+      "odds_draw": 5.3,
+      "odds_away": 10.0
+    },
+    {
+      "date": "2024-07-01",
+      "home": "France",
+      "away": "Belgium",
+      "score_home": 1,
+      "score_away": 0,
+      "odds_home": 2.1,
+      "odds_draw": 3.4,
+      "odds_away": 4.35
+    },
+    {
+      "date": "2024-06-30",
+      "home": "Spain",
+      "away": "Georgia",
+      "score_home": 4,
+      "score_away": 1,
+      "odds_home": 1.22,
+      "odds_draw": 7.5,
+      "odds_away": 17.0
+    },
+    {
+      "date": "2024-06-30",
+      "home": "England",
+      "away": "Slovakia",
+      "score_home": 2,
+      "score_away": 1,
+      "odds_home": 1.47,
+      "odds_draw": 4.2,
+      "odds_away": 9.5
+    },
+    {
+      "date": "2024-06-29",
+      "home": "Germany",
+      "away": "Denmark",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 1.65,
+      "odds_draw": 4.0,
+      "odds_away": 6.75
+    },
+    {
+      "date": "2024-06-29",
+      "home": "Switzerland",
+      "away": "Italy",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 3.35,
+      "odds_draw": 2.88,
+      "odds_away": 2.75
+    },
+    {
+      "date": "2024-06-26",
+      "home": "Czech Republic",
+      "away": "Turkey",
+      "score_home": 1,
+      "score_away": 2,
+      "odds_home": 2.6,
+      "odds_draw": 3.35,
+      "odds_away": 3.05
+    },
+    {
+      "date": "2024-06-26",
+      "home": "Georgia",
+      "away": "Portugal",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 9.5,
+      "odds_draw": 5.3,
+      "odds_away": 1.38
+    },
+    {
+      "date": "2024-06-26",
+      "home": "Ukraine",
+      "away": "Belgium",
+      "score_home": 0,
+      "score_away": 0,
+      "odds_home": 5.8,
+      "odds_draw": 4.2,
+      "odds_away": 1.65
+    },
+    {
+      "date": "2024-06-26",
+      "home": "Slovakia",
+      "away": "Romania",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 3.0,
+      "odds_draw": 2.16,
+      "odds_away": 4.4
+    },
+    {
+      "date": "2024-06-25",
+      "home": "Denmark",
+      "away": "Serbia",
+      "score_home": 0,
+      "score_away": 0,
+      "odds_home": 2.35,
+      "odds_draw": 3.4,
+      "odds_away": 3.4
+    },
+    {
+      "date": "2024-06-25",
+      "home": "England",
+      "away": "Slovenia",
+      "score_home": 0,
+      "score_away": 0,
+      "odds_home": 1.33,
+      "odds_draw": 5.5,
+      "odds_away": 13.0
+    },
+    {
+      "date": "2024-06-25",
+      "home": "Netherlands",
+      "away": "Austria",
+      "score_home": 2,
+      "score_away": 3,
+      "odds_home": 1.85,
+      "odds_draw": 3.75,
+      "odds_away": 5.1
+    },
+    {
+      "date": "2024-06-25",
+      "home": "France",
+      "away": "Poland",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 1.32,
+      "odds_draw": 6.0,
+      "odds_away": 13.0
+    },
+    {
+      "date": "2024-06-24",
+      "home": "Albania",
+      "away": "Spain",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 9.0,
+      "odds_draw": 5.1,
+      "odds_away": 1.42
+    },
+    {
+      "date": "2024-06-24",
+      "home": "Croatia",
+      "away": "Italy",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 3.15,
+      "odds_draw": 3.1,
+      "odds_away": 2.7
+    },
+    {
+      "date": "2024-06-23",
+      "home": "Switzerland",
+      "away": "Germany",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 7.5,
+      "odds_draw": 4.2,
+      "odds_away": 1.6
+    },
+    {
+      "date": "2024-06-23",
+      "home": "Scotland",
+      "away": "Hungary",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 2.5,
+      "odds_draw": 4.3,
+      "odds_away": 2.88
+    },
+    {
+      "date": "2024-06-22",
+      "home": "Belgium",
+      "away": "Romania",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 1.4,
+      "odds_draw": 5.5,
+      "odds_away": 9.0
+    },
+    {
+      "date": "2024-06-22",
+      "home": "Turkey",
+      "away": "Portugal",
+      "score_home": 0,
+      "score_away": 3,
+      "odds_home": 6.25,
+      "odds_draw": 4.2,
+      "odds_away": 1.62
+    },
+    {
+      "date": "2024-06-22",
+      "home": "Georgia",
+      "away": "Czech Republic",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 4.5,
+      "odds_draw": 4.0,
+      "odds_away": 1.86
+    },
+    {
+      "date": "2024-06-21",
+      "home": "Netherlands",
+      "away": "France",
+      "score_home": 0,
+      "score_away": 0,
+      "odds_home": 3.2,
+      "odds_draw": 3.3,
+      "odds_away": 2.5
+    },
+    {
+      "date": "2024-06-21",
+      "home": "Poland",
+      "away": "Austria",
+      "score_home": 1,
+      "score_away": 3,
+      "odds_home": 4.25,
+      "odds_draw": 3.4,
+      "odds_away": 2.1
+    },
+    {
+      "date": "2024-06-21",
+      "home": "Slovakia",
+      "away": "Ukraine",
+      "score_home": 1,
+      "score_away": 2,
+      "odds_home": 3.4,
+      "odds_draw": 3.35,
+      "odds_away": 2.3
+    },
+    {
+      "date": "2024-06-20",
+      "home": "Spain",
+      "away": "Italy",
+      "score_home": 1,
+      "score_away": 0,
+      "odds_home": 2.3,
+      "odds_draw": 3.2,
+      "odds_away": 3.95
+    },
+    {
+      "date": "2024-06-20",
+      "home": "Denmark",
+      "away": "England",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 5.75,
+      "odds_draw": 3.6,
+      "odds_away": 1.78
+    },
+    {
+      "date": "2024-06-20",
+      "home": "Slovenia",
+      "away": "Serbia",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 5.75,
+      "odds_draw": 3.8,
+      "odds_away": 1.71
+    },
+    {
+      "date": "2024-06-19",
+      "home": "Scotland",
+      "away": "Switzerland",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 5.0,
+      "odds_draw": 3.5,
+      "odds_away": 2.0
+    },
+    {
+      "date": "2024-06-19",
+      "home": "Germany",
+      "away": "Hungary",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 1.27,
+      "odds_draw": 6.75,
+      "odds_away": 12.25
+    },
+    {
+      "date": "2024-06-19",
+      "home": "Croatia",
+      "away": "Albania",
+      "score_home": 2,
+      "score_away": 2,
+      "odds_home": 1.46,
+      "odds_draw": 4.6,
+      "odds_away": 8.5
+    },
+    {
+      "date": "2024-06-18",
+      "home": "Portugal",
+      "away": "Czech Republic",
+      "score_home": 2,
+      "score_away": 1,
+      "odds_home": 1.5,
+      "odds_draw": 4.5,
+      "odds_away": 7.5
+    },
+    {
+      "date": "2024-06-18",
+      "home": "Turkey",
+      "away": "Georgia",
+      "score_home": 3,
+      "score_away": 1,
+      "odds_home": 1.65,
+      "odds_draw": 4.1,
+      "odds_away": 5.8
+    },
+    {
+      "date": "2024-06-17",
+      "home": "Austria",
+      "away": "France",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 6.75,
+      "odds_draw": 4.2,
+      "odds_away": 1.58
+    },
+    {
+      "date": "2024-06-17",
+      "home": "Belgium",
+      "away": "Slovakia",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 1.5,
+      "odds_draw": 4.5,
+      "odds_away": 7.5
+    },
+    {
+      "date": "2024-06-17",
+      "home": "Romania",
+      "away": "Ukraine",
+      "score_home": 3,
+      "score_away": 0,
+      "odds_home": 4.8,
+      "odds_draw": 3.6,
+      "odds_away": 1.88
+    },
+    {
+      "date": "2024-06-16",
+      "home": "Serbia",
+      "away": "England",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 7.0,
+      "odds_draw": 4.6,
+      "odds_away": 1.51
+    },
+    {
+      "date": "2024-06-16",
+      "home": "Slovenia",
+      "away": "Denmark",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 6.1,
+      "odds_draw": 3.85,
+      "odds_away": 1.73
+    },
+    {
+      "date": "2024-06-16",
+      "home": "Poland",
+      "away": "Netherlands",
+      "score_home": 1,
+      "score_away": 2,
+      "odds_home": 8.0,
+      "odds_draw": 4.5,
+      "odds_away": 1.53
+    },
+    {
+      "date": "2024-06-15",
+      "home": "Italy",
+      "away": "Albania",
+      "score_home": 2,
+      "score_away": 1,
+      "odds_home": 1.36,
+      "odds_draw": 5.1,
+      "odds_away": 12.0
+    },
+    {
+      "date": "2024-06-15",
+      "home": "Spain",
+      "away": "Croatia",
+      "score_home": 3,
+      "score_away": 0,
+      "odds_home": 1.91,
+      "odds_draw": 3.55,
+      "odds_away": 4.5
+    },
+    {
+      "date": "2024-06-15",
+      "home": "Hungary",
+      "away": "Switzerland",
+      "score_home": 1,
+      "score_away": 3,
+      "odds_home": 4.0,
+      "odds_draw": 3.2,
+      "odds_away": 2.23
+    }
+  ]
+}

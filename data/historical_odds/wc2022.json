@@ -1,0 +1,515 @@
+{
+  "tournament": "World Cup 2022",
+  "matches": [
+    {
+      "date": "2022-12-18",
+      "home": "Argentina",
+      "away": "France",
+      "score_home": 4,
+      "score_away": 3,
+      "odds_home": 2.7,
+      "odds_draw": 3.2,
+      "odds_away": 2.9
+    },
+    {
+      "date": "2022-12-17",
+      "home": "Croatia",
+      "away": "Morocco",
+      "score_home": 2,
+      "score_away": 1,
+      "odds_home": 2.25,
+      "odds_draw": 3.6,
+      "odds_away": 3.15
+    },
+    {
+      "date": "2022-12-14",
+      "home": "France",
+      "away": "Morocco",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 1.62,
+      "odds_draw": 4.0,
+      "odds_away": 6.5
+    },
+    {
+      "date": "2022-12-13",
+      "home": "Argentina",
+      "away": "Croatia",
+      "score_home": 3,
+      "score_away": 0,
+      "odds_home": 2.05,
+      "odds_draw": 3.13,
+      "odds_away": 4.8
+    },
+    {
+      "date": "2022-12-10",
+      "home": "England",
+      "away": "France",
+      "score_home": 1,
+      "score_away": 2,
+      "odds_home": 2.95,
+      "odds_draw": 3.1,
+      "odds_away": 2.8
+    },
+    {
+      "date": "2022-12-10",
+      "home": "Morocco",
+      "away": "Portugal",
+      "score_home": 1,
+      "score_away": 0,
+      "odds_home": 6.5,
+      "odds_draw": 4.0,
+      "odds_away": 1.61
+    },
+    {
+      "date": "2022-12-09",
+      "home": "Netherlands",
+      "away": "Argentina",
+      "score_home": 2,
+      "score_away": 3,
+      "odds_home": 3.75,
+      "odds_draw": 3.15,
+      "odds_away": 2.3
+    },
+    {
+      "date": "2022-12-09",
+      "home": "Croatia",
+      "away": "Brazil",
+      "score_home": 2,
+      "score_away": 1,
+      "odds_home": 9.0,
+      "odds_draw": 4.8,
+      "odds_away": 1.4
+    },
+    {
+      "date": "2022-12-06",
+      "home": "Portugal",
+      "away": "Switzerland",
+      "score_home": 6,
+      "score_away": 1,
+      "odds_home": 2.0,
+      "odds_draw": 3.65,
+      "odds_away": 4.5
+    },
+    {
+      "date": "2022-12-06",
+      "home": "Morocco",
+      "away": "Spain",
+      "score_home": 1,
+      "score_away": 0,
+      "odds_home": 6.5,
+      "odds_draw": 4.0,
+      "odds_away": 1.62
+    },
+    {
+      "date": "2022-12-05",
+      "home": "Brazil",
+      "away": "South Korea",
+      "score_home": 4,
+      "score_away": 1,
+      "odds_home": 1.25,
+      "odds_draw": 6.75,
+      "odds_away": 15.0
+    },
+    {
+      "date": "2022-12-05",
+      "home": "Japan",
+      "away": "Croatia",
+      "score_home": 1,
+      "score_away": 2,
+      "odds_home": 4.0,
+      "odds_draw": 3.25,
+      "odds_away": 2.15
+    },
+    {
+      "date": "2022-12-04",
+      "home": "England",
+      "away": "Senegal",
+      "score_home": 3,
+      "score_away": 0,
+      "odds_home": 1.62,
+      "odds_draw": 3.75,
+      "odds_away": 7.0
+    },
+    {
+      "date": "2022-12-04",
+      "home": "France",
+      "away": "Poland",
+      "score_home": 3,
+      "score_away": 1,
+      "odds_home": 1.4,
+      "odds_draw": 5.1,
+      "odds_away": 9.0
+    },
+    {
+      "date": "2022-12-03",
+      "home": "Argentina",
+      "away": "Australia",
+      "score_home": 2,
+      "score_away": 1,
+      "odds_home": 1.29,
+      "odds_draw": 6.5,
+      "odds_away": 13.0
+    },
+    {
+      "date": "2022-12-03",
+      "home": "Netherlands",
+      "away": "USA",
+      "score_home": 3,
+      "score_away": 1,
+      "odds_home": 1.95,
+      "odds_draw": 3.5,
+      "odds_away": 4.6
+    },
+    {
+      "date": "2022-12-02",
+      "home": "Cameroon",
+      "away": "Brazil",
+      "score_home": 1,
+      "score_away": 0,
+      "odds_home": 11.0,
+      "odds_draw": 5.5,
+      "odds_away": 1.37
+    },
+    {
+      "date": "2022-12-02",
+      "home": "Serbia",
+      "away": "Switzerland",
+      "score_home": 2,
+      "score_away": 3,
+      "odds_home": 2.55,
+      "odds_draw": 3.4,
+      "odds_away": 2.9
+    },
+    {
+      "date": "2022-12-02",
+      "home": "Ghana",
+      "away": "Uruguay",
+      "score_home": 0,
+      "score_away": 2,
+      "odds_home": 4.6,
+      "odds_draw": 3.9,
+      "odds_away": 1.82
+    },
+    {
+      "date": "2022-12-02",
+      "home": "South Korea",
+      "away": "Portugal",
+      "score_home": 2,
+      "score_away": 1,
+      "odds_home": 4.4,
+      "odds_draw": 3.9,
+      "odds_away": 1.86
+    },
+    {
+      "date": "2022-12-01",
+      "home": "Costa Rica",
+      "away": "Germany",
+      "score_home": 2,
+      "score_away": 4,
+      "odds_home": 31.0,
+      "odds_draw": 12.0,
+      "odds_away": 1.12
+    },
+    {
+      "date": "2022-12-01",
+      "home": "Japan",
+      "away": "Spain",
+      "score_home": 2,
+      "score_away": 1,
+      "odds_home": 7.5,
+      "odds_draw": 4.6,
+      "odds_away": 1.5
+    },
+    {
+      "date": "2022-12-01",
+      "home": "Croatia",
+      "away": "Belgium",
+      "score_home": 0,
+      "score_away": 0,
+      "odds_home": 3.05,
+      "odds_draw": 3.5,
+      "odds_away": 2.55
+    },
+    {
+      "date": "2022-12-01",
+      "home": "Canada",
+      "away": "Morocco",
+      "score_home": 1,
+      "score_away": 2,
+      "odds_home": 5.0,
+      "odds_draw": 3.55,
+      "odds_away": 1.86
+    },
+    {
+      "date": "2022-11-30",
+      "home": "Poland",
+      "away": "Argentina",
+      "score_home": 0,
+      "score_away": 2,
+      "odds_home": 8.5,
+      "odds_draw": 4.7,
+      "odds_away": 1.44
+    },
+    {
+      "date": "2022-11-30",
+      "home": "Saudi Arabia",
+      "away": "Mexico",
+      "score_home": 1,
+      "score_away": 2,
+      "odds_home": 5.5,
+      "odds_draw": 4.35,
+      "odds_away": 1.62
+    },
+    {
+      "date": "2022-11-30",
+      "home": "Australia",
+      "away": "Denmark",
+      "score_home": 1,
+      "score_away": 0,
+      "odds_home": 8.0,
+      "odds_draw": 5.0,
+      "odds_away": 1.44
+    },
+    {
+      "date": "2022-11-30",
+      "home": "Tunisia",
+      "away": "France",
+      "score_home": 1,
+      "score_away": 0,
+      "odds_home": 6.0,
+      "odds_draw": 4.0,
+      "odds_away": 1.64
+    },
+    {
+      "date": "2022-11-29",
+      "home": "Wales",
+      "away": "England",
+      "score_home": 0,
+      "score_away": 3,
+      "odds_home": 9.5,
+      "odds_draw": 4.5,
+      "odds_away": 1.44
+    },
+    {
+      "date": "2022-11-29",
+      "home": "Iran",
+      "away": "USA",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 4.25,
+      "odds_draw": 3.5,
+      "odds_away": 2.0
+    },
+    {
+      "date": "2022-11-29",
+      "home": "Ecuador",
+      "away": "Senegal",
+      "score_home": 1,
+      "score_away": 2,
+      "odds_home": 2.5,
+      "odds_draw": 3.1,
+      "odds_away": 3.3
+    },
+    {
+      "date": "2022-11-29",
+      "home": "Netherlands",
+      "away": "Qatar",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 1.21,
+      "odds_draw": 7.25,
+      "odds_away": 17.0
+    },
+    {
+      "date": "2022-11-28",
+      "home": "Portugal",
+      "away": "Uruguay",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 1.95,
+      "odds_draw": 3.4,
+      "odds_away": 4.6
+    },
+    {
+      "date": "2022-11-28",
+      "home": "Brazil",
+      "away": "Switzerland",
+      "score_home": 1,
+      "score_away": 0,
+      "odds_home": 1.5,
+      "odds_draw": 4.35,
+      "odds_away": 8.5
+    },
+    {
+      "date": "2022-11-28",
+      "home": "South Korea",
+      "away": "Ghana",
+      "score_home": 2,
+      "score_away": 3,
+      "odds_home": 2.75,
+      "odds_draw": 3.2,
+      "odds_away": 2.88
+    },
+    {
+      "date": "2022-11-28",
+      "home": "Cameroon",
+      "away": "Serbia",
+      "score_home": 3,
+      "score_away": 3,
+      "odds_home": 5.6,
+      "odds_draw": 3.8,
+      "odds_away": 1.71
+    },
+    {
+      "date": "2022-11-27",
+      "home": "Spain",
+      "away": "Germany",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 2.6,
+      "odds_draw": 3.5,
+      "odds_away": 2.88
+    },
+    {
+      "date": "2022-11-27",
+      "home": "Croatia",
+      "away": "Canada",
+      "score_home": 4,
+      "score_away": 1,
+      "odds_home": 2.25,
+      "odds_draw": 3.3,
+      "odds_away": 3.65
+    },
+    {
+      "date": "2022-11-27",
+      "home": "Belgium",
+      "away": "Morocco",
+      "score_home": 0,
+      "score_away": 2,
+      "odds_home": 1.95,
+      "odds_draw": 3.5,
+      "odds_away": 4.75
+    },
+    {
+      "date": "2022-11-27",
+      "home": "Japan",
+      "away": "Costa Rica",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 1.51,
+      "odds_draw": 4.33,
+      "odds_away": 7.75
+    },
+    {
+      "date": "2022-11-26",
+      "home": "Argentina",
+      "away": "Mexico",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 1.58,
+      "odds_draw": 4.1,
+      "odds_away": 8.0
+    },
+    {
+      "date": "2022-11-26",
+      "home": "France",
+      "away": "Denmark",
+      "score_home": 2,
+      "score_away": 1,
+      "odds_home": 1.86,
+      "odds_draw": 3.6,
+      "odds_away": 4.8
+    },
+    {
+      "date": "2022-11-26",
+      "home": "Poland",
+      "away": "Saudi Arabia",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 1.74,
+      "odds_draw": 3.65,
+      "odds_away": 6.0
+    },
+    {
+      "date": "2022-11-26",
+      "home": "Tunisia",
+      "away": "Australia",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 2.2,
+      "odds_draw": 3.4,
+      "odds_away": 3.65
+    },
+    {
+      "date": "2022-11-25",
+      "home": "England",
+      "away": "USA",
+      "score_home": 0,
+      "score_away": 0,
+      "odds_home": 1.5,
+      "odds_draw": 4.33,
+      "odds_away": 8.5
+    },
+    {
+      "date": "2022-11-25",
+      "home": "France",
+      "away": "Denmark",
+      "score_home": 2,
+      "score_away": 1,
+      "odds_home": 1.86,
+      "odds_draw": 3.6,
+      "odds_away": 4.8
+    },
+    {
+      "date": "2022-11-25",
+      "home": "Netherlands",
+      "away": "Ecuador",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 1.86,
+      "odds_draw": 3.5,
+      "odds_away": 5.1
+    },
+    {
+      "date": "2022-11-25",
+      "home": "Qatar",
+      "away": "Senegal",
+      "score_home": 1,
+      "score_away": 3,
+      "odds_home": 6.25,
+      "odds_draw": 3.65,
+      "odds_away": 1.74
+    },
+    {
+      "date": "2022-11-25",
+      "home": "Wales",
+      "away": "Iran",
+      "score_home": 0,
+      "score_away": 2,
+      "odds_home": 2.2,
+      "odds_draw": 3.2,
+      "odds_away": 4.0
+    },
+    {
+      "date": "2022-11-24",
+      "home": "Brazil",
+      "away": "Serbia",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 1.48,
+      "odds_draw": 4.6,
+      "odds_away": 7.5
+    },
+    {
+      "date": "2022-11-24",
+      "home": "Portugal",
+      "away": "Ghana",
+      "score_home": 3,
+      "score_away": 2,
+      "odds_home": 1.33,
+      "odds_draw": 5.75,
+      "odds_away": 11.0
+    }
+  ]
+}

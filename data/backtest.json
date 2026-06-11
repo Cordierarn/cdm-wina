@@ -1,5 +1,5 @@
 {
- "generated_at": 1781164157,
+ "generated_at": 1781166661,
  "tournaments": [
   {
    "tournament": "Asian Cup 2015",
@@ -484,22 +484,6 @@
  ],
  "summary": {
   "Africa Cup of Nations 2015": {
-   "totals": {
-    "n": 4,
-    "n_with_market": 0,
-    "brier": {
-     "model": 0.48878087318217,
-     "baseline": 0.5,
-     "market": null
-    },
-    "logloss": {
-     "model": 0.6819261032803027,
-     "baseline": 0.6931471805599453,
-     "market": null
-    },
-    "best_weight": null,
-    "best_mix_logloss": null
-   },
    "1n2": {
     "n": 4,
     "n_with_market": 0,
@@ -515,25 +499,25 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   }
-  },
-  "Africa Cup of Nations 2017": {
+   },
    "totals": {
-    "n": 18,
+    "n": 4,
     "n_with_market": 0,
     "brier": {
-     "model": 0.5041345035980567,
+     "model": 0.48878087318217,
      "baseline": 0.5,
      "market": null
     },
     "logloss": {
-     "model": 0.6972832304900549,
+     "model": 0.6819261032803027,
      "baseline": 0.6931471805599453,
      "market": null
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
+   }
+  },
+  "Africa Cup of Nations 2017": {
    "1n2": {
     "n": 18,
     "n_with_market": 0,
@@ -549,25 +533,25 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   }
-  },
-  "Africa Cup of Nations 2018": {
+   },
    "totals": {
-    "n": 93,
+    "n": 18,
     "n_with_market": 0,
     "brier": {
-     "model": 0.5015505036312528,
+     "model": 0.5041345035980567,
      "baseline": 0.5,
      "market": null
     },
     "logloss": {
-     "model": 0.6946977201803491,
+     "model": 0.6972832304900549,
      "baseline": 0.6931471805599453,
      "market": null
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
+   }
+  },
+  "Africa Cup of Nations 2018": {
    "1n2": {
     "n": 93,
     "n_with_market": 0,
@@ -583,25 +567,25 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   }
-  },
-  "Africa Cup of Nations 2019": {
+   },
    "totals": {
-    "n": 74,
+    "n": 93,
     "n_with_market": 0,
     "brier": {
-     "model": 0.4974215020073858,
+     "model": 0.5015505036312528,
      "baseline": 0.5,
      "market": null
     },
     "logloss": {
-     "model": 0.6905686026077459,
+     "model": 0.6946977201803491,
      "baseline": 0.6931471805599453,
      "market": null
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
+   }
+  },
+  "Africa Cup of Nations 2019": {
    "1n2": {
     "n": 74,
     "n_with_market": 0,
@@ -617,25 +601,25 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   }
-  },
-  "Africa Cup of Nations 2022": {
+   },
    "totals": {
-    "n": 52,
+    "n": 74,
     "n_with_market": 0,
     "brier": {
-     "model": 0.5188418554421221,
+     "model": 0.4974215020073858,
      "baseline": 0.5,
      "market": null
     },
     "logloss": {
-     "model": 0.7120028479422991,
+     "model": 0.6905686026077459,
      "baseline": 0.6931471805599453,
      "market": null
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
+   }
+  },
+  "Africa Cup of Nations 2022": {
    "1n2": {
     "n": 52,
     "n_with_market": 0,
@@ -651,25 +635,25 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   }
-  },
-  "Africa Cup of Nations 2024": {
+   },
    "totals": {
     "n": 52,
     "n_with_market": 0,
     "brier": {
-     "model": 0.5066863546783753,
+     "model": 0.5188418554421221,
      "baseline": 0.5,
      "market": null
     },
     "logloss": {
-     "model": 0.6998352593543703,
+     "model": 0.7120028479422991,
      "baseline": 0.6931471805599453,
      "market": null
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
+   }
+  },
+  "Africa Cup of Nations 2024": {
    "1n2": {
     "n": 52,
     "n_with_market": 0,
@@ -685,25 +669,25 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   }
-  },
-  "Africa Cup of Nations 2025": {
+   },
    "totals": {
-    "n": 36,
+    "n": 52,
     "n_with_market": 0,
     "brier": {
-     "model": 0.5022843878598328,
+     "model": 0.5066863546783753,
      "baseline": 0.5,
      "market": null
     },
     "logloss": {
-     "model": 0.6954323416307397,
+     "model": 0.6998352593543703,
      "baseline": 0.6931471805599453,
      "market": null
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
+   }
+  },
+  "Africa Cup of Nations 2025": {
    "1n2": {
     "n": 36,
     "n_with_market": 0,
@@ -719,25 +703,25 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   }
-  },
-  "Africa Cup of Nations 2026": {
+   },
    "totals": {
-    "n": 16,
+    "n": 36,
     "n_with_market": 0,
     "brier": {
-     "model": 0.5082836096841993,
+     "model": 0.5022843878598328,
      "baseline": 0.5,
      "market": null
     },
     "logloss": {
-     "model": 0.7014333776681498,
+     "model": 0.6954323416307397,
      "baseline": 0.6931471805599453,
      "market": null
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
+   }
+  },
+  "Africa Cup of Nations 2026": {
    "1n2": {
     "n": 16,
     "n_with_market": 0,
@@ -753,25 +737,25 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   }
-  },
-  "Asian Cup 2015": {
+   },
    "totals": {
-    "n": 2,
+    "n": 16,
     "n_with_market": 0,
     "brier": {
-     "model": 0.5002200710203927,
+     "model": 0.5082836096841993,
      "baseline": 0.5,
      "market": null
     },
     "logloss": {
-     "model": 0.6933673000258078,
+     "model": 0.7014333776681498,
      "baseline": 0.6931471805599453,
      "market": null
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
+   }
+  },
+  "Asian Cup 2015": {
    "1n2": {
     "n": 2,
     "n_with_market": 0,
@@ -787,25 +771,25 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   }
-  },
-  "Asian Cup 2019": {
+   },
    "totals": {
-    "n": 23,
+    "n": 2,
     "n_with_market": 0,
     "brier": {
-     "model": 0.4990015611531037,
+     "model": 0.5002200710203927,
      "baseline": 0.5,
      "market": null
     },
     "logloss": {
-     "model": 0.6921487212787979,
+     "model": 0.6933673000258078,
      "baseline": 0.6931471805599453,
      "market": null
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
+   }
+  },
+  "Asian Cup 2019": {
    "1n2": {
     "n": 23,
     "n_with_market": 0,
@@ -821,25 +805,25 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   }
-  },
-  "Asian Cup 2024": {
+   },
    "totals": {
-    "n": 36,
+    "n": 23,
     "n_with_market": 0,
     "brier": {
-     "model": 0.5002709940695758,
+     "model": 0.4990015611531037,
      "baseline": 0.5,
      "market": null
     },
     "logloss": {
-     "model": 0.6934182298403502,
+     "model": 0.6921487212787979,
      "baseline": 0.6931471805599453,
      "market": null
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
+   }
+  },
+  "Asian Cup 2024": {
    "1n2": {
     "n": 36,
     "n_with_market": 0,
@@ -855,25 +839,25 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   }
-  },
-  "Copa America 2015": {
+   },
    "totals": {
-    "n": 8,
+    "n": 36,
     "n_with_market": 0,
     "brier": {
-     "model": 0.49144049019056857,
+     "model": 0.5002709940695758,
      "baseline": 0.5,
      "market": null
     },
     "logloss": {
-     "model": 0.6845868122052381,
+     "model": 0.6934182298403502,
      "baseline": 0.6931471805599453,
      "market": null
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
+   }
+  },
+  "Copa America 2015": {
    "1n2": {
     "n": 8,
     "n_with_market": 0,
@@ -889,25 +873,25 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   }
-  },
-  "Copa America 2016": {
+   },
    "totals": {
-    "n": 32,
+    "n": 8,
     "n_with_market": 0,
     "brier": {
-     "model": 0.5016183077742379,
+     "model": 0.49144049019056857,
      "baseline": 0.5,
      "market": null
     },
     "logloss": {
-     "model": 0.6947655723836755,
+     "model": 0.6845868122052381,
      "baseline": 0.6931471805599453,
      "market": null
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
+   }
+  },
+  "Copa America 2016": {
    "1n2": {
     "n": 32,
     "n_with_market": 0,
@@ -923,25 +907,25 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   }
-  },
-  "Copa America 2019": {
+   },
    "totals": {
-    "n": 26,
+    "n": 32,
     "n_with_market": 0,
     "brier": {
-     "model": 0.5008833811415068,
+     "model": 0.5016183077742379,
      "baseline": 0.5,
      "market": null
     },
     "logloss": {
-     "model": 0.6940306234348382,
+     "model": 0.6947655723836755,
      "baseline": 0.6931471805599453,
      "market": null
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
+   }
+  },
+  "Copa America 2019": {
    "1n2": {
     "n": 26,
     "n_with_market": 0,
@@ -957,25 +941,25 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   }
-  },
-  "Copa America 2021": {
+   },
    "totals": {
-    "n": 28,
+    "n": 26,
     "n_with_market": 0,
     "brier": {
-     "model": 0.5131049522202675,
+     "model": 0.5008833811415068,
      "baseline": 0.5,
      "market": null
     },
     "logloss": {
-     "model": 0.7062656897534001,
+     "model": 0.6940306234348382,
      "baseline": 0.6931471805599453,
      "market": null
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
+   }
+  },
+  "Copa America 2021": {
    "1n2": {
     "n": 28,
     "n_with_market": 0,
@@ -991,25 +975,25 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   }
-  },
-  "Copa America 2024": {
+   },
    "totals": {
-    "n": 32,
+    "n": 28,
     "n_with_market": 0,
     "brier": {
-     "model": 0.5063414955796799,
+     "model": 0.5131049522202675,
      "baseline": 0.5,
      "market": null
     },
     "logloss": {
-     "model": 0.6994908132297772,
+     "model": 0.7062656897534001,
      "baseline": 0.6931471805599453,
      "market": null
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
+   }
+  },
+  "Copa America 2024": {
    "1n2": {
     "n": 32,
     "n_with_market": 0,
@@ -1025,25 +1009,25 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   }
-  },
-  "Euro 2016": {
+   },
    "totals": {
-    "n": 22,
+    "n": 32,
     "n_with_market": 0,
     "brier": {
-     "model": 0.49495685809508516,
+     "model": 0.5063414955796799,
      "baseline": 0.5,
      "market": null
     },
     "logloss": {
-     "model": 0.6881037056661053,
+     "model": 0.6994908132297772,
      "baseline": 0.6931471805599453,
      "market": null
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
+   }
+  },
+  "Euro 2016": {
    "1n2": {
     "n": 22,
     "n_with_market": 0,
@@ -1059,25 +1043,25 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   }
-  },
-  "Euro 2019": {
+   },
    "totals": {
-    "n": 250,
+    "n": 22,
     "n_with_market": 0,
     "brier": {
-     "model": 0.5013195250803799,
+     "model": 0.49495685809508516,
      "baseline": 0.5,
      "market": null
     },
     "logloss": {
-     "model": 0.6944667340513657,
+     "model": 0.6881037056661053,
      "baseline": 0.6931471805599453,
      "market": null
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
+   }
+  },
+  "Euro 2019": {
    "1n2": {
     "n": 250,
     "n_with_market": 0,
@@ -1093,25 +1077,25 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   }
-  },
-  "Euro 2020": {
+   },
    "totals": {
-    "n": 12,
+    "n": 250,
     "n_with_market": 0,
     "brier": {
-     "model": 0.5001961567777858,
+     "model": 0.5013195250803799,
      "baseline": 0.5,
      "market": null
     },
     "logloss": {
-     "model": 0.6933433706396515,
+     "model": 0.6944667340513657,
      "baseline": 0.6931471805599453,
      "market": null
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
+   }
+  },
+  "Euro 2020": {
    "1n2": {
     "n": 12,
     "n_with_market": 0,
@@ -1127,25 +1111,25 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   }
-  },
-  "Euro 2021": {
+   },
    "totals": {
-    "n": 51,
+    "n": 12,
     "n_with_market": 0,
     "brier": {
-     "model": 0.49842241501587187,
+     "model": 0.5001961567777858,
      "baseline": 0.5,
      "market": null
     },
     "logloss": {
-     "model": 0.6915691310778933,
-     "baseline": 0.6931471805599452,
+     "model": 0.6933433706396515,
+     "baseline": 0.6931471805599453,
      "market": null
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
+   }
+  },
+  "Euro 2021": {
    "1n2": {
     "n": 51,
     "n_with_market": 0,
@@ -1161,25 +1145,25 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   }
-  },
-  "Euro 2023": {
+   },
    "totals": {
-    "n": 230,
+    "n": 51,
     "n_with_market": 0,
     "brier": {
-     "model": 0.4982679373616994,
+     "model": 0.49842241501587187,
      "baseline": 0.5,
      "market": null
     },
     "logloss": {
-     "model": 0.6914143936630959,
-     "baseline": 0.6931471805599453,
+     "model": 0.6915691310778933,
+     "baseline": 0.6931471805599452,
      "market": null
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
+   }
+  },
+  "Euro 2023": {
    "1n2": {
     "n": 230,
     "n_with_market": 0,
@@ -1195,9 +1179,41 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
+   },
+   "totals": {
+    "n": 230,
+    "n_with_market": 0,
+    "brier": {
+     "model": 0.4982679373616994,
+     "baseline": 0.5,
+     "market": null
+    },
+    "logloss": {
+     "model": 0.6914143936630959,
+     "baseline": 0.6931471805599453,
+     "market": null
+    },
+    "best_weight": null,
+    "best_mix_logloss": null
    }
   },
   "Euro 2024": {
+   "1n2": {
+    "n": 60,
+    "n_with_market": 45,
+    "brier": {
+     "model": 0.6473370981080772,
+     "baseline": 0.6666666666666667,
+     "market": 0.6230221853855333
+    },
+    "logloss": {
+     "model": 1.0746420234057819,
+     "baseline": 1.0986122886681098,
+     "market": 1.0198660380740059
+    },
+    "best_weight": 0.0,
+    "best_mix_logloss": 1.019866038074006
+   },
    "totals": {
     "n": 60,
     "n_with_market": 0,
@@ -1213,41 +1229,9 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
-   "1n2": {
-    "n": 60,
-    "n_with_market": 0,
-    "brier": {
-     "model": 0.6473370981080772,
-     "baseline": 0.6666666666666667,
-     "market": null
-    },
-    "logloss": {
-     "model": 1.0746420234057819,
-     "baseline": 1.0986122886681098,
-     "market": null
-    },
-    "best_weight": null,
-    "best_mix_logloss": null
    }
   },
   "World Cup 2015": {
-   "totals": {
-    "n": 9,
-    "n_with_market": 0,
-    "brier": {
-     "model": 0.4838622797690838,
-     "baseline": 0.5,
-     "market": null
-    },
-    "logloss": {
-     "model": 0.6769951628979994,
-     "baseline": 0.6931471805599453,
-     "market": null
-    },
-    "best_weight": null,
-    "best_mix_logloss": null
-   },
    "1n2": {
     "n": 9,
     "n_with_market": 0,
@@ -1263,25 +1247,25 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   }
-  },
-  "World Cup 2016": {
+   },
    "totals": {
-    "n": 79,
+    "n": 9,
     "n_with_market": 0,
     "brier": {
-     "model": 0.5089117764569857,
+     "model": 0.4838622797690838,
      "baseline": 0.5,
      "market": null
     },
     "logloss": {
-     "model": 0.7020626287517509,
+     "model": 0.6769951628979994,
      "baseline": 0.6931471805599453,
      "market": null
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
+   }
+  },
+  "World Cup 2016": {
    "1n2": {
     "n": 79,
     "n_with_market": 0,
@@ -1297,25 +1281,25 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   }
-  },
-  "World Cup 2017": {
+   },
    "totals": {
-    "n": 224,
+    "n": 79,
     "n_with_market": 0,
     "brier": {
-     "model": 0.5003197891597806,
+     "model": 0.5089117764569857,
      "baseline": 0.5,
      "market": null
     },
     "logloss": {
-     "model": 0.6934669904754809,
+     "model": 0.7020626287517509,
      "baseline": 0.6931471805599453,
      "market": null
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
+   }
+  },
+  "World Cup 2017": {
    "1n2": {
     "n": 224,
     "n_with_market": 0,
@@ -1331,25 +1315,25 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   }
-  },
-  "World Cup 2018": {
+   },
    "totals": {
-    "n": 64,
+    "n": 224,
     "n_with_market": 0,
     "brier": {
-     "model": 0.5004587799942162,
+     "model": 0.5003197891597806,
      "baseline": 0.5,
      "market": null
     },
     "logloss": {
-     "model": 0.693605985697471,
+     "model": 0.6934669904754809,
      "baseline": 0.6931471805599453,
      "market": null
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
+   }
+  },
+  "World Cup 2018": {
    "1n2": {
     "n": 64,
     "n_with_market": 0,
@@ -1365,25 +1349,25 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   }
-  },
-  "World Cup 2020": {
+   },
    "totals": {
-    "n": 20,
+    "n": 64,
     "n_with_market": 0,
     "brier": {
-     "model": 0.492895859010111,
+     "model": 0.5004587799942162,
      "baseline": 0.5,
      "market": null
     },
     "logloss": {
-     "model": 0.6860415138690343,
+     "model": 0.693605985697471,
      "baseline": 0.6931471805599453,
      "market": null
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
+   }
+  },
+  "World Cup 2020": {
    "1n2": {
     "n": 20,
     "n_with_market": 0,
@@ -1399,25 +1383,25 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   }
-  },
-  "World Cup 2021": {
+   },
    "totals": {
-    "n": 393,
+    "n": 20,
     "n_with_market": 0,
     "brier": {
-     "model": 0.4983696023801966,
+     "model": 0.492895859010111,
      "baseline": 0.5,
      "market": null
     },
     "logloss": {
-     "model": 0.6915158069510111,
+     "model": 0.6860415138690343,
      "baseline": 0.6931471805599453,
      "market": null
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
+   }
+  },
+  "World Cup 2021": {
    "1n2": {
     "n": 393,
     "n_with_market": 0,
@@ -1433,9 +1417,41 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
+   },
+   "totals": {
+    "n": 393,
+    "n_with_market": 0,
+    "brier": {
+     "model": 0.4983696023801966,
+     "baseline": 0.5,
+     "market": null
+    },
+    "logloss": {
+     "model": 0.6915158069510111,
+     "baseline": 0.6931471805599453,
+     "market": null
+    },
+    "best_weight": null,
+    "best_mix_logloss": null
    }
   },
   "World Cup 2022": {
+   "1n2": {
+    "n": 116,
+    "n_with_market": 47,
+    "brier": {
+     "model": 0.627111222557602,
+     "baseline": 0.6666666666666667,
+     "market": 0.5758116872989787
+    },
+    "logloss": {
+     "model": 1.039046937520656,
+     "baseline": 1.0986122886681098,
+     "market": 0.9829872207640701
+    },
+    "best_weight": 0.25,
+    "best_mix_logloss": 0.9721965391443673
+   },
    "totals": {
     "n": 116,
     "n_with_market": 0,
@@ -1451,41 +1467,9 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
-   "1n2": {
-    "n": 116,
-    "n_with_market": 0,
-    "brier": {
-     "model": 0.627111222557602,
-     "baseline": 0.6666666666666667,
-     "market": null
-    },
-    "logloss": {
-     "model": 1.039046937520656,
-     "baseline": 1.0986122886681098,
-     "market": null
-    },
-    "best_weight": null,
-    "best_mix_logloss": null
    }
   },
   "World Cup 2023": {
-   "totals": {
-    "n": 30,
-    "n_with_market": 0,
-    "brier": {
-     "model": 0.5126121777100373,
-     "baseline": 0.5,
-     "market": null
-    },
-    "logloss": {
-     "model": 0.7057633068715466,
-     "baseline": 0.6931471805599453,
-     "market": null
-    },
-    "best_weight": null,
-    "best_mix_logloss": null
-   },
    "1n2": {
     "n": 30,
     "n_with_market": 0,
@@ -1501,25 +1485,25 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   }
-  },
-  "World Cup 2024": {
+   },
    "totals": {
-    "n": 64,
+    "n": 30,
     "n_with_market": 0,
     "brier": {
-     "model": 0.49654525207704076,
+     "model": 0.5126121777100373,
      "baseline": 0.5,
      "market": null
     },
     "logloss": {
-     "model": 0.6896917308529217,
+     "model": 0.7057633068715466,
      "baseline": 0.6931471805599453,
      "market": null
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
+   }
+  },
+  "World Cup 2024": {
    "1n2": {
     "n": 64,
     "n_with_market": 0,
@@ -1535,25 +1519,25 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
-   }
-  },
-  "World Cup 2025": {
+   },
    "totals": {
-    "n": 288,
+    "n": 64,
     "n_with_market": 0,
     "brier": {
-     "model": 0.49684225702165247,
+     "model": 0.49654525207704076,
      "baseline": 0.5,
      "market": null
     },
     "logloss": {
-     "model": 0.689987781567133,
+     "model": 0.6896917308529217,
      "baseline": 0.6931471805599453,
      "market": null
     },
     "best_weight": null,
     "best_mix_logloss": null
-   },
+   }
+  },
+  "World Cup 2025": {
    "1n2": {
     "n": 288,
     "n_with_market": 0,
@@ -1569,15 +1553,38 @@
     },
     "best_weight": null,
     "best_mix_logloss": null
+   },
+   "totals": {
+    "n": 288,
+    "n_with_market": 0,
+    "brier": {
+     "model": 0.49684225702165247,
+     "baseline": 0.5,
+     "market": null
+    },
+    "logloss": {
+     "model": 0.689987781567133,
+     "baseline": 0.6931471805599453,
+     "market": null
+    },
+    "best_weight": null,
+    "best_mix_logloss": null
+   }
+  },
+  "__overall__": {
+   "1n2": {
+    "best_weight": 0.15,
+    "best_mix_logloss": 0.9980614783079204
    }
   }
  },
  "model_weights": {
-  "1n2": 0.4,
+  "1n2": 0.15,
   "totals": 0.4
  },
  "notes": {
-  "market_reference": "historical closing odds when available in the dataset",
-  "force_source": "fixture rating columns if present, otherwise pre-cutoff Elo fallback"
+  "market_reference": "closing_backtest.json (OddsPortal scraping, WC2022+Euro2024)",
+  "force_source": "fixture rating columns if present, otherwise pre-cutoff Elo fallback",
+  "totals_weight": "fixed at 0.40 (no free closing odds available for O/U 2.5)"
  }
 }

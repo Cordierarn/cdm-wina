@@ -1,0 +1,1618 @@
+{
+  "2024-07-14|spain|england": {
+    "date": "2024-07-14",
+    "home": "Spain",
+    "away": "England",
+    "h2h": [
+      0.394521,
+      0.342466,
+      0.263014
+    ],
+    "odds_raw": [
+      2.5,
+      2.88,
+      3.75
+    ],
+    "source": "oddsportal"
+  },
+  "2024-07-10|netherlands|england": {
+    "date": "2024-07-10",
+    "home": "Netherlands",
+    "away": "England",
+    "h2h": [
+      0.298879,
+      0.342466,
+      0.358655
+    ],
+    "odds_raw": [
+      3.3,
+      2.88,
+      2.75
+    ],
+    "source": "oddsportal"
+  },
+  "2024-07-09|spain|france": {
+    "date": "2024-07-09",
+    "home": "Spain",
+    "away": "France",
+    "h2h": [
+      0.360262,
+      0.344,
+      0.295738
+    ],
+    "odds_raw": [
+      2.75,
+      2.88,
+      3.35
+    ],
+    "source": "oddsportal"
+  },
+  "2024-07-06|netherlands|turkey": {
+    "date": "2024-07-06",
+    "home": "Netherlands",
+    "away": "Turkey",
+    "h2h": [
+      0.604477,
+      0.238842,
+      0.156681
+    ],
+    "odds_raw": [
+      1.62,
+      4.1,
+      6.25
+    ],
+    "source": "oddsportal"
+  },
+  "2024-07-06|england|switzerland": {
+    "date": "2024-07-06",
+    "home": "England",
+    "away": "Switzerland",
+    "h2h": [
+      0.439698,
+      0.326843,
+      0.233459
+    ],
+    "odds_raw": [
+      2.23,
+      3.0,
+      4.2
+    ],
+    "source": "oddsportal"
+  },
+  "2024-07-05|portugal|france": {
+    "date": "2024-07-05",
+    "home": "Portugal",
+    "away": "France",
+    "h2h": [
+      0.28626,
+      0.324427,
+      0.389313
+    ],
+    "odds_raw": [
+      3.4,
+      3.0,
+      2.5
+    ],
+    "source": "oddsportal"
+  },
+  "2024-07-05|spain|germany": {
+    "date": "2024-07-05",
+    "home": "Spain",
+    "away": "Germany",
+    "h2h": [
+      0.357013,
+      0.302088,
+      0.340898
+    ],
+    "odds_raw": [
+      2.75,
+      3.25,
+      2.88
+    ],
+    "source": "oddsportal"
+  },
+  "2024-07-02|austria|turkey": {
+    "date": "2024-07-02",
+    "home": "Austria",
+    "away": "Turkey",
+    "h2h": [
+      0.48828,
+      0.287224,
+      0.224497
+    ],
+    "odds_raw": [
+      2.0,
+      3.4,
+      4.35
+    ],
+    "source": "oddsportal"
+  },
+  "2024-07-02|romania|netherlands": {
+    "date": "2024-07-02",
+    "home": "Romania",
+    "away": "Netherlands",
+    "h2h": [
+      0.115292,
+      0.204163,
+      0.680544
+    ],
+    "odds_raw": [
+      8.5,
+      4.8,
+      1.44
+    ],
+    "source": "oddsportal"
+  },
+  "2024-07-01|portugal|slovenia": {
+    "date": "2024-07-01",
+    "home": "Portugal",
+    "away": "Slovenia",
+    "h2h": [
+      0.715115,
+      0.1862,
+      0.098686
+    ],
+    "odds_raw": [
+      1.38,
+      5.3,
+      10.0
+    ],
+    "source": "oddsportal"
+  },
+  "2024-07-01|france|belgium": {
+    "date": "2024-07-01",
+    "home": "France",
+    "away": "Belgium",
+    "h2h": [
+      0.476099,
+      0.294061,
+      0.229841
+    ],
+    "odds_raw": [
+      2.1,
+      3.4,
+      4.35
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-30|spain|georgia": {
+    "date": "2024-06-30",
+    "home": "Spain",
+    "away": "Georgia",
+    "h2h": [
+      0.81009,
+      0.131775,
+      0.058136
+    ],
+    "odds_raw": [
+      1.22,
+      7.5,
+      17.0
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-30|england|slovakia": {
+    "date": "2024-06-30",
+    "home": "England",
+    "away": "Slovakia",
+    "h2h": [
+      0.664568,
+      0.232599,
+      0.102833
+    ],
+    "odds_raw": [
+      1.47,
+      4.2,
+      9.5
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-29|germany|denmark": {
+    "date": "2024-06-29",
+    "home": "Germany",
+    "away": "Denmark",
+    "h2h": [
+      0.603521,
+      0.248952,
+      0.147527
+    ],
+    "odds_raw": [
+      1.65,
+      4.0,
+      6.75
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-29|switzerland|italy": {
+    "date": "2024-06-29",
+    "home": "Switzerland",
+    "away": "Italy",
+    "h2h": [
+      0.295738,
+      0.344,
+      0.360262
+    ],
+    "odds_raw": [
+      3.35,
+      2.88,
+      2.75
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-26|czech republic|turkey": {
+    "date": "2024-06-26",
+    "home": "Czech Republic",
+    "away": "Turkey",
+    "h2h": [
+      0.380434,
+      0.295262,
+      0.324304
+    ],
+    "odds_raw": [
+      2.6,
+      3.35,
+      3.05
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-26|georgia|portugal": {
+    "date": "2024-06-26",
+    "home": "Georgia",
+    "away": "Portugal",
+    "h2h": [
+      0.103343,
+      0.185238,
+      0.711419
+    ],
+    "odds_raw": [
+      9.5,
+      5.3,
+      1.38
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-26|ukraine|belgium": {
+    "date": "2024-06-26",
+    "home": "Ukraine",
+    "away": "Belgium",
+    "h2h": [
+      0.169604,
+      0.234214,
+      0.596182
+    ],
+    "odds_raw": [
+      5.8,
+      4.2,
+      1.65
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-26|slovakia|romania": {
+    "date": "2024-06-26",
+    "home": "Slovakia",
+    "away": "Romania",
+    "h2h": [
+      0.325658,
+      0.452303,
+      0.222039
+    ],
+    "odds_raw": [
+      3.0,
+      2.16,
+      4.4
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-25|denmark|serbia": {
+    "date": "2024-06-25",
+    "home": "Denmark",
+    "away": "Serbia",
+    "h2h": [
+      0.419753,
+      0.290123,
+      0.290123
+    ],
+    "odds_raw": [
+      2.35,
+      3.4,
+      3.4
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-25|england|slovenia": {
+    "date": "2024-06-25",
+    "home": "England",
+    "away": "Slovenia",
+    "h2h": [
+      0.743978,
+      0.179907,
+      0.076115
+    ],
+    "odds_raw": [
+      1.33,
+      5.5,
+      13.0
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-25|netherlands|austria": {
+    "date": "2024-06-25",
+    "home": "Netherlands",
+    "away": "Austria",
+    "h2h": [
+      0.53877,
+      0.265793,
+      0.195436
+    ],
+    "odds_raw": [
+      1.85,
+      3.75,
+      5.1
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-25|france|poland": {
+    "date": "2024-06-25",
+    "home": "France",
+    "away": "Poland",
+    "h2h": [
+      0.756694,
+      0.166473,
+      0.076834
+    ],
+    "odds_raw": [
+      1.32,
+      6.0,
+      13.0
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-24|albania|spain": {
+    "date": "2024-06-24",
+    "home": "Albania",
+    "away": "Spain",
+    "h2h": [
+      0.109857,
+      0.193865,
+      0.696277
+    ],
+    "odds_raw": [
+      9.0,
+      5.1,
+      1.42
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-24|croatia|italy": {
+    "date": "2024-06-24",
+    "home": "Croatia",
+    "away": "Italy",
+    "h2h": [
+      0.314189,
+      0.319257,
+      0.366554
+    ],
+    "odds_raw": [
+      3.15,
+      3.1,
+      2.7
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-23|switzerland|germany": {
+    "date": "2024-06-23",
+    "home": "Switzerland",
+    "away": "Germany",
+    "h2h": [
+      0.133811,
+      0.238949,
+      0.62724
+    ],
+    "odds_raw": [
+      7.5,
+      4.2,
+      1.6
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-23|scotland|hungary": {
+    "date": "2024-06-23",
+    "home": "Scotland",
+    "away": "Hungary",
+    "h2h": [
+      0.408255,
+      0.237357,
+      0.354388
+    ],
+    "odds_raw": [
+      2.5,
+      4.3,
+      2.88
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-22|belgium|romania": {
+    "date": "2024-06-22",
+    "home": "Belgium",
+    "away": "Romania",
+    "h2h": [
+      0.709169,
+      0.180516,
+      0.110315
+    ],
+    "odds_raw": [
+      1.4,
+      5.5,
+      9.0
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-22|turkey|portugal": {
+    "date": "2024-06-22",
+    "home": "Turkey",
+    "away": "Portugal",
+    "h2h": [
+      0.157577,
+      0.234489,
+      0.607934
+    ],
+    "odds_raw": [
+      6.25,
+      4.2,
+      1.62
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-22|georgia|czech republic": {
+    "date": "2024-06-22",
+    "home": "Georgia",
+    "away": "Czech Republic",
+    "h2h": [
+      0.220053,
+      0.24756,
+      0.532387
+    ],
+    "odds_raw": [
+      4.5,
+      4.0,
+      1.86
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-21|netherlands|france": {
+    "date": "2024-06-21",
+    "home": "Netherlands",
+    "away": "France",
+    "h2h": [
+      0.307721,
+      0.298396,
+      0.393883
+    ],
+    "odds_raw": [
+      3.2,
+      3.3,
+      2.5
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-21|poland|austria": {
+    "date": "2024-06-21",
+    "home": "Poland",
+    "away": "Austria",
+    "h2h": [
+      0.233983,
+      0.292479,
+      0.473538
+    ],
+    "odds_raw": [
+      4.25,
+      3.4,
+      2.1
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-21|slovakia|ukraine": {
+    "date": "2024-06-21",
+    "home": "Slovakia",
+    "away": "Ukraine",
+    "h2h": [
+      0.286272,
+      0.290544,
+      0.423184
+    ],
+    "odds_raw": [
+      3.4,
+      3.35,
+      2.3
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-20|spain|italy": {
+    "date": "2024-06-20",
+    "home": "Spain",
+    "away": "Italy",
+    "h2h": [
+      0.434588,
+      0.31236,
+      0.253051
+    ],
+    "odds_raw": [
+      2.3,
+      3.2,
+      3.95
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-20|denmark|england": {
+    "date": "2024-06-20",
+    "home": "Denmark",
+    "away": "England",
+    "h2h": [
+      0.171598,
+      0.274081,
+      0.554321
+    ],
+    "odds_raw": [
+      5.75,
+      3.6,
+      1.78
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-20|slovenia|serbia": {
+    "date": "2024-06-20",
+    "home": "Slovenia",
+    "away": "Serbia",
+    "h2h": [
+      0.170192,
+      0.257527,
+      0.572282
+    ],
+    "odds_raw": [
+      5.75,
+      3.8,
+      1.71
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-19|scotland|switzerland": {
+    "date": "2024-06-19",
+    "home": "Scotland",
+    "away": "Switzerland",
+    "h2h": [
+      0.202899,
+      0.289855,
+      0.507246
+    ],
+    "odds_raw": [
+      5.0,
+      3.5,
+      2.0
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-19|germany|hungary": {
+    "date": "2024-06-19",
+    "home": "Germany",
+    "away": "Hungary",
+    "h2h": [
+      0.774101,
+      0.145646,
+      0.080254
+    ],
+    "odds_raw": [
+      1.27,
+      6.75,
+      12.25
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-19|croatia|albania": {
+    "date": "2024-06-19",
+    "home": "Croatia",
+    "away": "Albania",
+    "h2h": [
+      0.671521,
+      0.213135,
+      0.115344
+    ],
+    "odds_raw": [
+      1.46,
+      4.6,
+      8.5
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-18|portugal|czech republic": {
+    "date": "2024-06-18",
+    "home": "Portugal",
+    "away": "Czech Republic",
+    "h2h": [
+      0.652174,
+      0.217391,
+      0.130435
+    ],
+    "odds_raw": [
+      1.5,
+      4.5,
+      7.5
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-18|turkey|georgia": {
+    "date": "2024-06-18",
+    "home": "Turkey",
+    "away": "Georgia",
+    "h2h": [
+      0.592796,
+      0.238564,
+      0.16864
+    ],
+    "odds_raw": [
+      1.65,
+      4.1,
+      5.8
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-17|austria|france": {
+    "date": "2024-06-17",
+    "home": "Austria",
+    "away": "France",
+    "h2h": [
+      0.145364,
+      0.23362,
+      0.621016
+    ],
+    "odds_raw": [
+      6.75,
+      4.2,
+      1.58
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-17|belgium|slovakia": {
+    "date": "2024-06-17",
+    "home": "Belgium",
+    "away": "Slovakia",
+    "h2h": [
+      0.652174,
+      0.217391,
+      0.130435
+    ],
+    "odds_raw": [
+      1.5,
+      4.5,
+      7.5
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-17|romania|ukraine": {
+    "date": "2024-06-17",
+    "home": "Romania",
+    "away": "Ukraine",
+    "h2h": [
+      0.204644,
+      0.272859,
+      0.522496
+    ],
+    "odds_raw": [
+      4.8,
+      3.6,
+      1.88
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-16|serbia|england": {
+    "date": "2024-06-16",
+    "home": "Serbia",
+    "away": "England",
+    "h2h": [
+      0.139714,
+      0.212608,
+      0.647679
+    ],
+    "odds_raw": [
+      7.0,
+      4.6,
+      1.51
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-16|slovenia|denmark": {
+    "date": "2024-06-16",
+    "home": "Slovenia",
+    "away": "Denmark",
+    "h2h": [
+      0.163655,
+      0.259297,
+      0.577048
+    ],
+    "odds_raw": [
+      6.1,
+      3.85,
+      1.73
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-16|poland|netherlands": {
+    "date": "2024-06-16",
+    "home": "Poland",
+    "away": "Netherlands",
+    "h2h": [
+      0.124898,
+      0.222041,
+      0.653061
+    ],
+    "odds_raw": [
+      8.0,
+      4.5,
+      1.53
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-15|italy|albania": {
+    "date": "2024-06-15",
+    "home": "Italy",
+    "away": "Albania",
+    "h2h": [
+      0.724638,
+      0.193237,
+      0.082126
+    ],
+    "odds_raw": [
+      1.36,
+      5.1,
+      12.0
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-15|spain|croatia": {
+    "date": "2024-06-15",
+    "home": "Spain",
+    "away": "Croatia",
+    "h2h": [
+      0.509561,
+      0.274158,
+      0.21628
+    ],
+    "odds_raw": [
+      1.91,
+      3.55,
+      4.5
+    ],
+    "source": "oddsportal"
+  },
+  "2024-06-15|hungary|switzerland": {
+    "date": "2024-06-15",
+    "home": "Hungary",
+    "away": "Switzerland",
+    "h2h": [
+      0.247297,
+      0.309121,
+      0.443582
+    ],
+    "odds_raw": [
+      4.0,
+      3.2,
+      2.23
+    ],
+    "source": "oddsportal"
+  },
+  "2022-12-18|argentina|france": {
+    "date": "2022-12-18",
+    "home": "Argentina",
+    "away": "France",
+    "h2h": [
+      0.360388,
+      0.304078,
+      0.335534
+    ],
+    "odds_raw": [
+      2.7,
+      3.2,
+      2.9
+    ],
+    "source": "oddsportal"
+  },
+  "2022-12-17|croatia|morocco": {
+    "date": "2022-12-17",
+    "home": "Croatia",
+    "away": "Morocco",
+    "h2h": [
+      0.427481,
+      0.267176,
+      0.305344
+    ],
+    "odds_raw": [
+      2.25,
+      3.6,
+      3.15
+    ],
+    "source": "oddsportal"
+  },
+  "2022-12-14|france|morocco": {
+    "date": "2022-12-14",
+    "home": "France",
+    "away": "Morocco",
+    "h2h": [
+      0.604511,
+      0.244827,
+      0.150663
+    ],
+    "odds_raw": [
+      1.62,
+      4.0,
+      6.5
+    ],
+    "source": "oddsportal"
+  },
+  "2022-12-13|argentina|croatia": {
+    "date": "2022-12-13",
+    "home": "Argentina",
+    "away": "Croatia",
+    "h2h": [
+      0.480299,
+      0.314573,
+      0.205128
+    ],
+    "odds_raw": [
+      2.05,
+      3.13,
+      4.8
+    ],
+    "source": "oddsportal"
+  },
+  "2022-12-10|england|france": {
+    "date": "2022-12-10",
+    "home": "England",
+    "away": "France",
+    "h2h": [
+      0.332758,
+      0.316657,
+      0.350585
+    ],
+    "odds_raw": [
+      2.95,
+      3.1,
+      2.8
+    ],
+    "source": "oddsportal"
+  },
+  "2022-12-10|morocco|portugal": {
+    "date": "2022-12-10",
+    "home": "Morocco",
+    "away": "Portugal",
+    "h2h": [
+      0.150099,
+      0.243911,
+      0.60599
+    ],
+    "odds_raw": [
+      6.5,
+      4.0,
+      1.61
+    ],
+    "source": "oddsportal"
+  },
+  "2022-12-09|netherlands|argentina": {
+    "date": "2022-12-09",
+    "home": "Netherlands",
+    "away": "Argentina",
+    "h2h": [
+      0.261718,
+      0.311569,
+      0.426714
+    ],
+    "odds_raw": [
+      3.75,
+      3.15,
+      2.3
+    ],
+    "source": "oddsportal"
+  },
+  "2022-12-09|croatia|brazil": {
+    "date": "2022-12-09",
+    "home": "Croatia",
+    "away": "Brazil",
+    "h2h": [
+      0.107486,
+      0.201536,
+      0.690979
+    ],
+    "odds_raw": [
+      9.0,
+      4.8,
+      1.4
+    ],
+    "source": "oddsportal"
+  },
+  "2022-12-06|portugal|switzerland": {
+    "date": "2022-12-06",
+    "home": "Portugal",
+    "away": "Switzerland",
+    "h2h": [
+      0.50191,
+      0.275019,
+      0.223071
+    ],
+    "odds_raw": [
+      2.0,
+      3.65,
+      4.5
+    ],
+    "source": "oddsportal"
+  },
+  "2022-12-06|morocco|spain": {
+    "date": "2022-12-06",
+    "home": "Morocco",
+    "away": "Spain",
+    "h2h": [
+      0.150663,
+      0.244827,
+      0.604511
+    ],
+    "odds_raw": [
+      6.5,
+      4.0,
+      1.62
+    ],
+    "source": "oddsportal"
+  },
+  "2022-12-05|brazil|south korea": {
+    "date": "2022-12-05",
+    "home": "Brazil",
+    "away": "South Korea",
+    "h2h": [
+      0.788321,
+      0.145985,
+      0.065693
+    ],
+    "odds_raw": [
+      1.25,
+      6.75,
+      15.0
+    ],
+    "source": "oddsportal"
+  },
+  "2022-12-05|japan|croatia": {
+    "date": "2022-12-05",
+    "home": "Japan",
+    "away": "Croatia",
+    "h2h": [
+      0.244425,
+      0.300831,
+      0.454744
+    ],
+    "odds_raw": [
+      4.0,
+      3.25,
+      2.15
+    ],
+    "source": "oddsportal"
+  },
+  "2022-12-04|england|senegal": {
+    "date": "2022-12-04",
+    "home": "England",
+    "away": "Senegal",
+    "h2h": [
+      0.601168,
+      0.259705,
+      0.139127
+    ],
+    "odds_raw": [
+      1.62,
+      3.75,
+      7.0
+    ],
+    "source": "oddsportal"
+  },
+  "2022-12-04|france|poland": {
+    "date": "2022-12-04",
+    "home": "France",
+    "away": "Poland",
+    "h2h": [
+      0.699269,
+      0.191956,
+      0.108775
+    ],
+    "odds_raw": [
+      1.4,
+      5.1,
+      9.0
+    ],
+    "source": "oddsportal"
+  },
+  "2022-12-03|argentina|australia": {
+    "date": "2022-12-03",
+    "home": "Argentina",
+    "away": "Australia",
+    "h2h": [
+      0.770599,
+      0.152934,
+      0.076467
+    ],
+    "odds_raw": [
+      1.29,
+      6.5,
+      13.0
+    ],
+    "source": "oddsportal"
+  },
+  "2022-12-03|netherlands|united states": {
+    "date": "2022-12-03",
+    "home": "Netherlands",
+    "away": "United States",
+    "h2h": [
+      0.504781,
+      0.281235,
+      0.213983
+    ],
+    "odds_raw": [
+      1.95,
+      3.5,
+      4.6
+    ],
+    "source": "oddsportal"
+  },
+  "2022-12-02|cameroon|brazil": {
+    "date": "2022-12-02",
+    "home": "Cameroon",
+    "away": "Brazil",
+    "h2h": [
+      0.090668,
+      0.181337,
+      0.727995
+    ],
+    "odds_raw": [
+      11.0,
+      5.5,
+      1.37
+    ],
+    "source": "oddsportal"
+  },
+  "2022-12-02|serbia|switzerland": {
+    "date": "2022-12-02",
+    "home": "Serbia",
+    "away": "Switzerland",
+    "h2h": [
+      0.380328,
+      0.285246,
+      0.334426
+    ],
+    "odds_raw": [
+      2.55,
+      3.4,
+      2.9
+    ],
+    "source": "oddsportal"
+  },
+  "2022-12-02|ghana|uruguay": {
+    "date": "2022-12-02",
+    "home": "Ghana",
+    "away": "Uruguay",
+    "h2h": [
+      0.212451,
+      0.250584,
+      0.536965
+    ],
+    "odds_raw": [
+      4.6,
+      3.9,
+      1.82
+    ],
+    "source": "oddsportal"
+  },
+  "2022-12-02|south korea|portugal": {
+    "date": "2022-12-02",
+    "home": "South Korea",
+    "away": "Portugal",
+    "h2h": [
+      0.222529,
+      0.251058,
+      0.526413
+    ],
+    "odds_raw": [
+      4.4,
+      3.9,
+      1.86
+    ],
+    "source": "oddsportal"
+  },
+  "2022-12-01|costa rica|germany": {
+    "date": "2022-12-01",
+    "home": "Costa Rica",
+    "away": "Germany",
+    "h2h": [
+      0.031988,
+      0.082635,
+      0.885377
+    ],
+    "odds_raw": [
+      31.0,
+      12.0,
+      1.12
+    ],
+    "source": "oddsportal"
+  },
+  "2022-12-01|japan|spain": {
+    "date": "2022-12-01",
+    "home": "Japan",
+    "away": "Spain",
+    "h2h": [
+      0.131054,
+      0.213675,
+      0.655271
+    ],
+    "odds_raw": [
+      7.5,
+      4.6,
+      1.5
+    ],
+    "source": "oddsportal"
+  },
+  "2022-12-01|croatia|belgium": {
+    "date": "2022-12-01",
+    "home": "Croatia",
+    "away": "Belgium",
+    "h2h": [
+      0.325998,
+      0.284084,
+      0.389919
+    ],
+    "odds_raw": [
+      3.05,
+      3.5,
+      2.55
+    ],
+    "source": "oddsportal"
+  },
+  "2022-12-01|canada|morocco": {
+    "date": "2022-12-01",
+    "home": "Canada",
+    "away": "Morocco",
+    "h2h": [
+      0.196208,
+      0.27635,
+      0.527442
+    ],
+    "odds_raw": [
+      5.0,
+      3.55,
+      1.86
+    ],
+    "source": "oddsportal"
+  },
+  "2022-11-30|poland|argentina": {
+    "date": "2022-11-30",
+    "home": "Poland",
+    "away": "Argentina",
+    "h2h": [
+      0.114794,
+      0.207605,
+      0.677601
+    ],
+    "odds_raw": [
+      8.5,
+      4.7,
+      1.44
+    ],
+    "source": "oddsportal"
+  },
+  "2022-11-30|saudi arabia|mexico": {
+    "date": "2022-11-30",
+    "home": "Saudi Arabia",
+    "away": "Mexico",
+    "h2h": [
+      0.176696,
+      0.223409,
+      0.599895
+    ],
+    "odds_raw": [
+      5.5,
+      4.35,
+      1.62
+    ],
+    "source": "oddsportal"
+  },
+  "2022-11-30|australia|denmark": {
+    "date": "2022-11-30",
+    "home": "Australia",
+    "away": "Denmark",
+    "h2h": [
+      0.122616,
+      0.196185,
+      0.681199
+    ],
+    "odds_raw": [
+      8.0,
+      5.0,
+      1.44
+    ],
+    "source": "oddsportal"
+  },
+  "2022-11-30|tunisia|france": {
+    "date": "2022-11-30",
+    "home": "Tunisia",
+    "away": "France",
+    "h2h": [
+      0.162376,
+      0.243564,
+      0.594059
+    ],
+    "odds_raw": [
+      6.0,
+      4.0,
+      1.64
+    ],
+    "source": "oddsportal"
+  },
+  "2022-11-29|wales|england": {
+    "date": "2022-11-29",
+    "home": "Wales",
+    "away": "England",
+    "h2h": [
+      0.103004,
+      0.217454,
+      0.679542
+    ],
+    "odds_raw": [
+      9.5,
+      4.5,
+      1.44
+    ],
+    "source": "oddsportal"
+  },
+  "2022-11-29|iran|united states": {
+    "date": "2022-11-29",
+    "home": "Iran",
+    "away": "United States",
+    "h2h": [
+      0.230453,
+      0.279835,
+      0.489712
+    ],
+    "odds_raw": [
+      4.25,
+      3.5,
+      2.0
+    ],
+    "source": "oddsportal"
+  },
+  "2022-11-29|ecuador|senegal": {
+    "date": "2022-11-29",
+    "home": "Ecuador",
+    "away": "Senegal",
+    "h2h": [
+      0.390011,
+      0.314525,
+      0.295463
+    ],
+    "odds_raw": [
+      2.5,
+      3.1,
+      3.3
+    ],
+    "source": "oddsportal"
+  },
+  "2022-11-29|netherlands|qatar": {
+    "date": "2022-11-29",
+    "home": "Netherlands",
+    "away": "Qatar",
+    "h2h": [
+      0.807707,
+      0.134803,
+      0.05749
+    ],
+    "odds_raw": [
+      1.21,
+      7.25,
+      17.0
+    ],
+    "source": "oddsportal"
+  },
+  "2022-11-28|portugal|uruguay": {
+    "date": "2022-11-28",
+    "home": "Portugal",
+    "away": "Uruguay",
+    "h2h": [
+      0.50064,
+      0.287132,
+      0.212228
+    ],
+    "odds_raw": [
+      1.95,
+      3.4,
+      4.6
+    ],
+    "source": "oddsportal"
+  },
+  "2022-11-28|brazil|switzerland": {
+    "date": "2022-11-28",
+    "home": "Brazil",
+    "away": "Switzerland",
+    "h2h": [
+      0.657333,
+      0.226667,
+      0.116
+    ],
+    "odds_raw": [
+      1.5,
+      4.35,
+      8.5
+    ],
+    "source": "oddsportal"
+  },
+  "2022-11-28|south korea|ghana": {
+    "date": "2022-11-28",
+    "home": "South Korea",
+    "away": "Ghana",
+    "h2h": [
+      0.355336,
+      0.305367,
+      0.339297
+    ],
+    "odds_raw": [
+      2.75,
+      3.2,
+      2.88
+    ],
+    "source": "oddsportal"
+  },
+  "2022-11-28|cameroon|serbia": {
+    "date": "2022-11-28",
+    "home": "Cameroon",
+    "away": "Serbia",
+    "h2h": [
+      0.173957,
+      0.256358,
+      0.569685
+    ],
+    "odds_raw": [
+      5.6,
+      3.8,
+      1.71
+    ],
+    "source": "oddsportal"
+  },
+  "2022-11-27|spain|germany": {
+    "date": "2022-11-27",
+    "home": "Spain",
+    "away": "Germany",
+    "h2h": [
+      0.377981,
+      0.280786,
+      0.341233
+    ],
+    "odds_raw": [
+      2.6,
+      3.5,
+      2.88
+    ],
+    "source": "oddsportal"
+  },
+  "2022-11-27|croatia|canada": {
+    "date": "2022-11-27",
+    "home": "Croatia",
+    "away": "Canada",
+    "h2h": [
+      0.435112,
+      0.296668,
+      0.26822
+    ],
+    "odds_raw": [
+      2.25,
+      3.3,
+      3.65
+    ],
+    "source": "oddsportal"
+  },
+  "2022-11-27|belgium|morocco": {
+    "date": "2022-11-27",
+    "home": "Belgium",
+    "away": "Morocco",
+    "h2h": [
+      0.508216,
+      0.283149,
+      0.208636
+    ],
+    "odds_raw": [
+      1.95,
+      3.5,
+      4.75
+    ],
+    "source": "oddsportal"
+  },
+  "2022-11-27|japan|costa rica": {
+    "date": "2022-11-27",
+    "home": "Japan",
+    "away": "Costa Rica",
+    "h2h": [
+      0.647849,
+      0.225924,
+      0.126226
+    ],
+    "odds_raw": [
+      1.51,
+      4.33,
+      7.75
+    ],
+    "source": "oddsportal"
+  },
+  "2022-11-26|argentina|mexico": {
+    "date": "2022-11-26",
+    "home": "Argentina",
+    "away": "Mexico",
+    "h2h": [
+      0.631765,
+      0.243461,
+      0.124774
+    ],
+    "odds_raw": [
+      1.58,
+      4.1,
+      8.0
+    ],
+    "source": "oddsportal"
+  },
+  "2022-11-26|france|denmark": {
+    "date": "2022-11-26",
+    "home": "France",
+    "away": "Denmark",
+    "h2h": [
+      0.525164,
+      0.271335,
+      0.203501
+    ],
+    "odds_raw": [
+      1.86,
+      3.6,
+      4.8
+    ],
+    "source": "oddsportal"
+  },
+  "2022-11-26|poland|saudi arabia": {
+    "date": "2022-11-26",
+    "home": "Poland",
+    "away": "Saudi Arabia",
+    "h2h": [
+      0.566023,
+      0.26983,
+      0.164147
+    ],
+    "odds_raw": [
+      1.74,
+      3.65,
+      6.0
+    ],
+    "source": "oddsportal"
+  },
+  "2022-11-26|tunisia|australia": {
+    "date": "2022-11-26",
+    "home": "Tunisia",
+    "away": "Australia",
+    "h2h": [
+      0.444484,
+      0.287607,
+      0.267908
+    ],
+    "odds_raw": [
+      2.2,
+      3.4,
+      3.65
+    ],
+    "source": "oddsportal"
+  },
+  "2022-11-25|england|united states": {
+    "date": "2022-11-25",
+    "home": "England",
+    "away": "United States",
+    "h2h": [
+      0.656646,
+      0.227475,
+      0.115879
+    ],
+    "odds_raw": [
+      1.5,
+      4.33,
+      8.5
+    ],
+    "source": "oddsportal"
+  },
+  "2022-11-25|france|denmark": {
+    "date": "2022-11-25",
+    "home": "France",
+    "away": "Denmark",
+    "h2h": [
+      0.525164,
+      0.271335,
+      0.203501
+    ],
+    "odds_raw": [
+      1.86,
+      3.6,
+      4.8
+    ],
+    "source": "oddsportal"
+  },
+  "2022-11-25|netherlands|ecuador": {
+    "date": "2022-11-25",
+    "home": "Netherlands",
+    "away": "Ecuador",
+    "h2h": [
+      0.527389,
+      0.280269,
+      0.192342
+    ],
+    "odds_raw": [
+      1.86,
+      3.5,
+      5.1
+    ],
+    "source": "oddsportal"
+  },
+  "2022-11-25|qatar|senegal": {
+    "date": "2022-11-25",
+    "home": "Qatar",
+    "away": "Senegal",
+    "h2h": [
+      0.158622,
+      0.271614,
+      0.569764
+    ],
+    "odds_raw": [
+      6.25,
+      3.65,
+      1.74
+    ],
+    "source": "oddsportal"
+  },
+  "2022-11-25|wales|iran": {
+    "date": "2022-11-25",
+    "home": "Wales",
+    "away": "Iran",
+    "h2h": [
+      0.446927,
+      0.307263,
+      0.24581
+    ],
+    "odds_raw": [
+      2.2,
+      3.2,
+      4.0
+    ],
+    "source": "oddsportal"
+  },
+  "2022-11-24|brazil|serbia": {
+    "date": "2022-11-24",
+    "home": "Brazil",
+    "away": "Serbia",
+    "h2h": [
+      0.658296,
+      0.2118,
+      0.129904
+    ],
+    "odds_raw": [
+      1.48,
+      4.6,
+      7.5
+    ],
+    "source": "oddsportal"
+  },
+  "2022-11-24|portugal|ghana": {
+    "date": "2022-11-24",
+    "home": "Portugal",
+    "away": "Ghana",
+    "h2h": [
+      0.739528,
+      0.171056,
+      0.089416
+    ],
+    "odds_raw": [
+      1.33,
+      5.75,
+      11.0
+    ],
+    "source": "oddsportal"
+  }
+}

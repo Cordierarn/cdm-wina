@@ -20,6 +20,7 @@ ROOT = Path(__file__).parent
 DATA_DIR = ROOT / "data"
 REMOTE_BASE = "https://raw.githubusercontent.com/eatpizzanot/soccer-dataset/main/parquet"
 INTL_LEAGUE_IDS = {78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88}
+CLOSING_BACKTEST_FILE = DATA_DIR / "closing_backtest.json"
 
 TOURNAMENT_PATTERNS = [
     ("World Cup", r"world cup|coupe du monde|fifa world cup"),
@@ -280,6 +281,74 @@ def market_lines(fixtures: pd.DataFrame, market: str, row: pd.Series) -> list[fl
     return None
 
 
+def load_closing_backtest() -> dict:
+    """Charge closing_backtest.json si présent, sinon retourne dict vide."""
+    if not CLOSING_BACKTEST_FILE.exists():
+        return {}
+    try:
+        return json.loads(CLOSING_BACKTEST_FILE.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+def closing_lookup(
+    closing: dict,
+    date_val: pd.Timestamp,
+    home_name: str,
+    away_name: str,
+) -> list[float] | None:
+    """Cherche les probas de clôture dans closing_backtest pour un match donné.
+
+    Essaie plusieurs variantes de clé : date exacte, ±1 jour, noms normalisés.
+    """
+    if not closing:
+        return None
+    date_iso = date_val.strftime("%Y-%m-%d")
+    h = norm(home_name)
+    a = norm(away_name)
+
+    for delta in (0, 1, -1):
+        import datetime as _dt
+        d = (date_val + pd.Timedelta(days=delta)).strftime("%Y-%m-%d")
+        key = f"{d}|{h}|{a}"
+        if key in closing:
+            return closing[key]["h2h"]
+    return None
+
+
+def build_team_name_index(fixtures: pd.DataFrame, home_id_col: str, away_id_col: str) -> dict[int, str]:
+    """Construit un index id→nom à partir des colonnes de nom d'équipe si présentes."""
+    name_index: dict[int, str] = {}
+    home_name_col = pick_column(fixtures.columns, ["home_team_name", "home_name", "team_home_name", "home_team"])
+    away_name_col = pick_column(fixtures.columns, ["away_team_name", "away_name", "team_away_name", "away_team"])
+    if home_name_col and home_id_col:
+        for _, row in fixtures[[home_id_col, home_name_col]].drop_duplicates().iterrows():
+            tid = row[home_id_col]
+            name = row[home_name_col]
+            if pd.notna(tid) and pd.notna(name):
+                name_index[int(tid)] = str(name)
+    if away_name_col and away_id_col:
+        for _, row in fixtures[[away_id_col, away_name_col]].drop_duplicates().iterrows():
+            tid = row[away_id_col]
+            name = row[away_name_col]
+            if pd.notna(tid) and pd.notna(name):
+                name_index[int(tid)] = str(name)
+    # Essayer aussi un parquet teams.parquet si disponible
+    teams_path = DATA_DIR / "dataset" / "teams.parquet"
+    if teams_path.exists():
+        try:
+            teams = pd.read_parquet(teams_path)
+            id_col = pick_column(teams.columns, ["id", "team_id"])
+            n_col = pick_column(teams.columns, ["name", "team_name", "short_name"])
+            if id_col and n_col:
+                for _, row in teams[[id_col, n_col]].drop_duplicates().iterrows():
+                    if pd.notna(row[id_col]) and pd.notna(row[n_col]):
+                        name_index[int(row[id_col])] = str(row[n_col])
+        except Exception:
+            pass
+    return name_index
+
+
 def predict_row(base_lambda: float, spread: float, rho: float, diff: float) -> dict[str, list[float]]:
     mat, _, _ = score_probs(base_lambda, spread, rho, diff)
     p1 = sum(mat[h][a] for h in range(11) for a in range(11) if h > a)
@@ -382,6 +451,15 @@ def main() -> None:
     if fixtures.empty:
         raise SystemExit("Aucun tournoi historique international reconnu n'a ete trouve")
 
+    # Cotes de clôture externes (OddsPortal via closing_backtest.json)
+    closing = load_closing_backtest()
+    if closing:
+        print(f"[closing] {len(closing)} matchs chargés depuis {CLOSING_BACKTEST_FILE.name}")
+    else:
+        print("[closing] closing_backtest.json absent — métriques marché en n/a")
+
+    team_name_index = build_team_name_index(fixtures, home_id_col, away_id_col)
+
     points: list[BacktestPoint] = []
     tournaments: list[dict] = []
 
@@ -448,6 +526,14 @@ def main() -> None:
             y_tot = [1.0 if gh + ga > 2.5 else 0.0, 1.0 if gh + ga <= 2.5 else 0.0]
             market_1n2 = market_lines(fixtures, "1n2", row)
             market_totals = market_lines(fixtures, "totals", row)
+            # Enrichissement depuis closing_backtest.json si disponible
+            if closing and market_1n2 is None:
+                h_id = int(row[home_id_col])
+                a_id = int(row[away_id_col])
+                h_name = team_name_index.get(h_id, "")
+                a_name = team_name_index.get(a_id, "")
+                if h_name and a_name:
+                    market_1n2 = closing_lookup(closing, row[date_col], h_name, a_name)
             points.append(BacktestPoint(key, "1n2", y_1n2, probs["1n2"], [1 / 3, 1 / 3, 1 / 3], market_1n2))
             points.append(BacktestPoint(key, "totals", y_tot, probs["totals"], [0.5, 0.5], market_totals))
             market_1n2_rows.append((probs["1n2"], y_1n2, market_1n2))
@@ -500,8 +586,12 @@ def main() -> None:
         "summary": summary,
         "model_weights": model_weights,
         "notes": {
-            "market_reference": "historical closing odds when available in the dataset",
+            "market_reference": (
+                "closing_backtest.json (OddsPortal scraping, WC2022+Euro2024)"
+                if closing else "n/a — closing_backtest.json absent"
+            ),
             "force_source": "fixture rating columns if present, otherwise pre-cutoff Elo fallback",
+            "totals_weight": "fixed at 0.40 (no free closing odds available for O/U 2.5)",
         },
     }
     DATA_DIR.mkdir(parents=True, exist_ok=True)

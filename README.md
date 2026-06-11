@@ -112,9 +112,36 @@ repli sur 0,40 pour les marchés non calibrés par le backtest.
 `backtest.py` valide le pipeline sur les tournois historiques du dataset en
 reconstruisant les forces et la calibration uniquement à partir des matchs
 antérieurs au tournoi testé. Il produit `data/backtest.json` et un résumé
-console par tournoi et par marché. Quand des cotes historiques exploitables
-sont disponibles dans le dataset, le script estime aussi le meilleur poids de
-mélange par marché.
+console par tournoi et par marché.
+
+#### Cotes historiques de clôture (comparaison au marché)
+
+La comparaison au marché nécessite des cotes de clôture historiques absentes du soccer-dataset.
+Source retenue : **[OddsPortal](https://www.oddsportal.com)** (consultation libre, pas de clé API).
+
+Tournois couverts : **FIFA World Cup 2022** et **UEFA Euro 2024** (1X2 uniquement).
+Totaux O/U 2.5 : non disponibles gratuitement — le poids `totals` est fixé à **0,40**.
+
+**Procédure d'installation des cotes (à faire une fois) :**
+
+```bash
+pip install playwright && playwright install chromium
+python fetch_historical_odds.py      # scrape OddsPortal → data/historical_odds/*.json
+python build_closing_backtest.py     # parse + mapping noms → data/closing_backtest.json
+python backtest.py                   # backtest complet avec métriques marché
+```
+
+`backtest.py` continue à fonctionner sans `closing_backtest.json` (métriques marché affichées en `n/a`).
+
+**Limites :**
+- OddsPortal est JS-rendu : Playwright (Chromium headless) est requis.
+- Les cotes exposées sont la moyenne des bookmakers (pas Pinnacle isolé).
+- Scraping lent (~2–3 s/match) : WC2022 (64 matchs) + Euro 2024 (51 matchs) ≈ 10 min.
+- Les noms d'équipes OddsPortal sont mappés vers les noms du soccer-dataset dans `build_closing_backtest.py` ; compléter `TEAM_NAME_MAP` si des matchs sont manquants.
+
+Quand `closing_backtest.json` est présent, `backtest.py` estime le meilleur poids de
+mélange modèle/marché par marché (grid search w ∈ [0, 1] pas 0,05) et l'écrit dans
+`data/backtest.json`, lu par `pricing.py` / `make_picks.py`.
 
 ### Suivi du CLV (Closing Line Value)
 
