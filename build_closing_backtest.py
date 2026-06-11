@@ -39,9 +39,15 @@ TEAM_NAME_MAP: dict[str, str] = {
     "korea republic": "South Korea",
     "south korea": "South Korea",
     "republic of korea": "South Korea",
+    # USA : OddsPortal écrit "USA", dataset écrit "United States"
     "usa": "United States",
     "united states": "United States",
     "usa.": "United States",
+    "u.s.a.": "United States",
+    # Türkiye : dataset utilise la graphie officielle avec tréma
+    "turkey": "Türkiye",
+    "turkiye": "Türkiye",
+    "türkiye": "Türkiye",
     "czechia": "Czech Republic",
     "czech republic": "Czech Republic",
     "ir iran": "Iran",

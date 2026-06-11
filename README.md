@@ -133,15 +133,32 @@ python backtest.py                   # backtest complet avec métriques marché
 
 `backtest.py` continue à fonctionner sans `closing_backtest.json` (métriques marché affichées en `n/a`).
 
-**Limites :**
-- OddsPortal est JS-rendu : Playwright (Chromium headless) est requis.
-- Les cotes exposées sont la moyenne des bookmakers (pas Pinnacle isolé).
-- Scraping lent (~2–3 s/match) : WC2022 (64 matchs) + Euro 2024 (51 matchs) ≈ 10 min.
-- Les noms d'équipes OddsPortal sont mappés vers les noms du soccer-dataset dans `build_closing_backtest.py` ; compléter `TEAM_NAME_MAP` si des matchs sont manquants.
+**Limites et biais — à lire avant d'utiliser les poids :**
+
+1. **Échantillon faible.** 105 matchs matchés (WC2022 + Euro2024). La courbe logloss(w) ci-dessous est quasi-plate entre w=0 et w=0,15 (Δ = +0,0015) — n'importe quelle valeur dans cette zone se vaut statistiquement :
+
+   ```
+   w=0.00  logloss=0.9703  (marché seul)
+   w=0.05  logloss=0.9700  ← optimal sur cet échantillon
+   w=0.10  logloss=0.9706
+   w=0.15  logloss=0.9718
+   w=0.20  logloss=0.9737
+   w=0.40  logloss=0.9865  (+0.016 vs optimal)
+   ```
+
+2. **Biais closing vs pré-match.** Le grid search compare le modèle aux cotes de clôture OddsPortal (moyenne bookmakers ≈ fin d'information marché). En pratique tu paries des heures ou jours avant contre des cotes Winamax moins efficientes. Le poids optimal en conditions réelles est probablement un peu plus élevé que w=0,05 — par sécurité `model_weights["1n2"]` est fixé à **0,05** et non 0,00.
+
+3. **Cotes OddsPortal = moyenne bookmakers, pas Pinnacle.** Pinnacle est le book sharp de référence ; la moyenne inclut des books à marge plus élevée, donc moins informatifs. Les probas dé-viguées sont légèrement moins précises que des closing lines Pinnacle pures.
+
+4. **Conséquence pratique sur les picks 1N2.** Avec w=0,05, la proba finale colle quasi-exactement la moyenne marché dé-viguée. Les picks 1N2 ne sortiront que sur des écarts Winamax/marché francs (EV ≥ 3% après marge Winamax), ce qui est le comportement sain : les vraies values sont sur les marchés de niche (totaux, scores exacts) où le poids reste à 0,40.
 
 Quand `closing_backtest.json` est présent, `backtest.py` estime le meilleur poids de
 mélange modèle/marché par marché (grid search w ∈ [0, 1] pas 0,05) et l'écrit dans
 `data/backtest.json`, lu par `pricing.py` / `make_picks.py`.
+
+- OddsPortal est JS-rendu : Playwright (Chromium headless) est requis.
+- Les noms d'équipes OddsPortal sont mappés vers ceux du soccer-dataset dans `build_closing_backtest.py` et `backtest.py` (`_DATASET_TO_CLOSING_NORM`) ; compléter si des matchs restent non-matchés.
+- Totaux O/U 2.5 : non disponibles gratuitement — poids `totals` fixé à **0,40** (fallback).
 
 ### Suivi du CLV (Closing Line Value)
 

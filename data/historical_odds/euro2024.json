@@ -52,16 +52,6 @@
       "odds_away": 4.2
     },
     {
-      "date": "2024-07-06",
-      "home": "England",
-      "away": "Switzerland",
-      "score_home": 2,
-      "score_away": 1,
-      "odds_home": 2.23,
-      "odds_draw": 3.0,
-      "odds_away": 4.2
-    },
-    {
       "date": "2024-07-05",
       "home": "Portugal",
       "away": "France",
@@ -353,6 +343,16 @@
     },
     {
       "date": "2024-06-20",
+      "home": "Belgium",
+      "away": "Slovakia",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 1.5,
+      "odds_draw": 4.5,
+      "odds_away": 7.5
+    },
+    {
+      "date": "2024-06-20",
       "home": "Denmark",
       "away": "England",
       "score_home": 1,
@@ -510,6 +510,1906 @@
       "odds_home": 4.0,
       "odds_draw": 3.2,
       "odds_away": 2.23
+    },
+    {
+      "date": "2024-06-14",
+      "home": "Germany",
+      "away": "Scotland",
+      "score_home": 5,
+      "score_away": 1,
+      "odds_home": 1.3,
+      "odds_draw": 6.0,
+      "odds_away": 12.0
+    },
+    {
+      "date": "2024-03-26",
+      "home": "Ukraine",
+      "away": "Iceland",
+      "score_home": 2,
+      "score_away": 1,
+      "odds_home": 1.62,
+      "odds_draw": 3.9,
+      "odds_away": 6.25
+    },
+    {
+      "date": "2024-03-26",
+      "home": "Wales",
+      "away": "Poland",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 2.8,
+      "odds_draw": 3.0,
+      "odds_away": 3.0
+    },
+    {
+      "date": "2024-03-26",
+      "home": "Georgia",
+      "away": "Greece",
+      "score_home": 1,
+      "score_away": 0,
+      "odds_home": 3.3,
+      "odds_draw": 3.0,
+      "odds_away": 2.45
+    },
+    {
+      "date": "2024-03-21",
+      "home": "Bosnia & Herzegovina",
+      "away": "Ukraine",
+      "score_home": 1,
+      "score_away": 2,
+      "odds_home": 3.7,
+      "odds_draw": 3.3,
+      "odds_away": 2.15
+    },
+    {
+      "date": "2024-03-21",
+      "home": "Poland",
+      "away": "Estonia",
+      "score_home": 5,
+      "score_away": 1,
+      "odds_home": 1.2,
+      "odds_draw": 7.0,
+      "odds_away": 17.0
+    },
+    {
+      "date": "2024-03-21",
+      "home": "Wales",
+      "away": "Finland",
+      "score_home": 4,
+      "score_away": 1,
+      "odds_home": 1.91,
+      "odds_draw": 3.3,
+      "odds_away": 5.0
+    },
+    {
+      "date": "2024-03-21",
+      "home": "Greece",
+      "away": "Kazakhstan",
+      "score_home": 5,
+      "score_away": 0,
+      "odds_home": 1.35,
+      "odds_draw": 5.0,
+      "odds_away": 12.0
+    },
+    {
+      "date": "2024-03-21",
+      "home": "Israel",
+      "away": "Iceland",
+      "score_home": 1,
+      "score_away": 4,
+      "odds_home": 2.35,
+      "odds_draw": 3.3,
+      "odds_away": 3.2
+    },
+    {
+      "date": "2024-03-21",
+      "home": "Georgia",
+      "away": "Luxembourg",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 1.8,
+      "odds_draw": 3.5,
+      "odds_away": 5.1
+    },
+    {
+      "date": "2023-11-21",
+      "home": "Andorra",
+      "away": "Israel",
+      "score_home": 0,
+      "score_away": 2,
+      "odds_home": 10.0,
+      "odds_draw": 5.25,
+      "odds_away": 1.36
+    },
+    {
+      "date": "2023-11-21",
+      "home": "Croatia",
+      "away": "Armenia",
+      "score_home": 1,
+      "score_away": 0,
+      "odds_home": 1.13,
+      "odds_draw": 9.75,
+      "odds_away": 23.0
+    },
+    {
+      "date": "2023-11-21",
+      "home": "Kosovo",
+      "away": "Belarus",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 1.67,
+      "odds_draw": 4.0,
+      "odds_away": 5.25
+    },
+    {
+      "date": "2023-11-21",
+      "home": "Greece",
+      "away": "France",
+      "score_home": 2,
+      "score_away": 2,
+      "odds_home": 6.0,
+      "odds_draw": 4.0,
+      "odds_away": 1.62
+    },
+    {
+      "date": "2023-11-21",
+      "home": "Gibraltar",
+      "away": "Netherlands",
+      "score_home": 0,
+      "score_away": 6,
+      "odds_home": 71.0,
+      "odds_draw": 41.0,
+      "odds_away": 1.01
+    },
+    {
+      "date": "2023-11-21",
+      "home": "Romania",
+      "away": "Switzerland",
+      "score_home": 1,
+      "score_away": 0,
+      "odds_home": 3.75,
+      "odds_draw": 3.5,
+      "odds_away": 2.05
+    },
+    {
+      "date": "2023-11-21",
+      "home": "Wales",
+      "away": "Turkey",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 2.65,
+      "odds_draw": 3.4,
+      "odds_away": 2.75
+    },
+    {
+      "date": "2023-11-20",
+      "home": "Albania",
+      "away": "Faroe Islands",
+      "score_home": 0,
+      "score_away": 0,
+      "odds_home": 1.33,
+      "odds_draw": 5.5,
+      "odds_away": 15.0
+    },
+    {
+      "date": "2023-11-20",
+      "home": "Czech Republic",
+      "away": "Moldova",
+      "score_home": 3,
+      "score_away": 0,
+      "odds_home": 1.24,
+      "odds_draw": 6.5,
+      "odds_away": 13.0
+    },
+    {
+      "date": "2023-11-20",
+      "home": "Northern Ireland",
+      "away": "Denmark",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 6.0,
+      "odds_draw": 3.75,
+      "odds_away": 1.75
+    },
+    {
+      "date": "2023-11-20",
+      "home": "North Macedonia",
+      "away": "England",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 17.0,
+      "odds_draw": 6.5,
+      "odds_away": 1.25
+    },
+    {
+      "date": "2023-11-20",
+      "home": "San Marino",
+      "away": "Finland",
+      "score_home": 1,
+      "score_away": 2,
+      "odds_home": 34.0,
+      "odds_draw": 11.5,
+      "odds_away": 1.09
+    },
+    {
+      "date": "2023-11-20",
+      "home": "Ukraine",
+      "away": "Italy",
+      "score_home": 0,
+      "score_away": 0,
+      "odds_home": 5.0,
+      "odds_draw": 3.75,
+      "odds_away": 1.73
+    },
+    {
+      "date": "2023-11-20",
+      "home": "Slovenia",
+      "away": "Kazakhstan",
+      "score_home": 2,
+      "score_away": 1,
+      "odds_home": 1.44,
+      "odds_draw": 4.33,
+      "odds_away": 8.0
+    },
+    {
+      "date": "2023-11-19",
+      "home": "Bosnia & Herzegovina",
+      "away": "Slovakia",
+      "score_home": 1,
+      "score_away": 2,
+      "odds_home": 3.2,
+      "odds_draw": 3.25,
+      "odds_away": 2.5
+    },
+    {
+      "date": "2023-11-19",
+      "home": "Spain",
+      "away": "Georgia",
+      "score_home": 3,
+      "score_away": 1,
+      "odds_home": 1.1,
+      "odds_draw": 10.0,
+      "odds_away": 26.0
+    },
+    {
+      "date": "2023-11-19",
+      "home": "Portugal",
+      "away": "Iceland",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 1.1,
+      "odds_draw": 12.5,
+      "odds_away": 31.0
+    },
+    {
+      "date": "2023-11-19",
+      "home": "Liechtenstein",
+      "away": "Luxembourg",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 15.0,
+      "odds_draw": 6.5,
+      "odds_away": 1.29
+    },
+    {
+      "date": "2023-11-19",
+      "home": "Scotland",
+      "away": "Norway",
+      "score_home": 3,
+      "score_away": 3,
+      "odds_home": 2.45,
+      "odds_draw": 3.2,
+      "odds_away": 3.4
+    },
+    {
+      "date": "2023-11-19",
+      "home": "Belgium",
+      "away": "Azerbaijan",
+      "score_home": 5,
+      "score_away": 0,
+      "odds_home": 1.11,
+      "odds_draw": 10.0,
+      "odds_away": 26.0
+    },
+    {
+      "date": "2023-11-19",
+      "home": "Sweden",
+      "away": "Estonia",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 1.2,
+      "odds_draw": 7.0,
+      "odds_away": 17.0
+    },
+    {
+      "date": "2023-11-19",
+      "home": "Serbia",
+      "away": "Bulgaria",
+      "score_home": 2,
+      "score_away": 2,
+      "odds_home": 1.21,
+      "odds_draw": 6.5,
+      "odds_away": 17.0
+    },
+    {
+      "date": "2023-11-19",
+      "home": "Hungary",
+      "away": "Montenegro",
+      "score_home": 3,
+      "score_away": 1,
+      "odds_home": 1.8,
+      "odds_draw": 3.6,
+      "odds_away": 4.6
+    },
+    {
+      "date": "2023-11-18",
+      "home": "France",
+      "away": "Gibraltar",
+      "score_home": 14,
+      "score_away": 0,
+      "odds_home": 1.01,
+      "odds_draw": 67.0,
+      "odds_away": 101.0
+    },
+    {
+      "date": "2023-11-18",
+      "home": "Netherlands",
+      "away": "Ireland",
+      "score_home": 1,
+      "score_away": 0,
+      "odds_home": 1.36,
+      "odds_draw": 6.0,
+      "odds_away": 13.0
+    },
+    {
+      "date": "2023-11-18",
+      "home": "Israel",
+      "away": "Romania",
+      "score_home": 1,
+      "score_away": 2,
+      "odds_home": 2.63,
+      "odds_draw": 3.5,
+      "odds_away": 2.75
+    },
+    {
+      "date": "2023-11-18",
+      "home": "Switzerland",
+      "away": "Kosovo",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 1.25,
+      "odds_draw": 6.25,
+      "odds_away": 12.0
+    },
+    {
+      "date": "2023-11-18",
+      "home": "Belarus",
+      "away": "Andorra",
+      "score_home": 1,
+      "score_away": 0,
+      "odds_home": 1.57,
+      "odds_draw": 4.0,
+      "odds_away": 8.0
+    },
+    {
+      "date": "2023-11-18",
+      "home": "Latvia",
+      "away": "Croatia",
+      "score_home": 0,
+      "score_away": 2,
+      "odds_home": 21.0,
+      "odds_draw": 8.0,
+      "odds_away": 1.17
+    },
+    {
+      "date": "2023-11-18",
+      "home": "Armenia",
+      "away": "Wales",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 4.5,
+      "odds_draw": 3.6,
+      "odds_away": 1.83
+    },
+    {
+      "date": "2023-11-17",
+      "home": "Poland",
+      "away": "Czech Republic",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 2.5,
+      "odds_draw": 3.2,
+      "odds_away": 3.05
+    },
+    {
+      "date": "2023-11-17",
+      "home": "Denmark",
+      "away": "Slovenia",
+      "score_home": 2,
+      "score_away": 1,
+      "odds_home": 1.62,
+      "odds_draw": 3.8,
+      "odds_away": 6.9
+    },
+    {
+      "date": "2023-11-17",
+      "home": "England",
+      "away": "Malta",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 1.02,
+      "odds_draw": 32.0,
+      "odds_away": 67.0
+    },
+    {
+      "date": "2023-11-17",
+      "home": "Italy",
+      "away": "North Macedonia",
+      "score_home": 5,
+      "score_away": 2,
+      "odds_home": 1.13,
+      "odds_draw": 9.5,
+      "odds_away": 23.0
+    },
+    {
+      "date": "2023-11-17",
+      "home": "Moldova",
+      "away": "Albania",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 4.75,
+      "odds_draw": 3.2,
+      "odds_away": 1.98
+    },
+    {
+      "date": "2023-11-17",
+      "home": "Finland",
+      "away": "Northern Ireland",
+      "score_home": 4,
+      "score_away": 0,
+      "odds_home": 2.25,
+      "odds_draw": 3.1,
+      "odds_away": 3.75
+    },
+    {
+      "date": "2023-11-17",
+      "home": "Kazakhstan",
+      "away": "San Marino",
+      "score_home": 3,
+      "score_away": 1,
+      "odds_home": 1.06,
+      "odds_draw": 14.5,
+      "odds_away": 51.0
+    },
+    {
+      "date": "2023-11-16",
+      "home": "Luxembourg",
+      "away": "Bosnia & Herzegovina",
+      "score_home": 4,
+      "score_away": 1,
+      "odds_home": 3.0,
+      "odds_draw": 3.3,
+      "odds_away": 2.55
+    },
+    {
+      "date": "2023-11-16",
+      "home": "Slovakia",
+      "away": "Iceland",
+      "score_home": 4,
+      "score_away": 2,
+      "odds_home": 1.8,
+      "odds_draw": 3.6,
+      "odds_away": 5.5
+    },
+    {
+      "date": "2023-11-16",
+      "home": "Montenegro",
+      "away": "Lithuania",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 1.37,
+      "odds_draw": 5.0,
+      "odds_away": 10.0
+    },
+    {
+      "date": "2023-11-16",
+      "home": "Liechtenstein",
+      "away": "Portugal",
+      "score_home": 0,
+      "score_away": 2,
+      "odds_home": 101.0,
+      "odds_draw": 41.0,
+      "odds_away": 1.01
+    },
+    {
+      "date": "",
+      "home": "Estonia",
+      "away": "Austria",
+      "score_home": 0,
+      "score_away": 2,
+      "odds_home": 13.0,
+      "odds_draw": 5.75,
+      "odds_away": 1.27
+    },
+    {
+      "date": "",
+      "home": "Azerbaijan",
+      "away": "Sweden",
+      "score_home": 3,
+      "score_away": 0,
+      "odds_home": 7.0,
+      "odds_draw": 4.5,
+      "odds_away": 1.53
+    },
+    {
+      "date": "",
+      "home": "Bulgaria",
+      "away": "Hungary",
+      "score_home": 2,
+      "score_away": 2,
+      "odds_home": 6.0,
+      "odds_draw": 3.65,
+      "odds_away": 1.7
+    },
+    {
+      "date": "",
+      "home": "Cyprus",
+      "away": "Spain",
+      "score_home": 1,
+      "score_away": 3,
+      "odds_home": 46.0,
+      "odds_draw": 17.5,
+      "odds_away": 1.05
+    },
+    {
+      "date": "",
+      "home": "Georgia",
+      "away": "Scotland",
+      "score_home": 2,
+      "score_away": 2,
+      "odds_home": 3.3,
+      "odds_draw": 3.4,
+      "odds_away": 2.3
+    },
+    {
+      "date": "2023-11-15",
+      "home": "Israel",
+      "away": "Switzerland",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 7.25,
+      "odds_draw": 4.5,
+      "odds_away": 1.5
+    },
+    {
+      "date": "2023-11-12",
+      "home": "Kosovo",
+      "away": "Israel",
+      "score_home": 1,
+      "score_away": 0,
+      "odds_home": 3.2,
+      "odds_draw": 3.6,
+      "odds_away": 2.25
+    },
+    {
+      "date": "2023-10-17",
+      "home": "San Marino",
+      "away": "Denmark",
+      "score_home": 1,
+      "score_away": 2,
+      "odds_home": 91.0,
+      "odds_draw": 41.0,
+      "odds_away": 1.01
+    },
+    {
+      "date": "2023-10-17",
+      "home": "England",
+      "away": "Italy",
+      "score_home": 3,
+      "score_away": 1,
+      "odds_home": 1.6,
+      "odds_draw": 3.9,
+      "odds_away": 6.75
+    },
+    {
+      "date": "2023-10-17",
+      "home": "Lithuania",
+      "away": "Hungary",
+      "score_home": 2,
+      "score_away": 2,
+      "odds_home": 10.0,
+      "odds_draw": 4.8,
+      "odds_away": 1.38
+    },
+    {
+      "date": "2023-10-17",
+      "home": "Malta",
+      "away": "Ukraine",
+      "score_home": 1,
+      "score_away": 3,
+      "odds_home": 17.0,
+      "odds_draw": 6.25,
+      "odds_away": 1.22
+    },
+    {
+      "date": "2023-10-17",
+      "home": "Serbia",
+      "away": "Montenegro",
+      "score_home": 3,
+      "score_away": 1,
+      "odds_home": 1.4,
+      "odds_draw": 5.0,
+      "odds_away": 8.5
+    },
+    {
+      "date": "2023-10-17",
+      "home": "Northern Ireland",
+      "away": "Slovenia",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 3.25,
+      "odds_draw": 3.1,
+      "odds_away": 2.45
+    },
+    {
+      "date": "2023-10-17",
+      "home": "Finland",
+      "away": "Kazakhstan",
+      "score_home": 1,
+      "score_away": 2,
+      "odds_home": 1.55,
+      "odds_draw": 3.9,
+      "odds_away": 7.5
+    },
+    {
+      "date": "2023-10-16",
+      "home": "Belgium",
+      "away": "Sweden",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 1.65,
+      "odds_draw": 4.0,
+      "odds_away": 5.75
+    },
+    {
+      "date": "2023-10-16",
+      "home": "Bosnia & Herzegovina",
+      "away": "Portugal",
+      "score_home": 0,
+      "score_away": 5,
+      "odds_home": 8.0,
+      "odds_draw": 4.8,
+      "odds_away": 1.44
+    },
+    {
+      "date": "2023-10-16",
+      "home": "Gibraltar",
+      "away": "Ireland",
+      "score_home": 0,
+      "score_away": 4,
+      "odds_home": 41.0,
+      "odds_draw": 13.0,
+      "odds_away": 1.06
+    },
+    {
+      "date": "2023-10-16",
+      "home": "Greece",
+      "away": "Netherlands",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 4.1,
+      "odds_draw": 3.4,
+      "odds_away": 2.05
+    },
+    {
+      "date": "2023-10-16",
+      "home": "Iceland",
+      "away": "Liechtenstein",
+      "score_home": 4,
+      "score_away": 0,
+      "odds_home": 1.04,
+      "odds_draw": 17.0,
+      "odds_away": 51.0
+    },
+    {
+      "date": "2023-10-16",
+      "home": "Luxembourg",
+      "away": "Slovakia",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 4.1,
+      "odds_draw": 3.4,
+      "odds_away": 2.2
+    },
+    {
+      "date": "2023-10-16",
+      "home": "Azerbaijan",
+      "away": "Austria",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 9.0,
+      "odds_draw": 5.0,
+      "odds_away": 1.39
+    },
+    {
+      "date": "2023-10-15",
+      "home": "Romania",
+      "away": "Andorra",
+      "score_home": 4,
+      "score_away": 0,
+      "odds_home": 1.12,
+      "odds_draw": 10.5,
+      "odds_away": 29.0
+    },
+    {
+      "date": "2023-10-15",
+      "home": "Wales",
+      "away": "Croatia",
+      "score_home": 2,
+      "score_away": 1,
+      "odds_home": 4.6,
+      "odds_draw": 3.4,
+      "odds_away": 2.0
+    },
+    {
+      "date": "2023-10-15",
+      "home": "Turkey",
+      "away": "Latvia",
+      "score_home": 4,
+      "score_away": 0,
+      "odds_home": 1.14,
+      "odds_draw": 9.0,
+      "odds_away": 19.0
+    },
+    {
+      "date": "2023-10-15",
+      "home": "Poland",
+      "away": "Moldova",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 1.29,
+      "odds_draw": 5.75,
+      "odds_away": 17.0
+    },
+    {
+      "date": "2023-10-15",
+      "home": "Norway",
+      "away": "Spain",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 4.25,
+      "odds_draw": 3.6,
+      "odds_away": 1.93
+    },
+    {
+      "date": "2023-10-15",
+      "home": "Switzerland",
+      "away": "Belarus",
+      "score_home": 3,
+      "score_away": 3,
+      "odds_home": 1.11,
+      "odds_draw": 10.5,
+      "odds_away": 26.0
+    },
+    {
+      "date": "2023-10-15",
+      "home": "Czech Republic",
+      "away": "Faroe Islands",
+      "score_home": 1,
+      "score_away": 0,
+      "odds_home": 1.06,
+      "odds_draw": 15.0,
+      "odds_away": 46.0
+    },
+    {
+      "date": "2023-10-15",
+      "home": "Georgia",
+      "away": "Cyprus",
+      "score_home": 4,
+      "score_away": 0,
+      "odds_home": 1.36,
+      "odds_draw": 5.5,
+      "odds_away": 11.0
+    },
+    {
+      "date": "2023-10-14",
+      "home": "Denmark",
+      "away": "Kazakhstan",
+      "score_home": 3,
+      "score_away": 1,
+      "odds_home": 1.15,
+      "odds_draw": 8.5,
+      "odds_away": 21.0
+    },
+    {
+      "date": "2023-10-14",
+      "home": "Hungary",
+      "away": "Serbia",
+      "score_home": 2,
+      "score_away": 1,
+      "odds_home": 3.25,
+      "odds_draw": 3.2,
+      "odds_away": 2.5
+    },
+    {
+      "date": "2023-10-14",
+      "home": "Italy",
+      "away": "Malta",
+      "score_home": 4,
+      "score_away": 0,
+      "odds_home": 1.04,
+      "odds_draw": 20.0,
+      "odds_away": 91.0
+    },
+    {
+      "date": "2023-10-14",
+      "home": "Bulgaria",
+      "away": "Lithuania",
+      "score_home": 0,
+      "score_away": 2,
+      "odds_home": 1.55,
+      "odds_draw": 3.9,
+      "odds_away": 8.0
+    },
+    {
+      "date": "2023-10-14",
+      "home": "Slovenia",
+      "away": "Finland",
+      "score_home": 3,
+      "score_away": 0,
+      "odds_home": 1.98,
+      "odds_draw": 3.25,
+      "odds_away": 4.5
+    },
+    {
+      "date": "2023-10-14",
+      "home": "Ukraine",
+      "away": "North Macedonia",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 1.61,
+      "odds_draw": 4.0,
+      "odds_away": 6.5
+    },
+    {
+      "date": "2023-10-14",
+      "home": "Northern Ireland",
+      "away": "San Marino",
+      "score_home": 3,
+      "score_away": 0,
+      "odds_home": 1.03,
+      "odds_draw": 23.0,
+      "odds_away": 67.0
+    },
+    {
+      "date": "2023-10-13",
+      "home": "Austria",
+      "away": "Belgium",
+      "score_home": 2,
+      "score_away": 3,
+      "odds_home": 2.8,
+      "odds_draw": 3.3,
+      "odds_away": 2.65
+    },
+    {
+      "date": "2023-10-13",
+      "home": "Liechtenstein",
+      "away": "Bosnia & Herzegovina",
+      "score_home": 0,
+      "score_away": 2,
+      "odds_home": 26.0,
+      "odds_draw": 10.0,
+      "odds_away": 1.12
+    },
+    {
+      "date": "2023-10-13",
+      "home": "Netherlands",
+      "away": "France",
+      "score_home": 1,
+      "score_away": 2,
+      "odds_home": 3.3,
+      "odds_draw": 3.5,
+      "odds_away": 2.28
+    },
+    {
+      "date": "2023-10-13",
+      "home": "Ireland",
+      "away": "Greece",
+      "score_home": 0,
+      "score_away": 2,
+      "odds_home": 2.5,
+      "odds_draw": 2.95,
+      "odds_away": 3.75
+    },
+    {
+      "date": "2023-10-13",
+      "home": "Iceland",
+      "away": "Luxembourg",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 1.95,
+      "odds_draw": 3.6,
+      "odds_away": 4.75
+    },
+    {
+      "date": "2023-10-13",
+      "home": "Portugal",
+      "away": "Slovakia",
+      "score_home": 3,
+      "score_away": 2,
+      "odds_home": 1.18,
+      "odds_draw": 7.6,
+      "odds_away": 19.5
+    },
+    {
+      "date": "2023-10-13",
+      "home": "Estonia",
+      "away": "Azerbaijan",
+      "score_home": 0,
+      "score_away": 2,
+      "odds_home": 2.65,
+      "odds_draw": 3.1,
+      "odds_away": 3.0
+    },
+    {
+      "date": "2023-10-12",
+      "home": "Albania",
+      "away": "Czech Republic",
+      "score_home": 3,
+      "score_away": 0,
+      "odds_home": 3.8,
+      "odds_draw": 3.1,
+      "odds_away": 2.25
+    },
+    {
+      "date": "2023-10-12",
+      "home": "Belarus",
+      "away": "Romania",
+      "score_home": 0,
+      "score_away": 0,
+      "odds_home": 7.0,
+      "odds_draw": 4.05,
+      "odds_away": 1.53
+    },
+    {
+      "date": "2023-10-12",
+      "home": "Croatia",
+      "away": "Turkey",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 1.62,
+      "odds_draw": 3.9,
+      "odds_away": 6.0
+    },
+    {
+      "date": "2023-10-12",
+      "home": "Cyprus",
+      "away": "Norway",
+      "score_home": 0,
+      "score_away": 4,
+      "odds_home": 17.0,
+      "odds_draw": 7.0,
+      "odds_away": 1.24
+    },
+    {
+      "date": "2023-10-12",
+      "home": "Faroe Islands",
+      "away": "Poland",
+      "score_home": 0,
+      "score_away": 2,
+      "odds_home": 11.0,
+      "odds_draw": 5.1,
+      "odds_away": 1.4
+    },
+    {
+      "date": "2023-10-12",
+      "home": "Spain",
+      "away": "Scotland",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 1.29,
+      "odds_draw": 5.6,
+      "odds_away": 12.5
+    },
+    {
+      "date": "2023-10-12",
+      "home": "Andorra",
+      "away": "Kosovo",
+      "score_home": 0,
+      "score_away": 3,
+      "odds_home": 8.5,
+      "odds_draw": 4.33,
+      "odds_away": 1.46
+    },
+    {
+      "date": "",
+      "home": "Latvia",
+      "away": "Armenia",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 4.0,
+      "odds_draw": 3.5,
+      "odds_away": 2.0
+    },
+    {
+      "date": "2023-09-12",
+      "home": "Switzerland",
+      "away": "Andorra",
+      "score_home": 3,
+      "score_away": 0,
+      "odds_home": 1.05,
+      "odds_draw": 15.5,
+      "odds_away": 41.0
+    },
+    {
+      "date": "2023-09-12",
+      "home": "Sweden",
+      "away": "Austria",
+      "score_home": 1,
+      "score_away": 3,
+      "odds_home": 2.5,
+      "odds_draw": 3.5,
+      "odds_away": 2.88
+    },
+    {
+      "date": "2023-09-12",
+      "home": "Israel",
+      "away": "Belarus",
+      "score_home": 1,
+      "score_away": 0,
+      "odds_home": 1.42,
+      "odds_draw": 5.0,
+      "odds_away": 8.0
+    },
+    {
+      "date": "2023-09-12",
+      "home": "Belgium",
+      "away": "Estonia",
+      "score_home": 5,
+      "score_away": 0,
+      "odds_home": 1.07,
+      "odds_draw": 14.0,
+      "odds_away": 34.0
+    },
+    {
+      "date": "2023-09-12",
+      "home": "Spain",
+      "away": "Cyprus",
+      "score_home": 6,
+      "score_away": 0,
+      "odds_home": 1.02,
+      "odds_draw": 26.0,
+      "odds_away": 67.0
+    },
+    {
+      "date": "2023-09-12",
+      "home": "Norway",
+      "away": "Georgia",
+      "score_home": 2,
+      "score_away": 1,
+      "odds_home": 1.29,
+      "odds_draw": 5.9,
+      "odds_away": 13.5
+    },
+    {
+      "date": "2023-09-12",
+      "home": "Italy",
+      "away": "Ukraine",
+      "score_home": 2,
+      "score_away": 1,
+      "odds_home": 1.5,
+      "odds_draw": 4.6,
+      "odds_away": 7.5
+    },
+    {
+      "date": "2023-09-12",
+      "home": "Romania",
+      "away": "Kosovo",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 2.25,
+      "odds_draw": 3.3,
+      "odds_away": 3.6
+    },
+    {
+      "date": "2023-09-12",
+      "home": "Malta",
+      "away": "North Macedonia",
+      "score_home": 0,
+      "score_away": 2,
+      "odds_home": 4.5,
+      "odds_draw": 3.25,
+      "odds_away": 2.1
+    },
+    {
+      "date": "2023-09-11",
+      "home": "Iceland",
+      "away": "Bosnia & Herzegovina",
+      "score_home": 1,
+      "score_away": 0,
+      "odds_home": 2.8,
+      "odds_draw": 3.3,
+      "odds_away": 2.6
+    },
+    {
+      "date": "2023-09-11",
+      "home": "Latvia",
+      "away": "Wales",
+      "score_home": 0,
+      "score_away": 2,
+      "odds_home": 7.5,
+      "odds_draw": 4.2,
+      "odds_away": 1.5
+    },
+    {
+      "date": "2023-09-11",
+      "home": "Slovakia",
+      "away": "Liechtenstein",
+      "score_home": 3,
+      "score_away": 0,
+      "odds_home": 1.03,
+      "odds_draw": 21.0,
+      "odds_away": 67.0
+    },
+    {
+      "date": "2023-09-11",
+      "home": "Portugal",
+      "away": "Luxembourg",
+      "score_home": 9,
+      "score_away": 0,
+      "odds_home": 1.08,
+      "odds_draw": 13.0,
+      "odds_away": 34.0
+    },
+    {
+      "date": "2023-09-11",
+      "home": "Armenia",
+      "away": "Croatia",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 9.0,
+      "odds_draw": 5.0,
+      "odds_away": 1.38
+    },
+    {
+      "date": "2023-09-10",
+      "home": "Albania",
+      "away": "Poland",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 3.5,
+      "odds_draw": 3.05,
+      "odds_away": 2.43
+    },
+    {
+      "date": "2023-09-10",
+      "home": "Greece",
+      "away": "Gibraltar",
+      "score_home": 5,
+      "score_away": 0,
+      "odds_home": 1.03,
+      "odds_draw": 22.0,
+      "odds_away": 67.0
+    },
+    {
+      "date": "2023-09-10",
+      "home": "Ireland",
+      "away": "Netherlands",
+      "score_home": 1,
+      "score_away": 2,
+      "odds_home": 7.0,
+      "odds_draw": 3.9,
+      "odds_away": 1.7
+    },
+    {
+      "date": "2023-09-10",
+      "home": "Lithuania",
+      "away": "Serbia",
+      "score_home": 1,
+      "score_away": 3,
+      "odds_home": 15.0,
+      "odds_draw": 6.0,
+      "odds_away": 1.25
+    },
+    {
+      "date": "2023-09-10",
+      "home": "San Marino",
+      "away": "Slovenia",
+      "score_home": 0,
+      "score_away": 4,
+      "odds_home": 51.0,
+      "odds_draw": 19.0,
+      "odds_away": 1.05
+    },
+    {
+      "date": "2023-09-10",
+      "home": "Montenegro",
+      "away": "Bulgaria",
+      "score_home": 2,
+      "score_away": 1,
+      "odds_home": 1.8,
+      "odds_draw": 3.5,
+      "odds_away": 5.2
+    },
+    {
+      "date": "2023-09-10",
+      "home": "Finland",
+      "away": "Denmark",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 8.0,
+      "odds_draw": 4.2,
+      "odds_away": 1.65
+    },
+    {
+      "date": "2023-09-10",
+      "home": "Faroe Islands",
+      "away": "Moldova",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 2.63,
+      "odds_draw": 3.1,
+      "odds_away": 3.2
+    },
+    {
+      "date": "2023-09-10",
+      "home": "Kazakhstan",
+      "away": "Northern Ireland",
+      "score_home": 1,
+      "score_away": 0,
+      "odds_home": 3.1,
+      "odds_draw": 3.1,
+      "odds_away": 2.63
+    },
+    {
+      "date": "2023-09-09",
+      "home": "Romania",
+      "away": "Israel",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 2.1,
+      "odds_draw": 3.5,
+      "odds_away": 3.6
+    },
+    {
+      "date": "2023-09-09",
+      "home": "North Macedonia",
+      "away": "Italy",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 11.5,
+      "odds_draw": 5.5,
+      "odds_away": 1.31
+    },
+    {
+      "date": "2023-09-09",
+      "home": "Kosovo",
+      "away": "Switzerland",
+      "score_home": 2,
+      "score_away": 2,
+      "odds_home": 5.25,
+      "odds_draw": 3.8,
+      "odds_away": 1.73
+    },
+    {
+      "date": "2023-09-09",
+      "home": "Andorra",
+      "away": "Belarus",
+      "score_home": 0,
+      "score_away": 0,
+      "odds_home": 5.0,
+      "odds_draw": 3.0,
+      "odds_away": 1.95
+    },
+    {
+      "date": "2023-09-09",
+      "home": "Ukraine",
+      "away": "England",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 9.0,
+      "odds_draw": 4.6,
+      "odds_away": 1.5
+    },
+    {
+      "date": "2023-09-09",
+      "home": "Estonia",
+      "away": "Sweden",
+      "score_home": 0,
+      "score_away": 5,
+      "odds_home": 9.5,
+      "odds_draw": 5.25,
+      "odds_away": 1.37
+    },
+    {
+      "date": "2023-09-09",
+      "home": "Azerbaijan",
+      "away": "Belgium",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 15.5,
+      "odds_draw": 7.4,
+      "odds_away": 1.21
+    },
+    {
+      "date": "2023-09-08",
+      "home": "Turkey",
+      "away": "Armenia",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 1.41,
+      "odds_draw": 5.5,
+      "odds_away": 9.0
+    },
+    {
+      "date": "2023-09-08",
+      "home": "Bosnia & Herzegovina",
+      "away": "Liechtenstein",
+      "score_home": 2,
+      "score_away": 1,
+      "odds_home": 1.02,
+      "odds_draw": 26.0,
+      "odds_away": 101.0
+    },
+    {
+      "date": "2023-09-08",
+      "home": "Croatia",
+      "away": "Latvia",
+      "score_home": 5,
+      "score_away": 0,
+      "odds_home": 1.1,
+      "odds_draw": 12.0,
+      "odds_away": 29.0
+    },
+    {
+      "date": "2023-09-08",
+      "home": "Cyprus",
+      "away": "Scotland",
+      "score_home": 0,
+      "score_away": 3,
+      "odds_home": 10.0,
+      "odds_draw": 4.5,
+      "odds_away": 1.44
+    },
+    {
+      "date": "2023-09-08",
+      "home": "Luxembourg",
+      "away": "Iceland",
+      "score_home": 3,
+      "score_away": 1,
+      "odds_home": 2.9,
+      "odds_draw": 3.2,
+      "odds_away": 2.75
+    },
+    {
+      "date": "2023-09-08",
+      "home": "Slovakia",
+      "away": "Portugal",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 7.5,
+      "odds_draw": 4.5,
+      "odds_away": 1.47
+    },
+    {
+      "date": "2023-09-08",
+      "home": "Georgia",
+      "away": "Spain",
+      "score_home": 1,
+      "score_away": 7,
+      "odds_home": 10.0,
+      "odds_draw": 5.5,
+      "odds_away": 1.35
+    },
+    {
+      "date": "2023-09-07",
+      "home": "Czech Republic",
+      "away": "Albania",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 1.58,
+      "odds_draw": 3.85,
+      "odds_away": 7.5
+    },
+    {
+      "date": "2023-09-07",
+      "home": "Denmark",
+      "away": "San Marino",
+      "score_home": 4,
+      "score_away": 0,
+      "odds_home": 1.01,
+      "odds_draw": 36.0,
+      "odds_away": 81.0
+    },
+    {
+      "date": "2023-09-07",
+      "home": "Poland",
+      "away": "Faroe Islands",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 1.14,
+      "odds_draw": 9.0,
+      "odds_away": 23.0
+    },
+    {
+      "date": "2023-09-07",
+      "home": "France",
+      "away": "Ireland",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 1.25,
+      "odds_draw": 6.75,
+      "odds_away": 16.0
+    },
+    {
+      "date": "2023-09-07",
+      "home": "Netherlands",
+      "away": "Greece",
+      "score_home": 3,
+      "score_away": 0,
+      "odds_home": 1.47,
+      "odds_draw": 4.33,
+      "odds_away": 8.0
+    },
+    {
+      "date": "2023-09-07",
+      "home": "Serbia",
+      "away": "Hungary",
+      "score_home": 1,
+      "score_away": 2,
+      "odds_home": 1.87,
+      "odds_draw": 3.55,
+      "odds_away": 4.4
+    },
+    {
+      "date": "2023-09-07",
+      "home": "Slovenia",
+      "away": "Northern Ireland",
+      "score_home": 4,
+      "score_away": 2,
+      "odds_home": 2.05,
+      "odds_draw": 3.2,
+      "odds_away": 4.9
+    },
+    {
+      "date": "2023-09-07",
+      "home": "Lithuania",
+      "away": "Montenegro",
+      "score_home": 2,
+      "score_away": 2,
+      "odds_home": 6.0,
+      "odds_draw": 3.5,
+      "odds_away": 1.72
+    },
+    {
+      "date": "2023-09-07",
+      "home": "Kazakhstan",
+      "away": "Finland",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 3.8,
+      "odds_draw": 3.3,
+      "odds_away": 2.15
+    },
+    {
+      "date": "2023-06-20",
+      "home": "Norway",
+      "away": "Cyprus",
+      "score_home": 3,
+      "score_away": 1,
+      "odds_home": 1.13,
+      "odds_draw": 9.5,
+      "odds_away": 26.0
+    },
+    {
+      "date": "2023-06-20",
+      "home": "Scotland",
+      "away": "Georgia",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 1.62,
+      "odds_draw": 3.9,
+      "odds_away": 6.5
+    },
+    {
+      "date": "2023-03-28",
+      "home": "Georgia",
+      "away": "Norway",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 4.0,
+      "odds_draw": 3.2,
+      "odds_away": 2.15
+    },
+    {
+      "date": "2023-03-27",
+      "home": "Poland",
+      "away": "Albania",
+      "score_home": 1,
+      "score_away": 0,
+      "odds_home": 1.58,
+      "odds_draw": 4.0,
+      "odds_away": 7.0
+    },
+    {
+      "date": "2023-03-27",
+      "home": "Austria",
+      "away": "Estonia",
+      "score_home": 2,
+      "score_away": 1,
+      "odds_home": 1.18,
+      "odds_draw": 7.25,
+      "odds_away": 19.0
+    },
+    {
+      "date": "2023-03-27",
+      "home": "Sweden",
+      "away": "Azerbaijan",
+      "score_home": 5,
+      "score_away": 0,
+      "odds_home": 1.2,
+      "odds_draw": 7.0,
+      "odds_away": 16.0
+    },
+    {
+      "date": "2023-03-27",
+      "home": "Hungary",
+      "away": "Bulgaria",
+      "score_home": 3,
+      "score_away": 0,
+      "odds_home": 1.4,
+      "odds_draw": 4.5,
+      "odds_away": 10.25
+    },
+    {
+      "date": "2023-03-27",
+      "home": "Moldova",
+      "away": "Czech Republic",
+      "score_home": 0,
+      "score_away": 0,
+      "odds_home": 19.0,
+      "odds_draw": 7.25,
+      "odds_away": 1.18
+    },
+    {
+      "date": "2023-03-27",
+      "home": "Ireland",
+      "away": "France",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 7.5,
+      "odds_draw": 4.33,
+      "odds_away": 1.5
+    },
+    {
+      "date": "2023-03-27",
+      "home": "Netherlands",
+      "away": "Gibraltar",
+      "score_home": 3,
+      "score_away": 0,
+      "odds_home": 1.01,
+      "odds_draw": 41.0,
+      "odds_away": 87.0
+    },
+    {
+      "date": "2023-03-27",
+      "home": "Montenegro",
+      "away": "Serbia",
+      "score_home": 0,
+      "score_away": 2,
+      "odds_home": 4.6,
+      "odds_draw": 3.5,
+      "odds_away": 1.9
+    },
+    {
+      "date": "2023-03-26",
+      "home": "Slovakia",
+      "away": "Bosnia & Herzegovina",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 2.2,
+      "odds_draw": 3.25,
+      "odds_away": 3.6
+    },
+    {
+      "date": "2023-03-26",
+      "home": "Northern Ireland",
+      "away": "Finland",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 2.63,
+      "odds_draw": 3.0,
+      "odds_away": 3.2
+    },
+    {
+      "date": "2023-03-26",
+      "home": "Malta",
+      "away": "Italy",
+      "score_home": 0,
+      "score_away": 2,
+      "odds_home": 36.0,
+      "odds_draw": 11.0,
+      "odds_away": 1.1
+    },
+    {
+      "date": "2023-03-26",
+      "home": "Luxembourg",
+      "away": "Portugal",
+      "score_home": 0,
+      "score_away": 6,
+      "odds_home": 22.0,
+      "odds_draw": 8.0,
+      "odds_away": 1.17
+    },
+    {
+      "date": "2023-03-26",
+      "home": "England",
+      "away": "Ukraine",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 1.36,
+      "odds_draw": 5.5,
+      "odds_away": 13.0
+    },
+    {
+      "date": "2023-03-26",
+      "home": "Liechtenstein",
+      "away": "Iceland",
+      "score_home": 0,
+      "score_away": 7,
+      "odds_home": 24.0,
+      "odds_draw": 9.5,
+      "odds_away": 1.13
+    },
+    {
+      "date": "2023-03-26",
+      "home": "Slovenia",
+      "away": "San Marino",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 1.02,
+      "odds_draw": 42.0,
+      "odds_away": 101.0
+    },
+    {
+      "date": "2023-03-26",
+      "home": "Kazakhstan",
+      "away": "Denmark",
+      "score_home": 3,
+      "score_away": 2,
+      "odds_home": 19.0,
+      "odds_draw": 6.5,
+      "odds_away": 1.21
+    },
+    {
+      "date": "2023-03-25",
+      "home": "Andorra",
+      "away": "Romania",
+      "score_home": 0,
+      "score_away": 2,
+      "odds_home": 19.0,
+      "odds_draw": 6.0,
+      "odds_away": 1.23
+    },
+    {
+      "date": "2023-03-25",
+      "home": "Croatia",
+      "away": "Wales",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 1.38,
+      "odds_draw": 4.6,
+      "odds_away": 10.0
+    },
+    {
+      "date": "2023-03-25",
+      "home": "Spain",
+      "away": "Norway",
+      "score_home": 3,
+      "score_away": 0,
+      "odds_home": 1.41,
+      "odds_draw": 4.75,
+      "odds_away": 8.5
+    },
+    {
+      "date": "2023-03-25",
+      "home": "Armenia",
+      "away": "Turkey",
+      "score_home": 1,
+      "score_away": 2,
+      "odds_home": 9.0,
+      "odds_draw": 4.6,
+      "odds_away": 1.42
+    },
+    {
+      "date": "2023-03-25",
+      "home": "Belarus",
+      "away": "Switzerland",
+      "score_home": 0,
+      "score_away": 5,
+      "odds_home": 17.0,
+      "odds_draw": 6.5,
+      "odds_away": 1.23
+    },
+    {
+      "date": "2023-03-25",
+      "home": "Israel",
+      "away": "Kosovo",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 2.0,
+      "odds_draw": 3.6,
+      "odds_away": 3.75
+    },
+    {
+      "date": "2023-03-25",
+      "home": "Scotland",
+      "away": "Cyprus",
+      "score_home": 3,
+      "score_away": 0,
+      "odds_home": 1.16,
+      "odds_draw": 8.0,
+      "odds_away": 26.0
+    },
+    {
+      "date": "2023-03-24",
+      "home": "Austria",
+      "away": "Azerbaijan",
+      "score_home": 4,
+      "score_away": 1,
+      "odds_home": 1.22,
+      "odds_draw": 7.0,
+      "odds_away": 15.0
+    },
+    {
+      "date": "2023-03-24",
+      "home": "Sweden",
+      "away": "Belgium",
+      "score_home": 0,
+      "score_away": 3,
+      "odds_home": 3.8,
+      "odds_draw": 3.35,
+      "odds_away": 2.17
+    },
+    {
+      "date": "2023-03-24",
+      "home": "Czech Republic",
+      "away": "Poland",
+      "score_home": 3,
+      "score_away": 1,
+      "odds_home": 2.25,
+      "odds_draw": 3.25,
+      "odds_away": 3.6
+    },
+    {
+      "date": "2023-03-24",
+      "home": "Moldova",
+      "away": "Faroe Islands",
+      "score_home": 1,
+      "score_away": 1,
+      "odds_home": 2.5,
+      "odds_draw": 3.1,
+      "odds_away": 3.25
+    },
+    {
+      "date": "2023-03-24",
+      "home": "France",
+      "away": "Netherlands",
+      "score_home": 4,
+      "score_away": 0,
+      "odds_home": 1.66,
+      "odds_draw": 4.0,
+      "odds_away": 5.5
+    },
+    {
+      "date": "2023-03-24",
+      "home": "Gibraltar",
+      "away": "Greece",
+      "score_home": 0,
+      "score_away": 3,
+      "odds_home": 54.0,
+      "odds_draw": 13.0,
+      "odds_away": 1.07
+    },
+    {
+      "date": "2023-03-24",
+      "home": "Serbia",
+      "away": "Lithuania",
+      "score_home": 2,
+      "score_away": 0,
+      "odds_home": 1.06,
+      "odds_draw": 15.0,
+      "odds_away": 49.0
+    },
+    {
+      "date": "2023-03-24",
+      "home": "Bulgaria",
+      "away": "Montenegro",
+      "score_home": 0,
+      "score_away": 1,
+      "odds_home": 3.1,
+      "odds_draw": 3.0,
+      "odds_away": 2.7
+    },
+    {
+      "date": "2023-03-23",
+      "home": "Bosnia & Herzegovina",
+      "away": "Iceland",
+      "score_home": 3,
+      "score_away": 0,
+      "odds_home": 1.86,
+      "odds_draw": 3.6,
+      "odds_away": 4.8
+    },
+    {
+      "date": "2023-03-23",
+      "home": "Denmark",
+      "away": "Finland",
+      "score_home": 3,
+      "score_away": 1,
+      "odds_home": 1.4,
+      "odds_draw": 4.75,
+      "odds_away": 11.0
+    },
+    {
+      "date": "2023-03-23",
+      "home": "Italy",
+      "away": "England",
+      "score_home": 1,
+      "score_away": 2,
+      "odds_home": 3.15,
+      "odds_draw": 3.15,
+      "odds_away": 2.65
+    },
+    {
+      "date": "2023-03-23",
+      "home": "Portugal",
+      "away": "Liechtenstein",
+      "score_home": 4,
+      "score_away": 0,
+      "odds_home": 1.01,
+      "odds_draw": 67.0,
+      "odds_away": 501.0
+    },
+    {
+      "date": "2023-03-23",
+      "home": "Slovakia",
+      "away": "Luxembourg",
+      "score_home": 0,
+      "score_away": 0,
+      "odds_home": 1.71,
+      "odds_draw": 3.75,
+      "odds_away": 5.7
+    },
+    {
+      "date": "2023-03-23",
+      "home": "North Macedonia",
+      "away": "Malta",
+      "score_home": 2,
+      "score_away": 1,
+      "odds_home": 1.4,
+      "odds_draw": 4.75,
+      "odds_away": 9.0
+    },
+    {
+      "date": "2023-03-23",
+      "home": "San Marino",
+      "away": "Northern Ireland",
+      "score_home": 0,
+      "score_away": 2,
+      "odds_home": 49.0,
+      "odds_draw": 13.5,
+      "odds_away": 1.07
+    },
+    {
+      "date": "2023-03-23",
+      "home": "Kazakhstan",
+      "away": "Slovenia",
+      "score_home": 1,
+      "score_away": 2,
+      "odds_home": 5.25,
+      "odds_draw": 3.5,
+      "odds_away": 1.83
     }
   ]
 }

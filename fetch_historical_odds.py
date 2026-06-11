@@ -184,18 +184,45 @@ def parse_event_row(row_text: str, current_date: str) -> dict | None:
     }
 
 
-def scrape_results_page(page, url: str) -> tuple[list[dict], str]:
-    """Scrape une page de résultats OddsPortal. Retourne (matchs, last_date)."""
+def _extract_rows(page) -> list[dict]:
+    """Extrait et parse tous les matchs visibles dans les eventRows courants."""
+    rows = page.locator("div[class*='eventRow']").all()
+    matches, current_date = [], ""
+    for row in rows:
+        try:
+            text = row.inner_text(timeout=5000)
+        except Exception:
+            continue
+        for line in text.splitlines()[:6]:
+            d = parse_date_from_header(line.strip())
+            if d:
+                current_date = d
+                break
+        match = parse_event_row(text, current_date)
+        if match:
+            matches.append(match)
+    return matches
+
+
+def scrape_tournament(page, tournament: dict) -> list[dict]:
+    """Scrape tous les matchs d'un tournoi sur toutes les pages de résultats.
+
+    OddsPortal pagine via des boutons JS (a.pagination-link sans href).
+    On charge l'URL principale puis on clique successivement sur chaque page.
+    """
     from playwright.sync_api import TimeoutError as PlaywrightTimeout
 
-    page.goto(url, wait_until="networkidle", timeout=60_000)
+    base_url = tournament["pages"][0]
+    print(f"\n[{tournament['label']}] {base_url}")
+
+    page.goto(base_url, wait_until="networkidle", timeout=60_000)
     time.sleep(PAGE_DELAY)
 
     # Gérer la bannière cookie si présente
     try:
         accept = page.locator(
             "button:has-text('Accept'), button:has-text('I Accept'), "
-            "#onetrust-accept-btn-handler, [id*='accept']"
+            "#onetrust-accept-btn-handler"
         )
         if accept.count() > 0:
             accept.first.click(timeout=3000)
@@ -203,44 +230,55 @@ def scrape_results_page(page, url: str) -> tuple[list[dict], str]:
     except Exception:
         pass
 
-    rows = page.locator("div[class*='eventRow']").all()
-
-    matches = []
-    current_date = ""
-
-    for row in rows:
+    # Identifier le nombre de pages via les boutons de pagination
+    pag_links = page.locator("a.pagination-link").all()
+    page_numbers = []
+    for lnk in pag_links:
         try:
-            text = row.inner_text(timeout=5000)
+            txt = lnk.inner_text(timeout=1000).strip()
+            if txt.isdigit():
+                page_numbers.append(int(txt))
         except Exception:
-            continue
+            pass
+    total_pages = max(page_numbers) if page_numbers else 1
+    print(f"  {total_pages} page(s) détectée(s)")
 
-        # Mettre à jour la date courante si le row contient un header de date
-        for line in text.splitlines()[:4]:
-            d = parse_date_from_header(line.strip())
-            if d:
-                current_date = d
-                break
-
-        match = parse_event_row(text, current_date)
-        if match:
-            matches.append(match)
-
-    return matches, current_date
-
-
-def scrape_tournament(page, tournament: dict) -> list[dict]:
-    """Scrape tous les matchs d'un tournoi sur toutes ses pages."""
+    seen: set[tuple] = set()
     all_matches: list[dict] = []
 
-    for url in tournament["pages"]:
-        print(f"\n[{tournament['label']}] {url}")
-        matches, _ = scrape_results_page(page, url)
-        print(f"  → {len(matches)} matchs")
-        for m in matches[:3]:
-            print(f"    {m['date']} {m['home']} {m['score_home']}-{m['score_away']} "
-                  f"{m['away']}  {m['odds_home']}/{m['odds_draw']}/{m['odds_away']}")
-        all_matches.extend(matches)
-        time.sleep(1)
+    def collect_page(matches: list[dict]) -> int:
+        new = 0
+        for m in matches:
+            key = (m["date"], m["home"], m["away"])
+            if key not in seen:
+                seen.add(key)
+                all_matches.append(m)
+                new += 1
+        return new
+
+    # Page 1
+    matches_p1 = _extract_rows(page)
+    new = collect_page(matches_p1)
+    print(f"  Page 1 : {new} nouveaux matchs")
+    for m in matches_p1[:3]:
+        print(f"    {m['date']} {m['home']} {m['score_home']}-{m['score_away']} "
+              f"{m['away']}  {m['odds_home']}/{m['odds_draw']}/{m['odds_away']}")
+
+    # Pages suivantes
+    for p in range(2, total_pages + 1):
+        try:
+            btn = page.locator(f"a.pagination-link:has-text('{p}')").first
+            btn.click(timeout=5000)
+            time.sleep(PAGE_DELAY)
+            matches_pn = _extract_rows(page)
+            new = collect_page(matches_pn)
+            print(f"  Page {p} : {new} nouveaux matchs")
+        except PlaywrightTimeout:
+            print(f"  Page {p} : timeout, arrêt")
+            break
+        except Exception as exc:
+            print(f"  Page {p} : erreur ({exc}), arrêt")
+            break
 
     return all_matches
 

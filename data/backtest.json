@@ -1,5 +1,5 @@
 {
- "generated_at": 1781166661,
+ "generated_at": 1781168679,
  "tournaments": [
   {
    "tournament": "Asian Cup 2015",
@@ -1166,19 +1166,19 @@
   "Euro 2023": {
    "1n2": {
     "n": 230,
-    "n_with_market": 0,
+    "n_with_market": 157,
     "brier": {
      "model": 0.6068671769914186,
      "baseline": 0.6666666666666667,
-     "market": null
+     "market": 0.40014013650750957
     },
     "logloss": {
      "model": 1.0120121249890064,
      "baseline": 1.0986122886681098,
-     "market": null
+     "market": 0.6915747633749592
     },
-    "best_weight": null,
-    "best_mix_logloss": null
+    "best_weight": 0.0,
+    "best_mix_logloss": 0.6915747633749592
    },
    "totals": {
     "n": 230,
@@ -1200,19 +1200,19 @@
   "Euro 2024": {
    "1n2": {
     "n": 60,
-    "n_with_market": 45,
+    "n_with_market": 55,
     "brier": {
      "model": 0.6473370981080772,
      "baseline": 0.6666666666666667,
-     "market": 0.6230221853855333
+     "market": 0.5787935826974909
     },
     "logloss": {
      "model": 1.0746420234057819,
      "baseline": 1.0986122886681098,
-     "market": 1.0198660380740059
+     "market": 0.9600046833677964
     },
     "best_weight": 0.0,
-    "best_mix_logloss": 1.019866038074006
+    "best_mix_logloss": 0.9600046833677967
    },
    "totals": {
     "n": 60,
@@ -1438,19 +1438,19 @@
   "World Cup 2022": {
    "1n2": {
     "n": 116,
-    "n_with_market": 47,
+    "n_with_market": 50,
     "brier": {
      "model": 0.627111222557602,
      "baseline": 0.6666666666666667,
-     "market": 0.5758116872989787
+     "market": 0.57732979706974
     },
     "logloss": {
      "model": 1.039046937520656,
      "baseline": 1.0986122886681098,
-     "market": 0.9829872207640701
+     "market": 0.981573654711164
     },
-    "best_weight": 0.25,
-    "best_mix_logloss": 0.9721965391443673
+    "best_weight": 0.2,
+    "best_mix_logloss": 0.9731734782104575
    },
    "totals": {
     "n": 116,
@@ -1573,13 +1573,14 @@
   },
   "__overall__": {
    "1n2": {
-    "best_weight": 0.15,
-    "best_mix_logloss": 0.9980614783079204
+    "best_weight": 0.05,
+    "best_mix_logloss": 0.8032678556131895,
+    "raw_best_weight": 0.0
    }
   }
  },
  "model_weights": {
-  "1n2": 0.15,
+  "1n2": 0.05,
   "totals": 0.4
  },
  "notes": {

@@ -291,6 +291,31 @@ def load_closing_backtest() -> dict:
         return {}
 
 
+# Mapping dataset→clé-closing : noms utilisés dans le soccer-dataset qui diffèrent
+# des noms OddsPortal après normalisation ASCII.
+# La clé closing est toujours le nom OddsPortal normalisé (via TEAM_NAME_MAP de
+# build_closing_backtest.py). Ce dict fait l'aller-retour dataset→closing-norm.
+_DATASET_TO_CLOSING_NORM: dict[str, str] = {
+    # dataset "USA" → closing "united states"
+    "usa": "united states",
+    # dataset "Türkiye" → closing "turkiye" (accents déjà strips par norm(), mais
+    # le mapping OddsPortal "turkey"→"Türkiye" produit norm("Türkiye")="turkiye")
+    "turkiye": "turkiye",
+    # dataset "Korea Republic" variantes
+    "korea republic": "south korea",
+    # dataset "IR Iran"
+    "ir iran": "iran",
+    # dataset "Bosnia and Herzegovina" variantes
+    "bosnia & herzegovina": "bosnia and herzegovina",
+}
+
+
+def _closing_norm(name: str) -> str:
+    """Normalise un nom d'équipe dataset vers la clé closing-backtest."""
+    n = norm(name)
+    return _DATASET_TO_CLOSING_NORM.get(n, n)
+
+
 def closing_lookup(
     closing: dict,
     date_val: pd.Timestamp,
@@ -299,16 +324,15 @@ def closing_lookup(
 ) -> list[float] | None:
     """Cherche les probas de clôture dans closing_backtest pour un match donné.
 
-    Essaie plusieurs variantes de clé : date exacte, ±1 jour, noms normalisés.
+    Essaie date exacte puis ±1 jour (décalage UTC/local), et applique le mapping
+    dataset→closing-norm pour les noms d'équipes non canoniques (USA, Türkiye…).
     """
     if not closing:
         return None
-    date_iso = date_val.strftime("%Y-%m-%d")
-    h = norm(home_name)
-    a = norm(away_name)
+    h = _closing_norm(home_name)
+    a = _closing_norm(away_name)
 
     for delta in (0, 1, -1):
-        import datetime as _dt
         d = (date_val + pd.Timedelta(days=delta)).strftime("%Y-%m-%d")
         key = f"{d}|{h}|{a}"
         if key in closing:
@@ -558,6 +582,10 @@ def main() -> None:
     summary = summarize_metrics(points)
 
     # Estimation du poids optimal par marche sur les points ayant une reference marche.
+    # Plancher à 0.05 : avec ~100 matchs la courbe logloss(w) est quasi-plate entre
+    # 0 et 0.15 (Δ < 0.002) ; forcer w=0 effacerait les picks 1N2 alors que l'écart
+    # vs w=0.05 n'est pas statistiquement significatif sur cet échantillon.
+    W_MIN = 0.05
     model_weights = {"1n2": 0.40, "totals": 0.40}
     for market in ("1n2", "totals"):
         refs = [p for p in points if p.market == market and p.market_probs]
@@ -574,10 +602,11 @@ def main() -> None:
             if ll < best_ll:
                 best_ll = ll
                 best_w = w
-        model_weights[market] = best_w
+        model_weights[market] = max(best_w, W_MIN)
         summary.setdefault("__overall__", {})[market] = {
-            "best_weight": best_w,
+            "best_weight": max(best_w, W_MIN),
             "best_mix_logloss": best_ll,
+            "raw_best_weight": best_w,
         }
 
     out = {
