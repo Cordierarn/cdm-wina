@@ -257,10 +257,11 @@ def calibration_from_snapshot(prior: pd.DataFrame, home_id_col: str, away_id_col
     return base_lambda, spread, best_rho, ratings, force_source
 
 
-def score_probs(base_lambda: float, spread: float, rho: float, diff: float) -> tuple[list[list[float]], float, float]:
+def score_probs(base_lambda: float, spread: float, rho: float, diff: float,
+                pi_zero: float = 0.0, lambda3: float = 0.0) -> tuple[list[list[float]], float, float]:
     lh = soft_cap_lambda(base_lambda * math.exp(spread * diff))
     la = soft_cap_lambda(base_lambda * math.exp(-spread * diff))
-    return score_matrix(lh, la, rho), lh, la
+    return score_matrix(lh, la, rho, pi_zero=pi_zero, lambda3=lambda3), lh, la
 
 
 def detect_market_odds(row: pd.Series, mapping: dict[str, list[str]]) -> list[float] | None:
@@ -373,8 +374,9 @@ def build_team_name_index(fixtures: pd.DataFrame, home_id_col: str, away_id_col:
     return name_index
 
 
-def predict_row(base_lambda: float, spread: float, rho: float, diff: float) -> tuple[dict[str, list[float]], list[list[float]]]:
-    mat, _, _ = score_probs(base_lambda, spread, rho, diff)
+def predict_row(base_lambda: float, spread: float, rho: float, diff: float,
+                pi_zero: float = 0.0, lambda3: float = 0.0) -> tuple[dict[str, list[float]], list[list[float]]]:
+    mat, _, _ = score_probs(base_lambda, spread, rho, diff, pi_zero=pi_zero, lambda3=lambda3)
     p1 = sum(mat[h][a] for h in range(11) for a in range(11) if h > a)
     px = sum(mat[h][a] for h in range(11) for a in range(11) if h == a)
     p2 = sum(mat[h][a] for h in range(11) for a in range(11) if h < a)
@@ -525,6 +527,17 @@ def main() -> None:
             date_col,
             rating_cols,
         )
+        # Les paramètres BVP/ZIP sont lus depuis strengths_dataset.json si présent
+        _sd_file = DATA_DIR / "strengths_dataset.json"
+        _pi_zero = 0.0
+        _lambda3 = 0.0
+        if _sd_file.exists():
+            try:
+                _sd = json.loads(_sd_file.read_text(encoding="utf-8"))
+                _pi_zero = float(_sd.get("pi_zero", 0.0))
+                _lambda3 = float(_sd.get("lambda3", 0.0))
+            except Exception:
+                pass
 
         raw_values = list(snapshot.values())
         if not raw_values:
@@ -547,7 +560,8 @@ def main() -> None:
             s_home = (rh - lo) / (hi - lo)
             s_away = (ra - lo) / (hi - lo)
             diff = s_home - s_away
-            probs, mat = predict_row(base_lambda, spread, rho, diff)
+            probs, mat = predict_row(base_lambda, spread, rho, diff,
+                                     pi_zero=_pi_zero, lambda3=_lambda3)
             gh = int(row[goals_home_col])
             ga = int(row[goals_away_col])
             y_1n2 = [1.0 if gh > ga else 0.0, 1.0 if gh == ga else 0.0, 1.0 if gh < ga else 0.0]
@@ -577,6 +591,10 @@ def main() -> None:
                             y_tot = [1.0 if gh + ga > line else 0.0, 1.0 if gh + ga <= line else 0.0]
             points.append(BacktestPoint(key, "1n2", y_1n2, probs["1n2"], [1 / 3, 1 / 3, 1 / 3], market_1n2))
             points.append(BacktestPoint(key, "totals", y_tot, model_tot, [0.5, 0.5], market_totals))
+            # Score exact : logloss sur la probabilité assignée au vrai score (gh, ga)
+            p_exact = mat[gh][ga] if gh <= 10 and ga <= 10 else 1e-15
+            points.append(BacktestPoint(key, "score_exact",
+                                        [1.0], [max(p_exact, 1e-15)], [1 / 121], None))
             market_1n2_rows.append((probs["1n2"], y_1n2, market_1n2))
             market_totals_rows.append((model_tot, y_tot, market_totals))
 

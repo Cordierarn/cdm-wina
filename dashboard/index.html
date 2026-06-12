@@ -62,12 +62,13 @@
   <button data-tab="parmatch">🎯 Par match</button>
   <button data-tab="cal">📅 Calendrier</button>
   <button data-tab="suivi">📒 Suivi</button>
-  <button data-tab="teams">🏆 Équipes</button>
+  <button data-tab="teams">📊 Équipes</button>
+  <button data-tab="tournoi">🏆 Tournoi</button>
 </nav>
 <main id="main"></main>
 
 <script>
-let MODEL, ODDS, PICKS, LINEUPS = {};
+let MODEL, ODDS, PICKS, LINEUPS = {}, SIM = null, BRACKET = null;
 let tab = 'picks';
 const fmtDate = ts => new Date(ts * 1000).toLocaleString('fr-FR', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
 const dayKey = ts => new Date(ts * 1000).toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' });
@@ -87,6 +88,8 @@ async function load() {
     fetch('../data/picks.json').then(r => r.json()),
   ]);
   LINEUPS = await fetch('../data/lineups.json').then(r => r.json()).then(d => d.lineups || {}).catch(() => ({}));
+  SIM = await fetch('../data/tournament_sim.json').then(r => r.json()).catch(() => null);
+  BRACKET = await fetch('../data/bracket.json').then(r => r.json()).catch(() => null);
   document.getElementById('meta').textContent =
     `cotes Winamax du ${new Date(ODDS.scraped_at * 1000).toLocaleString('fr-FR')} · ${ODDS.matches.length} matchs · ${PICKS.value_bets.length} value bets`;
   render();
@@ -106,6 +109,7 @@ function render() {
   if (tab === 'cal') m.innerHTML = renderCal();
   if (tab === 'suivi') { m.innerHTML = renderSuivi(); drawBankroll(); }
   if (tab === 'teams') m.innerHTML = renderTeams();
+  if (tab === 'tournoi') m.innerHTML = renderTournoi();
 }
 
 // ── Picks ──────────────────────────────────────────────────────────────
@@ -139,11 +143,23 @@ function pickCard(p) {
 }
 
 // ── Par match : propositions pour chaque match ─────────────────────────
+let pmFilter = 'all';
 function renderParMatch() {
-  const entries = Object.entries(PICKS.par_match || {}).sort((a, b) => a[1].kickoff - b[1].kickoff);
-  if (!entries.length) return `<p class="muted">Relance update.bat pour générer les propositions.</p>`;
+  const rawEntries = Object.entries(PICKS.par_match || {}).sort((a, b) => a[1].kickoff - b[1].kickoff);
+  if (!rawEntries.length) return `<p class="muted">Relance update.bat pour générer les propositions.</p>`;
   const now = Date.now() / 1000;
-  let html = `<p class="muted" style="margin-bottom:14px">Pour chaque match : favori 1N2 du modèle + les 5 meilleures propositions (EV décroissant, proba ≥ 10 %). Vert = value (EV ≥ 3 %).</p>`;
+  const isMismatchEntry = ([, m]) => {
+    if (!m.top_scores || !m.top_scores[0]) return false;
+    const [gh, ga] = m.top_scores[0].score.split('-').map(Number);
+    return Math.max(gh, ga) >= 2 && Math.abs(gh - ga) >= 2;
+  };
+  const entries = pmFilter === 'mismatch' ? rawEntries.filter(isMismatchEntry) : rawEntries;
+  const nMismatch = rawEntries.filter(isMismatchEntry).length;
+  let html = `<div class="row" style="margin-bottom:12px;gap:8px">
+    <button class="act small ${pmFilter==='all'?'':'ghost'}" onclick="pmFilter='all';render()">Tous (${rawEntries.length})</button>
+    <button class="act small ${pmFilter==='mismatch'?'':'ghost'}" onclick="pmFilter='mismatch';render()" style="${pmFilter==='mismatch'?'':''}">⚡ Favoris écrasants (${nMismatch})</button>
+    <span class="muted" style="font-size:12px">Score prédit gold = écart ≥ 2 buts</span>
+  </div>`;
   let lastDay = '';
   for (const [match, m] of entries) {
     if (m.kickoff < now) continue;
@@ -159,6 +175,23 @@ function renderParMatch() {
         ${fav ? `<span class="pill" title="favori du modèle">⭐ ${fav.selection_name} ${pct(fav.proba)}</span>` : ''}
         ${lu ? (lu.confirmed ? `<span class="pill" style="color:var(--green)">📋 XI confirmés</span>` : `<span class="pill">🕐 XI pas encore publiés</span>`) : ''}
       </div>
+      ${m.top_scores ? (() => {
+        const top = m.top_scores[0];
+        const [gh, ga] = top.score.split('-').map(Number);
+        const isMismatch = Math.max(gh, ga) >= 2 && Math.abs(gh - ga) >= 2;
+        const headerStyle = isMismatch ? 'color:var(--gold);font-weight:600' : 'color:var(--muted)';
+        const label = isMismatch ? `🎯 Scores les plus probables — <span style="color:var(--gold)">favori écrasant</span>` : '🎯 Scores les plus probables';
+        return `<div class="row" style="padding:6px 0;border-top:1px solid var(--border);gap:6px;flex-wrap:wrap">
+          <span style="font-size:11px;width:100%;margin-bottom:2px;${headerStyle}">${label}</span>
+          ${m.top_scores.map((s, i) => {
+            const [h2, a2] = s.score.split('-').map(Number);
+            const big = Math.max(h2, a2) >= 2 && Math.abs(h2 - a2) >= 2;
+            const cls = i === 0 ? 'odd value' : 'odd';
+            const style = big && i === 0 ? 'min-width:68px;text-align:center;border-color:var(--gold);background:rgba(210,153,34,.12)' : 'min-width:58px;text-align:center';
+            return `<span class="${cls}" style="${style}"><strong>${s.score}</strong><small>${(s.proba*100).toFixed(1)}%</small></span>`;
+          }).join('')}
+        </div>`;
+      })() : ''}
       ${m.props.map(p => `
         <div class="row" style="padding:4px 0;border-top:1px solid var(--border)">
           <span class="grow">${p.marche} : <strong>${p.selection_name}</strong></span>
@@ -336,6 +369,132 @@ function renderTeams() {
   }
   return html;
 }
+
+// ── Tournoi : simulation Monte Carlo ───────────────────────────────────
+// ── Tournoi : bracket complet match par match ──────────────────────────
+function renderTournoi() {
+  if (!BRACKET) return `<p class="muted">Fichier bracket.json introuvable.</p>`;
+  const B = BRACKET;
+  const champion = B.champion;
+
+  // Helper : rendu d'une carte match
+  function matchCard(m, label, roundLabel) {
+    if (!m) return '';
+    const pW = m.home === m.winner ? m.p1 : m.p2;
+    const isClose = Math.max(m.p1, m.p2) < 0.45;
+    const winColor = isClose ? 'var(--gold)' : 'var(--green)';
+    const [sh, sa] = m.score.split('-').map(Number);
+    const bigScore = Math.max(sh,sa) >= 2 && Math.abs(sh-sa) >= 2;
+    return `<div class="card" style="padding:8px 10px;min-width:210px;max-width:280px;flex:1;${m.winner===champion?'border-color:var(--gold)':''}">
+      ${label ? `<div style="font-size:10px;color:var(--blue);margin-bottom:4px;font-weight:600">${label}</div>` : ''}
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px">
+        <span style="flex:1;font-size:13px;font-weight:${m.home===m.winner?700:400};color:${m.home===m.winner?'var(--text)':'var(--muted)'}">${m.home}</span>
+        <span style="font-size:18px;font-weight:800;color:${bigScore?'var(--gold)':'var(--text)'};letter-spacing:1px">${m.score}</span>
+        <span style="flex:1;font-size:13px;font-weight:${m.away===m.winner?700:400};color:${m.away===m.winner?'var(--text)':'var(--muted)'};text-align:right">${m.away}</span>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--muted)">
+        <span>λ ${m.lh}–${m.la}</span>
+        <span style="color:${winColor};font-weight:600">✓ ${m.winner} <small>(${(pW*100).toFixed(0)}%)</small></span>
+        <span>score: ${(m.score_p*100).toFixed(1)}%</span>
+      </div>
+    </div>`;
+  }
+
+  let html = '';
+
+  // ── Champion banner ──
+  html += `<div style="text-align:center;margin:16px 0 22px;padding:16px;background:linear-gradient(135deg,rgba(210,153,34,.15),rgba(210,153,34,.05));border:1px solid var(--gold);border-radius:12px">
+    <div style="font-size:36px">🏆</div>
+    <div style="font-size:24px;font-weight:800;color:var(--gold);margin:4px 0">${champion}</div>
+    <div style="font-size:12px;color:var(--muted)">Champion prédit · Bracket officiel FIFA (matchs 73-104) · Forces = Elo eloratings.net + Glicko-2 + Transfermarkt</div>
+  </div>`;
+
+  // ── Phase de groupes ──
+  html += `<h2 style="margin:0 0 10px">Phase de groupes</h2>
+  <p class="muted" style="font-size:12px;margin-bottom:12px">Tous les matchs de chaque groupe · Score le plus probable · Le classement final détermine les qualifiés.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;margin-bottom:28px">`;
+
+  for (const [grp, gdata] of Object.entries(B.groups)) {
+    html += `<div class="card" style="padding:10px 12px">
+      <div style="font-weight:700;color:var(--blue);margin-bottom:8px">Groupe ${grp}
+        <span style="font-weight:400;font-size:11px;color:var(--muted);margin-left:6px">Qualifiés → ${gdata.ranking[0]} · ${gdata.ranking[1]}</span>
+      </div>`;
+    // Classement attendu
+    gdata.ranking.forEach((t, i) => {
+      const icon = i===0?'🟢':i===1?'🔵':i===2?'⚪':'⚫';
+      const bold = i<2;
+      html += `<div style="font-size:12px;padding:2px 0;${bold?'font-weight:600':'color:var(--muted)'}">${icon} ${i+1}. ${t}</div>`;
+    });
+    html += `<div style="margin-top:8px;border-top:1px solid var(--border);padding-top:6px">`;
+    gdata.matches.forEach(m => {
+      const pW = Math.max(m.p1, m.p2);
+      const [sh, sa] = m.score.split('-').map(Number);
+      const bigScore = Math.max(sh,sa) >= 2 && Math.abs(sh-sa) >= 2;
+      html += `<div style="display:flex;align-items:center;gap:6px;padding:3px 0;font-size:12px">
+        <span style="flex:1;text-align:right;font-weight:${m.winner===m.home?600:400};color:${m.winner===m.home?'var(--text)':'var(--muted)'}">${m.home}</span>
+        <span style="font-weight:700;min-width:28px;text-align:center;color:${bigScore?'var(--gold)':'var(--text)'}">${m.score}</span>
+        <span style="flex:1;font-weight:${m.winner===m.away?600:400};color:${m.winner===m.away?'var(--text)':'var(--muted)'}">${m.away}</span>
+        <span style="font-size:10px;color:var(--muted);min-width:28px">${(pW*100).toFixed(0)}%</span>
+      </div>`;
+    });
+    html += `</div></div>`;
+  }
+  html += `</div>`;
+
+  // Helper section KO
+  function koSection(title, matches, subtitle) {
+    let s = `<h2 style="margin:0 0 6px">${title}</h2>`;
+    if (subtitle) s += `<p class="muted" style="font-size:12px;margin-bottom:10px">${subtitle}</p>`;
+    s += `<div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px">`;
+    matches.forEach((m, i) => {
+      s += matchCard(m, `Match ${i+1}`);
+    });
+    s += `</div>`;
+    return s;
+  }
+
+  html += koSection('1/16 de finale', B.r16, '32 équipes qualifiées · 16 matchs à élimination directe');
+  html += koSection('1/8 de finale', B.r8, '16 équipes restantes');
+  html += koSection('Quarts de finale', B.r4, '8 équipes restantes');
+  html += koSection('Demi-finales', B.r2, '4 équipes restantes · les perdants jouent la 3e place');
+
+  // ── Finale ──
+  const f = B.final;
+  const pF = Math.max(f.p1, f.p2);
+  html += `<h2 style="margin:0 0 10px">🏆 Finale</h2>
+  <div style="display:flex;justify-content:center;margin-bottom:24px">
+    <div class="card" style="max-width:420px;width:100%;padding:20px;border-color:var(--gold);background:linear-gradient(135deg,var(--panel),var(--panel2))">
+      <div style="text-align:center;font-size:11px;color:var(--muted);margin-bottom:10px">19 juillet 2026 · MetLife Stadium, New York</div>
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:10px">
+        <div style="text-align:center;flex:1">
+          <div style="font-size:18px;font-weight:${f.winner===f.home?800:400};color:${f.winner===f.home?'var(--gold)':'var(--muted)'}">${f.home}</div>
+          <div style="font-size:12px;color:var(--muted)">${(f.p1*100).toFixed(0)}%</div>
+        </div>
+        <div style="text-align:center">
+          <div style="font-size:32px;font-weight:900;color:var(--gold);letter-spacing:2px">${f.score}</div>
+          <div style="font-size:10px;color:var(--muted)">score prédit (${(f.score_p*100).toFixed(1)}%)</div>
+          <div style="font-size:11px;color:var(--muted);margin-top:2px">Nul: ${(f.px*100).toFixed(0)}%</div>
+        </div>
+        <div style="text-align:center;flex:1">
+          <div style="font-size:18px;font-weight:${f.winner===f.away?800:400};color:${f.winner===f.away?'var(--gold)':'var(--muted)'}">${f.away}</div>
+          <div style="font-size:12px;color:var(--muted)">${(f.p2*100).toFixed(0)}%</div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:14px;padding:10px;background:rgba(210,153,34,.1);border-radius:8px">
+        <div style="font-size:13px;color:var(--muted)">Champion du Monde 2026</div>
+        <div style="font-size:26px;font-weight:800;color:var(--gold)">🏆 ${champion}</div>
+        <div style="font-size:12px;color:var(--muted);margin-top:2px">Probabilité de victoire en finale : ${(pF*100).toFixed(0)}%</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="warn">
+    ⚠️ Bracket déterministe : le favori de chaque match est retenu à chaque tour. Score = le plus probable selon Poisson+Dixon-Coles. En réalité n'importe quelle équipe peut gagner — voir l'onglet probabilités Monte Carlo. Non destiné aux paris.
+  </div>`;
+
+  return html;
+}
+
 
 load();
 </script>

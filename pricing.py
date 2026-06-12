@@ -20,6 +20,14 @@ MODEL_WEIGHTS = {"1n2": MODEL_WEIGHT_FALLBACK, "totals": MODEL_WEIGHT_FALLBACK,
 
 MAX_GOALS = 10
 
+# Paramètres du modèle étendu (surchargés par strengths_dataset.json si présent)
+# pi_zero  : Zero-Inflated Poisson — probabilité structurelle d'un 0-0 défensif
+#            (au-delà de ce que prédit Poisson pur). Calibré par MLE sur tournois.
+# lambda3  : Bivariate Poisson — terme de covariance entre buts des deux équipes.
+#            Capture la corrélation négative : une équipe menée prend plus de risques.
+ZIP_PI_ZERO: float = 0.0
+BVPOIS_LAMBDA3: float = 0.0
+
 # Winamax (FR, normalise sans accents/minuscules) -> noms du repo (EN)
 FR_TO_EN = {
     "mexique": "Mexico", "afrique du sud": "South Africa",
@@ -111,12 +119,65 @@ def dc_tau(h: int, a: int, lh: float, la: float, rho: float) -> float:
     return 1.0
 
 
-def score_matrix(lh: float, la: float, rho: float = 0.0) -> list[list[float]]:
-    ph = [math.exp(-lh) * lh**k / math.factorial(k) for k in range(MAX_GOALS + 1)]
-    pa = [math.exp(-la) * la**k / math.factorial(k) for k in range(MAX_GOALS + 1)]
-    mat = [[ph[h] * pa[a] * dc_tau(h, a, lh, la, rho)
-            for a in range(MAX_GOALS + 1)] for h in range(MAX_GOALS + 1)]
+def _bvpois_pmf(h: int, a: int, l1: float, l2: float, l3: float) -> float:
+    """PMF du bivariate Poisson (Karlis & Ntzoufras 2003).
+
+    X = X1 + X3, Y = X2 + X3 où X1~Po(l1), X2~Po(l2), X3~Po(l3) indépendants.
+    La somme sur k (min(h,a) termes) donne la corrélation entre buts des deux équipes.
+    l3 petit (~0.05-0.15) suffit pour capturer l'effet tactique sans sur-ajuster.
+    """
+    total = 0.0
+    exp_l1 = math.exp(-l1)
+    exp_l2 = math.exp(-l2)
+    exp_l3 = math.exp(-l3)
+    for k in range(min(h, a) + 1):
+        binom_h = math.factorial(h) // (math.factorial(k) * math.factorial(h - k))
+        binom_a = math.factorial(a) // (math.factorial(k) * math.factorial(a - k))
+        term = (binom_h * binom_a
+                * math.factorial(k)
+                * (l3 / (l1 * l2)) ** k
+                * (exp_l1 * l1 ** h / math.factorial(h))
+                * (exp_l2 * l2 ** a / math.factorial(a))
+                * exp_l3)
+        total += term
+    return total
+
+
+def score_matrix(lh: float, la: float, rho: float = 0.0,
+                 pi_zero: float = 0.0, lambda3: float = 0.0) -> list[list[float]]:
+    """Matrice de probabilités de scores (h, a) = 0..MAX_GOALS.
+
+    Modèle combiné :
+    1. Bivariate Poisson (Karlis & Ntzoufras) si lambda3 > 0 — remplace le
+       Poisson indépendant de base et capture la corrélation entre buts.
+    2. Correction Dixon-Coles τ sur les scores (0,0),(1,0),(0,1),(1,1).
+    3. Zero-Inflated Poisson : masse supplémentaire pi_zero sur le 0-0 (matchs
+       défensifs structurels non capturés par le niveau des équipes seul).
+    """
+    if lambda3 > 0.0:
+        # Bivariate Poisson : l1 = lh - l3, l2 = la - l3 (marginales identiques)
+        l3 = min(lambda3, min(lh, la) * 0.9)
+        l1 = max(lh - l3, 1e-9)
+        l2 = max(la - l3, 1e-9)
+        mat = [[_bvpois_pmf(h, a, l1, l2, l3) * dc_tau(h, a, lh, la, rho)
+                for a in range(MAX_GOALS + 1)] for h in range(MAX_GOALS + 1)]
+    else:
+        ph = [math.exp(-lh) * lh**k / math.factorial(k) for k in range(MAX_GOALS + 1)]
+        pa = [math.exp(-la) * la**k / math.factorial(k) for k in range(MAX_GOALS + 1)]
+        mat = [[ph[h] * pa[a] * dc_tau(h, a, lh, la, rho)
+                for a in range(MAX_GOALS + 1)] for h in range(MAX_GOALS + 1)]
+
+    # Zero-Inflated : on ajoute pi_zero sur le 0-0 et on recompresse le reste
+    if pi_zero > 0.0:
+        base_00 = mat[0][0]
+        extra = pi_zero * (1.0 - base_00)   # masse déplacée vers 0-0
+        scale = 1.0 - extra                  # facteur de recompression du reste
+        mat = [[v * scale for v in row] for row in mat]
+        mat[0][0] += extra
+
     total = sum(sum(row) for row in mat)
+    if total <= 0:
+        total = 1.0
     return [[v / total for v in row] for row in mat]
 
 

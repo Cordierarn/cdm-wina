@@ -69,7 +69,9 @@ def main() -> None:
         flipped = (home_en, away_en) not in pred_index
         lh = pred["lambda_away"] if flipped else pred["lambda_home"]
         la = pred["lambda_home"] if flipped else pred["lambda_away"]
-        mat = score_matrix(lh, la, model.get("rho", 0.0))
+        mat = score_matrix(lh, la, model.get("rho", 0.0),
+                           pi_zero=model.get("pi_zero", 0.0),
+                           lambda3=model.get("lambda3", 0.0))
         matched += 1
 
         # reference sharp : Pinnacle dans le meme sens que Winamax si dispo
@@ -141,6 +143,33 @@ def main() -> None:
     for m in par_match.values():
         m["props"].sort(key=lambda x: -x["ev"])
         m["props"] = m["props"][:5]
+
+    # Score exact le plus probable pour chaque match
+    for o in odds["matches"]:
+        home_en, away_en = fr_to_en(o["home_fr"]), fr_to_en(o["away_fr"])
+        if not home_en or not away_en:
+            continue
+        pred = pred_index.get((home_en, away_en)) or pred_index.get((away_en, home_en))
+        if not pred:
+            continue
+        flipped = (home_en, away_en) not in pred_index
+        lh = pred["lambda_away"] if flipped else pred["lambda_home"]
+        la = pred["lambda_home"] if flipped else pred["lambda_away"]
+        mat = score_matrix(lh, la, model.get("rho", 0.0),
+                           pi_zero=model.get("pi_zero", 0.0),
+                           lambda3=model.get("lambda3", 0.0))
+        # Top 5 scores les plus probables
+        scores = []
+        for h in range(MAX_GOALS + 1):
+            for a in range(MAX_GOALS + 1):
+                scores.append((mat[h][a], h, a))
+        scores.sort(reverse=True)
+        match_key = f"{o['home_fr']} - {o['away_fr']}"
+        if match_key in par_match:
+            par_match[match_key]["top_scores"] = [
+                {"score": f"{h}-{a}", "proba": round(p, 4)}
+                for p, h, a in scores[:8]
+            ]
 
     out = {
         "generated_at": int(time.time()),
