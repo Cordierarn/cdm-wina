@@ -179,6 +179,7 @@ def main() -> None:
 
     safe_by_day: dict[str, list[dict]] = {}
     value_by_day: dict[str, list[dict]] = {}
+    fun_by_day: dict[str, list[dict]] = {}   # grosses cotes encore plausibles (plaisir)
     for match_key, slot in par_match.items():
         day = day_of(slot["kickoff"])
         safe = [r for r in all_rows if r["match"] == match_key
@@ -189,6 +190,12 @@ def main() -> None:
                  and combinable(r) and r["proba"] >= 0.30 and r["ev"] >= 0.03]
         if cands:
             value_by_day.setdefault(day, []).append(max(cands, key=lambda r: r["ev"]))
+        # jambe "plaisir" : grosse cote dont le modele garde une proba credible
+        # (>=18%) et pas une cote pourrie (EV pas trop negatif) -> gros gain
+        fun = [r for r in all_rows if r["match"] == match_key
+               and combinable(r) and r["proba"] >= 0.18 and r["ev"] >= -0.05 and r["cote"] >= 1.8]
+        if fun:
+            fun_by_day.setdefault(day, []).append(max(fun, key=lambda r: r["cote"]))
 
     combos = []
     seen_combo = set()
@@ -215,16 +222,19 @@ def main() -> None:
             "kelly_pct": round(kelly(p_joint, cote_combo) * 100, 2),
         })
 
-    all_days = sorted(set(safe_by_day) | set(value_by_day))
+    all_days = sorted(set(safe_by_day) | set(value_by_day) | set(fun_by_day))
     for day in all_days:
         safe_legs = sorted(safe_by_day.get(day, []), key=lambda r: -r["proba"])
         value_legs = sorted(value_by_day.get(day, []), key=lambda r: -r["ev"])
+        fun_legs = sorted(fun_by_day.get(day, []), key=lambda r: -r["cote"])
         # sur : les 2 selections les plus probables du jour (passe le + souvent)
         emit_combo(day, "sur", safe_legs[:2])
         # value : les meilleures jambes +EV (seul profil gagnant a long terme)
         emit_combo(day, "value", value_legs[:3])
-        # ambitieux : 4 plus probables, grosse cote, faible proba jointe
-        emit_combo(day, "ambitieux", safe_legs[:4])
+        # plaisir : 3-4 grosses cotes credibles -> gros gain (x10 a x40)
+        emit_combo(day, "plaisir", fun_legs[:4])
+        # jackpot : jusqu'a 6 grosses cotes -> tres gros gain, tres faible proba
+        emit_combo(day, "jackpot", fun_legs[:6])
 
     # Score exact le plus probable pour chaque match
     for o in odds["matches"]:

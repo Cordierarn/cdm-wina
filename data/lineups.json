@@ -1,16 +1,6 @@
 {
- "checked_at": 1781286796,
+ "checked_at": 1781370373,
  "lineups": {
-  "Canada|Bosnia and Herzegovina": {
-   "kickoff": "2026-06-12T19:00Z",
-   "teams": {},
-   "confirmed": false
-  },
-  "United States|Paraguay": {
-   "kickoff": "2026-06-13T01:00Z",
-   "teams": {},
-   "confirmed": false
-  },
   "Qatar|Switzerland": {
    "kickoff": "2026-06-13T19:00Z",
    "teams": {},
@@ -23,6 +13,31 @@
   },
   "Haiti|Scotland": {
    "kickoff": "2026-06-14T01:00Z",
+   "teams": {},
+   "confirmed": false
+  },
+  "Australia|Turkey": {
+   "kickoff": "2026-06-14T04:00Z",
+   "teams": {},
+   "confirmed": false
+  },
+  "Germany|Curacao": {
+   "kickoff": "2026-06-14T17:00Z",
+   "teams": {},
+   "confirmed": false
+  },
+  "Netherlands|Japan": {
+   "kickoff": "2026-06-14T20:00Z",
+   "teams": {},
+   "confirmed": false
+  },
+  "Ivory Coast|Ecuador": {
+   "kickoff": "2026-06-14T23:00Z",
+   "teams": {},
+   "confirmed": false
+  },
+  "Sweden|Tunisia": {
+   "kickoff": "2026-06-15T02:00Z",
    "teams": {},
    "confirmed": false
   }

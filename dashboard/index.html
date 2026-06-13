@@ -226,6 +226,8 @@ function renderCombos() {
   const labels = {
     sur: ['🛡️ Sûr', 'Les 2 sélections les plus probables du jour. Passe souvent, gain modeste.'],
     value: ['💎 Value', 'Uniquement des jambes à EV positif. Seul profil gagnant sur le long terme — proba faible, gros gain.'],
+    plaisir: ['🎉 Plaisir', 'Grosses cotes que le modèle juge encore crédibles. Gros gain, faible proba — pour se faire plaisir à petite mise.'],
+    jackpot: ['🤑 Jackpot', 'Le ticket de rêve : un max de grosses cotes empilées. Proba minuscule, gain énorme. Mise 1-2€ max.'],
     ambitieux: ['🚀 Ambitieux', '4 sélections probables. Grosse cote, faible proba — un coup de poker.'],
   };
   let html = `<div class="warn">⚠️ Un combiné multiplie la marge du bookmaker : seuls les combinés <strong>Value</strong> (EV positif) sont gagnants à long terme. Les combinés <strong>Sûr</strong> passent souvent mais ont une EV négative. 1 jambe max par match (les paris d'un même match sont corrélés). Joue petit (09 74 75 13 13).</div>`;
@@ -235,7 +237,7 @@ function renderCombos() {
   if (!days.length) return html + `<p class="muted">Aucun combiné à venir.</p>`;
   for (const day of days) {
     const dayCombos = future.filter(c => c.day === day)
-      .sort((a, b) => ['value','sur','ambitieux'].indexOf(a.type) - ['value','sur','ambitieux'].indexOf(b.type));
+      .sort((a, b) => ['value','plaisir','jackpot','sur','ambitieux'].indexOf(a.type) - ['value','plaisir','jackpot','sur','ambitieux'].indexOf(b.type));
     html += `<div class="datehead">${new Date(day + 'T12:00:00').toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' })}</div>`;
     for (const c of dayCombos) {
       const [name, desc] = labels[c.type] || [c.type, ''];
