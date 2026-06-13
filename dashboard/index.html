@@ -226,6 +226,7 @@ function renderCombos() {
   const labels = {
     sur: ['🛡️ Sûr', 'Les 2 sélections les plus probables du jour. Passe souvent, gain modeste.'],
     value: ['💎 Value', 'Uniquement des jambes à EV positif. Seul profil gagnant sur le long terme — proba faible, gros gain.'],
+    modere: ['🎯 Modéré', 'Cote 10-50 visée avec les sélections les plus probables (tous marchés). Bon compromis frisson / chance de toucher.'],
     plaisir: ['🎉 Plaisir', 'Grosses cotes que le modèle juge encore crédibles. Gros gain, faible proba — pour se faire plaisir à petite mise.'],
     jackpot: ['🤑 Jackpot', 'Le ticket de rêve : un max de grosses cotes empilées. Proba minuscule, gain énorme. Mise 1-2€ max.'],
     ambitieux: ['🚀 Ambitieux', '4 sélections probables. Grosse cote, faible proba — un coup de poker.'],
@@ -237,7 +238,7 @@ function renderCombos() {
   if (!days.length) return html + `<p class="muted">Aucun combiné à venir.</p>`;
   for (const day of days) {
     const dayCombos = future.filter(c => c.day === day)
-      .sort((a, b) => ['value','plaisir','jackpot','sur','ambitieux'].indexOf(a.type) - ['value','plaisir','jackpot','sur','ambitieux'].indexOf(b.type));
+      .sort((a, b) => ['value','modere','plaisir','jackpot','sur','ambitieux'].indexOf(a.type) - ['value','modere','plaisir','jackpot','sur','ambitieux'].indexOf(b.type));
     html += `<div class="datehead">${new Date(day + 'T12:00:00').toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' })}</div>`;
     for (const c of dayCombos) {
       const [name, desc] = labels[c.type] || [c.type, ''];

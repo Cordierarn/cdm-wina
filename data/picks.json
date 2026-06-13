@@ -1,5 +1,5 @@
 {
- "generated_at": 1781370809,
+ "generated_at": 1781371346,
  "matched_matches": 68,
  "priced_markets": 1561,
  "value_bets": [
@@ -13755,6 +13755,52 @@
   },
   {
    "day": "2026-06-14",
+   "type": "modere",
+   "legs": [
+    {
+     "match": "Allemagne - Curaçao",
+     "marche": "Nombre de buts de Allemagne",
+     "selection_name": "Moins de 3,5",
+     "cote": 2,
+     "proba": 0.5488,
+     "ev": 0.0976,
+     "kickoff": 1781456400
+    },
+    {
+     "match": "Haïti - Écosse",
+     "marche": "Nombre de buts",
+     "selection_name": "Moins de 2,5",
+     "cote": 2,
+     "proba": 0.4536,
+     "ev": -0.0928,
+     "kickoff": 1781398800
+    },
+    {
+     "match": "Pays-Bas - Japon",
+     "marche": "Nombre de buts",
+     "selection_name": "Moins de 2",
+     "cote": 2.45,
+     "proba": 0.2701,
+     "ev": -0.0806,
+     "kickoff": 1781467200
+    },
+    {
+     "match": "Brésil - Maroc",
+     "marche": "Résultat",
+     "selection_name": "Match nul",
+     "cote": 3.85,
+     "proba": 0.2566,
+     "ev": -0.0122,
+     "kickoff": 1781388000
+    }
+   ],
+   "proba": 0.0173,
+   "cote": 37.73,
+   "ev": -0.349,
+   "kelly_pct": 0.0
+  },
+  {
+   "day": "2026-06-14",
    "type": "plaisir",
    "legs": [
     {
@@ -13880,6 +13926,52 @@
    "proba": 0.5649,
    "cote": 1.49,
    "ev": -0.1593,
+   "kelly_pct": 0.0
+  },
+  {
+   "day": "2026-06-15",
+   "type": "modere",
+   "legs": [
+    {
+     "match": "Côte d'Ivoire - Équateur",
+     "marche": "Les 2 équipes marquent",
+     "selection_name": "Oui",
+     "cote": 2.05,
+     "proba": 0.4608,
+     "ev": -0.0554,
+     "kickoff": 1781478000
+    },
+    {
+     "match": "Suède - Tunisie",
+     "marche": "Nombre de buts",
+     "selection_name": "Plus de 2,5",
+     "cote": 2,
+     "proba": 0.4502,
+     "ev": -0.0995,
+     "kickoff": 1781488800
+    },
+    {
+     "match": "Espagne - Cap-Vert",
+     "marche": "Nombre de buts de Espagne",
+     "selection_name": "Moins de 2,5",
+     "cote": 2.25,
+     "proba": 0.4236,
+     "ev": -0.0469,
+     "kickoff": 1781539200
+    },
+    {
+     "match": "Belgique - Égypte",
+     "marche": "Nombre de buts",
+     "selection_name": "Plus de 3",
+     "cote": 2.5,
+     "proba": 0.2739,
+     "ev": -0.097,
+     "kickoff": 1781550000
+    }
+   ],
+   "proba": 0.0241,
+   "cote": 23.06,
+   "ev": -0.4449,
    "kelly_pct": 0.0
   },
   {
@@ -14014,6 +14106,43 @@
   },
   {
    "day": "2026-06-17",
+   "type": "modere",
+   "legs": [
+    {
+     "match": "Autriche - Jordanie",
+     "marche": "Nombre de buts",
+     "selection_name": "Moins de 2,5",
+     "cote": 2.05,
+     "proba": 0.4621,
+     "ev": -0.0527,
+     "kickoff": 1781668800
+    },
+    {
+     "match": "Irak - Norvège",
+     "marche": "Les 2 équipes marquent",
+     "selection_name": "Oui",
+     "cote": 2.1,
+     "proba": 0.436,
+     "ev": -0.0844,
+     "kickoff": 1781647200
+    },
+    {
+     "match": "Argentine - Algérie",
+     "marche": "Nombre de buts de Argentine",
+     "selection_name": "Plus de 2,5",
+     "cote": 2.55,
+     "proba": 0.3606,
+     "ev": -0.0805,
+     "kickoff": 1781658000
+    }
+   ],
+   "proba": 0.0727,
+   "cote": 10.98,
+   "ev": -0.2024,
+   "kelly_pct": 0.0
+  },
+  {
+   "day": "2026-06-17",
    "type": "plaisir",
    "legs": [
     {
@@ -14088,6 +14217,43 @@
   },
   {
    "day": "2026-06-18",
+   "type": "modere",
+   "legs": [
+    {
+     "match": "Ghana - Panama",
+     "marche": "Nombre de buts",
+     "selection_name": "Plus de 2,5",
+     "cote": 2.05,
+     "proba": 0.4496,
+     "ev": -0.0783,
+     "kickoff": 1781737200
+    },
+    {
+     "match": "Ouzbékistan - Colombie",
+     "marche": "Les 2 équipes marquent",
+     "selection_name": "Oui",
+     "cote": 2.1,
+     "proba": 0.4399,
+     "ev": -0.0763,
+     "kickoff": 1781748000
+    },
+    {
+     "match": "Suisse - Bosnie-Herzégovine",
+     "marche": "Nombre de buts de Suisse",
+     "selection_name": "Plus de 2,5",
+     "cote": 3.2,
+     "proba": 0.2898,
+     "ev": -0.0726,
+     "kickoff": 1781809200
+    }
+   ],
+   "proba": 0.0573,
+   "cote": 13.78,
+   "ev": -0.2104,
+   "kelly_pct": 0.0
+  },
+  {
+   "day": "2026-06-18",
    "type": "plaisir",
    "legs": [
     {
@@ -14150,6 +14316,43 @@
    "cote": 1.51,
    "ev": -0.1161,
    "kelly_pct": 0.0
+  },
+  {
+   "day": "2026-06-19",
+   "type": "modere",
+   "legs": [
+    {
+     "match": "Mexique - Corée du Sud",
+     "marche": "Nombre de buts",
+     "selection_name": "Plus de 2,5",
+     "cote": 2.15,
+     "proba": 0.4322,
+     "ev": -0.0708,
+     "kickoff": 1781830800
+    },
+    {
+     "match": "Canada - Qatar",
+     "marche": "Les 2 équipes marquent",
+     "selection_name": "Oui",
+     "cote": 2.2,
+     "proba": 0.43,
+     "ev": -0.0539,
+     "kickoff": 1781820000
+    },
+    {
+     "match": "États-Unis - Australie",
+     "marche": "Nombre de buts de Australie",
+     "selection_name": "Plus de 1,5",
+     "cote": 4.1,
+     "proba": 0.2825,
+     "ev": 0.1582,
+     "kickoff": 1781895600
+    }
+   ],
+   "proba": 0.0525,
+   "cote": 19.39,
+   "ev": 0.0182,
+   "kelly_pct": 0.02
   },
   {
    "day": "2026-06-19",
@@ -14218,6 +14421,52 @@
   },
   {
    "day": "2026-06-20",
+   "type": "modere",
+   "legs": [
+    {
+     "match": "Allemagne - Côte d'Ivoire",
+     "marche": "Nombre de buts de Allemagne",
+     "selection_name": "Moins de 1,5",
+     "cote": 2,
+     "proba": 0.4707,
+     "ev": -0.0585,
+     "kickoff": 1781985600
+    },
+    {
+     "match": "Turquie - Paraguay",
+     "marche": "Nombre de buts de Turquie",
+     "selection_name": "Plus de 1,5",
+     "cote": 2.05,
+     "proba": 0.4634,
+     "ev": -0.0499,
+     "kickoff": 1781924400
+    },
+    {
+     "match": "Écosse - Maroc",
+     "marche": "Nombre de buts",
+     "selection_name": "Plus de 2,5",
+     "cote": 2.05,
+     "proba": 0.4419,
+     "ev": -0.094,
+     "kickoff": 1781906400
+    },
+    {
+     "match": "Brésil - Haïti",
+     "marche": "Nombre de buts de Brésil",
+     "selection_name": "Moins de 2,5",
+     "cote": 2.45,
+     "proba": 0.4187,
+     "ev": 0.0259,
+     "kickoff": 1781915400
+    }
+   ],
+   "proba": 0.0404,
+   "cote": 20.59,
+   "ev": -0.1689,
+   "kelly_pct": 0.0
+  },
+  {
+   "day": "2026-06-20",
    "type": "plaisir",
    "legs": [
     {
@@ -14282,6 +14531,80 @@
    "kelly_pct": 0.0
   },
   {
+   "day": "2026-06-21",
+   "type": "modere",
+   "legs": [
+    {
+     "match": "Belgique - Iran",
+     "marche": "Nombre de buts de Belgique",
+     "selection_name": "Moins de 1,5",
+     "cote": 2.1,
+     "proba": 0.4754,
+     "ev": -0.0017,
+     "kickoff": 1782068400
+    },
+    {
+     "match": "Tunisie - Japon",
+     "marche": "Nombre de buts",
+     "selection_name": "Plus de 2,5",
+     "cote": 2,
+     "proba": 0.47,
+     "ev": -0.0599,
+     "kickoff": 1782014400
+    },
+    {
+     "match": "Espagne - Arabie Saoudite",
+     "marche": "Nombre de buts",
+     "selection_name": "Plus de 3,5",
+     "cote": 2,
+     "proba": 0.452,
+     "ev": -0.096,
+     "kickoff": 1782057600
+    },
+    {
+     "match": "Équateur - Curaçao",
+     "marche": "Nombre de buts de Curaçao",
+     "selection_name": "Plus de 0,5",
+     "cote": 2.1,
+     "proba": 0.4377,
+     "ev": -0.0808,
+     "kickoff": 1782000000
+    }
+   ],
+   "proba": 0.0442,
+   "cote": 17.64,
+   "ev": -0.2202,
+   "kelly_pct": 0.0
+  },
+  {
+   "day": "2026-06-21",
+   "type": "plaisir",
+   "legs": [
+    {
+     "match": "Belgique - Iran",
+     "marche": "Nombre de buts de Belgique",
+     "selection_name": "Moins de 0,5",
+     "cote": 5.5,
+     "proba": 0.1899,
+     "ev": 0.0445,
+     "kickoff": 1782068400
+    },
+    {
+     "match": "Tunisie - Japon",
+     "marche": "Nombre de buts de Japon",
+     "selection_name": "Plus de 2,5",
+     "cote": 3.65,
+     "proba": 0.2695,
+     "ev": -0.0164,
+     "kickoff": 1782014400
+    }
+   ],
+   "proba": 0.0512,
+   "cote": 20.07,
+   "ev": 0.0274,
+   "kelly_pct": 0.04
+  },
+  {
    "day": "2026-06-22",
    "type": "sur",
    "legs": [
@@ -14310,6 +14633,71 @@
    "kelly_pct": 0.0
   },
   {
+   "day": "2026-06-22",
+   "type": "modere",
+   "legs": [
+    {
+     "match": "Nouvelle Zélande - Égypte",
+     "marche": "Nombre de buts",
+     "selection_name": "Plus de 2,5",
+     "cote": 2,
+     "proba": 0.455,
+     "ev": -0.09,
+     "kickoff": 1782090000
+    },
+    {
+     "match": "France - Irak",
+     "marche": "Nombre de buts de Irak",
+     "selection_name": "Plus de 0,5",
+     "cote": 2.4,
+     "proba": 0.4021,
+     "ev": -0.035,
+     "kickoff": 1782162000
+    },
+    {
+     "match": "Argentine - Autriche",
+     "marche": "Nombre de buts de Argentine",
+     "selection_name": "Plus de 2,5",
+     "cote": 3.1,
+     "proba": 0.3046,
+     "ev": -0.0558,
+     "kickoff": 1782147600
+    }
+   ],
+   "proba": 0.0557,
+   "cote": 14.88,
+   "ev": -0.1708,
+   "kelly_pct": 0.0
+  },
+  {
+   "day": "2026-06-22",
+   "type": "plaisir",
+   "legs": [
+    {
+     "match": "Nouvelle Zélande - Égypte",
+     "marche": "Nombre de buts de Nouvelle Zélande",
+     "selection_name": "Plus de 1,5",
+     "cote": 4.1,
+     "proba": 0.2341,
+     "ev": -0.04,
+     "kickoff": 1782090000
+    },
+    {
+     "match": "France - Irak",
+     "marche": "Les 2 équipes marquent",
+     "selection_name": "Oui",
+     "cote": 2.55,
+     "proba": 0.3742,
+     "ev": -0.0458,
+     "kickoff": 1782162000
+    }
+   ],
+   "proba": 0.0876,
+   "cote": 10.45,
+   "ev": -0.0841,
+   "kelly_pct": 0.0
+  },
+  {
    "day": "2026-06-23",
    "type": "sur",
    "legs": [
@@ -14335,6 +14723,43 @@
    "proba": 0.5462,
    "cote": 1.55,
    "ev": -0.1546,
+   "kelly_pct": 0.0
+  },
+  {
+   "day": "2026-06-23",
+   "type": "modere",
+   "legs": [
+    {
+     "match": "Angleterre - Ghana",
+     "marche": "Nombre de buts de Angleterre",
+     "selection_name": "Plus de 2,5",
+     "cote": 2.15,
+     "proba": 0.4651,
+     "ev": -0.0,
+     "kickoff": 1782244800
+    },
+    {
+     "match": "Portugal - Ouzbékistan",
+     "marche": "Nombre de buts",
+     "selection_name": "Moins de 2,5",
+     "cote": 2.1,
+     "proba": 0.4405,
+     "ev": -0.075,
+     "kickoff": 1782234000
+    },
+    {
+     "match": "Norvège - Sénégal",
+     "marche": "Nombre de buts de Sénégal",
+     "selection_name": "Plus de 1,5",
+     "cote": 2.65,
+     "proba": 0.3438,
+     "ev": -0.0889,
+     "kickoff": 1782172800
+    }
+   ],
+   "proba": 0.0704,
+   "cote": 11.96,
+   "ev": -0.1572,
    "kelly_pct": 0.0
   },
   {
@@ -14404,6 +14829,43 @@
   },
   {
    "day": "2026-06-24",
+   "type": "modere",
+   "legs": [
+    {
+     "match": "Colombie - RD Congo",
+     "marche": "Nombre de buts",
+     "selection_name": "Plus de 2,5",
+     "cote": 2,
+     "proba": 0.4951,
+     "ev": -0.0099,
+     "kickoff": 1782266400
+    },
+    {
+     "match": "Panama - Croatie",
+     "marche": "Nombre de buts de Croatie",
+     "selection_name": "Plus de 2,5",
+     "cote": 3.1,
+     "proba": 0.2918,
+     "ev": -0.0954,
+     "kickoff": 1782255600
+    },
+    {
+     "match": "Bosnie-Herzégovine - Qatar",
+     "marche": "Nombre de buts",
+     "selection_name": "Plus de 3",
+     "cote": 2.7,
+     "proba": 0.2548,
+     "ev": -0.097,
+     "kickoff": 1782327600
+    }
+   ],
+   "proba": 0.0368,
+   "cote": 16.74,
+   "ev": -0.3838,
+   "kelly_pct": 0.0
+  },
+  {
+   "day": "2026-06-24",
    "type": "plaisir",
    "legs": [
     {
@@ -14456,6 +14918,43 @@
    "proba": 0.5856,
    "cote": 1.49,
    "ev": -0.1284,
+   "kelly_pct": 0.0
+  },
+  {
+   "day": "2026-06-25",
+   "type": "modere",
+   "legs": [
+    {
+     "match": "Curaçao - Côte d'Ivoire",
+     "marche": "Nombre de buts de Curaçao",
+     "selection_name": "Plus de 0,5",
+     "cote": 2,
+     "proba": 0.4707,
+     "ev": -0.0587,
+     "kickoff": 1782417600
+    },
+    {
+     "match": "Écosse - Brésil",
+     "marche": "Nombre de buts de Brésil",
+     "selection_name": "Moins de 1,5",
+     "cote": 2.1,
+     "proba": 0.4439,
+     "ev": -0.0679,
+     "kickoff": 1782338400
+    },
+    {
+     "match": "Équateur - Allemagne",
+     "marche": "Nombre de buts de Équateur",
+     "selection_name": "Plus de 1,5",
+     "cote": 3.4,
+     "proba": 0.2862,
+     "ev": -0.027,
+     "kickoff": 1782417600
+    }
+   ],
+   "proba": 0.0598,
+   "cote": 14.28,
+   "ev": -0.1461,
    "kelly_pct": 0.0
   },
   {
@@ -14543,6 +15042,80 @@
    "kelly_pct": 0.3
   },
   {
+   "day": "2026-06-26",
+   "type": "modere",
+   "legs": [
+    {
+     "match": "Japon - Suède",
+     "marche": "Nombre de buts de Japon",
+     "selection_name": "Plus de 1,5",
+     "cote": 2,
+     "proba": 0.4607,
+     "ev": -0.0787,
+     "kickoff": 1782428400
+    },
+    {
+     "match": "Paraguay - Australie",
+     "marche": "Nombre de buts",
+     "selection_name": "Plus de 2,5",
+     "cote": 2.05,
+     "proba": 0.4411,
+     "ev": -0.0957,
+     "kickoff": 1782439200
+    },
+    {
+     "match": "Turquie - États-Unis",
+     "marche": "Nombre de buts de Turquie",
+     "selection_name": "Plus de 1,5",
+     "cote": 2.2,
+     "proba": 0.433,
+     "ev": -0.0475,
+     "kickoff": 1782439200
+    },
+    {
+     "match": "Tunisie - Pays-Bas",
+     "marche": "Nombre de buts de Pays-Bas",
+     "selection_name": "Plus de 2,5",
+     "cote": 2.75,
+     "proba": 0.3289,
+     "ev": -0.0956,
+     "kickoff": 1782428400
+    }
+   ],
+   "proba": 0.0289,
+   "cote": 24.8,
+   "ev": -0.2821,
+   "kelly_pct": 0.0
+  },
+  {
+   "day": "2026-06-26",
+   "type": "plaisir",
+   "legs": [
+    {
+     "match": "Turquie - États-Unis",
+     "marche": "Nombre de buts de Turquie",
+     "selection_name": "Plus de 2,5",
+     "cote": 5,
+     "proba": 0.1985,
+     "ev": -0.0075,
+     "kickoff": 1782439200
+    },
+    {
+     "match": "Paraguay - Australie",
+     "marche": "Nombre de buts de Australie",
+     "selection_name": "Plus de 1,5",
+     "cote": 3.25,
+     "proba": 0.327,
+     "ev": 0.0627,
+     "kickoff": 1782439200
+    }
+   ],
+   "proba": 0.0649,
+   "cote": 16.25,
+   "ev": 0.0548,
+   "kelly_pct": 0.09
+  },
+  {
    "day": "2026-06-27",
    "type": "sur",
    "legs": [
@@ -14599,6 +15172,34 @@
    "kelly_pct": 0.72
   },
   {
+   "day": "2026-06-27",
+   "type": "plaisir",
+   "legs": [
+    {
+     "match": "Égypte - Iran",
+     "marche": "Nombre de buts",
+     "selection_name": "Plus de 3,5",
+     "cote": 4.4,
+     "proba": 0.2249,
+     "ev": -0.0107,
+     "kickoff": 1782529200
+    },
+    {
+     "match": "Croatie - Ghana",
+     "marche": "Nombre de buts de Croatie",
+     "selection_name": "Plus de 2,5",
+     "cote": 3.4,
+     "proba": 0.3371,
+     "ev": 0.1461,
+     "kickoff": 1782594000
+    }
+   ],
+   "proba": 0.0758,
+   "cote": 14.96,
+   "ev": 0.1342,
+   "kelly_pct": 0.24
+  },
+  {
    "day": "2026-06-28",
    "type": "sur",
    "legs": [
@@ -14624,6 +15225,43 @@
    "proba": 0.5512,
    "cote": 1.45,
    "ev": -0.1997,
+   "kelly_pct": 0.0
+  },
+  {
+   "day": "2026-06-28",
+   "type": "modere",
+   "legs": [
+    {
+     "match": "RD Congo - Ouzbékistan",
+     "marche": "Nombre de buts",
+     "selection_name": "Plus de 2,5",
+     "cote": 2.05,
+     "proba": 0.4448,
+     "ev": -0.0881,
+     "kickoff": 1782603000
+    },
+    {
+     "match": "Colombie - Portugal",
+     "marche": "Nombre de buts de Colombie",
+     "selection_name": "Plus de 1,5",
+     "cote": 2.9,
+     "proba": 0.3282,
+     "ev": -0.0481,
+     "kickoff": 1782603000
+    },
+    {
+     "match": "Algérie - Autriche",
+     "marche": "Nombre de buts de Algérie",
+     "selection_name": "Plus de 1,5",
+     "cote": 2.9,
+     "proba": 0.3112,
+     "ev": -0.0975,
+     "kickoff": 1782612000
+    }
+   ],
+   "proba": 0.0454,
+   "cote": 17.24,
+   "ev": -0.2168,
    "kelly_pct": 0.0
   },
   {

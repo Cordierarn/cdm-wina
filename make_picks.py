@@ -180,6 +180,7 @@ def main() -> None:
     safe_by_day: dict[str, list[dict]] = {}
     value_by_day: dict[str, list[dict]] = {}
     fun_by_day: dict[str, list[dict]] = {}   # grosses cotes encore plausibles (plaisir)
+    mod_by_day: dict[str, list[dict]] = {}   # cote moderee ciblee 10-50
     for match_key, slot in par_match.items():
         day = day_of(slot["kickoff"])
         safe = [r for r in all_rows if r["match"] == match_key
@@ -196,13 +197,19 @@ def main() -> None:
                and combinable(r) and r["proba"] >= 0.18 and r["ev"] >= -0.05 and r["cote"] >= 1.8]
         if fun:
             fun_by_day.setdefault(day, []).append(max(fun, key=lambda r: r["cote"]))
+        # jambe "modere" : cote moyenne (2-5) la plus probable -> 3-4 jambes
+        # suffisent pour un combo cote 10-50. Tous marches pricables confondus.
+        mod = [r for r in all_rows if r["match"] == match_key and combinable(r)
+               and 2.0 <= r["cote"] <= 5.5 and r["proba"] >= 0.25 and r["ev"] >= -0.10]
+        if mod:
+            mod_by_day.setdefault(day, []).append(max(mod, key=lambda r: r["proba"]))
 
     combos = []
     seen_combo = set()
     def emit_combo(day: str, label: str, chosen: list[dict]) -> None:
         if len(chosen) < 2:
             return
-        sig = (day, tuple(sorted(leg["match"] for leg in chosen)))
+        sig = (day, tuple(sorted(f"{leg['match']}|{leg['selection_name']}" for leg in chosen)))
         if sig in seen_combo:
             return
         seen_combo.add(sig)
@@ -222,15 +229,32 @@ def main() -> None:
             "kelly_pct": round(kelly(p_joint, cote_combo) * 100, 2),
         })
 
-    all_days = sorted(set(safe_by_day) | set(value_by_day) | set(fun_by_day))
+    def build_target(legs: list[dict], lo: float, hi: float) -> list[dict]:
+        """Empile les jambes les plus probables jusqu'a une cote totale dans
+        [lo, hi]. Maximise la proba jointe pour la cote visee."""
+        chosen, cote = [], 1.0
+        for leg in legs:
+            if cote >= lo:
+                break
+            if cote * leg["cote"] > hi and len(chosen) >= 2:
+                continue  # cette jambe ferait deborder : on tente la suivante
+            chosen.append(leg)
+            cote *= leg["cote"]
+        return chosen if lo <= cote <= hi and len(chosen) >= 2 else []
+
+    all_days = sorted(set(safe_by_day) | set(value_by_day) | set(fun_by_day) | set(mod_by_day))
     for day in all_days:
         safe_legs = sorted(safe_by_day.get(day, []), key=lambda r: -r["proba"])
         value_legs = sorted(value_by_day.get(day, []), key=lambda r: -r["ev"])
         fun_legs = sorted(fun_by_day.get(day, []), key=lambda r: -r["cote"])
+        mod_legs = sorted(mod_by_day.get(day, []), key=lambda r: -r["proba"])
         # sur : les 2 selections les plus probables du jour (passe le + souvent)
         emit_combo(day, "sur", safe_legs[:2])
         # value : les meilleures jambes +EV (seul profil gagnant a long terme)
         emit_combo(day, "value", value_legs[:3])
+        # modere : cote ciblee 10-50 avec les jambes les + probables (cote 100 max)
+        emit_combo(day, "modere", build_target(mod_legs, 10.0, 50.0)
+                   or build_target(mod_legs, 10.0, 100.0))
         # plaisir : 3-4 grosses cotes credibles -> gros gain (x10 a x40)
         emit_combo(day, "plaisir", fun_legs[:4])
         # jackpot : jusqu'a 6 grosses cotes -> tres gros gain, tres faible proba
