@@ -187,6 +187,8 @@ Le CLV est considéré comme le meilleur prédicteur de rentabilité long terme 
 Page web statique (`dashboard/index.html`, zéro dépendance) servie par `python -m http.server` :
 
 - **💎 Picks du jour** — value bets des prochaines 48 h puis suivants, triés par Kelly : cote, proba modèle, EV, mise ¼-Kelly suggérée, bouton « + Suivre » ;
+- **🎯 Par match** — pour chaque match : favori 1N2, **✅ pari sûr** (la sélection la plus probable jouable, cote ≥ 1,25), top 5 propositions et scores exacts les plus probables ;
+- **🎰 Combinés** — combinés du jour (1 jambe max par match, non corrélés), 3 profils : **🛡️ Sûr** (2 sélections les plus probables — passe souvent, EV négative car la marge se cumule), **💎 Value** (jambes à EV positif uniquement — seul profil gagnant à long terme, proba faible/gros gain), **🚀 Ambitieux** (4 jambes, grosse cote). Mise Kelly si EV+, sinon forfait de suivi 2 € ;
 - **📅 Calendrier** — les 72 matchs de poules, horaires réels Winamax, cotes 1N2, barre de probas du modèle ;
 - **📒 Suivi** — paris suivis (localStorage) : gagné/perdu, profit, ROI, courbe de bankroll ;
 - **🏆 Équipes** — classement des forces des 48 équipes.

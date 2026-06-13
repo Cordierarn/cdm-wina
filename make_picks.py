@@ -144,6 +144,88 @@ def main() -> None:
         m["props"].sort(key=lambda x: -x["ev"])
         m["props"] = m["props"][:5]
 
+    # Pari sur par match : la selection la plus probable parmi celles a EV
+    # positif (sinon la plus probable a EV > -3%), cote >= 1.20 pour rester
+    # interessante. C'est aussi la jambe candidate pour les combines.
+    for match_key, slot in par_match.items():
+        candidates = [r for r in all_rows if r["match"] == match_key
+                      and r["cote"] >= 1.25 and r["proba"] >= 0.55]
+        if not candidates:
+            slot["pari_sur"] = None
+            continue
+        # privilegier l'EV, mais ne jamais laisser un match sans pari sur :
+        # parmi les candidats, prendre le meilleur compromis proba*EV
+        pos = [r for r in candidates if r["ev"] > 0]
+        pool = pos or [r for r in candidates if r["ev"] > -0.06] or candidates
+        slot["pari_sur"] = max(pool, key=lambda r: (r["proba"], r["ev"]))
+
+    # Combines du jour : 1 jambe max par match (les paris d'un meme match sont
+    # correles et interdits en combine), probas multipliees (matchs independants).
+    # 3 profils : sur (2 jambes), equilibre (3), ambitieux (4-5).
+    import datetime as _dt
+
+    def day_of(ts):
+        return _dt.datetime.fromtimestamp(ts).strftime("%Y-%m-%d")
+
+    # Une seule jambe par match (les paris d'un meme match sont correles).
+    # On distingue deux pools :
+    #  - "safe" : la selection la plus probable du match (pari sur) -> combo qui PASSE
+    #  - "value" : la meilleure jambe +EV proba>=0.40 -> combo +EV a long terme
+    # marches remboursables (push) : non combinables proprement -> exclus des combos
+    REFUNDABLE = {"vainqueur (rembourse si match nul)"}
+
+    def combinable(r: dict) -> bool:
+        return r["cote"] >= 1.20 and norm(r["marche"]) not in REFUNDABLE
+
+    safe_by_day: dict[str, list[dict]] = {}
+    value_by_day: dict[str, list[dict]] = {}
+    for match_key, slot in par_match.items():
+        day = day_of(slot["kickoff"])
+        safe = [r for r in all_rows if r["match"] == match_key
+                and combinable(r) and r["proba"] >= 0.55]
+        if safe:
+            safe_by_day.setdefault(day, []).append(max(safe, key=lambda r: r["proba"]))
+        cands = [r for r in all_rows if r["match"] == match_key
+                 and combinable(r) and r["proba"] >= 0.30 and r["ev"] >= 0.03]
+        if cands:
+            value_by_day.setdefault(day, []).append(max(cands, key=lambda r: r["ev"]))
+
+    combos = []
+    seen_combo = set()
+    def emit_combo(day: str, label: str, chosen: list[dict]) -> None:
+        if len(chosen) < 2:
+            return
+        sig = (day, tuple(sorted(leg["match"] for leg in chosen)))
+        if sig in seen_combo:
+            return
+        seen_combo.add(sig)
+        p_joint = 1.0
+        cote_combo = 1.0
+        for leg in chosen:
+            p_joint *= leg["proba"]
+            cote_combo *= leg["cote"]
+        combos.append({
+            "day": day,
+            "type": label,
+            "legs": [{k: leg[k] for k in ("match", "marche", "selection_name",
+                                          "cote", "proba", "ev", "kickoff")} for leg in chosen],
+            "proba": round(p_joint, 4),
+            "cote": round(cote_combo, 2),
+            "ev": round(p_joint * cote_combo - 1, 4),
+            "kelly_pct": round(kelly(p_joint, cote_combo) * 100, 2),
+        })
+
+    all_days = sorted(set(safe_by_day) | set(value_by_day))
+    for day in all_days:
+        safe_legs = sorted(safe_by_day.get(day, []), key=lambda r: -r["proba"])
+        value_legs = sorted(value_by_day.get(day, []), key=lambda r: -r["ev"])
+        # sur : les 2 selections les plus probables du jour (passe le + souvent)
+        emit_combo(day, "sur", safe_legs[:2])
+        # value : les meilleures jambes +EV (seul profil gagnant a long terme)
+        emit_combo(day, "value", value_legs[:3])
+        # ambitieux : 4 plus probables, grosse cote, faible proba jointe
+        emit_combo(day, "ambitieux", safe_legs[:4])
+
     # Score exact le plus probable pour chaque match
     for o in odds["matches"]:
         home_en, away_en = fr_to_en(o["home_fr"]), fr_to_en(o["away_fr"])
@@ -178,6 +260,7 @@ def main() -> None:
         "value_bets": value_bets,
         "all_picks": picks_1n2,
         "par_match": par_match,
+        "combos": combos,
     }
     (DATA_DIR / "picks.json").write_text(json.dumps(out, indent=1, ensure_ascii=False), encoding="utf-8")
     n_pin = sum(1 for p in value_bets if p["ref"] == "pinnacle")
@@ -186,6 +269,10 @@ def main() -> None:
     for p in value_bets[:12]:
         print(f"  {p['match'][:34]:34s} {p['marche'][:28]:28s} {str(p['selection_name'])[:18]:18s} "
               f"cote {p['cote']:>5.2f} proba {p['proba']:.0%} EV {p['ev']:+.1%}")
+    print(f"combos: {len(combos)} generes")
+    for c in combos[:6]:
+        print(f"  {c['day']} [{c['type']:9s}] {len(c['legs'])} jambes  cote {c['cote']:>6.2f}  "
+              f"proba {c['proba']:.0%}  EV {c['ev']:+.1%}")
 
 
 if __name__ == "__main__":

@@ -1,47 +1,6 @@
 {
- "checked_at": 1781207828,
+ "checked_at": 1781286796,
  "lineups": {
-  "Mexico|South Africa": {
-   "kickoff": "2026-06-11T19:00Z",
-   "teams": {
-    "Mexico": {
-     "starters": [
-      "Raúl Rangel",
-      "Johan Vásquez",
-      "César Montes",
-      "Érik Lira",
-      "Jesús Gallardo",
-      "Israel Reyes",
-      "Álvaro Fidalgo",
-      "Brian Gutiérrez",
-      "Julián Quiñones",
-      "Roberto Alvarado",
-      "Raúl Jiménez"
-     ]
-    },
-    "South Africa": {
-     "starters": [
-      "Ronwen Williams",
-      "Ime Okon",
-      "Mbekezeli Mbokazi",
-      "Nkosinathi Sibisi",
-      "Aubrey Modiba",
-      "Khuliso Mudau",
-      "Sphephelo Sithole",
-      "Jayden Adams",
-      "Teboho Mokoena",
-      "Lyle Foster",
-      "Iqraam Rayners"
-     ]
-    }
-   },
-   "confirmed": true
-  },
-  "South Korea|Czech Republic": {
-   "kickoff": "2026-06-12T02:00Z",
-   "teams": {},
-   "confirmed": false
-  },
   "Canada|Bosnia and Herzegovina": {
    "kickoff": "2026-06-12T19:00Z",
    "teams": {},
@@ -49,6 +8,21 @@
   },
   "United States|Paraguay": {
    "kickoff": "2026-06-13T01:00Z",
+   "teams": {},
+   "confirmed": false
+  },
+  "Qatar|Switzerland": {
+   "kickoff": "2026-06-13T19:00Z",
+   "teams": {},
+   "confirmed": false
+  },
+  "Brazil|Morocco": {
+   "kickoff": "2026-06-13T22:00Z",
+   "teams": {},
+   "confirmed": false
+  },
+  "Haiti|Scotland": {
+   "kickoff": "2026-06-14T01:00Z",
    "teams": {},
    "confirmed": false
   }
