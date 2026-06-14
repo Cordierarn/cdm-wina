@@ -1,10 +1,41 @@
 {
- "checked_at": 1781394045,
+ "checked_at": 1781450022,
  "lineups": {
   "Australia|Turkey": {
    "kickoff": "2026-06-14T04:00Z",
-   "teams": {},
-   "confirmed": false
+   "teams": {
+    "Australia": {
+     "starters": [
+      "Patrick Beach",
+      "Harry Souttar",
+      "Cameron Burgess",
+      "Alessandro Circati",
+      "Jordan Bos",
+      "Jacob Italiano",
+      "Paul Okon-Engstler",
+      "Aiden O'Neill",
+      "Nestory Irankunda",
+      "Connor Metcalfe",
+      "Mohamed Toure"
+     ]
+    },
+    "Turkey": {
+     "starters": [
+      "Ugurcan Çakir",
+      "Abdülkerim Bardakçi",
+      "Merih Demiral",
+      "Ferdi Kadioglu",
+      "Zeki Çelik",
+      "Orkun Kökçü",
+      "Hakan Çalhanoglu",
+      "Ismail Yüksek",
+      "Kerem Aktürkoglu",
+      "Baris Alper Yilmaz",
+      "Arda Güler"
+     ]
+    }
+   },
+   "confirmed": true
   },
   "Germany|Curacao": {
    "kickoff": "2026-06-14T17:00Z",

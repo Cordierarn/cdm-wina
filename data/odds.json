@@ -1,5 +1,5 @@
 {
- "scraped_at": 1781394037,
+ "scraped_at": 1781450016,
  "matches": [
   {
    "winamax_id": "66456904",
@@ -64,1708 +64,38 @@
   {
    "winamax_id": "66456928",
    "title": "Brésil - Maroc",
-   "home_fr": "Brésil",
-   "away_fr": "Maroc",
+   "home_fr": null,
+   "away_fr": null,
    "kickoff": 1781388000,
-   "odds_1": 3.1,
-   "odds_X": 1.56,
-   "odds_2": 5.7,
-   "status": "LIVE",
-   "bets": [
-    {
-     "marche": "Nombre de buts",
-     "issues": [
-      {
-       "label": "Plus de 2,5",
-       "cote": 1.84
-      },
-      {
-       "label": "Moins de 2,5",
-       "cote": 1.6
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts",
-     "issues": [
-      {
-       "label": "Plus de 3",
-       "cote": 4
-      },
-      {
-       "label": "Moins de 3",
-       "cote": 1.14
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts",
-     "issues": [
-      {
-       "label": "Plus de 4",
-       "cote": 21
-      },
-      {
-       "label": "Moins de 4",
-       "cote": 1
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts",
-     "issues": [
-      {
-       "label": "Plus de 3,5",
-       "cote": 5.6
-      },
-      {
-       "label": "Moins de 3,5",
-       "cote": 1.06
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts",
-     "issues": [
-      {
-       "label": "Plus de 4,5",
-       "cote": 24
-      },
-      {
-       "label": "Moins de 4,5",
-       "cote": 1
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Maroc",
-     "issues": [
-      {
-       "label": "Plus de 1,5",
-       "cote": 4
-      },
-      {
-       "label": "Moins de 1,5",
-       "cote": 1.14
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Maroc",
-     "issues": [
-      {
-       "label": "Plus de 2,5",
-       "cote": 29
-      },
-      {
-       "label": "Moins de 2,5",
-       "cote": 1
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Maroc",
-     "issues": [
-      {
-       "label": "Plus de 3,5",
-       "cote": 100
-      },
-      {
-       "label": "Moins de 3,5",
-       "cote": 1
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Maroc",
-     "issues": [
-      {
-       "label": "Plus de 4,5",
-       "cote": 100
-      },
-      {
-       "label": "Moins de 4,5",
-       "cote": 1
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Brésil",
-     "issues": [
-      {
-       "label": "Plus de 1,5",
-       "cote": 2.5
-      },
-      {
-       "label": "Moins de 1,5",
-       "cote": 1.33
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Brésil",
-     "issues": [
-      {
-       "label": "Plus de 2,5",
-       "cote": 10.5
-      },
-      {
-       "label": "Moins de 2,5",
-       "cote": 1.02
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Brésil",
-     "issues": [
-      {
-       "label": "Plus de 3,5",
-       "cote": 55
-      },
-      {
-       "label": "Moins de 3,5",
-       "cote": 1
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Brésil",
-     "issues": [
-      {
-       "label": "Plus de 4,5",
-       "cote": 100
-      },
-      {
-       "label": "Moins de 4,5",
-       "cote": 1
-      }
-     ]
-    },
-    {
-     "marche": "Double chance",
-     "issues": [
-      {
-       "label": "Brésil ou match nul",
-       "cote": 1.07
-      },
-      {
-       "label": "Brésil ou Maroc",
-       "cote": 2.05
-      },
-      {
-       "label": "Maroc ou match nul",
-       "cote": 1.25
-      }
-     ]
-    },
-    {
-     "marche": "Vainqueur (remboursé si match nul)",
-     "issues": [
-      {
-       "label": "Brésil",
-       "cote": 1.33
-      },
-      {
-       "label": "Maroc",
-       "cote": 2.5
-      }
-     ]
-    },
-    {
-     "marche": "Écart de buts (handicap)",
-     "issues": [
-      {
-       "label": "Brésil 0",
-       "cote": 1.33
-      },
-      {
-       "label": "Maroc 0",
-       "cote": 2.5
-      }
-     ]
-    },
-    {
-     "marche": "Écart de buts (handicap)",
-     "issues": [
-      {
-       "label": "Brésil -1",
-       "cote": 9.5
-      },
-      {
-       "label": "Maroc +1",
-       "cote": 1.02
-      }
-     ]
-    },
-    {
-     "marche": "Écart de buts (handicap)",
-     "issues": [
-      {
-       "label": "Brésil -1.5",
-       "cote": 12.5
-      },
-      {
-       "label": "Maroc +1.5",
-       "cote": 1.01
-      }
-     ]
-    },
-    {
-     "marche": "Nombre exact de buts",
-     "issues": [
-      {
-       "label": "2",
-       "cote": 1.6
-      },
-      {
-       "label": "3",
-       "cote": 2.5
-      },
-      {
-       "label": "4",
-       "cote": 6.75
-      },
-      {
-       "label": "5",
-       "cote": 27
-      },
-      {
-       "label": "6",
-       "cote": 85
-      },
-      {
-       "label": "7",
-       "cote": 100
-      },
-      {
-       "label": "8",
-       "cote": 100
-      },
-      {
-       "label": "9 ou plus",
-       "cote": 100
-      }
-     ]
-    },
-    {
-     "marche": "Résultat",
-     "issues": [
-      {
-       "label": "Brésil",
-       "cote": 3.1
-      },
-      {
-       "label": "Match nul",
-       "cote": 1.56
-      },
-      {
-       "label": "Maroc",
-       "cote": 5.7
-      }
-     ]
-    },
-    {
-     "marche": "Écart de buts (handicap)",
-     "issues": [
-      {
-       "label": "Brésil +1",
-       "cote": 1
-      },
-      {
-       "label": "Maroc -1",
-       "cote": 34
-      }
-     ]
-    },
-    {
-     "marche": "Écart de buts (handicap)",
-     "issues": [
-      {
-       "label": "Brésil +1.5",
-       "cote": 1
-      },
-      {
-       "label": "Maroc -1.5",
-       "cote": 38
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Maroc",
-     "issues": [
-      {
-       "label": "Plus de 5,5",
-       "cote": 100
-      },
-      {
-       "label": "Moins de 5,5",
-       "cote": 1
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Brésil",
-     "issues": [
-      {
-       "label": "Plus de 5,5",
-       "cote": 100
-      },
-      {
-       "label": "Moins de 5,5",
-       "cote": 1
-      }
-     ]
-    },
-    {
-     "marche": "Score exact",
-     "issues": [
-      {
-       "label": "1 - 1",
-       "cote": 1.6
-      },
-      {
-       "label": "2 - 1",
-       "cote": 3.7
-      },
-      {
-       "label": "3 - 1",
-       "cote": 14.5
-      },
-      {
-       "label": "4 - 1",
-       "cote": 60
-      },
-      {
-       "label": "5 - 1",
-       "cote": 300
-      },
-      {
-       "label": "6 - 1",
-       "cote": 1000
-      },
-      {
-       "label": "7 - 1",
-       "cote": 1000
-      },
-      {
-       "label": "1 - 2",
-       "cote": 6.25
-      },
-      {
-       "label": "2 - 2",
-       "cote": 13
-      },
-      {
-       "label": "3 - 2",
-       "cote": 50
-      },
-      {
-       "label": "4 - 2",
-       "cote": 160
-      },
-      {
-       "label": "5 - 2",
-       "cote": 700
-      },
-      {
-       "label": "6 - 2",
-       "cote": 1000
-      },
-      {
-       "label": "1 - 3",
-       "cote": 42
-      },
-      {
-       "label": "2 - 3",
-       "cote": 65
-      },
-      {
-       "label": "3 - 3",
-       "cote": 190
-      },
-      {
-       "label": "4 - 3",
-       "cote": 600
-      },
-      {
-       "label": "5 - 3",
-       "cote": 1000
-      },
-      {
-       "label": "1 - 4",
-       "cote": 200
-      },
-      {
-       "label": "2 - 4",
-       "cote": 450
-      },
-      {
-       "label": "3 - 4",
-       "cote": 1000
-      },
-      {
-       "label": "4 - 4",
-       "cote": 1000
-      },
-      {
-       "label": "1 - 5",
-       "cote": 1000
-      },
-      {
-       "label": "2 - 5",
-       "cote": 1000
-      },
-      {
-       "label": "3 - 5",
-       "cote": 1000
-      },
-      {
-       "label": "1 - 6",
-       "cote": 1000
-      },
-      {
-       "label": "2 - 6",
-       "cote": 1000
-      },
-      {
-       "label": "1 - 7",
-       "cote": 1000
-      }
-     ]
-    }
-   ]
+   "odds_1": null,
+   "odds_X": null,
+   "odds_2": null,
+   "status": "ENDED",
+   "bets": []
   },
   {
    "winamax_id": "66456930",
    "title": "Haïti - Écosse",
-   "home_fr": "Haïti",
-   "away_fr": "Écosse",
+   "home_fr": null,
+   "away_fr": null,
    "kickoff": 1781398800,
-   "odds_1": 5.7,
-   "odds_X": 4.7,
-   "odds_2": 1.52,
-   "status": "PREMATCH",
-   "bets": [
-    {
-     "marche": "Nombre de buts",
-     "issues": [
-      {
-       "label": "Plus de 2,5",
-       "cote": 1.54
-      },
-      {
-       "label": "Moins de 2,5",
-       "cote": 2
-      }
-     ]
-    },
-    {
-     "marche": "Résultat",
-     "issues": [
-      {
-       "label": "Haïti",
-       "cote": 5.7
-      },
-      {
-       "label": "Match nul",
-       "cote": 4.7
-      },
-      {
-       "label": "Écosse",
-       "cote": 1.52
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts",
-     "issues": [
-      {
-       "label": "Plus de 1",
-       "cote": 1.02
-      },
-      {
-       "label": "Moins de 1",
-       "cote": 10.5
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts",
-     "issues": [
-      {
-       "label": "Plus de 2",
-       "cote": 1.24
-      },
-      {
-       "label": "Moins de 2",
-       "cote": 3.15
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts",
-     "issues": [
-      {
-       "label": "Plus de 3",
-       "cote": 1.92
-      },
-      {
-       "label": "Moins de 3",
-       "cote": 1.58
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts",
-     "issues": [
-      {
-       "label": "Plus de 4",
-       "cote": 3.7
-      },
-      {
-       "label": "Moins de 4",
-       "cote": 1.18
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts",
-     "issues": [
-      {
-       "label": "Plus de 5",
-       "cote": 7.75
-      },
-      {
-       "label": "Moins de 5",
-       "cote": 1.03
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts",
-     "issues": [
-      {
-       "label": "Plus de 0,5",
-       "cote": 1.02
-      },
-      {
-       "label": "Moins de 0,5",
-       "cote": 12
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts",
-     "issues": [
-      {
-       "label": "Plus de 1,5",
-       "cote": 1.16
-      },
-      {
-       "label": "Moins de 1,5",
-       "cote": 3.9
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts",
-     "issues": [
-      {
-       "label": "Plus de 3,5",
-       "cote": 2.4
-      },
-      {
-       "label": "Moins de 3,5",
-       "cote": 1.37
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts",
-     "issues": [
-      {
-       "label": "Plus de 4,5",
-       "cote": 4.2
-      },
-      {
-       "label": "Moins de 4,5",
-       "cote": 1.13
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Haïti (intervalle)",
-     "issues": [
-      {
-       "label": "1-2",
-       "cote": 1.64
-      },
-      {
-       "label": "1-3",
-       "cote": 1.5
-      },
-      {
-       "label": "2-3",
-       "cote": 3.65
-      },
-      {
-       "label": "4 et plus",
-       "cote": 38
-      },
-      {
-       "label": "0",
-       "cote": 2.1
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Écosse",
-     "issues": [
-      {
-       "label": "Plus de 0,5",
-       "cote": 1.07
-      },
-      {
-       "label": "Moins de 0,5",
-       "cote": 5.7
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Écosse",
-     "issues": [
-      {
-       "label": "Plus de 1,5",
-       "cote": 1.46
-      },
-      {
-       "label": "Moins de 1,5",
-       "cote": 2.15
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Écosse",
-     "issues": [
-      {
-       "label": "Plus de 2,5",
-       "cote": 2.45
-      },
-      {
-       "label": "Moins de 2,5",
-       "cote": 1.36
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Écosse",
-     "issues": [
-      {
-       "label": "Plus de 3,5",
-       "cote": 4.8
-      },
-      {
-       "label": "Moins de 3,5",
-       "cote": 1.1
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Écosse",
-     "issues": [
-      {
-       "label": "Plus de 4,5",
-       "cote": 11
-      },
-      {
-       "label": "Moins de 4,5",
-       "cote": 1.02
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Écosse (intervalle)",
-     "issues": [
-      {
-       "label": "1-2",
-       "cote": 1.64
-      },
-      {
-       "label": "1-3",
-       "cote": 1.27
-      },
-      {
-       "label": "2-3",
-       "cote": 1.88
-      },
-      {
-       "label": "4 et plus",
-       "cote": 4.8
-      },
-      {
-       "label": "0",
-       "cote": 5.7
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Haïti",
-     "issues": [
-      {
-       "label": "Plus de 0,5",
-       "cote": 1.48
-      },
-      {
-       "label": "Moins de 0,5",
-       "cote": 2.1
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Haïti",
-     "issues": [
-      {
-       "label": "Plus de 1,5",
-       "cote": 3.5
-      },
-      {
-       "label": "Moins de 1,5",
-       "cote": 1.2
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Haïti",
-     "issues": [
-      {
-       "label": "Plus de 2,5",
-       "cote": 10
-      },
-      {
-       "label": "Moins de 2,5",
-       "cote": 1.02
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Haïti",
-     "issues": [
-      {
-       "label": "Plus de 3,5",
-       "cote": 38
-      },
-      {
-       "label": "Moins de 3,5",
-       "cote": 1
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Haïti",
-     "issues": [
-      {
-       "label": "Plus de 4,5",
-       "cote": 100
-      },
-      {
-       "label": "Moins de 4,5",
-       "cote": 1
-      }
-     ]
-    },
-    {
-     "marche": "Les 2 équipes marquent",
-     "issues": [
-      {
-       "label": "Oui",
-       "cote": 1.66
-      },
-      {
-       "label": "Non",
-       "cote": 1.8
-      }
-     ]
-    },
-    {
-     "marche": "Double chance",
-     "issues": [
-      {
-       "label": "Haïti ou match nul",
-       "cote": 2.3
-      },
-      {
-       "label": "Haïti ou Écosse",
-       "cote": 1.16
-      },
-      {
-       "label": "Écosse ou match nul",
-       "cote": 1.1
-      }
-     ]
-    },
-    {
-     "marche": "Vainqueur (remboursé si match nul)",
-     "issues": [
-      {
-       "label": "Haïti",
-       "cote": 3.5
-      },
-      {
-       "label": "Écosse",
-       "cote": 1.15
-      }
-     ]
-    },
-    {
-     "marche": "Score exact",
-     "issues": [
-      {
-       "label": "0 - 0",
-       "cote": 12
-      },
-      {
-       "label": "1 - 0",
-       "cote": 14
-      },
-      {
-       "label": "2 - 0",
-       "cote": 28
-      },
-      {
-       "label": "3 - 0",
-       "cote": 60
-      },
-      {
-       "label": "4 - 0",
-       "cote": 150
-      },
-      {
-       "label": "5 - 0",
-       "cote": 450
-      },
-      {
-       "label": "0 - 1",
-       "cote": 6.75
-      },
-      {
-       "label": "1 - 1",
-       "cote": 7.25
-      },
-      {
-       "label": "2 - 1",
-       "cote": 14.5
-      },
-      {
-       "label": "3 - 1",
-       "cote": 40
-      },
-      {
-       "label": "4 - 1",
-       "cote": 95
-      },
-      {
-       "label": "5 - 1",
-       "cote": 300
-      },
-      {
-       "label": "0 - 2",
-       "cote": 6.75
-      },
-      {
-       "label": "1 - 2",
-       "cote": 7.25
-      },
-      {
-       "label": "2 - 2",
-       "cote": 14
-      },
-      {
-       "label": "3 - 2",
-       "cote": 40
-      },
-      {
-       "label": "4 - 2",
-       "cote": 90
-      },
-      {
-       "label": "5 - 2",
-       "cote": 300
-      },
-      {
-       "label": "0 - 3",
-       "cote": 9
-      },
-      {
-       "label": "1 - 3",
-       "cote": 9.5
-      },
-      {
-       "label": "2 - 3",
-       "cote": 20
-      },
-      {
-       "label": "3 - 3",
-       "cote": 50
-      },
-      {
-       "label": "4 - 3",
-       "cote": 110
-      },
-      {
-       "label": "5 - 3",
-       "cote": 450
-      },
-      {
-       "label": "0 - 4",
-       "cote": 16
-      },
-      {
-       "label": "1 - 4",
-       "cote": 18
-      },
-      {
-       "label": "2 - 4",
-       "cote": 34
-      },
-      {
-       "label": "3 - 4",
-       "cote": 65
-      },
-      {
-       "label": "4 - 4",
-       "cote": 180
-      },
-      {
-       "label": "5 - 4",
-       "cote": 450
-      },
-      {
-       "label": "0 - 5",
-       "cote": 36
-      },
-      {
-       "label": "1 - 5",
-       "cote": 38
-      },
-      {
-       "label": "2 - 5",
-       "cote": 60
-      },
-      {
-       "label": "3 - 5",
-       "cote": 120
-      },
-      {
-       "label": "4 - 5",
-       "cote": 350
-      },
-      {
-       "label": "Autre",
-       "cote": 30
-      }
-     ]
-    },
-    {
-     "marche": "Nombre exact de buts",
-     "issues": [
-      {
-       "label": "0",
-       "cote": 12
-      },
-      {
-       "label": "1",
-       "cote": 5
-      },
-      {
-       "label": "2",
-       "cote": 3.55
-      },
-      {
-       "label": "3",
-       "cote": 3.6
-      },
-      {
-       "label": "4",
-       "cote": 4.5
-      },
-      {
-       "label": "5",
-       "cote": 7
-      },
-      {
-       "label": "6",
-       "cote": 13
-      },
-      {
-       "label": "7",
-       "cote": 28
-      },
-      {
-       "label": "8",
-       "cote": 55
-      },
-      {
-       "label": "9 ou plus",
-       "cote": 80
-      }
-     ]
-    },
-    {
-     "marche": "Écart de buts (handicap)",
-     "issues": [
-      {
-       "label": "Haïti +1.5",
-       "cote": 1.47
-      },
-      {
-       "label": "Écosse -1.5",
-       "cote": 2.15
-      }
-     ]
-    },
-    {
-     "marche": "Écart de buts (handicap)",
-     "issues": [
-      {
-       "label": "Haïti +2.5",
-       "cote": 1.16
-      },
-      {
-       "label": "Écosse -2.5",
-       "cote": 3.9
-      }
-     ]
-    },
-    {
-     "marche": "Écart de buts (handicap)",
-     "issues": [
-      {
-       "label": "Haïti +3.5",
-       "cote": 1.03
-      },
-      {
-       "label": "Écosse -3.5",
-       "cote": 8
-      }
-     ]
-    }
-   ]
+   "odds_1": null,
+   "odds_X": null,
+   "odds_2": null,
+   "status": "ENDED",
+   "bets": []
   },
   {
    "winamax_id": "66456942",
    "title": "Australie - Turquie",
-   "home_fr": "Australie",
-   "away_fr": "Turquie",
+   "home_fr": null,
+   "away_fr": null,
    "kickoff": 1781409600,
-   "odds_1": 5,
-   "odds_X": 3.85,
-   "odds_2": 1.7,
-   "status": "PREMATCH",
-   "bets": [
-    {
-     "marche": "Nombre de buts de Australie (intervalle)",
-     "issues": [
-      {
-       "label": "1-2",
-       "cote": 1.66
-      },
-      {
-       "label": "1-3",
-       "cote": 1.56
-      },
-      {
-       "label": "2-3",
-       "cote": 3.95
-      },
-      {
-       "label": "4 et plus",
-       "cote": 46
-      },
-      {
-       "label": "0",
-       "cote": 2
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Turquie",
-     "issues": [
-      {
-       "label": "Plus de 0,5",
-       "cote": 1.14
-      },
-      {
-       "label": "Moins de 0,5",
-       "cote": 4.2
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Turquie",
-     "issues": [
-      {
-       "label": "Plus de 1,5",
-       "cote": 1.72
-      },
-      {
-       "label": "Moins de 1,5",
-       "cote": 1.74
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Turquie",
-     "issues": [
-      {
-       "label": "Plus de 2,5",
-       "cote": 3.4
-      },
-      {
-       "label": "Moins de 2,5",
-       "cote": 1.21
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Turquie",
-     "issues": [
-      {
-       "label": "Plus de 3,5",
-       "cote": 7.5
-      },
-      {
-       "label": "Moins de 3,5",
-       "cote": 1.04
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Turquie",
-     "issues": [
-      {
-       "label": "Plus de 4,5",
-       "cote": 21
-      },
-      {
-       "label": "Moins de 4,5",
-       "cote": 1.01
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Turquie (intervalle)",
-     "issues": [
-      {
-       "label": "1-2",
-       "cote": 1.54
-      },
-      {
-       "label": "1-3",
-       "cote": 1.26
-      },
-      {
-       "label": "2-3",
-       "cote": 2.05
-      },
-      {
-       "label": "4 et plus",
-       "cote": 7.5
-      },
-      {
-       "label": "0",
-       "cote": 4.2
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Australie",
-     "issues": [
-      {
-       "label": "Plus de 0,5",
-       "cote": 1.52
-      },
-      {
-       "label": "Moins de 0,5",
-       "cote": 2
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Australie",
-     "issues": [
-      {
-       "label": "Plus de 1,5",
-       "cote": 3.8
-      },
-      {
-       "label": "Moins de 1,5",
-       "cote": 1.17
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Australie",
-     "issues": [
-      {
-       "label": "Plus de 2,5",
-       "cote": 12
-      },
-      {
-       "label": "Moins de 2,5",
-       "cote": 1.02
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Australie",
-     "issues": [
-      {
-       "label": "Plus de 3,5",
-       "cote": 46
-      },
-      {
-       "label": "Moins de 3,5",
-       "cote": 1
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts",
-     "issues": [
-      {
-       "label": "Plus de 1",
-       "cote": 1.05
-      },
-      {
-       "label": "Moins de 1",
-       "cote": 6.75
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts",
-     "issues": [
-      {
-       "label": "Plus de 2",
-       "cote": 1.42
-      },
-      {
-       "label": "Moins de 2",
-       "cote": 2.25
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts",
-     "issues": [
-      {
-       "label": "Plus de 3",
-       "cote": 2.55
-      },
-      {
-       "label": "Moins de 3",
-       "cote": 1.33
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts",
-     "issues": [
-      {
-       "label": "Plus de 4",
-       "cote": 5.5
-      },
-      {
-       "label": "Moins de 4",
-       "cote": 1.08
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts",
-     "issues": [
-      {
-       "label": "Plus de 5",
-       "cote": 13
-      },
-      {
-       "label": "Moins de 5",
-       "cote": 1.02
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts",
-     "issues": [
-      {
-       "label": "Plus de 0,5",
-       "cote": 1.03
-      },
-      {
-       "label": "Moins de 0,5",
-       "cote": 8
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts",
-     "issues": [
-      {
-       "label": "Plus de 1,5",
-       "cote": 1.26
-      },
-      {
-       "label": "Moins de 1,5",
-       "cote": 3
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts",
-     "issues": [
-      {
-       "label": "Plus de 2,5",
-       "cote": 1.84
-      },
-      {
-       "label": "Moins de 2,5",
-       "cote": 1.64
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts",
-     "issues": [
-      {
-       "label": "Plus de 3,5",
-       "cote": 3.2
-      },
-      {
-       "label": "Moins de 3,5",
-       "cote": 1.23
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts",
-     "issues": [
-      {
-       "label": "Plus de 4,5",
-       "cote": 6.25
-      },
-      {
-       "label": "Moins de 4,5",
-       "cote": 1.06
-      }
-     ]
-    },
-    {
-     "marche": "Résultat",
-     "issues": [
-      {
-       "label": "Australie",
-       "cote": 5
-      },
-      {
-       "label": "Match nul",
-       "cote": 3.85
-      },
-      {
-       "label": "Turquie",
-       "cote": 1.7
-      }
-     ]
-    },
-    {
-     "marche": "Les 2 équipes marquent",
-     "issues": [
-      {
-       "label": "Oui",
-       "cote": 1.82
-      },
-      {
-       "label": "Non",
-       "cote": 1.66
-      }
-     ]
-    },
-    {
-     "marche": "Double chance",
-     "issues": [
-      {
-       "label": "Australie ou match nul",
-       "cote": 1.96
-      },
-      {
-       "label": "Australie ou Turquie",
-       "cote": 1.23
-      },
-      {
-       "label": "Turquie ou match nul",
-       "cote": 1.13
-      }
-     ]
-    },
-    {
-     "marche": "Vainqueur (remboursé si match nul)",
-     "issues": [
-      {
-       "label": "Australie",
-       "cote": 3.05
-      },
-      {
-       "label": "Turquie",
-       "cote": 1.21
-      }
-     ]
-    },
-    {
-     "marche": "Score exact",
-     "issues": [
-      {
-       "label": "0 - 0",
-       "cote": 8
-      },
-      {
-       "label": "1 - 0",
-       "cote": 10
-      },
-      {
-       "label": "2 - 0",
-       "cote": 22
-      },
-      {
-       "label": "3 - 0",
-       "cote": 55
-      },
-      {
-       "label": "4 - 0",
-       "cote": 140
-      },
-      {
-       "label": "5 - 0",
-       "cote": 450
-      },
-      {
-       "label": "0 - 1",
-       "cote": 5.7
-      },
-      {
-       "label": "1 - 1",
-       "cote": 6
-      },
-      {
-       "label": "2 - 1",
-       "cote": 13.5
-      },
-      {
-       "label": "3 - 1",
-       "cote": 40
-      },
-      {
-       "label": "4 - 1",
-       "cote": 95
-      },
-      {
-       "label": "5 - 1",
-       "cote": 350
-      },
-      {
-       "label": "0 - 2",
-       "cote": 6.5
-      },
-      {
-       "label": "1 - 2",
-       "cote": 7.5
-      },
-      {
-       "label": "2 - 2",
-       "cote": 14.5
-      },
-      {
-       "label": "3 - 2",
-       "cote": 46
-      },
-      {
-       "label": "4 - 2",
-       "cote": 110
-      },
-      {
-       "label": "5 - 2",
-       "cote": 400
-      },
-      {
-       "label": "0 - 3",
-       "cote": 10.5
-      },
-      {
-       "label": "1 - 3",
-       "cote": 12
-      },
-      {
-       "label": "2 - 3",
-       "cote": 26
-      },
-      {
-       "label": "3 - 3",
-       "cote": 60
-      },
-      {
-       "label": "4 - 3",
-       "cote": 160
-      },
-      {
-       "label": "5 - 3",
-       "cote": 450
-      },
-      {
-       "label": "0 - 4",
-       "cote": 23
-      },
-      {
-       "label": "1 - 4",
-       "cote": 26
-      },
-      {
-       "label": "2 - 4",
-       "cote": 50
-      },
-      {
-       "label": "3 - 4",
-       "cote": 100
-      },
-      {
-       "label": "4 - 4",
-       "cote": 275
-      },
-      {
-       "label": "5 - 4",
-       "cote": 500
-      },
-      {
-       "label": "0 - 5",
-       "cote": 50
-      },
-      {
-       "label": "1 - 5",
-       "cote": 55
-      },
-      {
-       "label": "2 - 5",
-       "cote": 85
-      },
-      {
-       "label": "3 - 5",
-       "cote": 200
-      },
-      {
-       "label": "4 - 5",
-       "cote": 450
-      },
-      {
-       "label": "Autre",
-       "cote": 55
-      }
-     ]
-    },
-    {
-     "marche": "Nombre exact de buts",
-     "issues": [
-      {
-       "label": "0",
-       "cote": 8
-      },
-      {
-       "label": "1",
-       "cote": 4
-      },
-      {
-       "label": "2",
-       "cote": 3.2
-      },
-      {
-       "label": "3",
-       "cote": 3.75
-      },
-      {
-       "label": "4",
-       "cote": 5.3
-      },
-      {
-       "label": "5",
-       "cote": 9.5
-      },
-      {
-       "label": "6",
-       "cote": 20
-      },
-      {
-       "label": "7",
-       "cote": 46
-      },
-      {
-       "label": "8",
-       "cote": 85
-      },
-      {
-       "label": "9 ou plus",
-       "cote": 100
-      }
-     ]
-    },
-    {
-     "marche": "Écart de buts (handicap)",
-     "issues": [
-      {
-       "label": "Australie +1.5",
-       "cote": 1.32
-      },
-      {
-       "label": "Turquie -1.5",
-       "cote": 2.65
-      }
-     ]
-    },
-    {
-     "marche": "Écart de buts (handicap)",
-     "issues": [
-      {
-       "label": "Australie -1.5",
-       "cote": 11.5
-      },
-      {
-       "label": "Turquie +1.5",
-       "cote": 1.02
-      }
-     ]
-    },
-    {
-     "marche": "Écart de buts (handicap)",
-     "issues": [
-      {
-       "label": "Australie +2.5",
-       "cote": 1.08
-      },
-      {
-       "label": "Turquie -2.5",
-       "cote": 5.3
-      }
-     ]
-    },
-    {
-     "marche": "Nombre de buts de Australie",
-     "issues": [
-      {
-       "label": "Plus de 4,5",
-       "cote": 100
-      },
-      {
-       "label": "Moins de 4,5",
-       "cote": 1
-      }
-     ]
-    }
-   ]
+   "odds_1": null,
+   "odds_X": null,
+   "odds_2": null,
+   "status": "ENDED",
+   "bets": []
   },
   {
    "winamax_id": "66457070",
@@ -1774,8 +104,8 @@
    "away_fr": "Curaçao",
    "kickoff": 1781456400,
    "odds_1": 1.03,
-   "odds_X": 15,
-   "odds_2": 30,
+   "odds_X": 22,
+   "odds_2": 35,
    "status": "PREMATCH",
    "bets": [
     {
@@ -1800,11 +130,11 @@
       },
       {
        "label": "Match nul",
-       "cote": 15
+       "cote": 22
       },
       {
        "label": "Curaçao",
-       "cote": 30
+       "cote": 35
       }
      ]
     },
@@ -2206,11 +536,11 @@
      "issues": [
       {
        "label": "Plus de 0,5",
-       "cote": 2.8
+       "cote": 2.7
       },
       {
        "label": "Moins de 0,5",
-       "cote": 1.29
+       "cote": 1.3
       }
      ]
     },
@@ -2280,28 +610,15 @@
      ]
     },
     {
-     "marche": "Nombre de buts de Curaçao",
-     "issues": [
-      {
-       "label": "Plus de 2,5",
-       "cote": 40
-      },
-      {
-       "label": "Moins de 2,5",
-       "cote": 1
-      }
-     ]
-    },
-    {
      "marche": "Nombre de buts de Allemagne",
      "issues": [
       {
-       "label": "Plus de 1,5",
-       "cote": 1.04
+       "label": "Plus de 6,5",
+       "cote": 6.25
       },
       {
-       "label": "Moins de 1,5",
-       "cote": 7.25
+       "label": "Moins de 6,5",
+       "cote": 1.06
       }
      ]
     }
@@ -2313,8 +630,8 @@
    "home_fr": "Pays-Bas",
    "away_fr": "Japon",
    "kickoff": 1781467200,
-   "odds_1": 1.94,
-   "odds_X": 3.55,
+   "odds_1": 2.05,
+   "odds_X": 3.5,
    "odds_2": 3.6,
    "status": "PREMATCH",
    "bets": [
@@ -2323,15 +640,15 @@
      "issues": [
       {
        "label": "Pays-Bas ou match nul",
-       "cote": 1.22
+       "cote": 1.23
       },
       {
        "label": "Pays-Bas ou Japon",
-       "cote": 1.25
+       "cote": 1.27
       },
       {
        "label": "Japon ou match nul",
-       "cote": 1.68
+       "cote": 1.62
       }
      ]
     },
@@ -2340,11 +657,11 @@
      "issues": [
       {
        "label": "Pays-Bas",
-       "cote": 1.36
+       "cote": 1.4
       },
       {
        "label": "Japon",
-       "cote": 2.35
+       "cote": 2.25
       }
      ]
     },
@@ -2353,11 +670,11 @@
      "issues": [
       {
        "label": "Pays-Bas",
-       "cote": 1.94
+       "cote": 2.05
       },
       {
        "label": "Match nul",
-       "cote": 3.55
+       "cote": 3.5
       },
       {
        "label": "Japon",
@@ -2370,23 +687,23 @@
      "issues": [
       {
        "label": "1-2",
-       "cote": 1.52
+       "cote": 1.5
       },
       {
        "label": "1-3",
-       "cote": 1.27
+       "cote": 1.28
       },
       {
        "label": "2-3",
-       "cote": 2.15
+       "cote": 2.25
       },
       {
        "label": "4 et plus",
-       "cote": 8.5
+       "cote": 10
       },
       {
        "label": "0",
-       "cote": 3.9
+       "cote": 3.6
       }
      ]
     },
@@ -2408,7 +725,7 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 2.8
+       "cote": 2.85
       },
       {
        "label": "Moins de 1,5",
@@ -2425,7 +742,7 @@
       },
       {
        "label": "Moins de 2,5",
-       "cote": 1.04
+       "cote": 1.03
       }
      ]
     },
@@ -2434,7 +751,7 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 25
+       "cote": 26
       },
       {
        "label": "Moins de 3,5",
@@ -2447,19 +764,19 @@
      "issues": [
       {
        "label": "1-2",
-       "cote": 1.54
+       "cote": 1.56
       },
       {
        "label": "1-3",
-       "cote": 1.4
+       "cote": 1.41
       },
       {
        "label": "2-3",
-       "cote": 3.05
+       "cote": 3.1
       },
       {
        "label": "4 et plus",
-       "cote": 25
+       "cote": 26
       },
       {
        "label": "0",
@@ -2472,11 +789,11 @@
      "issues": [
       {
        "label": "Plus de 0,5",
-       "cote": 1.16
+       "cote": 1.18
       },
       {
        "label": "Moins de 0,5",
-       "cote": 3.9
+       "cote": 3.6
       }
      ]
     },
@@ -2485,11 +802,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 1.82
+       "cote": 1.94
       },
       {
        "label": "Moins de 1,5",
-       "cote": 1.64
+       "cote": 1.56
       }
      ]
     },
@@ -2498,11 +815,11 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 3.7
+       "cote": 4.1
       },
       {
        "label": "Moins de 2,5",
-       "cote": 1.17
+       "cote": 1.14
       }
      ]
     },
@@ -2511,11 +828,11 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 8.5
+       "cote": 10
       },
       {
        "label": "Moins de 3,5",
-       "cote": 1.03
+       "cote": 1.02
       }
      ]
     },
@@ -2524,7 +841,7 @@
      "issues": [
       {
        "label": "Plus de 4,5",
-       "cote": 25
+       "cote": 30
       },
       {
        "label": "Moins de 4,5",
@@ -2537,11 +854,11 @@
      "issues": [
       {
        "label": "Plus de 1",
-       "cote": 1.03
+       "cote": 1.05
       },
       {
        "label": "Moins de 1",
-       "cote": 7.5
+       "cote": 6.75
       }
      ]
     },
@@ -2550,11 +867,11 @@
      "issues": [
       {
        "label": "Plus de 2",
-       "cote": 1.35
+       "cote": 1.41
       },
       {
        "label": "Moins de 2",
-       "cote": 2.45
+       "cote": 2.3
       }
      ]
     },
@@ -2563,11 +880,11 @@
      "issues": [
       {
        "label": "Plus de 3",
-       "cote": 2.3
+       "cote": 2.5
       },
       {
        "label": "Moins de 3",
-       "cote": 1.4
+       "cote": 1.34
       }
      ]
     },
@@ -2576,11 +893,11 @@
      "issues": [
       {
        "label": "Plus de 4",
-       "cote": 4.8
+       "cote": 5.4
       },
       {
        "label": "Moins de 4",
-       "cote": 1.1
+       "cote": 1.08
       }
      ]
     },
@@ -2589,7 +906,7 @@
      "issues": [
       {
        "label": "Plus de 5",
-       "cote": 10.5
+       "cote": 12.5
       },
       {
        "label": "Moins de 5",
@@ -2606,7 +923,7 @@
       },
       {
        "label": "Moins de 0,5",
-       "cote": 9
+       "cote": 8
       }
      ]
     },
@@ -2615,11 +932,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 1.22
+       "cote": 1.25
       },
       {
        "label": "Moins de 1,5",
-       "cote": 3.25
+       "cote": 3.05
       }
      ]
     },
@@ -2628,11 +945,11 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 1.74
+       "cote": 1.82
       },
       {
        "label": "Moins de 2,5",
-       "cote": 1.72
+       "cote": 1.64
       }
      ]
     },
@@ -2641,11 +958,11 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 2.9
+       "cote": 3.15
       },
       {
        "label": "Moins de 3,5",
-       "cote": 1.27
+       "cote": 1.24
       }
      ]
     },
@@ -2654,11 +971,11 @@
      "issues": [
       {
        "label": "Plus de 4,5",
-       "cote": 5.5
+       "cote": 6
       },
       {
        "label": "Moins de 4,5",
-       "cote": 1.08
+       "cote": 1.06
       }
      ]
     },
@@ -2667,11 +984,11 @@
      "issues": [
       {
        "label": "Oui",
-       "cote": 1.64
+       "cote": 1.68
       },
       {
        "label": "Non",
-       "cote": 1.84
+       "cote": 1.8
       }
      ]
     },
@@ -2680,11 +997,11 @@
      "issues": [
       {
        "label": "0 - 0",
-       "cote": 9
+       "cote": 8
       },
       {
        "label": "1 - 0",
-       "cote": 6.75
+       "cote": 6.5
       },
       {
        "label": "2 - 0",
@@ -2692,43 +1009,43 @@
       },
       {
        "label": "3 - 0",
-       "cote": 14
+       "cote": 15
       },
       {
        "label": "4 - 0",
-       "cote": 32
+       "cote": 34
       },
       {
        "label": "5 - 0",
-       "cote": 60
+       "cote": 65
       },
       {
        "label": "0 - 1",
-       "cote": 9.5
+       "cote": 8.5
       },
       {
        "label": "1 - 1",
-       "cote": 5.8
+       "cote": 5.5
       },
       {
        "label": "2 - 1",
-       "cote": 7.5
+       "cote": 7.75
       },
       {
        "label": "3 - 1",
-       "cote": 13
+       "cote": 14
       },
       {
        "label": "4 - 1",
-       "cote": 30
+       "cote": 32
       },
       {
        "label": "5 - 1",
-       "cote": 60
+       "cote": 65
       },
       {
        "label": "0 - 2",
-       "cote": 16
+       "cote": 15
       },
       {
        "label": "1 - 2",
@@ -2736,23 +1053,23 @@
       },
       {
        "label": "2 - 2",
-       "cote": 11.5
+       "cote": 12
       },
       {
        "label": "3 - 2",
-       "cote": 23
+       "cote": 25
       },
       {
        "label": "4 - 2",
-       "cote": 48
+       "cote": 50
       },
       {
        "label": "5 - 2",
-       "cote": 85
+       "cote": 100
       },
       {
        "label": "0 - 3",
-       "cote": 40
+       "cote": 38
       },
       {
        "label": "1 - 3",
@@ -2764,19 +1081,19 @@
       },
       {
        "label": "3 - 3",
-       "cote": 48
+       "cote": 50
       },
       {
        "label": "4 - 3",
-       "cote": 80
+       "cote": 90
       },
       {
        "label": "5 - 3",
-       "cote": 170
+       "cote": 190
       },
       {
        "label": "0 - 4",
-       "cote": 80
+       "cote": 75
       },
       {
        "label": "1 - 4",
@@ -2784,15 +1101,15 @@
       },
       {
        "label": "2 - 4",
-       "cote": 65
+       "cote": 70
       },
       {
        "label": "3 - 4",
-       "cote": 100
+       "cote": 110
       },
       {
        "label": "4 - 4",
-       "cote": 180
+       "cote": 190
       },
       {
        "label": "5 - 4",
@@ -2808,19 +1125,19 @@
       },
       {
        "label": "2 - 5",
-       "cote": 190
+       "cote": 200
       },
       {
        "label": "3 - 5",
-       "cote": 300
+       "cote": 350
       },
       {
        "label": "4 - 5",
-       "cote": 450
+       "cote": 500
       },
       {
        "label": "Autre",
-       "cote": 60
+       "cote": 65
       }
      ]
     },
@@ -2829,39 +1146,39 @@
      "issues": [
       {
        "label": "0",
-       "cote": 9
+       "cote": 8
       },
       {
        "label": "1",
-       "cote": 4.3
+       "cote": 4.1
       },
       {
        "label": "2",
-       "cote": 3.25
+       "cote": 3.2
       },
       {
        "label": "3",
-       "cote": 3.75
+       "cote": 3.8
       },
       {
        "label": "4",
-       "cote": 5
+       "cote": 5.2
       },
       {
        "label": "5",
-       "cote": 8.5
+       "cote": 9.5
       },
       {
        "label": "6",
-       "cote": 17
+       "cote": 20
       },
       {
        "label": "7",
-       "cote": 40
+       "cote": 46
       },
       {
        "label": "8",
-       "cote": 70
+       "cote": 80
       },
       {
        "label": "9 ou plus",
@@ -2874,11 +1191,11 @@
      "issues": [
       {
        "label": "Pays-Bas -1.5",
-       "cote": 3.25
+       "cote": 3.5
       },
       {
        "label": "Japon +1.5",
-       "cote": 1.22
+       "cote": 1.19
       }
      ]
     },
@@ -2887,11 +1204,11 @@
      "issues": [
       {
        "label": "Pays-Bas -2.5",
-       "cote": 6.75
+       "cote": 7.5
       },
       {
        "label": "Japon +2.5",
-       "cote": 1.05
+       "cote": 1.04
       }
      ]
     },
@@ -2904,7 +1221,7 @@
       },
       {
        "label": "Japon -1.5",
-       "cote": 7.5
+       "cote": 7.25
       }
      ]
     },
@@ -2929,9 +1246,9 @@
    "home_fr": "Côte d'Ivoire",
    "away_fr": "Équateur",
    "kickoff": 1781478000,
-   "odds_1": 3.55,
-   "odds_X": 2.75,
-   "odds_2": 2.3,
+   "odds_1": 3.15,
+   "odds_X": 2.85,
+   "odds_2": 2.6,
    "status": "PREMATCH",
    "bets": [
     {
@@ -2939,11 +1256,11 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 2.55
+       "cote": 2.7
       },
       {
        "label": "Moins de 2,5",
-       "cote": 1.34
+       "cote": 1.3
       }
      ]
     },
@@ -2952,15 +1269,15 @@
      "issues": [
       {
        "label": "Côte d'Ivoire",
-       "cote": 3.55
+       "cote": 3.15
       },
       {
        "label": "Match nul",
-       "cote": 2.75
+       "cote": 2.85
       },
       {
        "label": "Équateur",
-       "cote": 2.3
+       "cote": 2.6
       }
      ]
     },
@@ -2969,11 +1286,11 @@
      "issues": [
       {
        "label": "Plus de 1",
-       "cote": 1.15
+       "cote": 1.17
       },
       {
        "label": "Moins de 1",
-       "cote": 4
+       "cote": 3.8
       }
      ]
     },
@@ -2982,11 +1299,11 @@
      "issues": [
       {
        "label": "Plus de 2",
-       "cote": 1.88
+       "cote": 2
       },
       {
        "label": "Moins de 2",
-       "cote": 1.6
+       "cote": 1.52
       }
      ]
     },
@@ -2995,11 +1312,11 @@
      "issues": [
       {
        "label": "Plus de 3",
-       "cote": 4.2
+       "cote": 4.6
       },
       {
        "label": "Moins de 3",
-       "cote": 1.14
+       "cote": 1.11
       }
      ]
     },
@@ -3008,7 +1325,7 @@
      "issues": [
       {
        "label": "Plus de 4",
-       "cote": 10.5
+       "cote": 12
       },
       {
        "label": "Moins de 4",
@@ -3021,7 +1338,7 @@
      "issues": [
       {
        "label": "Plus de 5",
-       "cote": 30
+       "cote": 34
       },
       {
        "label": "Moins de 5",
@@ -3034,11 +1351,11 @@
      "issues": [
       {
        "label": "Plus de 0,5",
-       "cote": 1.09
+       "cote": 1.1
       },
       {
        "label": "Moins de 0,5",
-       "cote": 5
+       "cote": 4.8
       }
      ]
     },
@@ -3047,11 +1364,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 1.46
+       "cote": 1.5
       },
       {
        "label": "Moins de 1,5",
-       "cote": 2.15
+       "cote": 2.05
       }
      ]
     },
@@ -3060,11 +1377,11 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 4.9
+       "cote": 5.4
       },
       {
        "label": "Moins de 3,5",
-       "cote": 1.1
+       "cote": 1.08
       }
      ]
     },
@@ -3073,7 +1390,7 @@
      "issues": [
       {
        "label": "Plus de 4,5",
-       "cote": 11.5
+       "cote": 13.5
       },
       {
        "label": "Moins de 4,5",
@@ -3086,23 +1403,23 @@
      "issues": [
       {
        "label": "1-2",
-       "cote": 1.66
+       "cote": 1.64
       },
       {
        "label": "1-3",
-       "cote": 1.54
+       "cote": 1.52
       },
       {
        "label": "2-3",
-       "cote": 3.9
+       "cote": 3.7
       },
       {
        "label": "4 et plus",
-       "cote": 44
+       "cote": 40
       },
       {
        "label": "0",
-       "cote": 2.05
+       "cote": 2.1
       }
      ]
     },
@@ -3111,11 +1428,11 @@
      "issues": [
       {
        "label": "Plus de 0,5",
-       "cote": 1.32
+       "cote": 1.39
       },
       {
        "label": "Moins de 0,5",
-       "cote": 2.65
+       "cote": 2.35
       }
      ]
     },
@@ -3124,11 +1441,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 2.6
+       "cote": 3
       },
       {
        "label": "Moins de 1,5",
-       "cote": 1.32
+       "cote": 1.26
       }
      ]
     },
@@ -3137,11 +1454,11 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 6.5
+       "cote": 8
       },
       {
        "label": "Moins de 2,5",
-       "cote": 1.05
+       "cote": 1.03
       }
      ]
     },
@@ -3150,11 +1467,11 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 20
+       "cote": 28
       },
       {
        "label": "Moins de 3,5",
-       "cote": 1.01
+       "cote": 1
       }
      ]
     },
@@ -3163,7 +1480,7 @@
      "issues": [
       {
        "label": "Plus de 4,5",
-       "cote": 60
+       "cote": 70
       },
       {
        "label": "Moins de 4,5",
@@ -3176,23 +1493,23 @@
      "issues": [
       {
        "label": "1-2",
-       "cote": 1.54
+       "cote": 1.56
       },
       {
        "label": "1-3",
-       "cote": 1.37
+       "cote": 1.43
       },
       {
        "label": "2-3",
-       "cote": 2.85
+       "cote": 3.2
       },
       {
        "label": "4 et plus",
-       "cote": 20
+       "cote": 28
       },
       {
        "label": "0",
-       "cote": 2.65
+       "cote": 2.35
       }
      ]
     },
@@ -3201,11 +1518,11 @@
      "issues": [
       {
        "label": "Plus de 0,5",
-       "cote": 1.5
+       "cote": 1.48
       },
       {
        "label": "Moins de 0,5",
-       "cote": 2.05
+       "cote": 2.1
       }
      ]
     },
@@ -3214,11 +1531,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 3.7
+       "cote": 3.55
       },
       {
        "label": "Moins de 1,5",
-       "cote": 1.17
+       "cote": 1.19
       }
      ]
     },
@@ -3227,7 +1544,7 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 11.5
+       "cote": 10.5
       },
       {
        "label": "Moins de 2,5",
@@ -3240,7 +1557,7 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 44
+       "cote": 40
       },
       {
        "label": "Moins de 3,5",
@@ -3253,11 +1570,11 @@
      "issues": [
       {
        "label": "Oui",
-       "cote": 2.05
+       "cote": 2.1
       },
       {
        "label": "Non",
-       "cote": 1.52
+       "cote": 1.48
       }
      ]
     },
@@ -3266,15 +1583,15 @@
      "issues": [
       {
        "label": "Côte d'Ivoire ou match nul",
-       "cote": 1.48
+       "cote": 1.4
       },
       {
        "label": "Côte d'Ivoire ou Équateur",
-       "cote": 1.37
+       "cote": 1.36
       },
       {
        "label": "Équateur ou match nul",
-       "cote": 1.23
+       "cote": 1.28
       }
      ]
     },
@@ -3283,11 +1600,11 @@
      "issues": [
       {
        "label": "Côte d'Ivoire",
-       "cote": 2.1
+       "cote": 1.9
       },
       {
        "label": "Équateur",
-       "cote": 1.46
+       "cote": 1.58
       }
      ]
     },
@@ -3296,27 +1613,27 @@
      "issues": [
       {
        "label": "0 - 0",
-       "cote": 5
+       "cote": 4.8
       },
       {
        "label": "1 - 0",
-       "cote": 6.75
+       "cote": 6
       },
       {
        "label": "2 - 0",
-       "cote": 14
+       "cote": 11.5
       },
       {
        "label": "3 - 0",
-       "cote": 40
+       "cote": 34
       },
       {
        "label": "4 - 0",
-       "cote": 95
+       "cote": 75
       },
       {
        "label": "5 - 0",
-       "cote": 350
+       "cote": 250
       },
       {
        "label": "0 - 1",
@@ -3324,35 +1641,35 @@
       },
       {
        "label": "1 - 1",
-       "cote": 4.9
+       "cote": 5
       },
       {
        "label": "2 - 1",
-       "cote": 12
+       "cote": 11
       },
       {
        "label": "3 - 1",
-       "cote": 34
+       "cote": 32
       },
       {
        "label": "4 - 1",
-       "cote": 85
+       "cote": 75
       },
       {
        "label": "5 - 1",
-       "cote": 300
+       "cote": 250
       },
       {
        "label": "0 - 2",
-       "cote": 8
-      },
-      {
-       "label": "1 - 2",
        "cote": 9
       },
       {
+       "label": "1 - 2",
+       "cote": 9.5
+      },
+      {
        "label": "2 - 2",
-       "cote": 16
+       "cote": 17
       },
       {
        "label": "3 - 2",
@@ -3360,7 +1677,7 @@
       },
       {
        "label": "4 - 2",
-       "cote": 120
+       "cote": 110
       },
       {
        "label": "5 - 2",
@@ -3368,23 +1685,23 @@
       },
       {
        "label": "0 - 3",
-       "cote": 19
+       "cote": 24
       },
       {
        "label": "1 - 3",
-       "cote": 21
+       "cote": 25
       },
       {
        "label": "2 - 3",
-       "cote": 42
+       "cote": 46
       },
       {
        "label": "3 - 3",
-       "cote": 70
+       "cote": 80
       },
       {
        "label": "4 - 3",
-       "cote": 225
+       "cote": 250
       },
       {
        "label": "5 - 3",
@@ -3392,19 +1709,19 @@
       },
       {
        "label": "0 - 4",
-       "cote": 50
+       "cote": 60
       },
       {
        "label": "1 - 4",
-       "cote": 50
+       "cote": 60
       },
       {
        "label": "2 - 4",
-       "cote": 80
+       "cote": 95
       },
       {
        "label": "3 - 4",
-       "cote": 180
+       "cote": 200
       },
       {
        "label": "4 - 4",
@@ -3416,19 +1733,19 @@
       },
       {
        "label": "0 - 5",
-       "cote": 110
+       "cote": 150
       },
       {
        "label": "1 - 5",
-       "cote": 120
+       "cote": 160
       },
       {
        "label": "2 - 5",
-       "cote": 200
+       "cote": 300
       },
       {
        "label": "3 - 5",
-       "cote": 450
+       "cote": 500
       },
       {
        "label": "4 - 5",
@@ -3436,7 +1753,7 @@
       },
       {
        "label": "Autre",
-       "cote": 140
+       "cote": 180
       }
      ]
     },
@@ -3445,11 +1762,11 @@
      "issues": [
       {
        "label": "0",
-       "cote": 5
+       "cote": 4.8
       },
       {
        "label": "1",
-       "cote": 3.35
+       "cote": 3.15
       },
       {
        "label": "2",
@@ -3457,23 +1774,23 @@
       },
       {
        "label": "3",
-       "cote": 4.4
+       "cote": 4.5
       },
       {
        "label": "4",
-       "cote": 7.25
+       "cote": 7.75
       },
       {
        "label": "5",
-       "cote": 17
+       "cote": 19
       },
       {
        "label": "6",
-       "cote": 40
+       "cote": 46
       },
       {
        "label": "7",
-       "cote": 80
+       "cote": 95
       },
       {
        "label": "8",
@@ -3490,11 +1807,11 @@
      "issues": [
       {
        "label": "Côte d'Ivoire +1.5",
-       "cote": 1.12
+       "cote": 1.09
       },
       {
        "label": "Équateur -1.5",
-       "cote": 4.4
+       "cote": 5.2
       }
      ]
     },
@@ -3503,11 +1820,11 @@
      "issues": [
       {
        "label": "Côte d'Ivoire -1.5",
-       "cote": 8
+       "cote": 6.75
       },
       {
        "label": "Équateur +1.5",
-       "cote": 1.03
+       "cote": 1.05
       }
      ]
     },
@@ -3516,11 +1833,11 @@
      "issues": [
       {
        "label": "Côte d'Ivoire +2.5",
-       "cote": 1.02
+       "cote": 1.01
       },
       {
        "label": "Équateur -2.5",
-       "cote": 11.5
+       "cote": 15
       }
      ]
     },
@@ -3545,8 +1862,8 @@
    "home_fr": "Suède",
    "away_fr": "Tunisie",
    "kickoff": 1781488800,
-   "odds_1": 1.86,
-   "odds_X": 3.45,
+   "odds_1": 1.94,
+   "odds_X": 3.5,
    "odds_2": 4,
    "status": "PREMATCH",
    "bets": [
@@ -3555,7 +1872,7 @@
      "issues": [
       {
        "label": "Suède ou match nul",
-       "cote": 1.18
+       "cote": 1.19
       },
       {
        "label": "Suède ou Tunisie",
@@ -3563,7 +1880,7 @@
       },
       {
        "label": "Tunisie ou match nul",
-       "cote": 1.74
+       "cote": 1.7
       }
      ]
     },
@@ -3572,11 +1889,11 @@
      "issues": [
       {
        "label": "Suède",
-       "cote": 1.3
+       "cote": 1.32
       },
       {
        "label": "Tunisie",
-       "cote": 2.6
+       "cote": 2.5
       }
      ]
     },
@@ -3585,11 +1902,11 @@
      "issues": [
       {
        "label": "Suède",
-       "cote": 1.86
+       "cote": 1.94
       },
       {
        "label": "Match nul",
-       "cote": 3.45
+       "cote": 3.5
       },
       {
        "label": "Tunisie",
@@ -3627,11 +1944,11 @@
      "issues": [
       {
        "label": "Plus de 0,5",
-       "cote": 1.49
+       "cote": 1.46
       },
       {
        "label": "Moins de 0,5",
-       "cote": 2.1
+       "cote": 2.15
       }
      ]
     },
@@ -3640,11 +1957,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 3.55
+       "cote": 3.35
       },
       {
        "label": "Moins de 1,5",
-       "cote": 1.19
+       "cote": 1.21
       }
      ]
     },
@@ -3653,7 +1970,7 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 10.5
+       "cote": 9.5
       },
       {
        "label": "Moins de 2,5",
@@ -3666,7 +1983,7 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 40
+       "cote": 36
       },
       {
        "label": "Moins de 3,5",
@@ -3679,23 +1996,23 @@
      "issues": [
       {
        "label": "1-2",
-       "cote": 1.64
+       "cote": 1.62
       },
       {
        "label": "1-3",
-       "cote": 1.52
+       "cote": 1.49
       },
       {
        "label": "2-3",
-       "cote": 3.75
+       "cote": 3.55
       },
       {
        "label": "4 et plus",
-       "cote": 40
+       "cote": 36
       },
       {
        "label": "0",
-       "cote": 2.1
+       "cote": 2.15
       }
      ]
     },
@@ -3717,7 +2034,7 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 1.94
+       "cote": 1.96
       },
       {
        "label": "Moins de 1,5",
@@ -3769,11 +2086,11 @@
      "issues": [
       {
        "label": "Plus de 1",
-       "cote": 1.07
+       "cote": 1.06
       },
       {
        "label": "Moins de 1",
-       "cote": 5.9
+       "cote": 6
       }
      ]
     },
@@ -3782,11 +2099,11 @@
      "issues": [
       {
        "label": "Plus de 2",
-       "cote": 1.52
+       "cote": 1.49
       },
       {
        "label": "Moins de 2",
-       "cote": 2
+       "cote": 2.1
       }
      ]
     },
@@ -3795,11 +2112,11 @@
      "issues": [
       {
        "label": "Plus de 3",
-       "cote": 2.95
+       "cote": 2.85
       },
       {
        "label": "Moins de 3",
-       "cote": 1.26
+       "cote": 1.28
       }
      ]
     },
@@ -3808,11 +2125,11 @@
      "issues": [
       {
        "label": "Plus de 4",
-       "cote": 6.5
+       "cote": 6.25
       },
       {
        "label": "Moins de 4",
-       "cote": 1.05
+       "cote": 1.06
       }
      ]
     },
@@ -3821,7 +2138,7 @@
      "issues": [
       {
        "label": "Plus de 5",
-       "cote": 16
+       "cote": 15
       },
       {
        "label": "Moins de 5",
@@ -3838,7 +2155,7 @@
       },
       {
        "label": "Moins de 0,5",
-       "cote": 7.25
+       "cote": 7.5
       }
      ]
     },
@@ -3847,11 +2164,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 1.31
+       "cote": 1.29
       },
       {
        "label": "Moins de 1,5",
-       "cote": 2.7
+       "cote": 2.75
       }
      ]
     },
@@ -3860,11 +2177,11 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 2
+       "cote": 1.96
       },
       {
        "label": "Moins de 2,5",
-       "cote": 1.54
+       "cote": 1.56
       }
      ]
     },
@@ -3873,11 +2190,11 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 3.6
+       "cote": 3.5
       },
       {
        "label": "Moins de 3,5",
-       "cote": 1.18
+       "cote": 1.2
       }
      ]
     },
@@ -3886,7 +2203,7 @@
      "issues": [
       {
        "label": "Plus de 4,5",
-       "cote": 7.25
+       "cote": 7
       },
       {
        "label": "Moins de 4,5",
@@ -3899,11 +2216,11 @@
      "issues": [
       {
        "label": "Oui",
-       "cote": 1.84
+       "cote": 1.8
       },
       {
        "label": "Non",
-       "cote": 1.64
+       "cote": 1.68
       }
      ]
     },
@@ -3912,27 +2229,27 @@
      "issues": [
       {
        "label": "0 - 0",
-       "cote": 7.25
+       "cote": 7.5
       },
       {
        "label": "1 - 0",
-       "cote": 5.6
+       "cote": 5.8
       },
       {
        "label": "2 - 0",
-       "cote": 7
+       "cote": 7.25
       },
       {
        "label": "3 - 0",
-       "cote": 13
+       "cote": 13.5
       },
       {
        "label": "4 - 0",
-       "cote": 30
+       "cote": 32
       },
       {
        "label": "5 - 0",
-       "cote": 60
+       "cote": 65
       },
       {
        "label": "0 - 1",
@@ -3940,7 +2257,7 @@
       },
       {
        "label": "1 - 1",
-       "cote": 5.7
+       "cote": 5.6
       },
       {
        "label": "2 - 1",
@@ -3952,7 +2269,7 @@
       },
       {
        "label": "4 - 1",
-       "cote": 32
+       "cote": 34
       },
       {
        "label": "5 - 1",
@@ -3960,19 +2277,19 @@
       },
       {
        "label": "0 - 2",
-       "cote": 18
+       "cote": 17
       },
       {
        "label": "1 - 2",
-       "cote": 12
+       "cote": 11.5
       },
       {
        "label": "2 - 2",
-       "cote": 14.5
+       "cote": 14
       },
       {
        "label": "3 - 2",
-       "cote": 29
+       "cote": 28
       },
       {
        "label": "4 - 2",
@@ -3984,47 +2301,47 @@
       },
       {
        "label": "0 - 3",
-       "cote": 48
-      },
-      {
-       "label": "1 - 3",
-       "cote": 34
-      },
-      {
-       "label": "2 - 3",
        "cote": 44
       },
       {
+       "label": "1 - 3",
+       "cote": 32
+      },
+      {
+       "label": "2 - 3",
+       "cote": 40
+      },
+      {
        "label": "3 - 3",
-       "cote": 60
+       "cote": 55
       },
       {
        "label": "4 - 3",
-       "cote": 110
-      },
-      {
-       "label": "5 - 3",
-       "cote": 275
-      },
-      {
-       "label": "0 - 4",
-       "cote": 110
-      },
-      {
-       "label": "1 - 4",
-       "cote": 85
-      },
-      {
-       "label": "2 - 4",
        "cote": 100
       },
       {
+       "label": "5 - 3",
+       "cote": 250
+      },
+      {
+       "label": "0 - 4",
+       "cote": 100
+      },
+      {
+       "label": "1 - 4",
+       "cote": 75
+      },
+      {
+       "label": "2 - 4",
+       "cote": 90
+      },
+      {
        "label": "3 - 4",
-       "cote": 160
+       "cote": 140
       },
       {
        "label": "4 - 4",
-       "cote": 300
+       "cote": 275
       },
       {
        "label": "5 - 4",
@@ -4032,15 +2349,15 @@
       },
       {
        "label": "0 - 5",
-       "cote": 400
+       "cote": 350
       },
       {
        "label": "1 - 5",
-       "cote": 275
+       "cote": 225
       },
       {
        "label": "2 - 5",
-       "cote": 350
+       "cote": 300
       },
       {
        "label": "3 - 5",
@@ -4061,11 +2378,11 @@
      "issues": [
       {
        "label": "0",
-       "cote": 7.25
+       "cote": 7.5
       },
       {
        "label": "1",
-       "cote": 3.8
+       "cote": 3.85
       },
       {
        "label": "2",
@@ -4077,19 +2394,19 @@
       },
       {
        "label": "4",
-       "cote": 5.8
+       "cote": 5.6
       },
       {
        "label": "5",
-       "cote": 11
+       "cote": 10.5
       },
       {
        "label": "6",
-       "cote": 25
+       "cote": 23
       },
       {
        "label": "7",
-       "cote": 55
+       "cote": 50
       },
       {
        "label": "8",
@@ -4106,11 +2423,11 @@
      "issues": [
       {
        "label": "Suède -1.5",
-       "cote": 3.2
+       "cote": 3.3
       },
       {
        "label": "Tunisie +1.5",
-       "cote": 1.23
+       "cote": 1.22
       }
      ]
     },
@@ -4119,11 +2436,11 @@
      "issues": [
       {
        "label": "Suède -2.5",
-       "cote": 6.75
+       "cote": 7
       },
       {
        "label": "Tunisie +2.5",
-       "cote": 1.05
+       "cote": 1.04
       }
      ]
     },
@@ -4136,7 +2453,7 @@
       },
       {
        "label": "Tunisie -1.5",
-       "cote": 9
+       "cote": 8.5
       }
      ]
     },
@@ -4161,9 +2478,9 @@
    "home_fr": "Espagne",
    "away_fr": "Cap-Vert",
    "kickoff": 1781539200,
-   "odds_1": 1.05,
-   "odds_X": 12,
-   "odds_2": 20,
+   "odds_1": 1.07,
+   "odds_X": 13.5,
+   "odds_2": 22,
    "status": "PREMATCH",
    "bets": [
     {
@@ -4201,15 +2518,15 @@
      "issues": [
       {
        "label": "Espagne",
-       "cote": 1.05
+       "cote": 1.07
       },
       {
        "label": "Match nul",
-       "cote": 12
+       "cote": 13.5
       },
       {
        "label": "Cap-Vert",
-       "cote": 20
+       "cote": 22
       }
      ]
     },
@@ -4218,7 +2535,7 @@
      "issues": [
       {
        "label": "1-2",
-       "cote": 2.45
+       "cote": 2.4
       },
       {
        "label": "1-3",
@@ -4230,11 +2547,11 @@
       },
       {
        "label": "4 et plus",
-       "cote": 2.15
+       "cote": 2.2
       },
       {
        "label": "0",
-       "cote": 16
+       "cote": 15
       }
      ]
     },
@@ -4247,7 +2564,7 @@
       },
       {
        "label": "Moins de 0,5",
-       "cote": 1.35
+       "cote": 1.34
       }
      ]
     },
@@ -4256,7 +2573,7 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 10
+       "cote": 10.5
       },
       {
        "label": "Moins de 1,5",
@@ -4269,7 +2586,7 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 50
+       "cote": 55
       },
       {
        "label": "Moins de 2,5",
@@ -4298,7 +2615,7 @@
       },
       {
        "label": "0",
-       "cote": 1.35
+       "cote": 1.34
       }
      ]
     },
@@ -4311,7 +2628,7 @@
       },
       {
        "label": "Moins de 1,5",
-       "cote": 4.5
+       "cote": 4.4
       }
      ]
     },
@@ -4320,11 +2637,11 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 1.44
+       "cote": 1.45
       },
       {
        "label": "Moins de 2,5",
-       "cote": 2.2
+       "cote": 2.15
       }
      ]
     },
@@ -4333,11 +2650,11 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 2.15
+       "cote": 2.2
       },
       {
        "label": "Moins de 3,5",
-       "cote": 1.46
+       "cote": 1.45
       }
      ]
     },
@@ -4346,7 +2663,7 @@
      "issues": [
       {
        "label": "Plus de 4,5",
-       "cote": 3.75
+       "cote": 3.8
       },
       {
        "label": "Moins de 4,5",
@@ -4359,7 +2676,7 @@
      "issues": [
       {
        "label": "Plus de 5,5",
-       "cote": 7
+       "cote": 7.25
       },
       {
        "label": "Moins de 5,5",
@@ -4372,11 +2689,11 @@
      "issues": [
       {
        "label": "Plus de 2",
-       "cote": 1.1
+       "cote": 1.11
       },
       {
        "label": "Moins de 2",
-       "cote": 4.8
+       "cote": 4.7
       }
      ]
     },
@@ -4385,11 +2702,11 @@
      "issues": [
       {
        "label": "Plus de 3",
-       "cote": 1.45
+       "cote": 1.46
       },
       {
        "label": "Moins de 3",
-       "cote": 2.2
+       "cote": 2.15
       }
      ]
     },
@@ -4402,7 +2719,7 @@
       },
       {
        "label": "Moins de 4",
-       "cote": 1.39
+       "cote": 1.38
       }
      ]
     },
@@ -4411,11 +2728,11 @@
      "issues": [
       {
        "label": "Plus de 5",
-       "cote": 4.3
+       "cote": 4.4
       },
       {
        "label": "Moins de 5",
-       "cote": 1.13
+       "cote": 1.12
       }
      ]
     },
@@ -4424,7 +2741,7 @@
      "issues": [
       {
        "label": "Plus de 6",
-       "cote": 8.5
+       "cote": 9
       },
       {
        "label": "Moins de 6",
@@ -4441,7 +2758,7 @@
       },
       {
        "label": "Moins de 1,5",
-       "cote": 5.7
+       "cote": 5.6
       }
      ]
     },
@@ -4454,7 +2771,7 @@
       },
       {
        "label": "Moins de 2,5",
-       "cote": 2.75
+       "cote": 2.7
       }
      ]
     },
@@ -4463,11 +2780,11 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 1.8
+       "cote": 1.82
       },
       {
        "label": "Moins de 3,5",
-       "cote": 1.68
+       "cote": 1.66
       }
      ]
     },
@@ -4476,11 +2793,11 @@
      "issues": [
       {
        "label": "Plus de 4,5",
-       "cote": 2.85
+       "cote": 2.9
       },
       {
        "label": "Moins de 4,5",
-       "cote": 1.28
+       "cote": 1.27
       }
      ]
     },
@@ -4489,11 +2806,11 @@
      "issues": [
       {
        "label": "Plus de 5,5",
-       "cote": 4.9
+       "cote": 5
       },
       {
        "label": "Moins de 5,5",
-       "cote": 1.1
+       "cote": 1.09
       }
      ]
     },
@@ -4515,11 +2832,11 @@
      "issues": [
       {
        "label": "0 - 0",
-       "cote": 24
+       "cote": 23
       },
       {
        "label": "1 - 0",
-       "cote": 7.75
+       "cote": 7.5
       },
       {
        "label": "2 - 0",
@@ -4555,7 +2872,7 @@
       },
       {
        "label": "4 - 1",
-       "cote": 13
+       "cote": 13.5
       },
       {
        "label": "5 - 1",
@@ -4579,7 +2896,7 @@
       },
       {
        "label": "4 - 2",
-       "cote": 48
+       "cote": 50
       },
       {
        "label": "5 - 2",
@@ -4591,11 +2908,11 @@
       },
       {
        "label": "1 - 3",
-       "cote": 180
+       "cote": 190
       },
       {
        "label": "2 - 3",
-       "cote": 130
+       "cote": 140
       },
       {
        "label": "3 - 3",
@@ -4607,7 +2924,7 @@
       },
       {
        "label": "5 - 3",
-       "cote": 200
+       "cote": 225
       },
       {
        "label": "0 - 4",
@@ -4655,7 +2972,7 @@
       },
       {
        "label": "Autre",
-       "cote": 7
+       "cote": 7.25
       }
      ]
     },
@@ -4664,15 +2981,15 @@
      "issues": [
       {
        "label": "0",
-       "cote": 24
+       "cote": 23
       },
       {
        "label": "1",
-       "cote": 7
+       "cote": 6.75
       },
       {
        "label": "2",
-       "cote": 4.4
+       "cote": 4.3
       },
       {
        "label": "3",
@@ -4700,7 +3017,7 @@
       },
       {
        "label": "9 ou plus",
-       "cote": 46
+       "cote": 48
       }
      ]
     },
@@ -4709,7 +3026,7 @@
      "issues": [
       {
        "label": "Espagne -3.5",
-       "cote": 2.55
+       "cote": 2.6
       },
       {
        "label": "Cap-Vert +3.5",
@@ -4726,7 +3043,7 @@
       },
       {
        "label": "Cap-Vert +2.5",
-       "cote": 1.82
+       "cote": 1.8
       }
      ]
     },
@@ -4777,9 +3094,9 @@
    "home_fr": "Belgique",
    "away_fr": "Égypte",
    "kickoff": 1781550000,
-   "odds_1": 1.56,
-   "odds_X": 3.85,
-   "odds_2": 5.3,
+   "odds_1": 1.58,
+   "odds_X": 3.95,
+   "odds_2": 5.5,
    "status": "PREMATCH",
    "bets": [
     {
@@ -4817,15 +3134,15 @@
      "issues": [
       {
        "label": "Belgique",
-       "cote": 1.56
+       "cote": 1.58
       },
       {
        "label": "Match nul",
-       "cote": 3.85
+       "cote": 3.95
       },
       {
        "label": "Égypte",
-       "cote": 5.3
+       "cote": 5.5
       }
      ]
     },
@@ -5394,8 +3711,8 @@
    "away_fr": "Uruguay",
    "kickoff": 1781560800,
    "odds_1": 6.75,
-   "odds_X": 4.4,
-   "odds_2": 1.41,
+   "odds_X": 4.5,
+   "odds_2": 1.43,
    "status": "PREMATCH",
    "bets": [
     {
@@ -5437,11 +3754,11 @@
       },
       {
        "label": "Match nul",
-       "cote": 4.4
+       "cote": 4.5
       },
       {
        "label": "Uruguay",
-       "cote": 1.41
+       "cote": 1.43
       }
      ]
     },
@@ -6009,9 +4326,9 @@
    "home_fr": "Iran",
    "away_fr": "Nouvelle Zélande",
    "kickoff": 1781571600,
-   "odds_1": 1.78,
-   "odds_X": 3.4,
-   "odds_2": 4.3,
+   "odds_1": 1.8,
+   "odds_X": 3.5,
+   "odds_2": 4.4,
    "status": "PREMATCH",
    "bets": [
     {
@@ -6316,15 +4633,15 @@
      "issues": [
       {
        "label": "Iran",
-       "cote": 1.78
+       "cote": 1.8
       },
       {
        "label": "Match nul",
-       "cote": 3.4
+       "cote": 3.5
       },
       {
        "label": "Nouvelle Zélande",
-       "cote": 4.3
+       "cote": 4.4
       }
      ]
     },
@@ -7846,7 +6163,7 @@
    "kickoff": 1781658000,
    "odds_1": 1.36,
    "odds_X": 4.5,
-   "odds_2": 7.5,
+   "odds_2": 7.75,
    "status": "PREMATCH",
    "bets": [
     {
@@ -7871,11 +6188,11 @@
      "issues": [
       {
        "label": "Argentine",
-       "cote": 1.08
+       "cote": 1.07
       },
       {
        "label": "Algérie",
-       "cote": 4.4
+       "cote": 4.5
       }
      ]
     },
@@ -7892,7 +6209,7 @@
       },
       {
        "label": "Algérie",
-       "cote": 7.5
+       "cote": 7.75
       }
      ]
     },
@@ -7905,7 +6222,7 @@
       },
       {
        "label": "1-3",
-       "cote": 1.26
+       "cote": 1.27
       },
       {
        "label": "2-3",
@@ -7913,7 +6230,7 @@
       },
       {
        "label": "4 et plus",
-       "cote": 5.2
+       "cote": 5.1
       },
       {
        "label": "0",
@@ -7939,7 +6256,7 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 5.5
+       "cote": 5.6
       },
       {
        "label": "Moins de 1,5",
@@ -7952,7 +6269,7 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 23
+       "cote": 24
       },
       {
        "label": "Moins de 2,5",
@@ -7969,15 +6286,15 @@
       },
       {
        "label": "1-3",
-       "cote": 1.84
+       "cote": 1.86
       },
       {
        "label": "2-3",
-       "cote": 5.7
+       "cote": 5.8
       },
       {
        "label": "4 et plus",
-       "cote": 75
+       "cote": 80
       },
       {
        "label": "0",
@@ -8003,11 +6320,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 1.5
+       "cote": 1.49
       },
       {
        "label": "Moins de 1,5",
-       "cote": 2.05
+       "cote": 2.1
       }
      ]
     },
@@ -8029,7 +6346,7 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 5.2
+       "cote": 5.1
       },
       {
        "label": "Moins de 3,5",
@@ -8085,7 +6402,7 @@
       },
       {
        "label": "Moins de 3",
-       "cote": 1.37
+       "cote": 1.38
       }
      ]
     },
@@ -8124,7 +6441,7 @@
       },
       {
        "label": "Moins de 0,5",
-       "cote": 9
+       "cote": 8.5
       }
      ]
     },
@@ -8133,7 +6450,7 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 1.24
+       "cote": 1.23
       },
       {
        "label": "Moins de 1,5",
@@ -8189,7 +6506,7 @@
       },
       {
        "label": "Non",
-       "cote": 1.5
+       "cote": 1.49
       }
      ]
     },
@@ -8198,7 +6515,7 @@
      "issues": [
       {
        "label": "0 - 0",
-       "cote": 9
+       "cote": 8.5
       },
       {
        "label": "1 - 0",
@@ -8222,7 +6539,7 @@
       },
       {
        "label": "0 - 1",
-       "cote": 14.5
+       "cote": 15
       },
       {
        "label": "1 - 1",
@@ -8242,15 +6559,15 @@
       },
       {
        "label": "5 - 1",
-       "cote": 44
+       "cote": 42
       },
       {
        "label": "0 - 2",
-       "cote": 38
+       "cote": 40
       },
       {
        "label": "1 - 2",
-       "cote": 21
+       "cote": 22
       },
       {
        "label": "2 - 2",
@@ -8270,7 +6587,7 @@
       },
       {
        "label": "0 - 3",
-       "cote": 95
+       "cote": 100
       },
       {
        "label": "1 - 3",
@@ -8294,7 +6611,7 @@
       },
       {
        "label": "0 - 4",
-       "cote": 350
+       "cote": 400
       },
       {
        "label": "1 - 4",
@@ -8306,7 +6623,7 @@
       },
       {
        "label": "3 - 4",
-       "cote": 275
+       "cote": 300
       },
       {
        "label": "4 - 4",
@@ -8338,7 +6655,7 @@
       },
       {
        "label": "Autre",
-       "cote": 34
+       "cote": 32
       }
      ]
     },
@@ -8347,11 +6664,11 @@
      "issues": [
       {
        "label": "0",
-       "cote": 9
+       "cote": 8.5
       },
       {
        "label": "1",
-       "cote": 4.1
+       "cote": 4.2
       },
       {
        "label": "2",
@@ -8363,7 +6680,7 @@
       },
       {
        "label": "4",
-       "cote": 5.2
+       "cote": 5.1
       },
       {
        "label": "5",
@@ -8371,7 +6688,7 @@
       },
       {
        "label": "6",
-       "cote": 19
+       "cote": 18
       },
       {
        "label": "7",
@@ -8392,7 +6709,7 @@
      "issues": [
       {
        "label": "Argentine -2.5",
-       "cote": 3.6
+       "cote": 3.55
       },
       {
        "label": "Algérie +2.5",
@@ -8405,7 +6722,7 @@
      "issues": [
       {
        "label": "Argentine -1.5",
-       "cote": 1.96
+       "cote": 1.94
       },
       {
        "label": "Algérie +1.5",
@@ -8431,7 +6748,7 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 75
+       "cote": 80
       },
       {
        "label": "Moins de 3,5",
@@ -12707,9 +11024,9 @@
    "home_fr": "Canada",
    "away_fr": "Qatar",
    "kickoff": 1781820000,
-   "odds_1": 1.22,
-   "odds_X": 5.1,
-   "odds_2": 8.5,
+   "odds_1": 1.23,
+   "odds_X": 5,
+   "odds_2": 8,
    "status": "PREMATCH",
    "bets": [
     {
@@ -12717,15 +11034,15 @@
      "issues": [
       {
        "label": "Canada",
-       "cote": 1.22
+       "cote": 1.23
       },
       {
        "label": "Match nul",
-       "cote": 5.1
+       "cote": 5
       },
       {
        "label": "Qatar",
-       "cote": 8.5
+       "cote": 8
       }
      ]
     },
@@ -12742,7 +11059,7 @@
       },
       {
        "label": "Qatar ou match nul",
-       "cote": 3.35
+       "cote": 3.3
       }
      ]
     },
@@ -12751,11 +11068,11 @@
      "issues": [
       {
        "label": "Canada",
-       "cote": 1.04
+       "cote": 1.05
       },
       {
        "label": "Qatar",
-       "cote": 5.1
+       "cote": 5
       }
      ]
     },
@@ -12764,11 +11081,11 @@
      "issues": [
       {
        "label": "1-2",
-       "cote": 1.72
+       "cote": 1.7
       },
       {
        "label": "1-3",
-       "cote": 1.29
+       "cote": 1.28
       },
       {
        "label": "2-3",
@@ -12776,11 +11093,11 @@
       },
       {
        "label": "4 et plus",
-       "cote": 4
+       "cote": 4.2
       },
       {
        "label": "0",
-       "cote": 6.75
+       "cote": 6.5
       }
      ]
     },
@@ -12828,7 +11145,7 @@
      "issues": [
       {
        "label": "1-2",
-       "cote": 2
+       "cote": 2.05
       },
       {
        "label": "1-3",
@@ -12840,7 +11157,7 @@
       },
       {
        "label": "4 et plus",
-       "cote": 90
+       "cote": 95
       },
       {
        "label": "0",
@@ -12857,7 +11174,7 @@
       },
       {
        "label": "Moins de 0,5",
-       "cote": 6.75
+       "cote": 6.5
       }
      ]
     },
@@ -12866,11 +11183,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 1.36
+       "cote": 1.38
       },
       {
        "label": "Moins de 1,5",
-       "cote": 2.45
+       "cote": 2.4
       }
      ]
     },
@@ -12879,11 +11196,11 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 2.15
+       "cote": 2.2
       },
       {
        "label": "Moins de 2,5",
-       "cote": 1.47
+       "cote": 1.44
       }
      ]
     },
@@ -12892,11 +11209,11 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 4
+       "cote": 4.2
       },
       {
        "label": "Moins de 3,5",
-       "cote": 1.15
+       "cote": 1.14
       }
      ]
     },
@@ -12905,7 +11222,7 @@
      "issues": [
       {
        "label": "Plus de 4,5",
-       "cote": 8.5
+       "cote": 9
       },
       {
        "label": "Moins de 4,5",
@@ -12918,11 +11235,11 @@
      "issues": [
       {
        "label": "Plus de 1",
-       "cote": 1.02
+       "cote": 1.03
       },
       {
        "label": "Moins de 1",
-       "cote": 9.5
+       "cote": 9
       }
      ]
     },
@@ -12931,11 +11248,11 @@
      "issues": [
       {
        "label": "Plus de 2",
-       "cote": 1.28
+       "cote": 1.3
       },
       {
        "label": "Moins de 2",
-       "cote": 2.85
+       "cote": 2.7
       }
      ]
     },
@@ -12944,11 +11261,11 @@
      "issues": [
       {
        "label": "Plus de 3",
-       "cote": 2.05
+       "cote": 2.15
       },
       {
        "label": "Moins de 3",
-       "cote": 1.5
+       "cote": 1.47
       }
      ]
     },
@@ -12957,11 +11274,11 @@
      "issues": [
       {
        "label": "Plus de 4",
-       "cote": 4.1
+       "cote": 4.2
       },
       {
        "label": "Moins de 4",
-       "cote": 1.14
+       "cote": 1.13
       }
      ]
     },
@@ -12970,11 +11287,11 @@
      "issues": [
       {
        "label": "Plus de 5",
-       "cote": 9
+       "cote": 9.5
       },
       {
        "label": "Moins de 5",
-       "cote": 1.03
+       "cote": 1.02
       }
      ]
     },
@@ -12987,7 +11304,7 @@
       },
       {
        "label": "Moins de 0,5",
-       "cote": 11
+       "cote": 10.5
       }
      ]
     },
@@ -12996,11 +11313,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 1.19
+       "cote": 1.2
       },
       {
        "label": "Moins de 1,5",
-       "cote": 3.6
+       "cote": 3.5
       }
      ]
     },
@@ -13009,11 +11326,11 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 1.6
+       "cote": 1.64
       },
       {
        "label": "Moins de 2,5",
-       "cote": 1.88
+       "cote": 1.84
       }
      ]
     },
@@ -13022,11 +11339,11 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 2.6
+       "cote": 2.7
       },
       {
        "label": "Moins de 3,5",
-       "cote": 1.32
+       "cote": 1.31
       }
      ]
     },
@@ -13035,11 +11352,11 @@
      "issues": [
       {
        "label": "Plus de 4,5",
-       "cote": 4.7
+       "cote": 4.9
       },
       {
        "label": "Moins de 4,5",
-       "cote": 1.11
+       "cote": 1.1
       }
      ]
     },
@@ -13052,7 +11369,7 @@
       },
       {
        "label": "Non",
-       "cote": 1.47
+       "cote": 1.46
       }
      ]
     },
@@ -13061,11 +11378,11 @@
      "issues": [
       {
        "label": "0 - 0",
-       "cote": 11
+       "cote": 10.5
       },
       {
        "label": "1 - 0",
-       "cote": 5.6
+       "cote": 5.5
       },
       {
        "label": "2 - 0",
@@ -13081,11 +11398,11 @@
       },
       {
        "label": "5 - 0",
-       "cote": 21
+       "cote": 23
       },
       {
        "label": "0 - 1",
-       "cote": 18
+       "cote": 17
       },
       {
        "label": "1 - 1",
@@ -13105,7 +11422,7 @@
       },
       {
        "label": "5 - 1",
-       "cote": 34
+       "cote": 36
       },
       {
        "label": "0 - 2",
@@ -13113,7 +11430,7 @@
       },
       {
        "label": "1 - 2",
-       "cote": 27
+       "cote": 26
       },
       {
        "label": "2 - 2",
@@ -13125,11 +11442,11 @@
       },
       {
        "label": "4 - 2",
-       "cote": 46
+       "cote": 48
       },
       {
        "label": "5 - 2",
-       "cote": 65
+       "cote": 70
       },
       {
        "label": "0 - 3",
@@ -13201,7 +11518,7 @@
       },
       {
        "label": "Autre",
-       "cote": 22
+       "cote": 24
       }
      ]
     },
@@ -13210,15 +11527,15 @@
      "issues": [
       {
        "label": "0",
-       "cote": 11
+       "cote": 10.5
       },
       {
        "label": "1",
-       "cote": 4.5
+       "cote": 4.4
       },
       {
        "label": "2",
-       "cote": 3.5
+       "cote": 3.45
       },
       {
        "label": "3",
@@ -13226,11 +11543,11 @@
       },
       {
        "label": "4",
-       "cote": 4.7
+       "cote": 4.8
       },
       {
        "label": "5",
-       "cote": 7.75
+       "cote": 8
       },
       {
        "label": "6",
@@ -13238,7 +11555,7 @@
       },
       {
        "label": "7",
-       "cote": 32
+       "cote": 34
       },
       {
        "label": "8",
@@ -13255,11 +11572,11 @@
      "issues": [
       {
        "label": "Canada -2.5",
-       "cote": 2.85
+       "cote": 2.95
       },
       {
        "label": "Qatar +2.5",
-       "cote": 1.28
+       "cote": 1.26
       }
      ]
     },
@@ -13268,11 +11585,11 @@
      "issues": [
       {
        "label": "Canada -1.5",
-       "cote": 1.68
+       "cote": 1.7
       },
       {
        "label": "Qatar +1.5",
-       "cote": 1.78
+       "cote": 1.76
       }
      ]
     },
@@ -13281,11 +11598,11 @@
      "issues": [
       {
        "label": "Canada -3.5",
-       "cote": 5.4
+       "cote": 5.7
       },
       {
        "label": "Qatar +3.5",
-       "cote": 1.08
+       "cote": 1.07
       }
      ]
     }
@@ -13900,9 +12217,9 @@
    "home_fr": "États-Unis",
    "away_fr": "Australie",
    "kickoff": 1781895600,
-   "odds_1": 1.46,
-   "odds_X": 3.9,
-   "odds_2": 5.1,
+   "odds_1": 1.52,
+   "odds_X": 3.8,
+   "odds_2": 4.7,
    "status": "PREMATCH",
    "bets": [
     {
@@ -13910,15 +12227,15 @@
      "issues": [
       {
        "label": "États-Unis",
-       "cote": 1.46
+       "cote": 1.52
       },
       {
        "label": "Match nul",
-       "cote": 3.9
+       "cote": 3.8
       },
       {
        "label": "Australie",
-       "cote": 5.1
+       "cote": 4.7
       }
      ]
     },
@@ -13927,15 +12244,15 @@
      "issues": [
       {
        "label": "États-Unis ou match nul",
-       "cote": 1.1
+       "cote": 1.12
       },
       {
        "label": "États-Unis ou Australie",
-       "cote": 1.18
+       "cote": 1.19
       },
       {
        "label": "Australie ou match nul",
-       "cote": 2.25
+       "cote": 2.1
       }
      ]
     },
@@ -13944,11 +12261,11 @@
      "issues": [
       {
        "label": "États-Unis",
-       "cote": 1.15
+       "cote": 1.18
       },
       {
        "label": "Australie",
-       "cote": 3.5
+       "cote": 3.25
       }
      ]
     },
@@ -13965,15 +12282,15 @@
       },
       {
        "label": "2-3",
-       "cote": 1.98
+       "cote": 2
       },
       {
        "label": "4 et plus",
-       "cote": 6.25
+       "cote": 6.75
       },
       {
        "label": "0",
-       "cote": 4.6
+       "cote": 4.5
       }
      ]
     },
@@ -13982,11 +12299,11 @@
      "issues": [
       {
        "label": "Plus de 0,5",
-       "cote": 1.62
+       "cote": 1.56
       },
       {
        "label": "Moins de 0,5",
-       "cote": 1.86
+       "cote": 1.96
       }
      ]
     },
@@ -13995,11 +12312,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 4.2
+       "cote": 3.9
       },
       {
        "label": "Moins de 1,5",
-       "cote": 1.13
+       "cote": 1.16
       }
      ]
     },
@@ -14008,11 +12325,24 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 14.5
+       "cote": 12.5
       },
       {
        "label": "Moins de 2,5",
-       "cote": 1.01
+       "cote": 1.02
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Australie",
+     "issues": [
+      {
+       "label": "Plus de 3,5",
+       "cote": 50
+      },
+      {
+       "label": "Moins de 3,5",
+       "cote": 1
       }
      ]
     },
@@ -14021,23 +12351,23 @@
      "issues": [
       {
        "label": "1-2",
-       "cote": 1.74
+       "cote": 1.7
       },
       {
        "label": "1-3",
-       "cote": 1.64
+       "cote": 1.58
       },
       {
        "label": "2-3",
-       "cote": 4.4
+       "cote": 4
       },
       {
        "label": "4 et plus",
-       "cote": 55
+       "cote": 48
       },
       {
        "label": "0",
-       "cote": 1.86
+       "cote": 1.96
       }
      ]
     },
@@ -14046,11 +12376,11 @@
      "issues": [
       {
        "label": "Plus de 0,5",
-       "cote": 1.11
+       "cote": 1.12
       },
       {
        "label": "Moins de 0,5",
-       "cote": 4.6
+       "cote": 4.5
       }
      ]
     },
@@ -14059,11 +12389,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 1.6
+       "cote": 1.64
       },
       {
        "label": "Moins de 1,5",
-       "cote": 1.88
+       "cote": 1.84
       }
      ]
     },
@@ -14072,11 +12402,11 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 3
+       "cote": 3.1
       },
       {
        "label": "Moins de 2,5",
-       "cote": 1.26
+       "cote": 1.24
       }
      ]
     },
@@ -14085,11 +12415,11 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 6.25
+       "cote": 6.75
       },
       {
        "label": "Moins de 3,5",
-       "cote": 1.06
+       "cote": 1.05
       }
      ]
     },
@@ -14098,7 +12428,7 @@
      "issues": [
       {
        "label": "Plus de 4,5",
-       "cote": 16
+       "cote": 18
       },
       {
        "label": "Moins de 4,5",
@@ -14124,7 +12454,7 @@
      "issues": [
       {
        "label": "Plus de 2",
-       "cote": 1.39
+       "cote": 1.38
       },
       {
        "label": "Moins de 2",
@@ -14137,11 +12467,11 @@
      "issues": [
       {
        "label": "Plus de 3",
-       "cote": 2.45
+       "cote": 2.4
       },
       {
        "label": "Moins de 3",
-       "cote": 1.35
+       "cote": 1.37
       }
      ]
     },
@@ -14150,7 +12480,7 @@
      "issues": [
       {
        "label": "Plus de 4",
-       "cote": 5.2
+       "cote": 5.1
       },
       {
        "label": "Moins de 4",
@@ -14189,11 +12519,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 1.25
+       "cote": 1.24
       },
       {
        "label": "Moins de 1,5",
-       "cote": 3.05
+       "cote": 3.1
       }
      ]
     },
@@ -14202,11 +12532,11 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 1.8
+       "cote": 1.78
       },
       {
        "label": "Moins de 2,5",
-       "cote": 1.68
+       "cote": 1.7
       }
      ]
     },
@@ -14215,11 +12545,11 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 3.1
+       "cote": 3.05
       },
       {
        "label": "Moins de 3,5",
-       "cote": 1.24
+       "cote": 1.25
       }
      ]
     },
@@ -14228,7 +12558,7 @@
      "issues": [
       {
        "label": "Plus de 4,5",
-       "cote": 6
+       "cote": 5.8
       },
       {
        "label": "Moins de 4,5",
@@ -14241,11 +12571,11 @@
      "issues": [
       {
        "label": "Oui",
-       "cote": 1.9
+       "cote": 1.82
       },
       {
        "label": "Non",
-       "cote": 1.6
+       "cote": 1.64
       }
      ]
     },
@@ -14258,31 +12588,31 @@
       },
       {
        "label": "1 - 0",
-       "cote": 5.5
+       "cote": 5.7
       },
       {
        "label": "2 - 0",
-       "cote": 5.9
+       "cote": 6.25
       },
       {
        "label": "3 - 0",
-       "cote": 9
+       "cote": 9.5
       },
       {
        "label": "4 - 0",
-       "cote": 18
+       "cote": 20
       },
       {
        "label": "5 - 0",
-       "cote": 42
+       "cote": 46
       },
       {
        "label": "0 - 1",
-       "cote": 11.5
+       "cote": 11
       },
       {
        "label": "1 - 1",
-       "cote": 6.75
+       "cote": 6.5
       },
       {
        "label": "2 - 1",
@@ -14290,11 +12620,11 @@
       },
       {
        "label": "3 - 1",
-       "cote": 11
+       "cote": 11.5
       },
       {
        "label": "4 - 1",
-       "cote": 23
+       "cote": 24
       },
       {
        "label": "5 - 1",
@@ -14302,19 +12632,19 @@
       },
       {
        "label": "0 - 2",
-       "cote": 27
+       "cote": 24
       },
       {
        "label": "1 - 2",
-       "cote": 15
+       "cote": 14.5
       },
       {
        "label": "2 - 2",
-       "cote": 17
+       "cote": 15
       },
       {
        "label": "3 - 2",
-       "cote": 26
+       "cote": 25
       },
       {
        "label": "4 - 2",
@@ -14330,11 +12660,11 @@
       },
       {
        "label": "1 - 3",
-       "cote": 48
+       "cote": 42
       },
       {
        "label": "2 - 3",
-       "cote": 50
+       "cote": 46
       },
       {
        "label": "3 - 3",
@@ -14342,43 +12672,43 @@
       },
       {
        "label": "4 - 3",
-       "cote": 100
+       "cote": 95
       },
       {
        "label": "5 - 3",
-       "cote": 200
+       "cote": 190
       },
       {
        "label": "0 - 4",
-       "cote": 180
+       "cote": 150
       },
       {
        "label": "1 - 4",
-       "cote": 120
+       "cote": 100
       },
       {
        "label": "2 - 4",
-       "cote": 130
+       "cote": 110
       },
       {
        "label": "3 - 4",
-       "cote": 180
+       "cote": 160
       },
       {
        "label": "4 - 4",
-       "cote": 350
+       "cote": 300
       },
       {
        "label": "5 - 4",
-       "cote": 500
+       "cote": 450
       },
       {
        "label": "0 - 5",
-       "cote": 500
+       "cote": 450
       },
       {
        "label": "1 - 5",
-       "cote": 450
+       "cote": 400
       },
       {
        "label": "2 - 5",
@@ -14386,7 +12716,7 @@
       },
       {
        "label": "3 - 5",
-       "cote": 500
+       "cote": 450
       },
       {
        "label": "4 - 5",
@@ -14394,7 +12724,7 @@
       },
       {
        "label": "Autre",
-       "cote": 46
+       "cote": 48
       }
      ]
     },
@@ -14407,7 +12737,7 @@
       },
       {
        "label": "1",
-       "cote": 4
+       "cote": 4.1
       },
       {
        "label": "2",
@@ -14419,7 +12749,7 @@
       },
       {
        "label": "4",
-       "cote": 5.3
+       "cote": 5.2
       },
       {
        "label": "5",
@@ -14431,11 +12761,11 @@
       },
       {
        "label": "7",
-       "cote": 44
+       "cote": 42
       },
       {
        "label": "8",
-       "cote": 80
+       "cote": 75
       },
       {
        "label": "9 ou plus",
@@ -14448,11 +12778,11 @@
      "issues": [
       {
        "label": "États-Unis -1.5",
-       "cote": 2.3
+       "cote": 2.4
       },
       {
        "label": "Australie +1.5",
-       "cote": 1.41
+       "cote": 1.37
       }
      ]
     },
@@ -14461,11 +12791,11 @@
      "issues": [
       {
        "label": "États-Unis -2.5",
-       "cote": 4.4
+       "cote": 4.7
       },
       {
        "label": "Australie +2.5",
-       "cote": 1.12
+       "cote": 1.11
       }
      ]
     },
@@ -14473,12 +12803,1205 @@
      "marche": "Écart de buts (handicap)",
      "issues": [
       {
-       "label": "États-Unis -3.5",
+       "label": "États-Unis +1.5",
+       "cote": 1.02
+      },
+      {
+       "label": "Australie -1.5",
+       "cote": 12.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "winamax_id": "66456934",
+   "title": "Écosse - Maroc",
+   "home_fr": "Écosse",
+   "away_fr": "Maroc",
+   "kickoff": 1781906400,
+   "odds_1": 4.2,
+   "odds_X": 3.35,
+   "odds_2": 1.66,
+   "status": "PREMATCH",
+   "bets": [
+    {
+     "marche": "Résultat",
+     "issues": [
+      {
+       "label": "Écosse",
+       "cote": 4.2
+      },
+      {
+       "label": "Match nul",
+       "cote": 3.35
+      },
+      {
+       "label": "Maroc",
+       "cote": 1.66
+      }
+     ]
+    },
+    {
+     "marche": "Double chance",
+     "issues": [
+      {
+       "label": "Écosse ou match nul",
+       "cote": 1.88
+      },
+      {
+       "label": "Écosse ou Maroc",
+       "cote": 1.24
+      },
+      {
+       "label": "Maroc ou match nul",
+       "cote": 1.15
+      }
+     ]
+    },
+    {
+     "marche": "Vainqueur (remboursé si match nul)",
+     "issues": [
+      {
+       "label": "Écosse",
+       "cote": 2.9
+      },
+      {
+       "label": "Maroc",
+       "cote": 1.24
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Écosse (intervalle)",
+     "issues": [
+      {
+       "label": "1-2",
+       "cote": 1.7
+      },
+      {
+       "label": "1-3",
+       "cote": 1.58
+      },
+      {
+       "label": "2-3",
+       "cote": 4.1
+      },
+      {
+       "label": "4 et plus",
+       "cote": 50
+      },
+      {
+       "label": "0",
+       "cote": 1.96
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Maroc",
+     "issues": [
+      {
+       "label": "Plus de 0,5",
+       "cote": 1.17
+      },
+      {
+       "label": "Moins de 0,5",
+       "cote": 3.75
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Maroc",
+     "issues": [
+      {
+       "label": "Plus de 1,5",
+       "cote": 1.86
+      },
+      {
+       "label": "Moins de 1,5",
+       "cote": 1.62
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Maroc",
+     "issues": [
+      {
+       "label": "Plus de 2,5",
+       "cote": 3.85
+      },
+      {
+       "label": "Moins de 2,5",
+       "cote": 1.16
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Maroc",
+     "issues": [
+      {
+       "label": "Plus de 3,5",
+       "cote": 9
+      },
+      {
+       "label": "Moins de 3,5",
+       "cote": 1.03
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Maroc",
+     "issues": [
+      {
+       "label": "Plus de 4,5",
+       "cote": 28
+      },
+      {
+       "label": "Moins de 4,5",
+       "cote": 1
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Maroc (intervalle)",
+     "issues": [
+      {
+       "label": "1-2",
+       "cote": 1.52
+      },
+      {
+       "label": "1-3",
+       "cote": 1.27
+      },
+      {
+       "label": "2-3",
+       "cote": 2.15
+      },
+      {
+       "label": "4 et plus",
+       "cote": 9
+      },
+      {
+       "label": "0",
+       "cote": 3.75
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Écosse",
+     "issues": [
+      {
+       "label": "Plus de 0,5",
+       "cote": 1.56
+      },
+      {
+       "label": "Moins de 0,5",
+       "cote": 1.96
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Écosse",
+     "issues": [
+      {
+       "label": "Plus de 1,5",
+       "cote": 3.95
+      },
+      {
+       "label": "Moins de 1,5",
+       "cote": 1.15
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Écosse",
+     "issues": [
+      {
+       "label": "Plus de 2,5",
+       "cote": 12.5
+      },
+      {
+       "label": "Moins de 2,5",
+       "cote": 1.02
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Écosse",
+     "issues": [
+      {
+       "label": "Plus de 3,5",
+       "cote": 50
+      },
+      {
+       "label": "Moins de 3,5",
+       "cote": 1
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 1",
+       "cote": 1.07
+      },
+      {
+       "label": "Moins de 1",
+       "cote": 5.9
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 2",
+       "cote": 1.52
+      },
+      {
+       "label": "Moins de 2",
+       "cote": 2
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 3",
+       "cote": 2.95
+      },
+      {
+       "label": "Moins de 3",
+       "cote": 1.26
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 4",
+       "cote": 6.5
+      },
+      {
+       "label": "Moins de 4",
+       "cote": 1.05
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 5",
+       "cote": 17
+      },
+      {
+       "label": "Moins de 5",
+       "cote": 1.01
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 0,5",
+       "cote": 1.04
+      },
+      {
+       "label": "Moins de 0,5",
+       "cote": 7.25
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 1,5",
+       "cote": 1.31
+      },
+      {
+       "label": "Moins de 1,5",
+       "cote": 2.65
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 2,5",
+       "cote": 2
+      },
+      {
+       "label": "Moins de 2,5",
+       "cote": 1.54
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 3,5",
+       "cote": 3.65
+      },
+      {
+       "label": "Moins de 3,5",
+       "cote": 1.18
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 4,5",
+       "cote": 7.5
+      },
+      {
+       "label": "Moins de 4,5",
+       "cote": 1.04
+      }
+     ]
+    },
+    {
+     "marche": "Les 2 équipes marquent",
+     "issues": [
+      {
+       "label": "Oui",
+       "cote": 1.92
+      },
+      {
+       "label": "Non",
+       "cote": 1.58
+      }
+     ]
+    },
+    {
+     "marche": "Score exact",
+     "issues": [
+      {
+       "label": "0 - 0",
+       "cote": 7.25
+      },
+      {
+       "label": "1 - 0",
+       "cote": 9
+      },
+      {
+       "label": "2 - 0",
+       "cote": 20
+      },
+      {
+       "label": "3 - 0",
+       "cote": 55
+      },
+      {
+       "label": "4 - 0",
+       "cote": 130
+      },
+      {
+       "label": "5 - 0",
+       "cote": 450
+      },
+      {
+       "label": "0 - 1",
+       "cote": 5.3
+      },
+      {
+       "label": "1 - 1",
+       "cote": 6
+      },
+      {
+       "label": "2 - 1",
+       "cote": 13.5
+      },
+      {
+       "label": "3 - 1",
+       "cote": 40
+      },
+      {
+       "label": "4 - 1",
+       "cote": 100
+      },
+      {
+       "label": "5 - 1",
+       "cote": 400
+      },
+      {
+       "label": "0 - 2",
+       "cote": 6.5
+      },
+      {
+       "label": "1 - 2",
+       "cote": 7.75
+      },
+      {
+       "label": "2 - 2",
+       "cote": 16
+      },
+      {
+       "label": "3 - 2",
+       "cote": 48
+      },
+      {
+       "label": "4 - 2",
+       "cote": 110
+      },
+      {
+       "label": "5 - 2",
+       "cote": 450
+      },
+      {
+       "label": "0 - 3",
+       "cote": 11
+      },
+      {
+       "label": "1 - 3",
+       "cote": 13.5
+      },
+      {
+       "label": "2 - 3",
+       "cote": 30
+      },
+      {
+       "label": "3 - 3",
+       "cote": 60
+      },
+      {
+       "label": "4 - 3",
+       "cote": 180
+      },
+      {
+       "label": "5 - 3",
+       "cote": 500
+      },
+      {
+       "label": "0 - 4",
+       "cote": 26
+      },
+      {
+       "label": "1 - 4",
+       "cote": 30
+      },
+      {
+       "label": "2 - 4",
+       "cote": 55
+      },
+      {
+       "label": "3 - 4",
+       "cote": 110
+      },
+      {
+       "label": "4 - 4",
+       "cote": 350
+      },
+      {
+       "label": "5 - 4",
+       "cote": 500
+      },
+      {
+       "label": "0 - 5",
+       "cote": 60
+      },
+      {
+       "label": "1 - 5",
+       "cote": 60
+      },
+      {
+       "label": "2 - 5",
+       "cote": 110
+      },
+      {
+       "label": "3 - 5",
+       "cote": 275
+      },
+      {
+       "label": "4 - 5",
+       "cote": 500
+      },
+      {
+       "label": "Autre",
+       "cote": 60
+      }
+     ]
+    },
+    {
+     "marche": "Nombre exact de buts",
+     "issues": [
+      {
+       "label": "0",
+       "cote": 7.25
+      },
+      {
+       "label": "1",
+       "cote": 3.75
+      },
+      {
+       "label": "2",
+       "cote": 3.1
+      },
+      {
+       "label": "3",
+       "cote": 3.85
+      },
+      {
+       "label": "4",
+       "cote": 5.8
+      },
+      {
+       "label": "5",
+       "cote": 11
+      },
+      {
+       "label": "6",
+       "cote": 25
+      },
+      {
+       "label": "7",
+       "cote": 55
+      },
+      {
+       "label": "8",
+       "cote": 100
+      },
+      {
+       "label": "9 ou plus",
+       "cote": 100
+      }
+     ]
+    },
+    {
+     "marche": "Écart de buts (handicap)",
+     "issues": [
+      {
+       "label": "Écosse +1.5",
+       "cote": 1.27
+      },
+      {
+       "label": "Maroc -1.5",
+       "cote": 2.85
+      }
+     ]
+    },
+    {
+     "marche": "Écart de buts (handicap)",
+     "issues": [
+      {
+       "label": "Écosse -1.5",
+       "cote": 11
+      },
+      {
+       "label": "Maroc +1.5",
+       "cote": 1.02
+      }
+     ]
+    },
+    {
+     "marche": "Écart de buts (handicap)",
+     "issues": [
+      {
+       "label": "Écosse +2.5",
+       "cote": 1.06
+      },
+      {
+       "label": "Maroc -2.5",
+       "cote": 6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "winamax_id": "66456932",
+   "title": "Brésil - Haïti",
+   "home_fr": "Brésil",
+   "away_fr": "Haïti",
+   "kickoff": 1781915400,
+   "odds_1": 1.07,
+   "odds_X": 7.75,
+   "odds_2": 13.5,
+   "status": "PREMATCH",
+   "bets": [
+    {
+     "marche": "Double chance",
+     "issues": [
+      {
+       "label": "Brésil ou match nul",
+       "cote": 1.01
+      },
+      {
+       "label": "Brésil ou Haïti",
+       "cote": 1.03
+      },
+      {
+       "label": "Haïti ou match nul",
+       "cote": 5.8
+      }
+     ]
+    },
+    {
+     "marche": "Vainqueur (remboursé si match nul)",
+     "issues": [
+      {
+       "label": "Brésil",
+       "cote": 1
+      },
+      {
+       "label": "Haïti",
+       "cote": 6.25
+      }
+     ]
+    },
+    {
+     "marche": "Résultat",
+     "issues": [
+      {
+       "label": "Brésil",
+       "cote": 1.07
+      },
+      {
+       "label": "Match nul",
+       "cote": 7.75
+      },
+      {
+       "label": "Haïti",
+       "cote": 13.5
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Brésil (intervalle)",
+     "issues": [
+      {
+       "label": "1-2",
+       "cote": 2.4
+      },
+      {
+       "label": "1-3",
+       "cote": 1.54
+      },
+      {
+       "label": "2-3",
+       "cote": 1.96
+      },
+      {
+       "label": "4 et plus",
+       "cote": 2.2
+      },
+      {
+       "label": "0",
+       "cote": 14.5
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Haïti",
+     "issues": [
+      {
+       "label": "Plus de 0,5",
+       "cote": 2
+      },
+      {
+       "label": "Moins de 0,5",
+       "cote": 1.52
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Haïti",
+     "issues": [
+      {
+       "label": "Plus de 1,5",
+       "cote": 6.75
+      },
+      {
+       "label": "Moins de 1,5",
+       "cote": 1.05
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Haïti",
+     "issues": [
+      {
+       "label": "Plus de 2,5",
+       "cote": 30
+      },
+      {
+       "label": "Moins de 2,5",
+       "cote": 1
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Haïti (intervalle)",
+     "issues": [
+      {
+       "label": "1-2",
+       "cote": 2.1
+      },
+      {
+       "label": "1-3",
+       "cote": 2
+      },
+      {
+       "label": "2-3",
+       "cote": 6.75
+      },
+      {
+       "label": "4 et plus",
+       "cote": 100
+      },
+      {
+       "label": "0",
+       "cote": 1.52
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Brésil",
+     "issues": [
+      {
+       "label": "Plus de 1,5",
+       "cote": 1.13
+      },
+      {
+       "label": "Moins de 1,5",
+       "cote": 4.3
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Brésil",
+     "issues": [
+      {
+       "label": "Plus de 2,5",
+       "cote": 1.46
+      },
+      {
+       "label": "Moins de 2,5",
+       "cote": 2.15
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Brésil",
+     "issues": [
+      {
+       "label": "Plus de 3,5",
+       "cote": 2.2
+      },
+      {
+       "label": "Moins de 3,5",
+       "cote": 1.45
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Brésil",
+     "issues": [
+      {
+       "label": "Plus de 4,5",
+       "cote": 3.8
+      },
+      {
+       "label": "Moins de 4,5",
+       "cote": 1.17
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Brésil",
+     "issues": [
+      {
+       "label": "Plus de 5,5",
+       "cote": 7
+      },
+      {
+       "label": "Moins de 5,5",
+       "cote": 1.04
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 2",
+       "cote": 1.09
+      },
+      {
+       "label": "Moins de 2",
+       "cote": 5.2
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 3",
+       "cote": 1.4
+      },
+      {
+       "label": "Moins de 3",
+       "cote": 2.3
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 4",
+       "cote": 2.2
+      },
+      {
+       "label": "Moins de 4",
+       "cote": 1.45
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 5",
+       "cote": 4
+      },
+      {
+       "label": "Moins de 5",
+       "cote": 1.15
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 6",
+       "cote": 7.75
+      },
+      {
+       "label": "Moins de 6",
+       "cote": 1.03
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 1,5",
+       "cote": 1.06
+      },
+      {
+       "label": "Moins de 1,5",
+       "cote": 6
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 2,5",
+       "cote": 1.27
+      },
+      {
+       "label": "Moins de 2,5",
+       "cote": 2.9
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 3,5",
+       "cote": 1.72
+      },
+      {
+       "label": "Moins de 3,5",
+       "cote": 1.74
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 4,5",
+       "cote": 2.65
+      },
+      {
+       "label": "Moins de 4,5",
+       "cote": 1.31
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 5,5",
+       "cote": 4.5
+      },
+      {
+       "label": "Moins de 5,5",
+       "cote": 1.12
+      }
+     ]
+    },
+    {
+     "marche": "Les 2 équipes marquent",
+     "issues": [
+      {
+       "label": "Oui",
+       "cote": 2.1
+      },
+      {
+       "label": "Non",
+       "cote": 1.49
+      }
+     ]
+    },
+    {
+     "marche": "Score exact",
+     "issues": [
+      {
+       "label": "0 - 0",
+       "cote": 23
+      },
+      {
+       "label": "1 - 0",
+       "cote": 8.5
+      },
+      {
+       "label": "2 - 0",
+       "cote": 6
+      },
+      {
+       "label": "3 - 0",
+       "cote": 5.7
+      },
+      {
+       "label": "4 - 0",
+       "cote": 7
+      },
+      {
+       "label": "5 - 0",
+       "cote": 10.5
+      },
+      {
+       "label": "0 - 1",
+       "cote": 40
+      },
+      {
+       "label": "1 - 1",
+       "cote": 15
+      },
+      {
+       "label": "2 - 1",
        "cote": 9.5
       },
       {
-       "label": "Australie +3.5",
-       "cote": 1.02
+       "label": "3 - 1",
+       "cote": 9.5
+      },
+      {
+       "label": "4 - 1",
+       "cote": 11.5
+      },
+      {
+       "label": "5 - 1",
+       "cote": 18
+      },
+      {
+       "label": "0 - 2",
+       "cote": 80
+      },
+      {
+       "label": "1 - 2",
+       "cote": 44
+      },
+      {
+       "label": "2 - 2",
+       "cote": 32
+      },
+      {
+       "label": "3 - 2",
+       "cote": 30
+      },
+      {
+       "label": "4 - 2",
+       "cote": 36
+      },
+      {
+       "label": "5 - 2",
+       "cote": 50
+      },
+      {
+       "label": "0 - 3",
+       "cote": 275
+      },
+      {
+       "label": "1 - 3",
+       "cote": 110
+      },
+      {
+       "label": "2 - 3",
+       "cote": 85
+      },
+      {
+       "label": "3 - 3",
+       "cote": 85
+      },
+      {
+       "label": "4 - 3",
+       "cote": 100
+      },
+      {
+       "label": "5 - 3",
+       "cote": 130
+      },
+      {
+       "label": "0 - 4",
+       "cote": 500
+      },
+      {
+       "label": "1 - 4",
+       "cote": 450
+      },
+      {
+       "label": "2 - 4",
+       "cote": 350
+      },
+      {
+       "label": "3 - 4",
+       "cote": 350
+      },
+      {
+       "label": "4 - 4",
+       "cote": 450
+      },
+      {
+       "label": "5 - 4",
+       "cote": 450
+      },
+      {
+       "label": "0 - 5",
+       "cote": 500
+      },
+      {
+       "label": "1 - 5",
+       "cote": 500
+      },
+      {
+       "label": "2 - 5",
+       "cote": 500
+      },
+      {
+       "label": "3 - 5",
+       "cote": 500
+      },
+      {
+       "label": "4 - 5",
+       "cote": 500
+      },
+      {
+       "label": "Autre",
+       "cote": 7
+      }
+     ]
+    },
+    {
+     "marche": "Nombre exact de buts",
+     "issues": [
+      {
+       "label": "0",
+       "cote": 23
+      },
+      {
+       "label": "1",
+       "cote": 7.5
+      },
+      {
+       "label": "2",
+       "cote": 4.5
+      },
+      {
+       "label": "3",
+       "cote": 3.8
+      },
+      {
+       "label": "4",
+       "cote": 4
+      },
+      {
+       "label": "5",
+       "cote": 5.2
+      },
+      {
+       "label": "6",
+       "cote": 8
+      },
+      {
+       "label": "7",
+       "cote": 14
+      },
+      {
+       "label": "8",
+       "cote": 28
+      },
+      {
+       "label": "9 ou plus",
+       "cote": 40
+      }
+     ]
+    },
+    {
+     "marche": "Écart de buts (handicap)",
+     "issues": [
+      {
+       "label": "Brésil -3.5",
+       "cote": 2.8
+      },
+      {
+       "label": "Haïti +3.5",
+       "cote": 1.29
+      }
+     ]
+    },
+    {
+     "marche": "Écart de buts (handicap)",
+     "issues": [
+      {
+       "label": "Brésil -2.5",
+       "cote": 1.76
+      },
+      {
+       "label": "Haïti +2.5",
+       "cote": 1.7
+      }
+     ]
+    },
+    {
+     "marche": "Écart de buts (handicap)",
+     "issues": [
+      {
+       "label": "Brésil -1.5",
+       "cote": 1.29
+      },
+      {
+       "label": "Haïti +1.5",
+       "cote": 2.8
       }
      ]
     }
@@ -14490,8 +14013,8 @@
    "home_fr": "Turquie",
    "away_fr": "Paraguay",
    "kickoff": 1781924400,
-   "odds_1": 1.88,
-   "odds_X": 3.05,
+   "odds_1": 1.86,
+   "odds_X": 3.15,
    "odds_2": 3.55,
    "status": "PREMATCH",
    "bets": [
@@ -14500,11 +14023,11 @@
      "issues": [
       {
        "label": "Turquie",
-       "cote": 1.88
+       "cote": 1.86
       },
       {
        "label": "Match nul",
-       "cote": 3.05
+       "cote": 3.15
       },
       {
        "label": "Paraguay",
@@ -14521,7 +14044,7 @@
       },
       {
        "label": "Turquie ou Paraguay",
-       "cote": 1.28
+       "cote": 1.27
       },
       {
        "label": "Paraguay ou match nul",
@@ -14551,19 +14074,19 @@
       },
       {
        "label": "1-3",
-       "cote": 1.29
+       "cote": 1.28
       },
       {
        "label": "2-3",
-       "cote": 2.35
+       "cote": 2.3
       },
       {
        "label": "4 et plus",
-       "cote": 11.5
+       "cote": 10.5
       },
       {
        "label": "0",
-       "cote": 3.35
+       "cote": 3.5
       }
      ]
     },
@@ -14572,11 +14095,11 @@
      "issues": [
       {
        "label": "Plus de 0,5",
-       "cote": 1.47
+       "cote": 1.44
       },
       {
        "label": "Moins de 0,5",
-       "cote": 2.1
+       "cote": 2.2
       }
      ]
     },
@@ -14585,11 +14108,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 3.45
+       "cote": 3.3
       },
       {
        "label": "Moins de 1,5",
-       "cote": 1.2
+       "cote": 1.22
       }
      ]
     },
@@ -14598,11 +14121,11 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 10
+       "cote": 9
       },
       {
        "label": "Moins de 2,5",
-       "cote": 1.02
+       "cote": 1.03
       }
      ]
     },
@@ -14611,7 +14134,7 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 40
+       "cote": 34
       },
       {
        "label": "Moins de 3,5",
@@ -14624,23 +14147,23 @@
      "issues": [
       {
        "label": "1-2",
-       "cote": 1.62
+       "cote": 1.6
       },
       {
        "label": "1-3",
-       "cote": 1.5
+       "cote": 1.47
       },
       {
        "label": "2-3",
-       "cote": 3.65
+       "cote": 3.5
       },
       {
        "label": "4 et plus",
-       "cote": 38
+       "cote": 34
       },
       {
        "label": "0",
-       "cote": 2.1
+       "cote": 2.2
       }
      ]
     },
@@ -14649,11 +14172,11 @@
      "issues": [
       {
        "label": "Plus de 0,5",
-       "cote": 1.21
+       "cote": 1.19
       },
       {
        "label": "Moins de 0,5",
-       "cote": 3.35
+       "cote": 3.5
       }
      ]
     },
@@ -14662,11 +14185,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 2.05
+       "cote": 1.98
       },
       {
        "label": "Moins de 1,5",
-       "cote": 1.5
+       "cote": 1.54
       }
      ]
     },
@@ -14675,11 +14198,11 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 4.5
+       "cote": 4.2
       },
       {
        "label": "Moins de 2,5",
-       "cote": 1.12
+       "cote": 1.13
       }
      ]
     },
@@ -14688,7 +14211,7 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 11.5
+       "cote": 10.5
       },
       {
        "label": "Moins de 3,5",
@@ -14701,7 +14224,7 @@
      "issues": [
       {
        "label": "Plus de 4,5",
-       "cote": 34
+       "cote": 30
       },
       {
        "label": "Moins de 4,5",
@@ -14714,11 +14237,11 @@
      "issues": [
       {
        "label": "Plus de 1",
-       "cote": 1.08
+       "cote": 1.06
       },
       {
        "label": "Moins de 1",
-       "cote": 5.5
+       "cote": 6
       }
      ]
     },
@@ -14727,11 +14250,11 @@
      "issues": [
       {
        "label": "Plus de 2",
-       "cote": 1.56
+       "cote": 1.49
       },
       {
        "label": "Moins de 2",
-       "cote": 1.96
+       "cote": 2.1
       }
      ]
     },
@@ -14740,11 +14263,11 @@
      "issues": [
       {
        "label": "Plus de 3",
-       "cote": 3.1
+       "cote": 2.85
       },
       {
        "label": "Moins de 3",
-       "cote": 1.24
+       "cote": 1.28
       }
      ]
     },
@@ -14753,11 +14276,11 @@
      "issues": [
       {
        "label": "Plus de 4",
-       "cote": 7
+       "cote": 6.25
       },
       {
        "label": "Moins de 4",
-       "cote": 1.04
+       "cote": 1.06
       }
      ]
     },
@@ -14766,7 +14289,7 @@
      "issues": [
       {
        "label": "Plus de 5",
-       "cote": 18
+       "cote": 15
       },
       {
        "label": "Moins de 5",
@@ -14779,11 +14302,11 @@
      "issues": [
       {
        "label": "Plus de 0,5",
-       "cote": 1.05
+       "cote": 1.04
       },
       {
        "label": "Moins de 0,5",
-       "cote": 6.75
+       "cote": 7.25
       }
      ]
     },
@@ -14792,11 +14315,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 1.33
+       "cote": 1.29
       },
       {
        "label": "Moins de 1,5",
-       "cote": 2.6
+       "cote": 2.75
       }
      ]
     },
@@ -14805,11 +14328,11 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 2.05
+       "cote": 1.96
       },
       {
        "label": "Moins de 2,5",
-       "cote": 1.5
+       "cote": 1.56
       }
      ]
     },
@@ -14818,11 +14341,11 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 3.8
+       "cote": 3.5
       },
       {
        "label": "Moins de 3,5",
-       "cote": 1.17
+       "cote": 1.2
       }
      ]
     },
@@ -14831,11 +14354,11 @@
      "issues": [
       {
        "label": "Plus de 4,5",
-       "cote": 7.75
+       "cote": 7
       },
       {
        "label": "Moins de 4,5",
-       "cote": 1.03
+       "cote": 1.04
       }
      ]
     },
@@ -14844,11 +14367,11 @@
      "issues": [
       {
        "label": "Oui",
-       "cote": 1.86
+       "cote": 1.78
       },
       {
        "label": "Non",
-       "cote": 1.62
+       "cote": 1.68
       }
      ]
     },
@@ -14857,11 +14380,11 @@
      "issues": [
       {
        "label": "0 - 0",
-       "cote": 6.75
+       "cote": 7.25
       },
       {
        "label": "1 - 0",
-       "cote": 5.6
+       "cote": 5.9
       },
       {
        "label": "2 - 0",
@@ -14869,7 +14392,7 @@
       },
       {
        "label": "3 - 0",
-       "cote": 14.5
+       "cote": 14
       },
       {
        "label": "4 - 0",
@@ -14877,11 +14400,11 @@
       },
       {
        "label": "5 - 0",
-       "cote": 70
+       "cote": 65
       },
       {
        "label": "0 - 1",
-       "cote": 8
+       "cote": 8.5
       },
       {
        "label": "1 - 1",
@@ -14889,19 +14412,19 @@
       },
       {
        "label": "2 - 1",
-       "cote": 8
+       "cote": 7.75
       },
       {
        "label": "3 - 1",
-       "cote": 15
+       "cote": 14.5
       },
       {
        "label": "4 - 1",
-       "cote": 38
+       "cote": 34
       },
       {
        "label": "5 - 1",
-       "cote": 75
+       "cote": 65
       },
       {
        "label": "0 - 2",
@@ -14913,63 +14436,63 @@
       },
       {
        "label": "2 - 2",
-       "cote": 14.5
+       "cote": 13.5
       },
       {
        "label": "3 - 2",
-       "cote": 30
+       "cote": 28
       },
       {
        "label": "4 - 2",
-       "cote": 60
+       "cote": 55
       },
       {
        "label": "5 - 2",
-       "cote": 120
+       "cote": 110
       },
       {
        "label": "0 - 3",
-       "cote": 44
-      },
-      {
-       "label": "1 - 3",
-       "cote": 34
-      },
-      {
-       "label": "2 - 3",
        "cote": 42
       },
       {
+       "label": "1 - 3",
+       "cote": 30
+      },
+      {
+       "label": "2 - 3",
+       "cote": 40
+      },
+      {
        "label": "3 - 3",
-       "cote": 60
+       "cote": 55
       },
       {
        "label": "4 - 3",
-       "cote": 120
+       "cote": 100
       },
       {
        "label": "5 - 3",
-       "cote": 300
+       "cote": 250
       },
       {
        "label": "0 - 4",
-       "cote": 100
+       "cote": 95
       },
       {
        "label": "1 - 4",
-       "cote": 75
+       "cote": 70
       },
       {
        "label": "2 - 4",
-       "cote": 100
+       "cote": 85
       },
       {
        "label": "3 - 4",
-       "cote": 160
+       "cote": 140
       },
       {
        "label": "4 - 4",
-       "cote": 300
+       "cote": 275
       },
       {
        "label": "5 - 4",
@@ -14977,15 +14500,15 @@
       },
       {
        "label": "0 - 5",
-       "cote": 350
+       "cote": 300
       },
       {
        "label": "1 - 5",
-       "cote": 250
+       "cote": 225
       },
       {
        "label": "2 - 5",
-       "cote": 350
+       "cote": 275
       },
       {
        "label": "3 - 5",
@@ -14997,7 +14520,7 @@
       },
       {
        "label": "Autre",
-       "cote": 80
+       "cote": 65
       }
      ]
     },
@@ -15006,35 +14529,35 @@
      "issues": [
       {
        "label": "0",
-       "cote": 6.75
+       "cote": 7.25
       },
       {
        "label": "1",
-       "cote": 3.7
+       "cote": 3.9
       },
       {
        "label": "2",
-       "cote": 3.05
+       "cote": 3.1
       },
       {
        "label": "3",
-       "cote": 3.95
+       "cote": 3.85
       },
       {
        "label": "4",
-       "cote": 6
+       "cote": 5.6
       },
       {
        "label": "5",
-       "cote": 11.5
+       "cote": 10.5
       },
       {
        "label": "6",
-       "cote": 27
+       "cote": 23
       },
       {
        "label": "7",
-       "cote": 55
+       "cote": 50
       },
       {
        "label": "8",
@@ -15051,11 +14574,11 @@
      "issues": [
       {
        "label": "Turquie -1.5",
-       "cote": 3.45
+       "cote": 3.4
       },
       {
        "label": "Paraguay +1.5",
-       "cote": 1.2
+       "cote": 1.21
       }
      ]
     },
@@ -15064,11 +14587,11 @@
      "issues": [
       {
        "label": "Turquie -2.5",
-       "cote": 7.75
+       "cote": 7.25
       },
       {
        "label": "Paraguay +2.5",
-       "cote": 1.03
+       "cote": 1.04
       }
      ]
     },
@@ -15081,7 +14604,7 @@
       },
       {
        "label": "Paraguay -1.5",
-       "cote": 8.5
+       "cote": 8
       }
      ]
     }
@@ -16330,11 +15853,11 @@
       },
       {
        "label": "Équateur ou Curaçao",
-       "cote": 1.07
+       "cote": 1.06
       },
       {
        "label": "Curaçao ou match nul",
-       "cote": 4.1
+       "cote": 4.2
       }
      ]
     },
@@ -16343,11 +15866,11 @@
      "issues": [
       {
        "label": "Équateur",
-       "cote": 1.03
+       "cote": 1.02
       },
       {
        "label": "Curaçao",
-       "cote": 5.5
+       "cote": 5.6
       }
      ]
     },
@@ -16368,7 +15891,7 @@
       },
       {
        "label": "4 et plus",
-       "cote": 3.55
+       "cote": 3.5
       },
       {
        "label": "0",
@@ -16385,7 +15908,7 @@
       },
       {
        "label": "Moins de 0,5",
-       "cote": 1.49
+       "cote": 1.47
       }
      ]
     },
@@ -16394,7 +15917,7 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 7.25
+       "cote": 7.5
       },
       {
        "label": "Moins de 1,5",
@@ -16407,7 +15930,7 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 34
+       "cote": 36
       },
       {
        "label": "Moins de 2,5",
@@ -16420,15 +15943,15 @@
      "issues": [
       {
        "label": "1-2",
-       "cote": 2.15
+       "cote": 2.2
       },
       {
        "label": "1-3",
-       "cote": 2.1
+       "cote": 2.15
       },
       {
        "label": "2-3",
-       "cote": 7.25
+       "cote": 7.5
       },
       {
        "label": "4 et plus",
@@ -16436,7 +15959,7 @@
       },
       {
        "label": "0",
-       "cote": 1.49
+       "cote": 1.47
       }
      ]
     },
@@ -16462,7 +15985,7 @@
       },
       {
        "label": "Moins de 1,5",
-       "cote": 2.8
+       "cote": 2.85
       }
      ]
     },
@@ -16471,11 +15994,11 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 1.94
+       "cote": 1.92
       },
       {
        "label": "Moins de 2,5",
-       "cote": 1.56
+       "cote": 1.58
       }
      ]
     },
@@ -16484,7 +16007,7 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 3.55
+       "cote": 3.5
       },
       {
        "label": "Moins de 3,5",
@@ -16497,7 +16020,7 @@
      "issues": [
       {
        "label": "Plus de 4,5",
-       "cote": 7.25
+       "cote": 7
       },
       {
        "label": "Moins de 4,5",
@@ -16514,7 +16037,7 @@
       },
       {
        "label": "Moins de 1",
-       "cote": 11.5
+       "cote": 12
       }
      ]
     },
@@ -16640,11 +16163,11 @@
      "issues": [
       {
        "label": "Oui",
-       "cote": 2.3
+       "cote": 2.35
       },
       {
        "label": "Non",
-       "cote": 1.41
+       "cote": 1.4
       }
      ]
     },
@@ -16661,15 +16184,15 @@
       },
       {
        "label": "2 - 0",
-       "cote": 4.8
+       "cote": 4.7
       },
       {
        "label": "3 - 0",
-       "cote": 5.8
+       "cote": 5.7
       },
       {
        "label": "4 - 0",
-       "cote": 9
+       "cote": 8.5
       },
       {
        "label": "5 - 0",
@@ -16677,11 +16200,11 @@
       },
       {
        "label": "0 - 1",
-       "cote": 21
+       "cote": 22
       },
       {
        "label": "1 - 1",
-       "cote": 11.5
+       "cote": 12
       },
       {
        "label": "2 - 1",
@@ -16689,7 +16212,7 @@
       },
       {
        "label": "3 - 1",
-       "cote": 9.5
+       "cote": 10
       },
       {
        "label": "4 - 1",
@@ -16705,11 +16228,11 @@
       },
       {
        "label": "1 - 2",
-       "cote": 30
+       "cote": 32
       },
       {
        "label": "2 - 2",
-       "cote": 32
+       "cote": 34
       },
       {
        "label": "3 - 2",
@@ -16725,7 +16248,7 @@
       },
       {
        "label": "0 - 3",
-       "cote": 160
+       "cote": 170
       },
       {
        "label": "1 - 3",
@@ -16733,19 +16256,19 @@
       },
       {
        "label": "2 - 3",
-       "cote": 75
+       "cote": 80
       },
       {
        "label": "3 - 3",
-       "cote": 100
+       "cote": 110
       },
       {
        "label": "4 - 3",
-       "cote": 120
+       "cote": 130
       },
       {
        "label": "5 - 3",
-       "cote": 200
+       "cote": 225
       },
       {
        "label": "0 - 4",
@@ -16753,7 +16276,7 @@
       },
       {
        "label": "1 - 4",
-       "cote": 400
+       "cote": 450
       },
       {
        "label": "2 - 4",
@@ -16761,11 +16284,11 @@
       },
       {
        "label": "3 - 4",
-       "cote": 400
+       "cote": 450
       },
       {
        "label": "4 - 4",
-       "cote": 450
+       "cote": 500
       },
       {
        "label": "5 - 4",
@@ -16822,7 +16345,7 @@
       },
       {
        "label": "5",
-       "cote": 7
+       "cote": 7.25
       },
       {
        "label": "6",
@@ -16847,11 +16370,11 @@
      "issues": [
       {
        "label": "Équateur -2.5",
-       "cote": 2.45
+       "cote": 2.4
       },
       {
        "label": "Curaçao +2.5",
-       "cote": 1.36
+       "cote": 1.37
       }
      ]
     },
@@ -16864,7 +16387,7 @@
       },
       {
        "label": "Curaçao +1.5",
-       "cote": 2
+       "cote": 2.05
       }
      ]
     },
@@ -16873,7 +16396,7 @@
      "issues": [
       {
        "label": "Équateur -3.5",
-       "cote": 4.5
+       "cote": 4.4
       },
       {
        "label": "Curaçao +3.5",
@@ -17600,7 +17123,7 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 10.5
+       "cote": 10
       },
       {
        "label": "Moins de 1,5",
@@ -17621,7 +17144,7 @@
       },
       {
        "label": "2-3",
-       "cote": 10.5
+       "cote": 10
       },
       {
        "label": "4 et plus",
@@ -17642,7 +17165,7 @@
       },
       {
        "label": "Moins de 1,5",
-       "cote": 3.75
+       "cote": 3.8
       }
      ]
     },
@@ -17746,7 +17269,7 @@
       },
       {
        "label": "Moins de 0,5",
-       "cote": 17
+       "cote": 18
       }
      ]
     },
@@ -17759,7 +17282,7 @@
       },
       {
        "label": "Moins de 1,5",
-       "cote": 4.7
+       "cote": 4.8
       }
      ]
     },
@@ -17820,11 +17343,11 @@
      "issues": [
       {
        "label": "Oui",
-       "cote": 2.65
+       "cote": 2.6
       },
       {
        "label": "Non",
-       "cote": 1.31
+       "cote": 1.32
       }
      ]
     },
@@ -17833,11 +17356,11 @@
      "issues": [
       {
        "label": "0 - 0",
-       "cote": 17
+       "cote": 18
       },
       {
        "label": "1 - 0",
-       "cote": 6.75
+       "cote": 6.5
       },
       {
        "label": "2 - 0",
@@ -17849,7 +17372,7 @@
       },
       {
        "label": "4 - 0",
-       "cote": 6.5
+       "cote": 6.75
       },
       {
        "label": "5 - 0",
@@ -17861,11 +17384,11 @@
       },
       {
        "label": "1 - 1",
-       "cote": 16
+       "cote": 17
       },
       {
        "label": "2 - 1",
-       "cote": 10.5
+       "cote": 10
       },
       {
        "label": "3 - 1",
@@ -17889,7 +17412,7 @@
       },
       {
        "label": "2 - 2",
-       "cote": 44
+       "cote": 46
       },
       {
        "label": "3 - 2",
@@ -17909,7 +17432,7 @@
       },
       {
        "label": "1 - 3",
-       "cote": 170
+       "cote": 160
       },
       {
        "label": "2 - 3",
@@ -17921,7 +17444,7 @@
       },
       {
        "label": "4 - 3",
-       "cote": 170
+       "cote": 160
       },
       {
        "label": "5 - 3",
@@ -17982,11 +17505,11 @@
      "issues": [
       {
        "label": "0",
-       "cote": 17
+       "cote": 18
       },
       {
        "label": "1",
-       "cote": 6
+       "cote": 5.9
       },
       {
        "label": "2",
@@ -18053,7 +17576,7 @@
      "issues": [
       {
        "label": "Espagne -1.5",
-       "cote": 1.3
+       "cote": 1.31
       },
       {
        "label": "Arabie Saoudite +1.5",
@@ -25825,6 +25348,1186 @@
    ]
   },
   {
+   "winamax_id": "66456936",
+   "title": "Écosse - Brésil",
+   "home_fr": "Écosse",
+   "away_fr": "Brésil",
+   "kickoff": 1782338400,
+   "odds_1": 5.4,
+   "odds_X": 4,
+   "odds_2": 1.33,
+   "status": "PREMATCH",
+   "bets": [
+    {
+     "marche": "Double chance",
+     "issues": [
+      {
+       "label": "Écosse ou match nul",
+       "cote": 2.55
+      },
+      {
+       "label": "Écosse ou Brésil",
+       "cote": 1.15
+      },
+      {
+       "label": "Brésil ou match nul",
+       "cote": 1.07
+      }
+     ]
+    },
+    {
+     "marche": "Vainqueur (remboursé si match nul)",
+     "issues": [
+      {
+       "label": "Écosse",
+       "cote": 3.95
+      },
+      {
+       "label": "Brésil",
+       "cote": 1.11
+      }
+     ]
+    },
+    {
+     "marche": "Résultat",
+     "issues": [
+      {
+       "label": "Écosse",
+       "cote": 5.4
+      },
+      {
+       "label": "Match nul",
+       "cote": 4
+      },
+      {
+       "label": "Brésil",
+       "cote": 1.33
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 1",
+       "cote": 1.03
+      },
+      {
+       "label": "Moins de 1",
+       "cote": 8.5
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 2",
+       "cote": 1.31
+      },
+      {
+       "label": "Moins de 2",
+       "cote": 2.65
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 3",
+       "cote": 2.15
+      },
+      {
+       "label": "Moins de 3",
+       "cote": 1.45
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 4",
+       "cote": 4.3
+      },
+      {
+       "label": "Moins de 4",
+       "cote": 1.12
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 5",
+       "cote": 9.5
+      },
+      {
+       "label": "Moins de 5",
+       "cote": 1.02
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 0,5",
+       "cote": 1.02
+      },
+      {
+       "label": "Moins de 0,5",
+       "cote": 10
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 1,5",
+       "cote": 1.2
+      },
+      {
+       "label": "Moins de 1,5",
+       "cote": 3.45
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 2,5",
+       "cote": 1.66
+      },
+      {
+       "label": "Moins de 2,5",
+       "cote": 1.82
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 3,5",
+       "cote": 2.75
+      },
+      {
+       "label": "Moins de 3,5",
+       "cote": 1.3
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 4,5",
+       "cote": 5
+      },
+      {
+       "label": "Moins de 4,5",
+       "cote": 1.09
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Écosse (intervalle)",
+     "issues": [
+      {
+       "label": "1-2",
+       "cote": 1.78
+      },
+      {
+       "label": "1-3",
+       "cote": 1.68
+      },
+      {
+       "label": "2-3",
+       "cote": 4.5
+      },
+      {
+       "label": "4 et plus",
+       "cote": 55
+      },
+      {
+       "label": "0",
+       "cote": 1.82
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Brésil",
+     "issues": [
+      {
+       "label": "Plus de 0,5",
+       "cote": 1.08
+      },
+      {
+       "label": "Moins de 0,5",
+       "cote": 5.5
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Brésil",
+     "issues": [
+      {
+       "label": "Plus de 1,5",
+       "cote": 1.48
+      },
+      {
+       "label": "Moins de 1,5",
+       "cote": 2.1
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Brésil",
+     "issues": [
+      {
+       "label": "Plus de 2,5",
+       "cote": 2.5
+      },
+      {
+       "label": "Moins de 2,5",
+       "cote": 1.34
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Brésil",
+     "issues": [
+      {
+       "label": "Plus de 3,5",
+       "cote": 5.1
+      },
+      {
+       "label": "Moins de 3,5",
+       "cote": 1.09
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Brésil",
+     "issues": [
+      {
+       "label": "Plus de 4,5",
+       "cote": 12
+      },
+      {
+       "label": "Moins de 4,5",
+       "cote": 1.02
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Brésil (intervalle)",
+     "issues": [
+      {
+       "label": "1-2",
+       "cote": 1.62
+      },
+      {
+       "label": "1-3",
+       "cote": 1.26
+      },
+      {
+       "label": "2-3",
+       "cote": 1.9
+      },
+      {
+       "label": "4 et plus",
+       "cote": 5.1
+      },
+      {
+       "label": "0",
+       "cote": 5.5
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Écosse",
+     "issues": [
+      {
+       "label": "Plus de 0,5",
+       "cote": 1.66
+      },
+      {
+       "label": "Moins de 0,5",
+       "cote": 1.82
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Écosse",
+     "issues": [
+      {
+       "label": "Plus de 1,5",
+       "cote": 4.4
+      },
+      {
+       "label": "Moins de 1,5",
+       "cote": 1.12
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Écosse",
+     "issues": [
+      {
+       "label": "Plus de 2,5",
+       "cote": 15
+      },
+      {
+       "label": "Moins de 2,5",
+       "cote": 1.01
+      }
+     ]
+    },
+    {
+     "marche": "Les 2 équipes marquent",
+     "issues": [
+      {
+       "label": "Oui",
+       "cote": 1.88
+      },
+      {
+       "label": "Non",
+       "cote": 1.6
+      }
+     ]
+    },
+    {
+     "marche": "Score exact",
+     "issues": [
+      {
+       "label": "0 - 0",
+       "cote": 10
+      },
+      {
+       "label": "1 - 0",
+       "cote": 13.5
+      },
+      {
+       "label": "2 - 0",
+       "cote": 32
+      },
+      {
+       "label": "3 - 0",
+       "cote": 70
+      },
+      {
+       "label": "4 - 0",
+       "cote": 225
+      },
+      {
+       "label": "5 - 0",
+       "cote": 500
+      },
+      {
+       "label": "0 - 1",
+       "cote": 5.8
+      },
+      {
+       "label": "1 - 1",
+       "cote": 7.5
+      },
+      {
+       "label": "2 - 1",
+       "cote": 17
+      },
+      {
+       "label": "3 - 1",
+       "cote": 50
+      },
+      {
+       "label": "4 - 1",
+       "cote": 140
+      },
+      {
+       "label": "5 - 1",
+       "cote": 450
+      },
+      {
+       "label": "0 - 2",
+       "cote": 5.8
+      },
+      {
+       "label": "1 - 2",
+       "cote": 7.25
+      },
+      {
+       "label": "2 - 2",
+       "cote": 18
+      },
+      {
+       "label": "3 - 2",
+       "cote": 50
+      },
+      {
+       "label": "4 - 2",
+       "cote": 140
+      },
+      {
+       "label": "5 - 2",
+       "cote": 450
+      },
+      {
+       "label": "0 - 3",
+       "cote": 8
+      },
+      {
+       "label": "1 - 3",
+       "cote": 10
+      },
+      {
+       "label": "2 - 3",
+       "cote": 25
+      },
+      {
+       "label": "3 - 3",
+       "cote": 60
+      },
+      {
+       "label": "4 - 3",
+       "cote": 180
+      },
+      {
+       "label": "5 - 3",
+       "cote": 500
+      },
+      {
+       "label": "0 - 4",
+       "cote": 15
+      },
+      {
+       "label": "1 - 4",
+       "cote": 19
+      },
+      {
+       "label": "2 - 4",
+       "cote": 42
+      },
+      {
+       "label": "3 - 4",
+       "cote": 90
+      },
+      {
+       "label": "4 - 4",
+       "cote": 300
+      },
+      {
+       "label": "5 - 4",
+       "cote": 500
+      },
+      {
+       "label": "0 - 5",
+       "cote": 32
+      },
+      {
+       "label": "1 - 5",
+       "cote": 40
+      },
+      {
+       "label": "2 - 5",
+       "cote": 65
+      },
+      {
+       "label": "3 - 5",
+       "cote": 170
+      },
+      {
+       "label": "4 - 5",
+       "cote": 450
+      },
+      {
+       "label": "Autre",
+       "cote": 32
+      }
+     ]
+    },
+    {
+     "marche": "Nombre exact de buts",
+     "issues": [
+      {
+       "label": "0",
+       "cote": 10
+      },
+      {
+       "label": "1",
+       "cote": 4.4
+      },
+      {
+       "label": "2",
+       "cote": 3.4
+      },
+      {
+       "label": "3",
+       "cote": 3.6
+      },
+      {
+       "label": "4",
+       "cote": 4.9
+      },
+      {
+       "label": "5",
+       "cote": 8
+      },
+      {
+       "label": "6",
+       "cote": 16
+      },
+      {
+       "label": "7",
+       "cote": 36
+      },
+      {
+       "label": "8",
+       "cote": 65
+      },
+      {
+       "label": "9 ou plus",
+       "cote": 100
+      }
+     ]
+    },
+    {
+     "marche": "Écart de buts (handicap)",
+     "issues": [
+      {
+       "label": "Écosse +1.5",
+       "cote": 1.52
+      },
+      {
+       "label": "Brésil -1.5",
+       "cote": 2
+      }
+     ]
+    },
+    {
+     "marche": "Écart de buts (handicap)",
+     "issues": [
+      {
+       "label": "Écosse +2.5",
+       "cote": 1.17
+      },
+      {
+       "label": "Brésil -2.5",
+       "cote": 3.7
+      }
+     ]
+    },
+    {
+     "marche": "Écart de buts (handicap)",
+     "issues": [
+      {
+       "label": "Écosse +3.5",
+       "cote": 1.03
+      },
+      {
+       "label": "Brésil -3.5",
+       "cote": 7.75
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "winamax_id": "66456938",
+   "title": "Maroc - Haïti",
+   "home_fr": "Maroc",
+   "away_fr": "Haïti",
+   "kickoff": 1782338400,
+   "odds_1": 1.21,
+   "odds_X": 4.6,
+   "odds_2": 7,
+   "status": "PREMATCH",
+   "bets": [
+    {
+     "marche": "Résultat",
+     "issues": [
+      {
+       "label": "Maroc",
+       "cote": 1.21
+      },
+      {
+       "label": "Match nul",
+       "cote": 4.6
+      },
+      {
+       "label": "Haïti",
+       "cote": 7
+      }
+     ]
+    },
+    {
+     "marche": "Double chance",
+     "issues": [
+      {
+       "label": "Maroc ou match nul",
+       "cote": 1.03
+      },
+      {
+       "label": "Maroc ou Haïti",
+       "cote": 1.11
+      },
+      {
+       "label": "Haïti ou match nul",
+       "cote": 3.2
+      }
+     ]
+    },
+    {
+     "marche": "Vainqueur (remboursé si match nul)",
+     "issues": [
+      {
+       "label": "Maroc",
+       "cote": 1.05
+      },
+      {
+       "label": "Haïti",
+       "cote": 4.8
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 2,5",
+       "cote": 1.52
+      },
+      {
+       "label": "Moins de 2,5",
+       "cote": 2.05
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Maroc (intervalle)",
+     "issues": [
+      {
+       "label": "1-2",
+       "cote": 1.78
+      },
+      {
+       "label": "1-3",
+       "cote": 1.3
+      },
+      {
+       "label": "2-3",
+       "cote": 1.84
+      },
+      {
+       "label": "4 et plus",
+       "cote": 3.8
+      },
+      {
+       "label": "0",
+       "cote": 7.25
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Haïti",
+     "issues": [
+      {
+       "label": "Plus de 0,5",
+       "cote": 1.76
+      },
+      {
+       "label": "Moins de 0,5",
+       "cote": 1.7
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Haïti",
+     "issues": [
+      {
+       "label": "Plus de 1,5",
+       "cote": 5
+      },
+      {
+       "label": "Moins de 1,5",
+       "cote": 1.1
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Haïti",
+     "issues": [
+      {
+       "label": "Plus de 2,5",
+       "cote": 19
+      },
+      {
+       "label": "Moins de 2,5",
+       "cote": 1.01
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Haïti (intervalle)",
+     "issues": [
+      {
+       "label": "1-2",
+       "cote": 1.86
+      },
+      {
+       "label": "1-3",
+       "cote": 1.76
+      },
+      {
+       "label": "2-3",
+       "cote": 5.2
+      },
+      {
+       "label": "4 et plus",
+       "cote": 65
+      },
+      {
+       "label": "0",
+       "cote": 1.7
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Maroc",
+     "issues": [
+      {
+       "label": "Plus de 0,5",
+       "cote": 1.04
+      },
+      {
+       "label": "Moins de 0,5",
+       "cote": 7.25
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Maroc",
+     "issues": [
+      {
+       "label": "Plus de 1,5",
+       "cote": 1.33
+      },
+      {
+       "label": "Moins de 1,5",
+       "cote": 2.6
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Maroc",
+     "issues": [
+      {
+       "label": "Plus de 2,5",
+       "cote": 2.05
+      },
+      {
+       "label": "Moins de 2,5",
+       "cote": 1.5
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Maroc",
+     "issues": [
+      {
+       "label": "Plus de 3,5",
+       "cote": 3.8
+      },
+      {
+       "label": "Moins de 3,5",
+       "cote": 1.17
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Maroc",
+     "issues": [
+      {
+       "label": "Plus de 4,5",
+       "cote": 7.75
+      },
+      {
+       "label": "Moins de 4,5",
+       "cote": 1.03
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 1",
+       "cote": 1.02
+      },
+      {
+       "label": "Moins de 1",
+       "cote": 11
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 2",
+       "cote": 1.22
+      },
+      {
+       "label": "Moins de 2",
+       "cote": 3.25
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 3",
+       "cote": 1.86
+      },
+      {
+       "label": "Moins de 3",
+       "cote": 1.62
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 4",
+       "cote": 3.55
+      },
+      {
+       "label": "Moins de 4",
+       "cote": 1.19
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 5",
+       "cote": 7.25
+      },
+      {
+       "label": "Moins de 5",
+       "cote": 1.04
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 0,5",
+       "cote": 1.02
+      },
+      {
+       "label": "Moins de 0,5",
+       "cote": 13
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 1,5",
+       "cote": 1.15
+      },
+      {
+       "label": "Moins de 1,5",
+       "cote": 4
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 3,5",
+       "cote": 2.35
+      },
+      {
+       "label": "Moins de 3,5",
+       "cote": 1.39
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts",
+     "issues": [
+      {
+       "label": "Plus de 4,5",
+       "cote": 4.1
+      },
+      {
+       "label": "Moins de 4,5",
+       "cote": 1.14
+      }
+     ]
+    },
+    {
+     "marche": "Les 2 équipes marquent",
+     "issues": [
+      {
+       "label": "Oui",
+       "cote": 1.92
+      },
+      {
+       "label": "Non",
+       "cote": 1.58
+      }
+     ]
+    },
+    {
+     "marche": "Score exact",
+     "issues": [
+      {
+       "label": "0 - 0",
+       "cote": 13
+      },
+      {
+       "label": "1 - 0",
+       "cote": 6.25
+      },
+      {
+       "label": "2 - 0",
+       "cote": 5.6
+      },
+      {
+       "label": "3 - 0",
+       "cote": 6.75
+      },
+      {
+       "label": "4 - 0",
+       "cote": 10.5
+      },
+      {
+       "label": "5 - 0",
+       "cote": 22
+      },
+      {
+       "label": "0 - 1",
+       "cote": 19
+      },
+      {
+       "label": "1 - 1",
+       "cote": 9
+      },
+      {
+       "label": "2 - 1",
+       "cote": 7.75
+      },
+      {
+       "label": "3 - 1",
+       "cote": 9.5
+      },
+      {
+       "label": "4 - 1",
+       "cote": 15
+      },
+      {
+       "label": "5 - 1",
+       "cote": 30
+      },
+      {
+       "label": "0 - 2",
+       "cote": 46
+      },
+      {
+       "label": "1 - 2",
+       "cote": 23
+      },
+      {
+       "label": "2 - 2",
+       "cote": 20
+      },
+      {
+       "label": "3 - 2",
+       "cote": 25
+      },
+      {
+       "label": "4 - 2",
+       "cote": 38
+      },
+      {
+       "label": "5 - 2",
+       "cote": 60
+      },
+      {
+       "label": "0 - 3",
+       "cote": 100
+      },
+      {
+       "label": "1 - 3",
+       "cote": 60
+      },
+      {
+       "label": "2 - 3",
+       "cote": 60
+      },
+      {
+       "label": "3 - 3",
+       "cote": 65
+      },
+      {
+       "label": "4 - 3",
+       "cote": 90
+      },
+      {
+       "label": "5 - 3",
+       "cote": 150
+      },
+      {
+       "label": "0 - 4",
+       "cote": 400
+      },
+      {
+       "label": "1 - 4",
+       "cote": 190
+      },
+      {
+       "label": "2 - 4",
+       "cote": 170
+      },
+      {
+       "label": "3 - 4",
+       "cote": 200
+      },
+      {
+       "label": "4 - 4",
+       "cote": 300
+      },
+      {
+       "label": "5 - 4",
+       "cote": 450
+      },
+      {
+       "label": "0 - 5",
+       "cote": 500
+      },
+      {
+       "label": "1 - 5",
+       "cote": 500
+      },
+      {
+       "label": "2 - 5",
+       "cote": 500
+      },
+      {
+       "label": "3 - 5",
+       "cote": 500
+      },
+      {
+       "label": "4 - 5",
+       "cote": 500
+      },
+      {
+       "label": "Autre",
+       "cote": 19
+      }
+     ]
+    },
+    {
+     "marche": "Nombre exact de buts",
+     "issues": [
+      {
+       "label": "0",
+       "cote": 13
+      },
+      {
+       "label": "1",
+       "cote": 5.1
+      },
+      {
+       "label": "2",
+       "cote": 3.65
+      },
+      {
+       "label": "3",
+       "cote": 3.6
+      },
+      {
+       "label": "4",
+       "cote": 4.5
+      },
+      {
+       "label": "5",
+       "cote": 7
+      },
+      {
+       "label": "6",
+       "cote": 12.5
+      },
+      {
+       "label": "7",
+       "cote": 27
+      },
+      {
+       "label": "8",
+       "cote": 55
+      },
+      {
+       "label": "9 ou plus",
+       "cote": 75
+      }
+     ]
+    },
+    {
+     "marche": "Écart de buts (handicap)",
+     "issues": [
+      {
+       "label": "Maroc -2.5",
+       "cote": 2.85
+      },
+      {
+       "label": "Haïti +2.5",
+       "cote": 1.28
+      }
+     ]
+    },
+    {
+     "marche": "Écart de buts (handicap)",
+     "issues": [
+      {
+       "label": "Maroc -1.5",
+       "cote": 1.7
+      },
+      {
+       "label": "Haïti +1.5",
+       "cote": 1.78
+      }
+     ]
+    },
+    {
+     "marche": "Écart de buts (handicap)",
+     "issues": [
+      {
+       "label": "Maroc -3.5",
+       "cote": 5.3
+      },
+      {
+       "label": "Haïti +3.5",
+       "cote": 1.08
+      }
+     ]
+    }
+   ]
+  },
+  {
    "winamax_id": "66456912",
    "title": "République Tchèque - Mexique",
    "home_fr": "République Tchèque",
@@ -29436,8 +30139,8 @@
    "away_fr": "États-Unis",
    "kickoff": 1782439200,
    "odds_1": 2.4,
-   "odds_X": 3.15,
-   "odds_2": 2.2,
+   "odds_X": 3.2,
+   "odds_2": 2.15,
    "status": "PREMATCH",
    "bets": [
     {
@@ -29449,11 +30152,11 @@
       },
       {
        "label": "Match nul",
-       "cote": 3.15
+       "cote": 3.2
       },
       {
        "label": "États-Unis",
-       "cote": 2.2
+       "cote": 2.15
       }
      ]
     },
@@ -29462,11 +30165,11 @@
      "issues": [
       {
        "label": "Turquie ou match nul",
-       "cote": 1.44
+       "cote": 1.45
       },
       {
        "label": "Turquie ou États-Unis",
-       "cote": 1.25
+       "cote": 1.24
       },
       {
        "label": "États-Unis ou match nul",
@@ -29479,7 +30182,7 @@
      "issues": [
       {
        "label": "Turquie",
-       "cote": 1.8
+       "cote": 1.82
       },
       {
        "label": "États-Unis",
@@ -29496,19 +30199,19 @@
       },
       {
        "label": "1-3",
-       "cote": 1.31
+       "cote": 1.3
       },
       {
        "label": "2-3",
-       "cote": 2.45
+       "cote": 2.4
       },
       {
        "label": "4 et plus",
-       "cote": 14
+       "cote": 13
       },
       {
        "label": "0",
-       "cote": 3.1
+       "cote": 3.2
       }
      ]
     },
@@ -29517,11 +30220,11 @@
      "issues": [
       {
        "label": "Plus de 0,5",
-       "cote": 1.21
+       "cote": 1.2
       },
       {
        "label": "Moins de 0,5",
-       "cote": 3.35
+       "cote": 3.45
       }
      ]
     },
@@ -29530,11 +30233,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 2.05
+       "cote": 2
       },
       {
        "label": "Moins de 1,5",
-       "cote": 1.5
+       "cote": 1.52
       }
      ]
     },
@@ -29543,11 +30246,11 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 4.5
+       "cote": 4.3
       },
       {
        "label": "Moins de 2,5",
-       "cote": 1.12
+       "cote": 1.13
       }
      ]
     },
@@ -29556,7 +30259,7 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 12
+       "cote": 11
       },
       {
        "label": "Moins de 3,5",
@@ -29569,7 +30272,7 @@
      "issues": [
       {
        "label": "Plus de 4,5",
-       "cote": 40
+       "cote": 34
       },
       {
        "label": "Moins de 4,5",
@@ -29586,19 +30289,19 @@
       },
       {
        "label": "1-3",
-       "cote": 1.29
+       "cote": 1.28
       },
       {
        "label": "2-3",
-       "cote": 2.35
+       "cote": 2.3
       },
       {
        "label": "4 et plus",
-       "cote": 12
+       "cote": 11
       },
       {
        "label": "0",
-       "cote": 3.35
+       "cote": 3.45
       }
      ]
     },
@@ -29607,11 +30310,11 @@
      "issues": [
       {
        "label": "Plus de 0,5",
-       "cote": 1.24
+       "cote": 1.23
       },
       {
        "label": "Moins de 0,5",
-       "cote": 3.1
+       "cote": 3.2
       }
      ]
     },
@@ -29620,11 +30323,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 2.2
+       "cote": 2.15
       },
       {
        "label": "Moins de 1,5",
-       "cote": 1.44
+       "cote": 1.46
       }
      ]
     },
@@ -29633,7 +30336,7 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 5
+       "cote": 4.8
       },
       {
        "label": "Moins de 2,5",
@@ -29646,11 +30349,11 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 14
+       "cote": 13
       },
       {
        "label": "Moins de 3,5",
-       "cote": 1.01
+       "cote": 1.02
       }
      ]
     },
@@ -29663,7 +30366,7 @@
       },
       {
        "label": "Moins de 1",
-       "cote": 8
+       "cote": 8.5
       }
      ]
     },
@@ -29672,11 +30375,11 @@
      "issues": [
       {
        "label": "Plus de 2",
-       "cote": 1.32
+       "cote": 1.3
       },
       {
        "label": "Moins de 2",
-       "cote": 2.6
+       "cote": 2.75
       }
      ]
     },
@@ -29685,11 +30388,11 @@
      "issues": [
       {
        "label": "Plus de 3",
-       "cote": 2.2
+       "cote": 2.1
       },
       {
        "label": "Moins de 3",
-       "cote": 1.43
+       "cote": 1.47
       }
      ]
     },
@@ -29698,11 +30401,11 @@
      "issues": [
       {
        "label": "Plus de 4",
-       "cote": 4.5
+       "cote": 4.2
       },
       {
        "label": "Moins de 4",
-       "cote": 1.12
+       "cote": 1.13
       }
      ]
     },
@@ -29711,11 +30414,11 @@
      "issues": [
       {
        "label": "Plus de 5",
-       "cote": 10
+       "cote": 9
       },
       {
        "label": "Moins de 5",
-       "cote": 1.02
+       "cote": 1.03
       }
      ]
     },
@@ -29728,7 +30431,7 @@
       },
       {
        "label": "Moins de 0,5",
-       "cote": 9.5
+       "cote": 10
       }
      ]
     },
@@ -29737,11 +30440,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 1.21
+       "cote": 1.19
       },
       {
        "label": "Moins de 1,5",
-       "cote": 3.4
+       "cote": 3.5
       }
      ]
     },
@@ -29750,11 +30453,11 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 1.68
+       "cote": 1.64
       },
       {
        "label": "Moins de 2,5",
-       "cote": 1.78
+       "cote": 1.82
       }
      ]
     },
@@ -29763,11 +30466,11 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 2.8
+       "cote": 2.65
       },
       {
        "label": "Moins de 3,5",
-       "cote": 1.29
+       "cote": 1.31
       }
      ]
     },
@@ -29776,11 +30479,11 @@
      "issues": [
       {
        "label": "Plus de 4,5",
-       "cote": 5.2
+       "cote": 4.9
       },
       {
        "label": "Moins de 4,5",
-       "cote": 1.09
+       "cote": 1.1
       }
      ]
     },
@@ -29789,11 +30492,11 @@
      "issues": [
       {
        "label": "Oui",
-       "cote": 1.56
+       "cote": 1.54
       },
       {
        "label": "Non",
-       "cote": 1.94
+       "cote": 2
       }
      ]
     },
@@ -29802,15 +30505,15 @@
      "issues": [
       {
        "label": "0 - 0",
-       "cote": 9.5
+       "cote": 10
       },
       {
        "label": "1 - 0",
-       "cote": 8
+       "cote": 8.5
       },
       {
        "label": "2 - 0",
-       "cote": 11.5
+       "cote": 12
       },
       {
        "label": "3 - 0",
@@ -29826,11 +30529,11 @@
       },
       {
        "label": "0 - 1",
-       "cote": 7.75
+       "cote": 8
       },
       {
        "label": "1 - 1",
-       "cote": 5.8
+       "cote": 5.9
       },
       {
        "label": "2 - 1",
@@ -29838,15 +30541,15 @@
       },
       {
        "label": "3 - 1",
-       "cote": 18
+       "cote": 17
       },
       {
        "label": "4 - 1",
-       "cote": 44
+       "cote": 42
       },
       {
        "label": "5 - 1",
-       "cote": 90
+       "cote": 85
       },
       {
        "label": "0 - 2",
@@ -29858,15 +30561,15 @@
       },
       {
        "label": "2 - 2",
-       "cote": 11
+       "cote": 10.5
       },
       {
        "label": "3 - 2",
-       "cote": 24
+       "cote": 23
       },
       {
        "label": "4 - 2",
-       "cote": 55
+       "cote": 50
       },
       {
        "label": "5 - 2",
@@ -29878,67 +30581,67 @@
       },
       {
        "label": "1 - 3",
-       "cote": 16
+       "cote": 15
       },
       {
        "label": "2 - 3",
-       "cote": 23
+       "cote": 22
       },
       {
        "label": "3 - 3",
-       "cote": 42
-      },
-      {
-       "label": "4 - 3",
-       "cote": 75
-      },
-      {
-       "label": "5 - 3",
-       "cote": 190
-      },
-      {
-       "label": "0 - 4",
-       "cote": 48
-      },
-      {
-       "label": "1 - 4",
        "cote": 40
       },
       {
-       "label": "2 - 4",
-       "cote": 50
+       "label": "4 - 3",
+       "cote": 70
       },
       {
-       "label": "3 - 4",
-       "cote": 75
-      },
-      {
-       "label": "4 - 4",
-       "cote": 150
-      },
-      {
-       "label": "5 - 4",
-       "cote": 450
-      },
-      {
-       "label": "0 - 5",
-       "cote": 95
-      },
-      {
-       "label": "1 - 5",
-       "cote": 75
-      },
-      {
-       "label": "2 - 5",
-       "cote": 100
-      },
-      {
-       "label": "3 - 5",
+       "label": "5 - 3",
        "cote": 180
       },
       {
+       "label": "0 - 4",
+       "cote": 46
+      },
+      {
+       "label": "1 - 4",
+       "cote": 38
+      },
+      {
+       "label": "2 - 4",
+       "cote": 48
+      },
+      {
+       "label": "3 - 4",
+       "cote": 70
+      },
+      {
+       "label": "4 - 4",
+       "cote": 140
+      },
+      {
+       "label": "5 - 4",
+       "cote": 400
+      },
+      {
+       "label": "0 - 5",
+       "cote": 90
+      },
+      {
+       "label": "1 - 5",
+       "cote": 70
+      },
+      {
+       "label": "2 - 5",
+       "cote": 95
+      },
+      {
+       "label": "3 - 5",
+       "cote": 160
+      },
+      {
        "label": "4 - 5",
-       "cote": 450
+       "cote": 400
       },
       {
        "label": "Autre",
@@ -29951,15 +30654,15 @@
      "issues": [
       {
        "label": "0",
-       "cote": 9.5
+       "cote": 10
       },
       {
        "label": "1",
-       "cote": 4.4
+       "cote": 4.6
       },
       {
        "label": "2",
-       "cote": 3.35
+       "cote": 3.4
       },
       {
        "label": "3",
@@ -29967,7 +30670,7 @@
       },
       {
        "label": "4",
-       "cote": 4.9
+       "cote": 4.8
       },
       {
        "label": "5",
@@ -29975,15 +30678,15 @@
       },
       {
        "label": "6",
-       "cote": 16
+       "cote": 15
       },
       {
        "label": "7",
-       "cote": 38
+       "cote": 34
       },
       {
        "label": "8",
-       "cote": 65
+       "cote": 60
       },
       {
        "label": "9 ou plus",
@@ -30000,7 +30703,7 @@
       },
       {
        "label": "États-Unis -1.5",
-       "cote": 4.3
+       "cote": 4.2
       }
      ]
     },
@@ -30026,7 +30729,7 @@
       },
       {
        "label": "États-Unis -2.5",
-       "cote": 10
+       "cote": 9.5
       }
      ]
     },
@@ -30051,9 +30754,9 @@
    "home_fr": "Paraguay",
    "away_fr": "Australie",
    "kickoff": 1782439200,
-   "odds_1": 1.9,
-   "odds_X": 2.9,
-   "odds_2": 3.15,
+   "odds_1": 1.96,
+   "odds_X": 2.95,
+   "odds_2": 3,
    "status": "PREMATCH",
    "bets": [
     {
@@ -30061,15 +30764,15 @@
      "issues": [
       {
        "label": "Paraguay",
-       "cote": 1.9
+       "cote": 1.96
       },
       {
        "label": "Match nul",
-       "cote": 2.9
+       "cote": 2.95
       },
       {
        "label": "Australie",
-       "cote": 3.15
+       "cote": 3
       }
      ]
     },
@@ -30078,7 +30781,7 @@
      "issues": [
       {
        "label": "Paraguay ou match nul",
-       "cote": 1.23
+       "cote": 1.25
       },
       {
        "label": "Paraguay ou Australie",
@@ -30086,7 +30789,7 @@
       },
       {
        "label": "Australie ou match nul",
-       "cote": 1.6
+       "cote": 1.56
       }
      ]
     },
@@ -30095,11 +30798,11 @@
      "issues": [
       {
        "label": "Paraguay",
-       "cote": 1.4
+       "cote": 1.44
       },
       {
        "label": "Australie",
-       "cote": 2.25
+       "cote": 2.15
       }
      ]
     },
@@ -30112,19 +30815,19 @@
       },
       {
        "label": "1-3",
-       "cote": 1.3
+       "cote": 1.31
       },
       {
        "label": "2-3",
-       "cote": 2.4
+       "cote": 2.45
       },
       {
        "label": "4 et plus",
-       "cote": 12.5
+       "cote": 14
       },
       {
        "label": "0",
-       "cote": 3.25
+       "cote": 3.1
       }
      ]
     },
@@ -30133,11 +30836,11 @@
      "issues": [
       {
        "label": "Plus de 0,5",
-       "cote": 1.44
+       "cote": 1.42
       },
       {
        "label": "Moins de 0,5",
-       "cote": 2.2
+       "cote": 2.25
       }
      ]
     },
@@ -30146,11 +30849,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 3.25
+       "cote": 3.15
       },
       {
        "label": "Moins de 1,5",
-       "cote": 1.22
+       "cote": 1.23
       }
      ]
     },
@@ -30159,7 +30862,7 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 9
+       "cote": 8.5
       },
       {
        "label": "Moins de 2,5",
@@ -30172,7 +30875,7 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 34
+       "cote": 30
       },
       {
        "label": "Moins de 3,5",
@@ -30185,23 +30888,23 @@
      "issues": [
       {
        "label": "1-2",
-       "cote": 1.6
+       "cote": 1.58
       },
       {
        "label": "1-3",
-       "cote": 1.47
+       "cote": 1.46
       },
       {
        "label": "2-3",
-       "cote": 3.45
+       "cote": 3.4
       },
       {
        "label": "4 et plus",
-       "cote": 34
+       "cote": 32
       },
       {
        "label": "0",
-       "cote": 2.2
+       "cote": 2.25
       }
      ]
     },
@@ -30210,11 +30913,11 @@
      "issues": [
       {
        "label": "Plus de 0,5",
-       "cote": 1.22
+       "cote": 1.24
       },
       {
        "label": "Moins de 0,5",
-       "cote": 3.25
+       "cote": 3.1
       }
      ]
     },
@@ -30223,11 +30926,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 2.1
+       "cote": 2.2
       },
       {
        "label": "Moins de 1,5",
-       "cote": 1.47
+       "cote": 1.45
       }
      ]
     },
@@ -30236,11 +30939,11 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 4.7
+       "cote": 5
       },
       {
        "label": "Moins de 2,5",
-       "cote": 1.11
+       "cote": 1.1
       }
      ]
     },
@@ -30249,11 +30952,11 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 12.5
+       "cote": 14
       },
       {
        "label": "Moins de 3,5",
-       "cote": 1.02
+       "cote": 1.01
       }
      ]
     },
@@ -30279,7 +30982,7 @@
       },
       {
        "label": "Moins de 1",
-       "cote": 5.6
+       "cote": 5.5
       }
      ]
     },
@@ -30288,11 +30991,11 @@
      "issues": [
       {
        "label": "Plus de 2",
-       "cote": 1.56
+       "cote": 1.58
       },
       {
        "label": "Moins de 2",
-       "cote": 1.96
+       "cote": 1.94
       }
      ]
     },
@@ -30301,11 +31004,11 @@
      "issues": [
       {
        "label": "Plus de 3",
-       "cote": 3.1
+       "cote": 3.15
       },
       {
        "label": "Moins de 3",
-       "cote": 1.24
+       "cote": 1.23
       }
      ]
     },
@@ -30353,11 +31056,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 1.32
+       "cote": 1.33
       },
       {
        "label": "Moins de 1,5",
-       "cote": 2.6
+       "cote": 2.55
       }
      ]
     },
@@ -30379,11 +31082,11 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 3.75
+       "cote": 3.8
       },
       {
        "label": "Moins de 3,5",
-       "cote": 1.17
+       "cote": 1.16
       }
      ]
     },
@@ -30392,7 +31095,7 @@
      "issues": [
       {
        "label": "Plus de 4,5",
-       "cote": 7.75
+       "cote": 8
       },
       {
        "label": "Moins de 4,5",
@@ -30426,27 +31129,27 @@
       },
       {
        "label": "2 - 0",
-       "cote": 7.75
+       "cote": 8
       },
       {
        "label": "3 - 0",
-       "cote": 15
+       "cote": 16
       },
       {
        "label": "4 - 0",
-       "cote": 38
+       "cote": 42
       },
       {
        "label": "5 - 0",
-       "cote": 75
+       "cote": 85
       },
       {
        "label": "0 - 1",
-       "cote": 7.75
+       "cote": 7.5
       },
       {
        "label": "1 - 1",
-       "cote": 5.4
+       "cote": 5.5
       },
       {
        "label": "2 - 1",
@@ -30458,19 +31161,19 @@
       },
       {
        "label": "4 - 1",
-       "cote": 40
+       "cote": 42
       },
       {
        "label": "5 - 1",
-       "cote": 80
+       "cote": 85
       },
       {
        "label": "0 - 2",
-       "cote": 15
+       "cote": 14
       },
       {
        "label": "1 - 2",
-       "cote": 11
+       "cote": 10.5
       },
       {
        "label": "2 - 2",
@@ -30486,19 +31189,19 @@
       },
       {
        "label": "5 - 2",
-       "cote": 130
+       "cote": 140
       },
       {
        "label": "0 - 3",
-       "cote": 38
+       "cote": 36
       },
       {
        "label": "1 - 3",
-       "cote": 30
+       "cote": 29
       },
       {
        "label": "2 - 3",
-       "cote": 40
+       "cote": 38
       },
       {
        "label": "3 - 3",
@@ -30506,7 +31209,7 @@
       },
       {
        "label": "4 - 3",
-       "cote": 110
+       "cote": 120
       },
       {
        "label": "5 - 3",
@@ -30514,7 +31217,7 @@
       },
       {
        "label": "0 - 4",
-       "cote": 85
+       "cote": 80
       },
       {
        "label": "1 - 4",
@@ -30522,11 +31225,11 @@
       },
       {
        "label": "2 - 4",
-       "cote": 90
+       "cote": 85
       },
       {
        "label": "3 - 4",
-       "cote": 150
+       "cote": 140
       },
       {
        "label": "4 - 4",
@@ -30538,15 +31241,15 @@
       },
       {
        "label": "0 - 5",
-       "cote": 275
+       "cote": 250
       },
       {
        "label": "1 - 5",
-       "cote": 200
+       "cote": 190
       },
       {
        "label": "2 - 5",
-       "cote": 300
+       "cote": 275
       },
       {
        "label": "3 - 5",
@@ -30558,7 +31261,7 @@
       },
       {
        "label": "Autre",
-       "cote": 85
+       "cote": 90
       }
      ]
     },
@@ -30571,7 +31274,7 @@
       },
       {
        "label": "1",
-       "cote": 3.7
+       "cote": 3.65
       },
       {
        "label": "2",
@@ -30579,7 +31282,7 @@
       },
       {
        "label": "3",
-       "cote": 3.95
+       "cote": 3.9
       },
       {
        "label": "4",
@@ -30587,7 +31290,7 @@
       },
       {
        "label": "5",
-       "cote": 11.5
+       "cote": 12
       },
       {
        "label": "6",
@@ -30595,7 +31298,7 @@
       },
       {
        "label": "7",
-       "cote": 55
+       "cote": 60
       },
       {
        "label": "8",
@@ -30612,11 +31315,11 @@
      "issues": [
       {
        "label": "Paraguay -1.5",
-       "cote": 3.7
+       "cote": 3.85
       },
       {
        "label": "Australie +1.5",
-       "cote": 1.18
+       "cote": 1.16
       }
      ]
     },
@@ -30625,7 +31328,7 @@
      "issues": [
       {
        "label": "Paraguay -2.5",
-       "cote": 8.5
+       "cote": 9
       },
       {
        "label": "Australie +2.5",
@@ -30638,11 +31341,11 @@
      "issues": [
       {
        "label": "Paraguay +1.5",
-       "cote": 1.03
+       "cote": 1.04
       },
       {
        "label": "Australie -1.5",
-       "cote": 7.75
+       "cote": 7.25
       }
      ]
     }
@@ -31257,9 +31960,9 @@
    "home_fr": "Sénégal",
    "away_fr": "Irak",
    "kickoff": 1782500400,
-   "odds_1": 1.32,
-   "odds_X": 3.9,
-   "odds_2": 5.8,
+   "odds_1": 1.31,
+   "odds_X": 3.95,
+   "odds_2": 6,
    "status": "PREMATCH",
    "bets": [
     {
@@ -31267,15 +31970,15 @@
      "issues": [
       {
        "label": "Sénégal",
-       "cote": 1.32
+       "cote": 1.31
       },
       {
        "label": "Match nul",
-       "cote": 3.9
+       "cote": 3.95
       },
       {
        "label": "Irak",
-       "cote": 5.8
+       "cote": 6
       }
      ]
     },
@@ -31292,7 +31995,7 @@
       },
       {
        "label": "Irak ou match nul",
-       "cote": 2.55
+       "cote": 2.6
       }
      ]
     },
@@ -31301,11 +32004,11 @@
      "issues": [
       {
        "label": "Sénégal",
-       "cote": 1.1
+       "cote": 1.09
       },
       {
        "label": "Irak",
-       "cote": 4.1
+       "cote": 4.2
       }
      ]
     },
@@ -31444,7 +32147,7 @@
      "issues": [
       {
        "label": "1-2",
-       "cote": 1.6
+       "cote": 1.62
       },
       {
        "label": "1-3",
@@ -31452,15 +32155,15 @@
       },
       {
        "label": "2-3",
-       "cote": 1.92
+       "cote": 1.9
       },
       {
        "label": "4 et plus",
-       "cote": 5.4
+       "cote": 5.2
       },
       {
        "label": "0",
-       "cote": 5.3
+       "cote": 5.4
       }
      ]
     },
@@ -31469,11 +32172,11 @@
      "issues": [
       {
        "label": "Plus de 0,5",
-       "cote": 1.74
+       "cote": 1.76
       },
       {
        "label": "Moins de 0,5",
-       "cote": 1.72
+       "cote": 1.7
       }
      ]
     },
@@ -31482,11 +32185,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 4.9
+       "cote": 5.1
       },
       {
        "label": "Moins de 1,5",
-       "cote": 1.1
+       "cote": 1.09
       }
      ]
     },
@@ -31495,7 +32198,7 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 19
+       "cote": 20
       },
       {
        "label": "Moins de 2,5",
@@ -31508,15 +32211,15 @@
      "issues": [
       {
        "label": "1-2",
-       "cote": 1.84
+       "cote": 1.88
       },
       {
        "label": "1-3",
-       "cote": 1.76
+       "cote": 1.78
       },
       {
        "label": "2-3",
-       "cote": 5.1
+       "cote": 5.3
       },
       {
        "label": "4 et plus",
@@ -31524,7 +32227,7 @@
       },
       {
        "label": "0",
-       "cote": 1.72
+       "cote": 1.7
       }
      ]
     },
@@ -31533,11 +32236,11 @@
      "issues": [
       {
        "label": "Plus de 0,5",
-       "cote": 1.09
+       "cote": 1.08
       },
       {
        "label": "Moins de 0,5",
-       "cote": 5.3
+       "cote": 5.4
       }
      ]
     },
@@ -31563,7 +32266,7 @@
       },
       {
        "label": "Moins de 2,5",
-       "cote": 1.32
+       "cote": 1.33
       }
      ]
     },
@@ -31572,11 +32275,11 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 5.4
+       "cote": 5.2
       },
       {
        "label": "Moins de 3,5",
-       "cote": 1.08
+       "cote": 1.09
       }
      ]
     },
@@ -31585,7 +32288,7 @@
      "issues": [
       {
        "label": "Plus de 4,5",
-       "cote": 13
+       "cote": 12.5
       },
       {
        "label": "Moins de 4,5",
@@ -31602,7 +32305,7 @@
       },
       {
        "label": "Non",
-       "cote": 1.54
+       "cote": 1.52
       }
      ]
     },
@@ -31619,15 +32322,15 @@
       },
       {
        "label": "2 - 0",
-       "cote": 5.5
+       "cote": 5.4
       },
       {
        "label": "3 - 0",
-       "cote": 7.75
+       "cote": 7.5
       },
       {
        "label": "4 - 0",
-       "cote": 14.5
+       "cote": 14
       },
       {
        "label": "5 - 0",
@@ -31635,7 +32338,7 @@
       },
       {
        "label": "0 - 1",
-       "cote": 13.5
+       "cote": 14
       },
       {
        "label": "1 - 1",
@@ -31655,23 +32358,23 @@
       },
       {
        "label": "5 - 1",
-       "cote": 44
+       "cote": 42
       },
       {
        "label": "0 - 2",
-       "cote": 34
+       "cote": 36
       },
       {
        "label": "1 - 2",
-       "cote": 19
+       "cote": 20
       },
       {
        "label": "2 - 2",
-       "cote": 19
+       "cote": 20
       },
       {
        "label": "3 - 2",
-       "cote": 28
+       "cote": 29
       },
       {
        "label": "4 - 2",
@@ -31683,19 +32386,19 @@
       },
       {
        "label": "0 - 3",
-       "cote": 80
+       "cote": 85
       },
       {
        "label": "1 - 3",
-       "cote": 55
+       "cote": 60
       },
       {
        "label": "2 - 3",
-       "cote": 55
+       "cote": 60
       },
       {
        "label": "3 - 3",
-       "cote": 65
+       "cote": 70
       },
       {
        "label": "4 - 3",
@@ -31707,23 +32410,23 @@
       },
       {
        "label": "0 - 4",
-       "cote": 275
+       "cote": 300
       },
       {
        "label": "1 - 4",
-       "cote": 160
+       "cote": 180
       },
       {
        "label": "2 - 4",
-       "cote": 160
+       "cote": 180
       },
       {
        "label": "3 - 4",
-       "cote": 225
+       "cote": 250
       },
       {
        "label": "4 - 4",
-       "cote": 400
+       "cote": 450
       },
       {
        "label": "5 - 4",
@@ -31751,7 +32454,7 @@
       },
       {
        "label": "Autre",
-       "cote": 36
+       "cote": 34
       }
      ]
     },
@@ -31805,11 +32508,11 @@
      "issues": [
       {
        "label": "Sénégal -2.5",
-       "cote": 3.75
+       "cote": 3.65
       },
       {
        "label": "Irak +2.5",
-       "cote": 1.17
+       "cote": 1.18
       }
      ]
     },
@@ -31818,11 +32521,11 @@
      "issues": [
       {
        "label": "Sénégal -1.5",
-       "cote": 2
+       "cote": 1.98
       },
       {
        "label": "Irak +1.5",
-       "cote": 1.52
+       "cote": 1.54
       }
      ]
     },
@@ -31831,11 +32534,11 @@
      "issues": [
       {
        "label": "Sénégal -3.5",
-       "cote": 7.75
+       "cote": 7.5
       },
       {
        "label": "Irak +3.5",
-       "cote": 1.03
+       "cote": 1.04
       }
      ]
     }
@@ -33110,23 +33813,23 @@
      "issues": [
       {
        "label": "1-2",
-       "cote": 1.88
+       "cote": 1.92
       },
       {
        "label": "1-3",
-       "cote": 1.8
+       "cote": 1.82
       },
       {
        "label": "2-3",
-       "cote": 5.3
+       "cote": 5.5
       },
       {
        "label": "4 et plus",
-       "cote": 65
+       "cote": 70
       },
       {
        "label": "0",
-       "cote": 1.68
+       "cote": 1.66
       }
      ]
     },
@@ -33135,11 +33838,11 @@
      "issues": [
       {
        "label": "Plus de 0,5",
-       "cote": 1.04
+       "cote": 1.05
       },
       {
        "label": "Moins de 0,5",
-       "cote": 7
+       "cote": 6.75
       }
      ]
     },
@@ -33148,7 +33851,7 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 1.34
+       "cote": 1.35
       },
       {
        "label": "Moins de 1,5",
@@ -33161,11 +33864,11 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 2.1
+       "cote": 2.15
       },
       {
        "label": "Moins de 2,5",
-       "cote": 1.49
+       "cote": 1.47
       }
      ]
     },
@@ -33174,7 +33877,7 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 3.95
+       "cote": 4
       },
       {
        "label": "Moins de 3,5",
@@ -33187,7 +33890,7 @@
      "issues": [
       {
        "label": "Plus de 4,5",
-       "cote": 8
+       "cote": 8.5
       },
       {
        "label": "Moins de 4,5",
@@ -33204,7 +33907,7 @@
       },
       {
        "label": "1-3",
-       "cote": 1.3
+       "cote": 1.29
       },
       {
        "label": "2-3",
@@ -33212,11 +33915,11 @@
       },
       {
        "label": "4 et plus",
-       "cote": 3.95
+       "cote": 4
       },
       {
        "label": "0",
-       "cote": 7
+       "cote": 6.75
       }
      ]
     },
@@ -33225,11 +33928,11 @@
      "issues": [
       {
        "label": "Plus de 0,5",
-       "cote": 1.78
+       "cote": 1.8
       },
       {
        "label": "Moins de 0,5",
-       "cote": 1.68
+       "cote": 1.66
       }
      ]
     },
@@ -33238,11 +33941,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 5.2
+       "cote": 5.3
       },
       {
        "label": "Moins de 1,5",
-       "cote": 1.09
+       "cote": 1.08
       }
      ]
     },
@@ -33251,7 +33954,7 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 20
+       "cote": 21
       },
       {
        "label": "Moins de 2,5",
@@ -33277,11 +33980,11 @@
      "issues": [
       {
        "label": "Plus de 2",
-       "cote": 1.24
+       "cote": 1.25
       },
       {
        "label": "Moins de 2",
-       "cote": 3.1
+       "cote": 3
       }
      ]
     },
@@ -33290,11 +33993,11 @@
      "issues": [
       {
        "label": "Plus de 3",
-       "cote": 1.92
+       "cote": 1.98
       },
       {
        "label": "Moins de 3",
-       "cote": 1.58
+       "cote": 1.56
       }
      ]
     },
@@ -33303,11 +34006,11 @@
      "issues": [
       {
        "label": "Plus de 4",
-       "cote": 3.75
+       "cote": 3.85
       },
       {
        "label": "Moins de 4",
-       "cote": 1.17
+       "cote": 1.16
       }
      ]
     },
@@ -33316,7 +34019,7 @@
      "issues": [
       {
        "label": "Plus de 5",
-       "cote": 7.75
+       "cote": 8
       },
       {
        "label": "Moins de 5",
@@ -33333,7 +34036,7 @@
       },
       {
        "label": "Moins de 0,5",
-       "cote": 12.5
+       "cote": 12
       }
      ]
     },
@@ -33342,11 +34045,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 1.16
+       "cote": 1.17
       },
       {
        "label": "Moins de 1,5",
-       "cote": 3.85
+       "cote": 3.75
       }
      ]
     },
@@ -33355,11 +34058,11 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 1.54
+       "cote": 1.56
       },
       {
        "label": "Moins de 2,5",
-       "cote": 1.98
+       "cote": 1.96
       }
      ]
     },
@@ -33368,11 +34071,11 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 2.4
+       "cote": 2.5
       },
       {
        "label": "Moins de 3,5",
-       "cote": 1.37
+       "cote": 1.35
       }
      ]
     },
@@ -33381,11 +34084,11 @@
      "issues": [
       {
        "label": "Plus de 4,5",
-       "cote": 4.3
+       "cote": 4.4
       },
       {
        "label": "Moins de 4,5",
-       "cote": 1.13
+       "cote": 1.12
       }
      ]
     },
@@ -33394,11 +34097,11 @@
      "issues": [
       {
        "label": "Oui",
-       "cote": 1.96
+       "cote": 2
       },
       {
        "label": "Non",
-       "cote": 1.56
+       "cote": 1.54
       }
      ]
     },
@@ -33407,11 +34110,11 @@
      "issues": [
       {
        "label": "0 - 0",
-       "cote": 12.5
+       "cote": 12
       },
       {
        "label": "1 - 0",
-       "cote": 18
+       "cote": 17
       },
       {
        "label": "2 - 0",
@@ -33447,7 +34150,7 @@
       },
       {
        "label": "4 - 1",
-       "cote": 190
+       "cote": 200
       },
       {
        "label": "5 - 1",
@@ -33455,7 +34158,7 @@
       },
       {
        "label": "0 - 2",
-       "cote": 5.4
+       "cote": 5.3
       },
       {
        "label": "1 - 2",
@@ -33463,7 +34166,7 @@
       },
       {
        "label": "2 - 2",
-       "cote": 21
+       "cote": 22
       },
       {
        "label": "3 - 2",
@@ -33471,7 +34174,7 @@
       },
       {
        "label": "4 - 2",
-       "cote": 180
+       "cote": 190
       },
       {
        "label": "5 - 2",
@@ -33491,7 +34194,7 @@
       },
       {
        "label": "3 - 3",
-       "cote": 65
+       "cote": 70
       },
       {
        "label": "4 - 3",
@@ -33511,15 +34214,15 @@
       },
       {
        "label": "2 - 4",
-       "cote": 40
+       "cote": 42
       },
       {
        "label": "3 - 4",
-       "cote": 95
+       "cote": 100
       },
       {
        "label": "4 - 4",
-       "cote": 350
+       "cote": 400
       },
       {
        "label": "5 - 4",
@@ -33527,7 +34230,7 @@
       },
       {
        "label": "0 - 5",
-       "cote": 22
+       "cote": 23
       },
       {
        "label": "1 - 5",
@@ -33539,7 +34242,7 @@
       },
       {
        "label": "3 - 5",
-       "cote": 160
+       "cote": 170
       },
       {
        "label": "4 - 5",
@@ -33547,7 +34250,7 @@
       },
       {
        "label": "Autre",
-       "cote": 21
+       "cote": 22
       }
      ]
     },
@@ -33556,15 +34259,15 @@
      "issues": [
       {
        "label": "0",
-       "cote": 12.5
+       "cote": 12
       },
       {
        "label": "1",
-       "cote": 4.9
+       "cote": 4.7
       },
       {
        "label": "2",
-       "cote": 3.6
+       "cote": 3.55
       },
       {
        "label": "3",
@@ -33580,19 +34283,19 @@
       },
       {
        "label": "6",
-       "cote": 13.5
+       "cote": 14
       },
       {
        "label": "7",
-       "cote": 29
+       "cote": 30
       },
       {
        "label": "8",
-       "cote": 55
+       "cote": 60
       },
       {
        "label": "9 ou plus",
-       "cote": 85
+       "cote": 90
       }
      ]
     },
@@ -33601,11 +34304,11 @@
      "issues": [
       {
        "label": "Nouvelle Zélande +1.5",
-       "cote": 1.76
+       "cote": 1.74
       },
       {
        "label": "Belgique -1.5",
-       "cote": 1.7
+       "cote": 1.72
       }
      ]
     },
@@ -33618,7 +34321,7 @@
       },
       {
        "label": "Belgique -2.5",
-       "cote": 2.9
+       "cote": 2.95
       }
      ]
     },
@@ -33631,7 +34334,7 @@
       },
       {
        "label": "Belgique -3.5",
-       "cote": 5.5
+       "cote": 5.6
       }
      ]
     }
@@ -34892,7 +35595,7 @@
       },
       {
        "label": "4 et plus",
-       "cote": 7.5
+       "cote": 7.25
       },
       {
        "label": "0",
@@ -34909,7 +35612,7 @@
       },
       {
        "label": "Moins de 0,5",
-       "cote": 1.88
+       "cote": 1.9
       }
      ]
     },
@@ -34918,7 +35621,7 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 4.2
+       "cote": 4.1
       },
       {
        "label": "Moins de 1,5",
@@ -34931,7 +35634,7 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 14.5
+       "cote": 14
       },
       {
        "label": "Moins de 2,5",
@@ -34944,11 +35647,11 @@
      "issues": [
       {
        "label": "1-2",
-       "cote": 1.74
+       "cote": 1.72
       },
       {
        "label": "1-3",
-       "cote": 1.64
+       "cote": 1.62
       },
       {
        "label": "2-3",
@@ -34956,11 +35659,11 @@
       },
       {
        "label": "4 et plus",
-       "cote": 55
+       "cote": 50
       },
       {
        "label": "0",
-       "cote": 1.88
+       "cote": 1.9
       }
      ]
     },
@@ -34969,7 +35672,7 @@
      "issues": [
       {
        "label": "Plus de 0,5",
-       "cote": 1.14
+       "cote": 1.13
       },
       {
        "label": "Moins de 0,5",
@@ -34982,11 +35685,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 1.72
+       "cote": 1.7
       },
       {
        "label": "Moins de 1,5",
-       "cote": 1.74
+       "cote": 1.76
       }
      ]
     },
@@ -34995,7 +35698,7 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 3.4
+       "cote": 3.3
       },
       {
        "label": "Moins de 2,5",
@@ -35008,7 +35711,7 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 7.5
+       "cote": 7.25
       },
       {
        "label": "Moins de 3,5",
@@ -35021,7 +35724,7 @@
      "issues": [
       {
        "label": "Plus de 4,5",
-       "cote": 21
+       "cote": 20
       },
       {
        "label": "Moins de 4,5",
@@ -35038,7 +35741,7 @@
       },
       {
        "label": "Moins de 1",
-       "cote": 6.5
+       "cote": 6.75
       }
      ]
     },
@@ -35047,11 +35750,11 @@
      "issues": [
       {
        "label": "Plus de 2",
-       "cote": 1.47
+       "cote": 1.45
       },
       {
        "label": "Moins de 2",
-       "cote": 2.15
+       "cote": 2.2
       }
      ]
     },
@@ -35060,11 +35763,11 @@
      "issues": [
       {
        "label": "Plus de 3",
-       "cote": 2.75
+       "cote": 2.65
       },
       {
        "label": "Moins de 3",
-       "cote": 1.3
+       "cote": 1.31
       }
      ]
     },
@@ -35073,7 +35776,7 @@
      "issues": [
       {
        "label": "Plus de 4",
-       "cote": 6
+       "cote": 5.8
       },
       {
        "label": "Moins de 4",
@@ -35086,7 +35789,7 @@
      "issues": [
       {
        "label": "Plus de 5",
-       "cote": 14.5
+       "cote": 14
       },
       {
        "label": "Moins de 5",
@@ -35112,11 +35815,11 @@
      "issues": [
       {
        "label": "Plus de 1,5",
-       "cote": 1.28
+       "cote": 1.27
       },
       {
        "label": "Moins de 1,5",
-       "cote": 2.85
+       "cote": 2.9
       }
      ]
     },
@@ -35125,7 +35828,7 @@
      "issues": [
       {
        "label": "Plus de 2,5",
-       "cote": 1.9
+       "cote": 1.88
       },
       {
        "label": "Moins de 2,5",
@@ -35138,11 +35841,11 @@
      "issues": [
       {
        "label": "Plus de 3,5",
-       "cote": 3.4
+       "cote": 3.35
       },
       {
        "label": "Moins de 3,5",
-       "cote": 1.2
+       "cote": 1.21
       }
      ]
     },
@@ -35151,7 +35854,7 @@
      "issues": [
       {
        "label": "Plus de 4,5",
-       "cote": 6.75
+       "cote": 6.5
       },
       {
        "label": "Moins de 4,5",
@@ -35164,11 +35867,11 @@
      "issues": [
       {
        "label": "Oui",
-       "cote": 1.92
+       "cote": 1.9
       },
       {
        "label": "Non",
-       "cote": 1.58
+       "cote": 1.6
       }
      ]
     },
@@ -35181,7 +35884,7 @@
       },
       {
        "label": "1 - 0",
-       "cote": 5.3
+       "cote": 5.4
       },
       {
        "label": "2 - 0",
@@ -35197,11 +35900,11 @@
       },
       {
        "label": "5 - 0",
-       "cote": 50
+       "cote": 48
       },
       {
        "label": "0 - 1",
-       "cote": 10
+       "cote": 10.5
       },
       {
        "label": "1 - 1",
@@ -35237,7 +35940,7 @@
       },
       {
        "label": "3 - 2",
-       "cote": 29
+       "cote": 28
       },
       {
        "label": "4 - 2",
@@ -35245,7 +35948,7 @@
       },
       {
        "label": "5 - 2",
-       "cote": 95
+       "cote": 90
       },
       {
        "label": "0 - 3",
@@ -35273,7 +35976,7 @@
       },
       {
        "label": "0 - 4",
-       "cote": 170
+       "cote": 160
       },
       {
        "label": "1 - 4",
@@ -35281,11 +35984,11 @@
       },
       {
        "label": "2 - 4",
-       "cote": 130
+       "cote": 120
       },
       {
        "label": "3 - 4",
-       "cote": 190
+       "cote": 180
       },
       {
        "label": "4 - 4",
@@ -35317,7 +36020,7 @@
       },
       {
        "label": "Autre",
-       "cote": 55
+       "cote": 50
       }
      ]
     },
@@ -35330,7 +36033,7 @@
       },
       {
        "label": "1",
-       "cote": 3.9
+       "cote": 3.95
       },
       {
        "label": "2",
@@ -35338,15 +36041,15 @@
       },
       {
        "label": "3",
-       "cote": 3.8
+       "cote": 3.75
       },
       {
        "label": "4",
-       "cote": 5.6
+       "cote": 5.5
       },
       {
        "label": "5",
-       "cote": 10
+       "cote": 9.5
       },
       {
        "label": "6",
@@ -35354,11 +36057,11 @@
       },
       {
        "label": "7",
-       "cote": 50
+       "cote": 48
       },
       {
        "label": "8",
-       "cote": 95
+       "cote": 90
       },
       {
        "label": "9 ou plus",
@@ -35384,11 +36087,11 @@
      "issues": [
       {
        "label": "Croatie -2.5",
-       "cote": 5.1
+       "cote": 5
       },
       {
        "label": "Ghana +2.5",
-       "cote": 1.09
+       "cote": 1.1
       }
      ]
     },
@@ -37987,6 +38690,19 @@
      ]
     },
     {
+     "marche": "Nombre de buts de Raphinha",
+     "issues": [
+      {
+       "label": "Plus de 1,5",
+       "cote": 1.65
+      },
+      {
+       "label": "Moins de 1,5",
+       "cote": 2
+      }
+     ]
+    },
+    {
      "marche": "Nombre de buts de Romelu Lukaku",
      "issues": [
       {
@@ -38004,11 +38720,11 @@
      "issues": [
       {
        "label": "Plus de 1,5 buts",
-       "cote": 1.9
+       "cote": 2.75
       },
       {
        "label": "Moins de 1,5 buts",
-       "cote": 1.7
+       "cote": 1.35
       }
      ]
     },
@@ -38078,20 +38794,33 @@
      ]
     },
     {
-     "marche": "Nombre de buts de Écosse",
+     "marche": "Nombre de buts de Qatar",
      "issues": [
       {
-       "label": "Plus de 3,5 buts",
-       "cote": 1.55
+       "label": "Plus de 2,5 buts",
+       "cote": 2.2
       },
       {
-       "label": "Moins de 3,5 buts",
-       "cote": 2.1
+       "label": "Moins de 2,5 buts",
+       "cote": 1.45
       }
      ]
     },
     {
-     "marche": "Nombre de buts de Australie",
+     "marche": "Nombre de buts de Suisse",
+     "issues": [
+      {
+       "label": "Plus de 8,5 buts",
+       "cote": 2.15
+      },
+      {
+       "label": "Moins de 8,5 buts",
+       "cote": 1.5
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Écosse",
      "issues": [
       {
        "label": "Plus de 3,5 buts",
@@ -38108,11 +38837,24 @@
      "issues": [
       {
        "label": "Plus de 5,5 buts",
-       "cote": 1.7
+       "cote": 1.85
       },
       {
        "label": "Moins de 5,5 buts",
-       "cote": 1.9
+       "cote": 1.75
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Maroc",
+     "issues": [
+      {
+       "label": "Plus de 6,5 buts",
+       "cote": 1.8
+      },
+      {
+       "label": "Moins de 6,5 buts",
+       "cote": 1.8
       }
      ]
     },
@@ -38533,6 +39275,19 @@
      ]
     },
     {
+     "marche": "Nombre de buts de Brésil",
+     "issues": [
+      {
+       "label": "Plus de 10,5 buts",
+       "cote": 1.6
+      },
+      {
+       "label": "Moins de 10,5 buts",
+       "cote": 1.95
+      }
+     ]
+    },
+    {
      "marche": "Nombre de buts de Julian Alvarez  (paliers)",
      "issues": [
       {
@@ -38759,6 +39514,123 @@
       {
        "label": "3 ou plus",
        "cote": 15
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Raphinha (paliers)",
+     "issues": [
+      {
+       "label": "1 ou plus",
+       "cote": 1.12
+      },
+      {
+       "label": "2 ou plus",
+       "cote": 1.65
+      },
+      {
+       "label": "3 ou plus",
+       "cote": 2.5
+      },
+      {
+       "label": "4 ou plus",
+       "cote": 3.5
+      },
+      {
+       "label": "5 ou plus",
+       "cote": 6
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Matheus Cunha (paliers)",
+     "issues": [
+      {
+       "label": "1 ou plus",
+       "cote": 1.25
+      },
+      {
+       "label": "2 ou plus",
+       "cote": 2
+      },
+      {
+       "label": "3 ou plus",
+       "cote": 3.5
+      },
+      {
+       "label": "4 ou plus",
+       "cote": 7.5
+      },
+      {
+       "label": "5 ou plus",
+       "cote": 15
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Neymar (paliers)",
+     "issues": [
+      {
+       "label": "1 ou plus",
+       "cote": 1.3
+      },
+      {
+       "label": "2 ou plus",
+       "cote": 1.8
+      },
+      {
+       "label": "3 ou plus",
+       "cote": 2.75
+      },
+      {
+       "label": "4 ou plus",
+       "cote": 4
+      },
+      {
+       "label": "5 ou plus",
+       "cote": 10
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Endrick (paliers)",
+     "issues": [
+      {
+       "label": "1 ou plus",
+       "cote": 1.15
+      },
+      {
+       "label": "2 ou plus",
+       "cote": 1.75
+      },
+      {
+       "label": "3 ou plus",
+       "cote": 3.5
+      },
+      {
+       "label": "4 ou plus",
+       "cote": 8
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Vinicius (paliers)",
+     "issues": [
+      {
+       "label": "2 ou plus",
+       "cote": 1.1
+      },
+      {
+       "label": "3 ou plus",
+       "cote": 1.5
+      },
+      {
+       "label": "4 ou plus",
+       "cote": 2
+      },
+      {
+       "label": "5 ou plus",
+       "cote": 4
       }
      ]
     },
@@ -39074,6 +39946,65 @@
      ]
     },
     {
+     "marche": "Nombre de buts de Brahim Diaz (paliers)",
+     "issues": [
+      {
+       "label": "1 ou plus",
+       "cote": 1.2
+      },
+      {
+       "label": "2 ou plus",
+       "cote": 1.65
+      },
+      {
+       "label": "3 ou plus",
+       "cote": 3
+      },
+      {
+       "label": "4 ou plus",
+       "cote": 8
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Ayoub El Kaabi (paliers)",
+     "issues": [
+      {
+       "label": "1 ou plus",
+       "cote": 1.1
+      },
+      {
+       "label": "2 ou plus",
+       "cote": 1.45
+      },
+      {
+       "label": "3 ou plus",
+       "cote": 2.25
+      },
+      {
+       "label": "4 ou plus",
+       "cote": 4.5
+      },
+      {
+       "label": "5 ou plus",
+       "cote": 10
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Achraf Hakimi (paliers)",
+     "issues": [
+      {
+       "label": "1 ou plus",
+       "cote": 1.75
+      },
+      {
+       "label": "2 ou plus",
+       "cote": 3.5
+      }
+     ]
+    },
+    {
      "marche": "Nombre de buts de Memphis Depay (paliers)",
      "issues": [
       {
@@ -39191,15 +40122,15 @@
      "issues": [
       {
        "label": "1 ou plus",
-       "cote": 1.35
+       "cote": 1.5
       },
       {
        "label": "2 ou plus",
-       "cote": 2.25
+       "cote": 3
       },
       {
        "label": "3 ou plus",
-       "cote": 5
+       "cote": 8
       }
      ]
     },
@@ -39318,6 +40249,23 @@
      ]
     },
     {
+     "marche": "Nombre de buts de Breel Embolo (paliers)",
+     "issues": [
+      {
+       "label": "2 ou plus",
+       "cote": 1.3
+      },
+      {
+       "label": "3 ou plus",
+       "cote": 2
+      },
+      {
+       "label": "4 ou plus",
+       "cote": 2.8
+      }
+     ]
+    },
+    {
      "marche": "Nombre de buts de Christian Pulisic (paliers)",
      "issues": [
       {
@@ -39391,11 +40339,11 @@
      "issues": [
       {
        "label": "1 ou plus",
-       "cote": 7
+       "cote": 10
       },
       {
        "label": "2 ou plus",
-       "cote": 35
+       "cote": 50
       }
      ]
     },
@@ -39444,6 +40392,19 @@
       {
        "label": "1 ou plus",
        "cote": 40
+      },
+      {
+       "label": "2 ou plus",
+       "cote": 200
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Neymar sur coup franc (paliers)",
+     "issues": [
+      {
+       "label": "1 ou plus",
+       "cote": 30
       },
       {
        "label": "2 ou plus",
@@ -39615,19 +40576,36 @@
      ]
     },
     {
+     "marche": "Nombre de buts de la tête de Gabriel Magalhaes (paliers) ",
+     "issues": [
+      {
+       "label": "1 ou plus",
+       "cote": 4.5
+      },
+      {
+       "label": "2 ou plus",
+       "cote": 25
+      },
+      {
+       "label": "3 ou plus",
+       "cote": 100
+      }
+     ]
+    },
+    {
      "marche": "Nombre de buts de la tête de Scott McTominay (paliers) ",
      "issues": [
       {
        "label": "1 ou plus",
-       "cote": 6
+       "cote": 8
       },
       {
        "label": "2 ou plus",
-       "cote": 40
+       "cote": 50
       },
       {
        "label": "3 ou plus",
-       "cote": 200
+       "cote": 250
       }
      ]
     },
@@ -39879,6 +40857,32 @@
       {
        "label": "Moins de 3,5 buts",
        "cote": 2.1
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Vinicius Jr.",
+     "issues": [
+      {
+       "label": "Plus de 3,5",
+       "cote": 2
+      },
+      {
+       "label": "Moins de 3,5",
+       "cote": 1.55
+      }
+     ]
+    },
+    {
+     "marche": "Nombre de buts de Australie",
+     "issues": [
+      {
+       "label": "Plus de 5,5 buts",
+       "cote": 1.8
+      },
+      {
+       "label": "Moins de 5,5 buts",
+       "cote": 1.8
       }
      ]
     }

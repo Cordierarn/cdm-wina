@@ -50,6 +50,7 @@ class BacktestPoint:
     model: list[float]
     baseline: list[float]
     market_probs: list[float] | None
+    market_odds: list[float] | None = None  # cotes brutes (pour comparer les devigs)
 
 
 def load_parquet(name: str) -> pd.DataFrame:
@@ -568,6 +569,7 @@ def main() -> None:
             y_tot = [1.0 if gh + ga > 2.5 else 0.0, 1.0 if gh + ga <= 2.5 else 0.0]
             model_tot = probs["totals"]
             market_1n2 = market_lines(fixtures, "1n2", row)
+            market_1n2_odds = None
             market_totals = market_lines(fixtures, "totals", row)
             # Enrichissement depuis closing_backtest.json si disponible
             if closing:
@@ -577,6 +579,7 @@ def main() -> None:
                 a_name = team_name_index.get(a_id, "")
                 entry = closing_lookup(closing, row[date_col], h_name, a_name) if h_name and a_name else None
                 if entry:
+                    market_1n2_odds = entry.get("odds_raw")
                     if market_1n2 is None:
                         market_1n2 = entry.get("h2h")
                     totals_entry = entry.get("totals")
@@ -589,7 +592,7 @@ def main() -> None:
                             over = model_over_prob(mat, line)
                             model_tot = [over, 1 - over]
                             y_tot = [1.0 if gh + ga > line else 0.0, 1.0 if gh + ga <= line else 0.0]
-            points.append(BacktestPoint(key, "1n2", y_1n2, probs["1n2"], [1 / 3, 1 / 3, 1 / 3], market_1n2))
+            points.append(BacktestPoint(key, "1n2", y_1n2, probs["1n2"], [1 / 3, 1 / 3, 1 / 3], market_1n2, market_1n2_odds))
             points.append(BacktestPoint(key, "totals", y_tot, model_tot, [0.5, 0.5], market_totals))
             # Score exact : logloss sur la probabilité assignée au vrai score (gh, ga)
             p_exact = mat[gh][ga] if gh <= 10 and ga <= 10 else 1e-15
@@ -650,9 +653,35 @@ def main() -> None:
                        "best_mix_logloss": best_ll})
         summary.setdefault("__overall__", {})[market] = detail
 
+    # ── Comparaison devig : Shin vs multiplicatif sur le 1X2 de cloture ──────
+    # Decision : on n'adopte Shin en prod que s'il bat le multiplicatif ici.
+    from pricing import multiplicative_devig, shin_devig
+    devig_pts = [p for p in points if p.market == "1n2" and p.market_odds
+                 and len(p.market_odds) == 3]
+    devig_cmp = None
+    if devig_pts:
+        bm = bs = lm = ls = 0.0
+        n = 0
+        for p in devig_pts:
+            pm = multiplicative_devig(p.market_odds)
+            ps = shin_devig(p.market_odds)
+            if not pm or not ps:
+                continue
+            n += 1
+            bm += brier_score(pm, p.y); bs += brier_score(ps, p.y)
+            lm += log_loss(pm, p.y);    ls += log_loss(ps, p.y)
+        if n:
+            devig_cmp = {"n": n,
+                         "brier": {"multiplicatif": round(bm / n, 5), "shin": round(bs / n, 5)},
+                         "logloss": {"multiplicatif": round(lm / n, 5), "shin": round(ls / n, 5)},
+                         "verdict": "shin" if ls < lm else "multiplicatif"}
+            print(f"\ndevig 1X2 (n={n}) : logloss mult={lm/n:.5f} shin={ls/n:.5f} "
+                  f"| brier mult={bm/n:.5f} shin={bs/n:.5f} -> {devig_cmp['verdict']}")
+
     out = {
         "generated_at": int(datetime.utcnow().timestamp()),
         "tournaments": tournaments,
+        "devig_comparison": devig_cmp,
         "summary": summary,
         "model_weights": model_weights,
         "notes": {

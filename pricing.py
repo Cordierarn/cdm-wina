@@ -285,6 +285,47 @@ def price_bet(marche: str, issues: list[dict], mat, home_fr: str, away_fr: str):
     return None
 
 
+def multiplicative_devig(odds: list[float]) -> list[float] | None:
+    """De-vig proportionnel (normalisation par la somme des inverses de cotes).
+    Simple et repandu, mais sur-corrige les outsiders (biais favori-longshot)."""
+    if not odds or any(o is None or o <= 1.0 for o in odds):
+        return None
+    inv = [1.0 / o for o in odds]
+    s = sum(inv)
+    return [v / s for v in inv] if s > 0 else None
+
+
+def shin_devig(odds: list[float]) -> list[float] | None:
+    """De-vig de Shin (1992) : modelise une proportion z de mises informees,
+    ce qui corrige le biais favori-longshot mieux que le proportionnel.
+
+    Pour des cotes decimales o_i, proba implicite pi_i = 1/o_i, booksum B :
+        p_i = (sqrt(z^2 + 4(1-z) pi_i^2 / B) - z) / (2(1-z))
+    z resolu par bissection pour que sum(p_i) = 1 (sum decroissante en z).
+    """
+    if not odds or any(o is None or o <= 1.0 for o in odds):
+        return None
+    pi = [1.0 / o for o in odds]
+    B = sum(pi)
+    if B <= 1.0:  # pas de marge -> simple normalisation
+        return [p / B for p in pi]
+
+    def p_of(z: float) -> list[float]:
+        return [(math.sqrt(z * z + 4 * (1 - z) * p * p / B) - z) / (2 * (1 - z))
+                for p in pi]
+
+    lo, hi = 0.0, 0.5  # z=0 -> sum=sqrt(B)>1 ; sum decroit avec z
+    for _ in range(60):
+        mid = (lo + hi) / 2
+        if sum(p_of(mid)) > 1.0:
+            lo = mid
+        else:
+            hi = mid
+    out = p_of((lo + hi) / 2)
+    s = sum(out)
+    return [v / s for v in out] if s > 0 else None
+
+
 def pinnacle_probs(marche_norm: str, issues, pin, flipped: bool):
     """Probas de reference Pinnacle pour les marches derivees du 1N2."""
     p1, px, p2 = pin["fair_p1"], pin["fair_pX"], pin["fair_p2"]

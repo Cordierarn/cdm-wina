@@ -14,6 +14,8 @@ import time
 import unicodedata
 from pathlib import Path
 
+from pricing import shin_devig
+
 LEAGUE_ID = 2686  # FIFA - World Cup
 API = "https://guest.api.arcadia.pinnacle.com/0.1"
 API_KEY = "CmX2KcMrXuFmNg6YFbmTxE0y9CIrOi0R"  # cle invitee publique du site
@@ -77,18 +79,19 @@ def main() -> None:
         d1 = american_to_decimal(prices["home"])
         dx = american_to_decimal(prices["draw"])
         d2 = american_to_decimal(prices["away"])
-        inv = [1 / d1, 1 / dx, 1 / d2]
-        s = sum(inv)
+        fair = shin_devig([d1, dx, d2])  # Shin (valide en backtest) comme scrape_oddsapi
+        if fair is None:
+            continue
         home, away, start = teams[mid]
         rows.append({
             "home_en": ALIASES.get(norm(home), norm(home)),
             "away_en": ALIASES.get(norm(away), norm(away)),
             "start": start,
             "odds_1": round(d1, 3), "odds_X": round(dx, 3), "odds_2": round(d2, 3),
-            "margin": round(s - 1, 4),
-            "fair_p1": round(inv[0] / s, 4),
-            "fair_pX": round(inv[1] / s, 4),
-            "fair_p2": round(inv[2] / s, 4),
+            "margin": round(1 / d1 + 1 / dx + 1 / d2 - 1, 4),
+            "fair_p1": round(fair[0], 4),
+            "fair_pX": round(fair[1], 4),
+            "fair_p2": round(fair[2], 4),
         })
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)

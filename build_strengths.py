@@ -271,6 +271,7 @@ def main() -> None:
     HALF_LIFE    = 730  # jours
 
     rows = []
+    match_meta = []  # (gh, ga, dh, w, age_days) par match, pour la MLE jointe + OOS
     skipped = 0
     for _, r in rec.iterrows():
         rh = rating.get(r.home_team_id)
@@ -283,11 +284,13 @@ def main() -> None:
             age_days   = (cutoff_date - match_date).days
             time_w     = 2 ** (-age_days / HALF_LIFE) if age_days >= 0 else 1.0
         except Exception:
+            age_days = 0
             time_w = 1.0
         comp_w = float(r.comp_weight)
         w = comp_w * time_w
         rows.append((float(r.goals_home), rh - ra, w))
         rows.append((float(r.goals_away), ra - rh, w))
+        match_meta.append((int(r.goals_home), int(r.goals_away), rh - ra, w, age_days))
 
     n_matches = len(rows) // 2
     print(f"calibration: {n_matches} matchs utilisés ({skipped} ignorés — équipes hors dataset)")
@@ -403,10 +406,100 @@ def main() -> None:
         if ll > best_pi_ll:
             best_pi_ll = ll; best_pi = pi
 
+    # ── MLE jointe (b, rho, lambda3, pi_zero) + garde-fou hors echantillon ───
+    # Le fit ci-dessus est sequentiel (chaque param fige le suivant), ce qui
+    # ignore leurs interactions. On raffine en optimisant les 4 conjointement
+    # (Nelder-Mead, warm-start = fit sequentiel). On n'adopte le resultat que
+    # s'il bat le sequentiel HORS echantillon (split chronologique).
+    meta = [m for m in match_meta]
+    mg = np.array([(h, a) for h, a, _, _, _ in meta], dtype=int)
+    md = np.array([d for _, _, d, _, _ in meta], dtype=float)
+    mw = np.array([w for _, _, _, w, _ in meta], dtype=float)
+    mage = np.array([ag for _, _, _, _, ag in meta], dtype=float)
+
+    from math import comb as _comb
+
+    def _match_logprob(h, a, lhi, lai, rho, l3, pi):
+        l3c = min(l3, min(lhi, lai) * 0.9) if l3 > 0 else 0.0
+        l1 = max(lhi - l3c, 1e-9); l2 = max(lai - l3c, 1e-9)
+        p = 0.0
+        for k in range(min(h, a) + 1):
+            p += (_comb(h, k) * _comb(a, k) * _math.factorial(k)
+                  * (l3c / (l1 * l2)) ** k
+                  * (_math.exp(-l1) * l1**h / _math.factorial(h))
+                  * (_math.exp(-l2) * l2**a / _math.factorial(a))
+                  * _math.exp(-l3c))
+        if   h == 0 and a == 0: tau = 1 - lhi * lai * rho
+        elif h == 0 and a == 1: tau = 1 + lhi * rho
+        elif h == 1 and a == 0: tau = 1 + lai * rho
+        elif h == 1 and a == 1: tau = 1 - rho
+        else:                   tau = 1.0
+        p *= max(tau, 1e-12)
+        p = (pi + (1 - pi) * p) if (h == 0 and a == 0) else (1 - pi) * p
+        return _math.log(max(p, 1e-15))
+
+    def _fit_joint(idx, x0):
+        """Optimise (b,rho,l3,pi) sur les matchs idx (ponderes). Renvoie le tuple."""
+        from scipy.optimize import minimize
+        g, d, w = mg[idx], md[idx], mw[idx]
+
+        def nll(x):
+            b, rho, l3, pi = x
+            if not (0 <= b <= 0.02 and -0.3 <= rho <= 0.3 and 0 <= l3 <= 0.4 and 0 <= pi <= 0.3):
+                return 1e9
+            base = (w * (g[:, 0] + g[:, 1]) / 2).sum() / (w * (np.exp(b * d) + np.exp(-b * d)) / 2).sum()
+            tot = 0.0
+            for i in range(len(g)):
+                lhi = base * _math.exp(b * d[i]); lai = base * _math.exp(-b * d[i])
+                tot += w[i] * _match_logprob(int(g[i, 0]), int(g[i, 1]), lhi, lai, rho, l3, pi)
+            return -tot
+        res = minimize(nll, x0, method="Nelder-Mead",
+                       options={"maxiter": 400, "xatol": 1e-4, "fatol": 1e-3})
+        return tuple(res.x)
+
+    def _holdout_logprob(params, idx):
+        """Log-vraisemblance moyenne NON ponderee sur les matchs idx."""
+        b, rho, l3, pi = params
+        g, d = mg[idx], md[idx]
+        base = (g.sum(axis=1).mean()) / (np.exp(b * d).mean() + np.exp(-b * d).mean()) * 2
+        tot = 0.0
+        for i in range(len(g)):
+            lhi = base * _math.exp(b * d[i]); lai = base * _math.exp(-b * d[i])
+            tot += _match_logprob(int(g[i, 0]), int(g[i, 1]), lhi, lai, rho, l3, pi)
+        return tot / len(g)
+
+    seq_params = (best_b, best_rho, best_l3, best_pi)
+    all_idx = np.arange(len(mg))
+    # split chronologique : valid = derniere annee (age <= 365), train = avant
+    val_idx = np.where(mage <= 365)[0]
+    tr_idx = np.where(mage > 365)[0]
+    joint_adopted = False
+    joint_params = seq_params
+    if len(val_idx) >= 100 and len(tr_idx) >= 200:
+        # Test conservateur : le sequentiel (fit sur tout, leger avantage) est
+        # compare au joint fit sur train uniquement. On n'adopte le joint que
+        # s'il gagne malgre ce handicap.
+        joint_tr = _fit_joint(tr_idx, list(seq_params))
+        ll_seq = _holdout_logprob(seq_params, val_idx)
+        ll_joint = _holdout_logprob(joint_tr, val_idx)
+        print(f"OOS (valid={len(val_idx)} matchs) logprob/match : "
+              f"sequentiel={ll_seq:.5f}  joint={ll_joint:.5f} -> "
+              f"{'JOINT adopte' if ll_joint > ll_seq else 'sequentiel conserve'}")
+        if ll_joint > ll_seq:
+            joint_params = _fit_joint(all_idx, list(seq_params))  # refit sur tout
+            joint_adopted = True
+    else:
+        print(f"OOS : echantillon valid insuffisant ({len(val_idx)}) -> sequentiel conserve")
+
+    if joint_adopted:
+        best_b, best_rho, best_l3, best_pi = joint_params
+        base_lambda = float((weights * goals).sum() / (weights * np.exp(best_b * diffs)).sum())
+        spread = best_b * (hi - lo)
+
     print(f"base_lambda={base_lambda:.3f}, b={best_b:.4f}/pt Glicko, "
           f"spread={spread:.3f}/force, rho={best_rho:.3f}, "
           f"lambda3={best_l3:.3f} (BVP), pi_zero={best_pi:.4f} (ZIP), "
-          f"avg_goals/équipe={avg_goals:.3f}")
+          f"avg_goals/équipe={avg_goals:.3f} [{'joint' if joint_adopted else 'sequentiel'}]")
 
     out = {
         "source": "eatpizzanot/soccer-dataset (Glicko-2) — tous matchs intl 2019+",

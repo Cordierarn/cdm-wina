@@ -178,6 +178,39 @@ def test_pinnacle_probs_double_chance():
     assert approx(sum(out), 2.0, 1e-9)
 
 
+# ── devig : Shin vs multiplicatif ────────────────────────────────────────
+def test_multiplicative_devig_sums_to_one():
+    p = P.multiplicative_devig([2.5, 2.88, 3.75])
+    assert p is not None and approx(sum(p), 1.0, 1e-9)
+
+
+def test_shin_devig_sums_to_one():
+    p = P.shin_devig([2.5, 2.88, 3.75])
+    assert p is not None and approx(sum(p), 1.0, 1e-9)
+
+
+def test_shin_invalid_odds():
+    assert P.shin_devig([0.0, 2.0]) is None
+    assert P.shin_devig([1.0, 2.0]) is None  # cote 1.0 = pas de gain
+
+
+def test_shin_vs_multiplicative_favorite_longshot():
+    # Shin retire plus de marge des outsiders : favori ↑, outsider ↓ vs proportionnel
+    odds = [1.5, 4.5, 8.0]
+    m = P.multiplicative_devig(odds)
+    s = P.shin_devig(odds)
+    fav = odds.index(min(odds))
+    dog = odds.index(max(odds))
+    assert s[fav] > m[fav], "Shin doit relever la proba du favori"
+    assert s[dog] < m[dog], "Shin doit baisser la proba de l'outsider"
+
+
+def test_shin_no_overround_normalizes():
+    # cotes 'justes' (booksum ~1) -> Shin ~ normalisation simple
+    p = P.shin_devig([2.0, 2.0])
+    assert approx(sum(p), 1.0, 1e-9) and approx(p[0], 0.5, 1e-6)
+
+
 # ── runner sans pytest ───────────────────────────────────────────────────
 if __name__ == "__main__":
     import sys

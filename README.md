@@ -81,6 +81,8 @@ Les buts de chaque équipe suivent une loi de Poisson, corrigée par le **tau de
 
 **Re-fit en cours de tournoi** — `fetch_cdm_results.py` récupère les matchs CDM réglés (ESPN), et `build_strengths.py` les réinjecte dans les ratings via une mise à jour **Glicko-1 batch** (poids `CDM_COMP_WEIGHT = 1,00` : un match de poule CDM est du signal fort, pas dilué). Garde-fou : un **snapshot des forces avant/après** chaque re-fit est figé dans `data/strengths_snapshots/` (`_pre`/`_post`) pour mesurer si la mise à jour aide. Lancé par `update.bat --model`.
 
+**Calibration jointe (MLE)** — les 4 paramètres du modèle de buts (`b` sensibilité au rating, `rho` Dixon-Coles, `lambda3` Bivariate Poisson, `pi_zero` Zero-Inflated) sont d'abord estimés séquentiellement (warm-start), puis **raffinés conjointement** par `scipy.optimize` (Nelder-Mead) — l'estimation séquentielle ignore leurs interactions. Garde-fou hors échantillon : le fit joint sur un *train* (matchs > 1 an) n'est **adopté que s'il bat le séquentiel sur la dernière année de validation** (log-vraisemblance/match). En pratique le joint a gagné (−3,8267 vs −3,8305 sur 804 matchs) et trouve un modèle **plus parcimonieux** : `lambda3 → 0` (la covariance BVP n'apportait rien OOS, le séquentiel la surestimait), `rho` réduit. Sinon le séquentiel est conservé.
+
 | Marché Winamax | Calcul |
 |---|---|
 | Résultat (1N2) | P(h>a), P(h=a), P(h<a) |
@@ -105,7 +107,7 @@ p = 0,40 · p_modèle + 0,60 · p_référence_marché
 
 **La référence marché dépend du marché :**
 
-- **1N2, double chance, vainqueur remboursé si nul** : cotes **Pinnacle dé-viguées** (`scrape_pinnacle.py` → `data/pinnacle.json`). Pinnacle est le book sharp de référence — marges faibles, sharps acceptés, sa closing line est considérée comme la meilleure estimation publique des vraies probabilités. C'est la stratégie classique « référence sharp contre book grand public » : quand la cote Winamax dépasse la proba Pinnacle dé-viguée, il y a de la value indépendamment du modèle.
+- **1N2, double chance, vainqueur remboursé si nul** : cotes **Pinnacle dé-viguées par la méthode de Shin (1992)** (`scrape_oddsapi.py` / `scrape_pinnacle.py` → `data/pinnacle.json`). Pinnacle est le book sharp de référence — marges faibles, sharps acceptés, sa closing line est la meilleure estimation publique des vraies probabilités. Le devig **Shin** (modélise une proportion de mises informées) corrige le biais favori-longshot mieux que le proportionnel : **validé en backtest** (logloss 0,80141 vs 0,80327, Brier 0,47116 vs 0,47146 sur 262 matchs de clôture, cf. `backtest.py` → `devig_comparison`). C'est la stratégie classique « référence sharp contre book grand public » : quand la cote Winamax dépasse la proba Pinnacle dé-viguée, il y a de la value indépendamment du modèle.
 - **Autres marchés** (totaux, score exact, handicap…) : probas implicites Winamax dé-margées, en conservant la masse totale du modèle (gère les marchés à issues non exclusives comme la double chance).
 
 Le poids est réglable par marché via `MODEL_WEIGHTS` dans `make_picks.py`, avec
