@@ -3,6 +3,7 @@ rem Rafraichit cotes + picks (et modele si --model)
 cd /d %~dp0
 if "%1"=="--model" (
   python scrape_transfermarkt.py
+  python fetch_cdm_results.py
   C:\Users\nonog\ScoutFootball_for_World_Cup\.venv\Scripts\python.exe build_strengths.py
   pushd C:\Users\nonog\ScoutFootball_for_World_Cup
   set PYTHONPATH=src

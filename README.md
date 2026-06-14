@@ -79,6 +79,8 @@ Les buts de chaque équipe suivent une loi de Poisson, corrigée par le **tau de
 
 **Avantage des nations hôtes** — la CDM 2026 est sur terrain neutre pour 45 équipes, mais **USA, Mexique et Canada jouent chez eux**. Quand un hôte affronte une non-hôte, son λ est boosté (`HOST_ATK_BONUS = 0,27` → ~1,31× plus susceptible de marquer) et celui de l'adversaire réduit (`HOST_DEF_BONUS = 0,10`), net ~0,37 log sur l'écart — dans la fourchette de la littérature (Albert & Koning ; Dixon-Coles 1997). Réglable dans `export_model.py`.
 
+**Re-fit en cours de tournoi** — `fetch_cdm_results.py` récupère les matchs CDM réglés (ESPN), et `build_strengths.py` les réinjecte dans les ratings via une mise à jour **Glicko-1 batch** (poids `CDM_COMP_WEIGHT = 1,00` : un match de poule CDM est du signal fort, pas dilué). Garde-fou : un **snapshot des forces avant/après** chaque re-fit est figé dans `data/strengths_snapshots/` (`_pre`/`_post`) pour mesurer si la mise à jour aide. Lancé par `update.bat --model`.
+
 | Marché Winamax | Calcul |
 |---|---|
 | Résultat (1N2) | P(h>a), P(h=a), P(h<a) |

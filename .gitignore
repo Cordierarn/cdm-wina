@@ -6,3 +6,4 @@ data/match_test.html
 .claude/
 config.json
 data/snapshots/
+data/strengths_snapshots/

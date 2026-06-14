@@ -1,0 +1,58 @@
+[
+ {
+  "date": "2026-06-11",
+  "home": "Mexico",
+  "away": "South Africa",
+  "goals_home": 2,
+  "goals_away": 0
+ },
+ {
+  "date": "2026-06-12",
+  "home": "South Korea",
+  "away": "Czech Republic",
+  "goals_home": 2,
+  "goals_away": 1
+ },
+ {
+  "date": "2026-06-12",
+  "home": "Canada",
+  "away": "Bosnia and Herzegovina",
+  "goals_home": 1,
+  "goals_away": 1
+ },
+ {
+  "date": "2026-06-13",
+  "home": "United States",
+  "away": "Paraguay",
+  "goals_home": 4,
+  "goals_away": 1
+ },
+ {
+  "date": "2026-06-13",
+  "home": "Qatar",
+  "away": "Switzerland",
+  "goals_home": 1,
+  "goals_away": 1
+ },
+ {
+  "date": "2026-06-13",
+  "home": "Brazil",
+  "away": "Morocco",
+  "goals_home": 1,
+  "goals_away": 1
+ },
+ {
+  "date": "2026-06-14",
+  "home": "Haiti",
+  "away": "Scotland",
+  "goals_home": 0,
+  "goals_away": 1
+ },
+ {
+  "date": "2026-06-14",
+  "home": "Australia",
+  "away": "Turkey",
+  "goals_home": 2,
+  "goals_away": 0
+ }
+]

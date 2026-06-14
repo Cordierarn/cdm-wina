@@ -80,6 +80,97 @@ ALIASES = {
 }
 
 
+# ── Re-fit Glicko en cours de tournoi ────────────────────────────────────
+# CDM_COMP_WEIGHT : poids des matchs CDM dans le re-fit. 1.00 = plein signal
+# (un match de poule CDM est du signal fort, on ne le noie pas). Coherent avec
+# COMPETITION_WEIGHTS (World Cup = 1.00).
+CDM_COMP_WEIGHT = 1.00
+RESULTS_FILE = DATA / "cdm_results.json"
+SNAP_DIR = DATA / "strengths_snapshots"
+
+
+def _snapshot_mus(by_name: dict, tag: str) -> dict[str, float]:
+    """mu - sigma par equipe WC48, pour figer l'etat avant/apres re-fit."""
+    out = {}
+    for team in WC48:
+        entry = by_name.get(ALIASES.get(team, team))
+        if entry:
+            out[team] = round(float(entry[0] - entry[1]), 2)
+    return out
+
+
+def refit_glicko_with_cdm(by_name: dict) -> int:
+    """Reinjecte les resultats CDM regles dans les ratings Glicko (mise a jour
+    Glicko-1 batch sur une periode), avec snapshots avant/apres.
+
+    by_name : {nom_dataset: (mu=rating, sigma=RD)} ; mute en place.
+    Retourne le nombre de matchs CDM appliques.
+    """
+    import math
+
+    if not RESULTS_FILE.exists():
+        return 0
+    results = json.loads(RESULTS_FILE.read_text(encoding="utf-8"))
+    if not results:
+        return 0
+
+    # repo-name -> nom dataset (inverse d'ALIASES, identite sinon)
+    def ds(repo_name: str) -> str:
+        return ALIASES.get(repo_name, repo_name)
+
+    # Etat de depart (rating, RD) pour les equipes impliquees
+    ratings: dict[str, list[float]] = {}
+    games: dict[str, list[tuple[float, float, float]]] = {}  # team -> [(opp_r, opp_RD, s)]
+    for r in results:
+        h, a = ds(r["home"]), ds(r["away"])
+        if h not in by_name or a not in by_name:
+            continue
+        for t in (h, a):
+            if t not in ratings:
+                mu, rd = by_name[t]
+                ratings[t] = [float(mu), float(rd)]
+        gh, ga = r["goals_home"], r["goals_away"]
+        sh = 1.0 if gh > ga else 0.5 if gh == ga else 0.0
+        games.setdefault(h, []).append((float(by_name[a][0]), float(by_name[a][1]), sh))
+        games.setdefault(a, []).append((float(by_name[h][0]), float(by_name[h][1]), 1.0 - sh))
+
+    if not games:
+        return 0
+
+    SNAP_DIR.mkdir(exist_ok=True)
+    import time
+    stamp = time.strftime("%Y%m%d_%H%M")
+    (SNAP_DIR / f"strengths_{stamp}_pre.json").write_text(
+        json.dumps(_snapshot_mus(by_name, "pre"), indent=1, ensure_ascii=False), encoding="utf-8")
+
+    # Glicko-1 batch : une periode = tous les matchs CDM de l'equipe.
+    q = math.log(10) / 400
+    updated: dict[str, tuple[float, float]] = {}
+    for team, gs in games.items():
+        r0, rd0 = ratings[team]
+        # le re-fit a plein poids = standard Glicko ; CDM_COMP_WEIGHT module l'apport
+        inv_d2 = 0.0
+        delta_sum = 0.0
+        for opp_r, opp_rd, s in gs:
+            g = 1.0 / math.sqrt(1 + 3 * q * q * opp_rd * opp_rd / (math.pi ** 2))
+            e = 1.0 / (1 + 10 ** (-g * (r0 - opp_r) / 400))
+            inv_d2 += q * q * g * g * e * (1 - e)
+            delta_sum += g * (s - e)
+        if inv_d2 <= 0:
+            continue
+        denom = 1.0 / (rd0 * rd0) + inv_d2
+        r_new = r0 + CDM_COMP_WEIGHT * (q / denom) * delta_sum
+        rd_new = math.sqrt(1.0 / denom)
+        updated[team] = (r_new, rd_new)
+
+    for team, (r_new, rd_new) in updated.items():
+        by_name[team] = (r_new, rd_new)
+
+    (SNAP_DIR / f"strengths_{stamp}_post.json").write_text(
+        json.dumps(_snapshot_mus(by_name, "post"), indent=1, ensure_ascii=False), encoding="utf-8")
+    return sum(len(gs) for gs in games.values()) // 2
+
+
 def main() -> None:
     teams    = pd.read_parquet(DS / "teams.parquet")
     fixtures = pd.read_parquet(DS / "fixtures.parquet")
@@ -129,6 +220,12 @@ def main() -> None:
 
     # ── Glicko-2 ratings ─────────────────────────────────────────────────
     by_name = {n: (mu, sig) for n, mu, sig in zip(nat.name, nat.rating_mu, nat.rating_sigma)}
+
+    # Re-fit en cours de tournoi : reinjecte les resultats CDM regles (snapshots
+    # avant/apres dans data/strengths_snapshots/ pour mesurer l'effet).
+    n_refit = refit_glicko_with_cdm(by_name)
+    if n_refit:
+        print(f"re-fit Glicko : {n_refit} matchs CDM reinjectes (poids {CDM_COMP_WEIGHT})")
 
     mus: dict[str, float] = {}
     for team in WC48:
