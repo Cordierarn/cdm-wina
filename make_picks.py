@@ -297,6 +297,20 @@ def main() -> None:
         "combos": combos,
     }
     (DATA_DIR / "picks.json").write_text(json.dumps(out, indent=1, ensure_ascii=False), encoding="utf-8")
+
+    # Snapshot horodate immuable des value bets, pour analyse CLV/ROI a posteriori.
+    # picks.json est ecrase a chaque run ; ce snapshot fige la cote prise au moment
+    # de la generation. Comparer plus tard a closing_history.jsonl (cote de cloture).
+    snap_dir = DATA_DIR / "snapshots"
+    snap_dir.mkdir(exist_ok=True)
+    stamp = time.strftime("%Y%m%d_%H%M", time.localtime(out["generated_at"]))
+    snapshot = [{"ts": out["generated_at"], "match": p["match"], "marche": p["marche"],
+                 "selection": p["selection_name"], "cote": p["cote"], "proba": p["proba"],
+                 "ev": p["ev"], "ref": p["ref"], "kickoff": p["kickoff"]}
+                for p in value_bets]
+    (snap_dir / f"picks_{stamp}.json").write_text(
+        json.dumps(snapshot, indent=1, ensure_ascii=False), encoding="utf-8")
+
     n_pin = sum(1 for p in value_bets if p["ref"] == "pinnacle")
     print(f"OK: {matched} matchs, {n_priced} marches prices ({len(pin_index)} matchs avec ref Pinnacle), "
           f"{len(value_bets)} value bets dont {n_pin} vs Pinnacle -> data/picks.json")

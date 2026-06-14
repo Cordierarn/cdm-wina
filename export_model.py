@@ -28,14 +28,33 @@ LAMBDA3 = 0.0   # Bivariate Poisson : covariance buts domicile/extérieur
 PI_ZERO = 0.0   # Zero-Inflated Poisson : masse structurelle sur le 0-0
 MAX_GOALS = 10
 
+# Avantage des nations hôtes (CDM 2026 : USA, Mexique, Canada jouent chez eux).
+# La CDM est sur terrain neutre pour 45 equipes, sauf les 3 hotes. Coef log
+# applique au lambda de l'hote (+0,27 -> ~1,31x plus susceptible de marquer,
+# conforme au "home team ~1,35x" type EPL) et une legere baisse sur l'adversaire
+# (-0,10) pour l'effet defensif/foule. Net ~0,37 sur l'ecart, dans la fourchette
+# litterature (Albert & Koning ; Dixon-Coles 1997). Prudent car selection, pas club.
+HOST_NATIONS = {"United States", "Mexico", "Canada"}
+HOST_ATK_BONUS = 0.27   # boost offensif de l'hote
+HOST_DEF_BONUS = 0.10   # reduction du lambda adverse
 
-def match_probs(s_home: float, s_away: float) -> dict:
+
+def match_probs(s_home: float, s_away: float,
+                home_team: str = "", away_team: str = "") -> dict:
     import math
     from pricing import score_matrix as _score_matrix
 
     diff = s_home - s_away
     raw_lh = BASE_LAMBDA * math.exp(SPREAD * diff)
     raw_la = BASE_LAMBDA * math.exp(-SPREAD * diff)
+    # Avantage hote : booste le lambda de l'equipe qui joue chez elle et reduit
+    # celui de l'adversaire (symetrique), quel que soit le cote nominal.
+    if home_team in HOST_NATIONS and away_team not in HOST_NATIONS:
+        raw_lh *= math.exp(HOST_ATK_BONUS)
+        raw_la *= math.exp(-HOST_DEF_BONUS)
+    elif away_team in HOST_NATIONS and home_team not in HOST_NATIONS:
+        raw_la *= math.exp(HOST_ATK_BONUS)
+        raw_lh *= math.exp(-HOST_DEF_BONUS)
     lh = soft_cap_lambda(raw_lh)
     la = soft_cap_lambda(raw_la)
 
@@ -85,7 +104,8 @@ def main() -> None:
         print(f"modele: rho={RHO:.3f}, lambda3={LAMBDA3:.3f} (BVP), pi_zero={PI_ZERO:.4f} (ZIP)")
     matches = []
     for m in generate_group_stage_matches():
-        probs = match_probs(strengths.get(m.home, 0.2), strengths.get(m.away, 0.2))
+        probs = match_probs(strengths.get(m.home, 0.2), strengths.get(m.away, 0.2),
+                            home_team=m.home, away_team=m.away)
         matches.append({
             "matchday": m.matchday,
             "date": m.date,

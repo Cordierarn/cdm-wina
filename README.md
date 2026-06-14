@@ -77,6 +77,8 @@ Pour un match entre forces `s_home` et `s_away` (0–1) :
 
 Les buts de chaque équipe suivent une loi de Poisson, corrigée par le **tau de Dixon-Coles (1997)** sur les scores bas — le Poisson indépendant sous-estime les nuls 0-0/1-1. Le paramètre `rho` est ajusté par MLE sur les mêmes 1 941 matchs internationaux que la calibration (rho ≈ −0,105 : nuls boostés). Résultat : **matrice de probabilités de scores** 11×11 (0 à 10 buts), renormalisée. Tous les marchés s'en déduisent par sommation :
 
+**Avantage des nations hôtes** — la CDM 2026 est sur terrain neutre pour 45 équipes, mais **USA, Mexique et Canada jouent chez eux**. Quand un hôte affronte une non-hôte, son λ est boosté (`HOST_ATK_BONUS = 0,27` → ~1,31× plus susceptible de marquer) et celui de l'adversaire réduit (`HOST_DEF_BONUS = 0,10`), net ~0,37 log sur l'écart — dans la fourchette de la littérature (Albert & Koning ; Dixon-Coles 1997). Réglable dans `export_model.py`.
+
 | Marché Winamax | Calcul |
 |---|---|
 | Résultat (1N2) | P(h>a), P(h=a), P(h<a) |
@@ -193,9 +195,20 @@ Page web statique (`dashboard/index.html`, zéro dépendance) servie par `python
 - **📒 Suivi** — paris suivis (localStorage) : gagné/perdu, profit, ROI, courbe de bankroll ;
 - **🏆 Équipes** — classement des forces des 48 équipes.
 
+## Ingénierie
+
+- **Tests** : `python test_pricing.py` — 19 tests sur le cœur financier (`pricing.py`) : conservation de la masse de probas, `soft_cap_lambda`, `dc_tau`, `price_bet` sur chaque marché (1N2, double chance, BTTS, totaux + push lignes entières, totaux équipe, score exact « Autre », handicap), `blend_with_market`, `pinnacle_probs`.
+- **Dépendances** : `requirements.txt` (le repo lui-même) ; `export_model.py` tourne dans le venv du repo ScoutFootball pour le calendrier.
+- **Config** : copier `config.example.json` → `config.json` (gitignoré) pour les clés API et les chemins machine.
+- **Snapshots CLV** : chaque `make_picks.py` fige les value bets horodatés dans `data/snapshots/picks_AAAAMMJJ_HHMM.json` (cote prise immuable) → à croiser plus tard avec `closing_history.jsonl` pour mesurer le CLV.
+
 ## Installation
 
 Prérequis : Windows (curl.exe inclus), Python 3.12+, [uv](https://github.com/astral-sh/uv), Git.
+
+```powershell
+pip install -r requirements.txt   # deps du repo (pandas, pyarrow, numpy, oddsharvester)
+```
 
 ```powershell
 # 1. Ce repo

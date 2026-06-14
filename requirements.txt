@@ -1,0 +1,14 @@
+# Dependances du repo cdm-wina (hors export_model.py qui tourne dans le venv
+# du repo ScoutFootball pour le calendrier des 72 matchs).
+#
+#   pip install -r requirements.txt
+#
+# make_picks.py / pricing.py / les scrapers Winamax-Pinnacle n'utilisent que la
+# stdlib + curl.exe (Windows). Les deps ci-dessous servent a :
+#   - build_strengths.py / backtest.py : forces Glicko-2 + backtest (parquet)
+#   - fetch_ou_oddsharvester.py         : cotes Over/Under historiques
+
+pandas>=2.0
+pyarrow>=14.0
+numpy>=1.24
+oddsharvester>=0.3.0   # scraping O/U OddsPortal (install: git+https://github.com/jordantete/OddsHarvester.git)

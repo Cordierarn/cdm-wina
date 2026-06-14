@@ -1,0 +1,10 @@
+{
+  "_comment": "Copier en config.json (gitignore) et remplir. Cles API + chemins machine.",
+  "odds_api_key": "VOTRE_CLE_THE_ODDS_API",
+  "api_football_key": "VOTRE_CLE_API_FOOTBALL_OPTIONNELLE",
+  "paths": {
+    "scoutfootball_repo": "C:/Users/<vous>/ScoutFootball_for_World_Cup",
+    "scoutfootball_python": "C:/Users/<vous>/ScoutFootball_for_World_Cup/.venv/Scripts/python.exe",
+    "uv_exe": "uv"
+  }
+}
