@@ -68,31 +68,21 @@ FLAGS = {
 }
 
 # ---------------------------------------------------------------------------
-# Kickoff schedule (Unix timestamps UTC)
+# Kickoff schedule — chargé depuis data/schedule.json (72 matchs, mis à jour
+# automatiquement par fetch_schedule() ou l'ESPN scraper).
 # ---------------------------------------------------------------------------
-KICKOFFS = {
-    ("Mexico", "South Africa"): 1781204400,
-    ("South Korea", "Czech Republic"): 1781204400,
-    ("Canada", "Bosnia and Herzegovina"): 1781290800,
-    ("United States", "Paraguay"): 1781290800,
-    ("Qatar", "Switzerland"): 1781377200,
-    ("Brazil", "Morocco"): 1781377200,
-    ("Haiti", "Scotland"): 1781463600,
-    ("Australia", "Turkey"): 1781463600,
-    ("Germany", "Curacao"): 1781550000,
-    ("Ivory Coast", "Ecuador"): 1781550000,
-    ("Netherlands", "Japan"): 1781636400,
-    ("Sweden", "Tunisia"): 1781636400,
-    ("Spain", "Cape Verde"): 1781722800,
-    ("Belgium", "Egypt"): 1781722800,
-    ("Saudi Arabia", "Uruguay"): 1781809200,
-    ("Iran", "New Zealand"): 1781809200,
-    ("France", "Senegal"): 1781895600,
-    ("Iraq", "Norway"): 1781895600,
-    ("Argentina", "Algeria"): 1781982000,
-    ("Austria", "Jordan"): 1781982000,
-    # Matchday 2 (placeholder — will be filled from live data)
-}
+def _load_kickoffs() -> dict[tuple[str, str], int]:
+    path = Path("data/schedule.json")
+    if not path.exists():
+        return {}
+    try:
+        data = json.loads(path.read_text())
+        return {(m["home"], m["away"]): m["kickoff"]
+                for m in data if m.get("kickoff")}
+    except Exception:
+        return {}
+
+KICKOFFS = _load_kickoffs()
 
 # ---------------------------------------------------------------------------
 # Résultats connus
