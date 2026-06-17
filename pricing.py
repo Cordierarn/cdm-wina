@@ -13,6 +13,7 @@ from pathlib import Path
 
 DATA_DIR = Path(__file__).parent / "data"
 BACKTEST_FILE = DATA_DIR / "backtest.json"
+CALIBRATION_FILE = DATA_DIR / "calibration.json"
 
 MODEL_WEIGHT_FALLBACK = 0.40
 MODEL_WEIGHTS = {"1n2": MODEL_WEIGHT_FALLBACK, "totals": MODEL_WEIGHT_FALLBACK,
@@ -70,6 +71,38 @@ def market_weight_key(marche_norm: str) -> str:
     if marche_norm == "nombre de buts" or marche_norm.startswith("nombre de buts de "):
         return "totals"
     return "default"
+
+
+_CALIBRATION_CACHE: dict | None = None
+
+
+def load_calibration(cal_file: Path | None = None) -> dict:
+    """Charge les paramètres de calibration (temperature + tournament boosts)."""
+    global _CALIBRATION_CACHE
+    if cal_file is None and _CALIBRATION_CACHE is not None:
+        return _CALIBRATION_CACHE
+    path = cal_file or CALIBRATION_FILE
+    if not path.exists():
+        return {}
+    try:
+        result = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+    if cal_file is None:
+        _CALIBRATION_CACHE = result
+    return result
+
+
+def temperature_scale_1x2(p1: float, px: float, p2: float,
+                           T: float = 1.0) -> tuple[float, float, float]:
+    """Temperature scaling pour la calibration 1X2 (réduit la confiance si T>1)."""
+    if abs(T - 1.0) < 1e-6:
+        return p1, px, p2
+    logs = [math.log(max(p, 1e-15)) / T for p in (p1, px, p2)]
+    mx = max(logs)
+    exps = [math.exp(l - mx) for l in logs]
+    s = sum(exps)
+    return tuple(e / s for e in exps)  # type: ignore[return-value]
 
 
 def load_model_weights(backtest_file: Path | None = None) -> dict[str, float]:
@@ -200,9 +233,13 @@ def price_bet(marche: str, issues: list[dict], mat, home_fr: str, away_fr: str):
     out = []
 
     if t == "resultat" and len(issues) == 3:
-        return [(p_sum(mat, lambda h, a: h > a), 0.0),
-                (p_sum(mat, lambda h, a: h == a), 0.0),
-                (p_sum(mat, lambda h, a: h < a), 0.0)]
+        cal = load_calibration()
+        T = cal.get("temperature", 1.0)
+        rp1, rpx, rp2 = (p_sum(mat, lambda h, a: h > a),
+                         p_sum(mat, lambda h, a: h == a),
+                         p_sum(mat, lambda h, a: h < a))
+        rp1, rpx, rp2 = temperature_scale_1x2(rp1, rpx, rp2, T)
+        return [(rp1, 0.0), (rpx, 0.0), (rp2, 0.0)]
 
     if t == "double chance" and len(issues) == 3:
         return [(p_sum(mat, lambda h, a: h >= a), 0.0),
