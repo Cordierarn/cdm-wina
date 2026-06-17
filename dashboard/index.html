@@ -592,12 +592,16 @@ function renderMPP() {
 
   });
 
-  // Group by day
+  // Group by day — key = YYYY-MM-DD (sortable), label = texte FR
   const byDay = {};
+  const dayLabel = {};
   MPP_LIST.forEach(m => {
     const dt = new Date(m.kickoff * 1000);
-    const key = dt.toLocaleDateString('fr-FR', {weekday:'long', day:'numeric', month:'long'});
-    if (!byDay[key]) byDay[key] = [];
+    const key = dt.toISOString().slice(0, 10); // "2026-06-11"
+    if (!byDay[key]) {
+      byDay[key] = [];
+      dayLabel[key] = dt.toLocaleDateString('fr-FR', {weekday:'long', day:'numeric', month:'long'});
+    }
     byDay[key].push(m);
   });
 
@@ -628,7 +632,9 @@ function renderMPP() {
     Brier 1X2 = 0.584 (Glicko-2 complet) · Précision pick#1 : <strong style="color:var(--gold)">4/20 (20%)</strong> · top-3 : <strong style="color:var(--blue)">7/20 (35%)</strong>.
   </div>`;
 
-  Object.entries(byDay).forEach(([day, matches]) => {
+  Object.keys(byDay).sort().forEach(key => {
+  const day = dayLabel[key];
+  const matches = byDay[key];
     // Filter
     const filtered = matches.filter(m => {
       const actual = MPP_PLAYED[m.home+'|'+m.away];
