@@ -25,7 +25,7 @@ ALIASES = {
 
 
 def fetch(url: str) -> dict:
-    result = subprocess.run(["curl.exe", "-s", url], capture_output=True, timeout=60)
+    result = subprocess.run(["curl", "-s", url], capture_output=True, timeout=60)
     return json.loads(result.stdout.decode("utf-8"))
 
 

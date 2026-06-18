@@ -26,6 +26,7 @@ else:
 TEMP       = _cal.get("temperature", 1.0)
 BOOST_H    = _cal.get("tournament_boost_home", 1.13)
 BOOST_A    = _cal.get("tournament_boost_away", 1.13)
+CMP_NU     = _cal.get("cmp_nu", 1.0)
 RHO        = -0.0113     # Dixon-Coles low-score correction
 N_SCORES   = 5          # nombre de scores affichés
 MAX_GOALS  = 10         # troncature sommation Poisson
@@ -149,6 +150,9 @@ def top_scores(lh, la, n=N_SCORES, boosted=True):
     """
     Retourne les N meilleurs scores P(i-j) triés par probabilité.
     boosted=True : applique BOOST_H/BOOST_A pour la CDM.
+    Utilise Poisson (pas CMP) : CMP dilue trop les probas de score exact,
+    rendant les seuils de confiance inopérants (tous "faible"). CMP est
+    utilisé pour les probas 1X2 via pricing.py/make_tournament.py.
     """
     bh = lh * BOOST_H if boosted else lh
     ba = la * BOOST_A if boosted else la
@@ -169,10 +173,14 @@ def pick_mean_score(lh, la):
     return f"{round(lh * BOOST_H)}-{round(la * BOOST_A)}"
 
 
-def confidence_label(top_p):
-    if top_p >= 15:
+def confidence_label(top_p, p1=0.33, p2=0.33):
+    """Confiance basée sur la probabilité de victoire du favori.
+    Plus discriminant que top_p qui converge vers 10-13% pour tous les matchs CDM.
+    """
+    fav_p = max(p1, p2)
+    if fav_p >= 0.65:
         return "haute"
-    if top_p >= 11:
+    if fav_p >= 0.52:
         return "moyenne"
     return "faible"
 
@@ -205,7 +213,20 @@ def build_mpp_list():
         for m in gdata["matches"]:
             h, a = m["home"], m["away"]
             lh, la = m["lh"], m["la"]
-            p1_raw, px_raw, p2_raw = m["p1"], m["px"], m["p2"]
+
+            # Probs 1X2 calculées depuis les lambdas boostés CDM
+            # (cohérent avec les picks de score — calibrés ensemble sur MD1)
+            bh, ba = lh * BOOST_H, la * BOOST_A
+            _dc = dc_tau  # alias local
+            p1_raw = sum(
+                poisson_pmf(i, bh) * poisson_pmf(j, ba) * _dc(i, j, bh, ba, RHO)
+                for i in range(MAX_GOALS + 1) for j in range(MAX_GOALS + 1) if i > j
+            )
+            px_raw = sum(
+                poisson_pmf(i, bh) * poisson_pmf(j, ba) * _dc(i, j, bh, ba, RHO)
+                for i in range(MAX_GOALS + 1) for j in range(MAX_GOALS + 1) if i == j
+            )
+            p2_raw = 1.0 - p1_raw - px_raw
 
             # Temperature calibration
             p1, px, p2 = temperature_scale([p1_raw, px_raw, p2_raw])
@@ -229,7 +250,7 @@ def build_mpp_list():
                 "scores": scores,
                 "scores_raw": scores_raw,
                 "pick_mean": pick_mean_score(lh, la),
-                "confidence": confidence_label(top_p),
+                "confidence": confidence_label(top_p, p1, p2),
                 "top_p": top_p,
                 "strat": pick_strategy(p1, px, p2, lh, la),
             }

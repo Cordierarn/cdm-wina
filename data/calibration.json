@@ -3,8 +3,9 @@
   "tournament_boost_home": 1.3775,
   "tournament_boost_away": 0.8278,
   "tournament_boost_global": 1.1345,
+  "cmp_nu": 0.85,
   "n_samples": 20,
-  "brier_raw": 0.5842,
-  "brier_calibrated": 0.583,
-  "note": "Fitted on CDM 2026 group stage matchday-1 (20 matches) — Glicko-2 strengths v2"
+  "brier_raw": 0.5677,
+  "brier_calibrated": 0.5677,
+  "note": "Fitted on CDM 2026 group stage matchday-1 (20 matches) — Glicko-2 strengths v2. Fix: probs 1X2 maintenant calculées depuis lambdas boostés (cohérence). CMP nu=0.85 dans pricing.py (OOS validé sur 1591 matchs intl, non utilisé dans make_tournament car lambdas calibrés Poisson)."
 }
