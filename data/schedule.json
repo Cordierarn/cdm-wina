@@ -13,8 +13,8 @@
   },
   {
     "group": "A",
-    "home": "Mexico",
-    "away": "Czech Republic",
+    "home": "Czech Republic",
+    "away": "Mexico",
     "kickoff": 1782349200
   },
   {
@@ -25,9 +25,9 @@
   },
   {
     "group": "A",
-    "home": "South Africa",
-    "away": "Czech Republic",
-    "kickoff": 1781830800
+    "home": "Czech Republic",
+    "away": "South Africa",
+    "kickoff": 1781798400
   },
   {
     "group": "A",
@@ -49,8 +49,8 @@
   },
   {
     "group": "B",
-    "home": "Canada",
-    "away": "Switzerland",
+    "home": "Switzerland",
+    "away": "Canada",
     "kickoff": 1782327600
   },
   {
@@ -61,9 +61,9 @@
   },
   {
     "group": "B",
-    "home": "Bosnia and Herzegovina",
-    "away": "Switzerland",
-    "kickoff": 1781820000
+    "home": "Switzerland",
+    "away": "Bosnia and Herzegovina",
+    "kickoff": 1781809200
   },
   {
     "group": "B",
@@ -81,12 +81,12 @@
     "group": "C",
     "home": "Brazil",
     "away": "Haiti",
-    "kickoff": 1781915400
+    "kickoff": 1781917200
   },
   {
     "group": "C",
-    "home": "Brazil",
-    "away": "Scotland",
+    "home": "Scotland",
+    "away": "Brazil",
     "kickoff": 1782338400
   },
   {
@@ -97,9 +97,9 @@
   },
   {
     "group": "C",
-    "home": "Morocco",
-    "away": "Scotland",
-    "kickoff": 1781915400
+    "home": "Scotland",
+    "away": "Morocco",
+    "kickoff": 1781906400
   },
   {
     "group": "C",
@@ -121,8 +121,8 @@
   },
   {
     "group": "D",
-    "home": "United States",
-    "away": "Turkey",
+    "home": "Turkey",
+    "away": "United States",
     "kickoff": 1782439200
   },
   {
@@ -133,9 +133,9 @@
   },
   {
     "group": "D",
-    "home": "Paraguay",
-    "away": "Turkey",
-    "kickoff": 1781895600
+    "home": "Turkey",
+    "away": "Paraguay",
+    "kickoff": 1781928000
   },
   {
     "group": "D",
@@ -157,8 +157,8 @@
   },
   {
     "group": "E",
-    "home": "Germany",
-    "away": "Ecuador",
+    "home": "Ecuador",
+    "away": "Germany",
     "kickoff": 1782417600
   },
   {
@@ -169,9 +169,9 @@
   },
   {
     "group": "E",
-    "home": "Curacao",
-    "away": "Ecuador",
-    "kickoff": 1781985600
+    "home": "Ecuador",
+    "away": "Curacao",
+    "kickoff": 1782000000
   },
   {
     "group": "E",
@@ -193,8 +193,8 @@
   },
   {
     "group": "F",
-    "home": "Netherlands",
-    "away": "Tunisia",
+    "home": "Tunisia",
+    "away": "Netherlands",
     "kickoff": 1782428400
   },
   {
@@ -205,9 +205,9 @@
   },
   {
     "group": "F",
-    "home": "Japan",
-    "away": "Tunisia",
-    "kickoff": 1781974800
+    "home": "Tunisia",
+    "away": "Japan",
+    "kickoff": 1782014400
   },
   {
     "group": "F",
@@ -229,8 +229,8 @@
   },
   {
     "group": "G",
-    "home": "Belgium",
-    "away": "New Zealand",
+    "home": "New Zealand",
+    "away": "Belgium",
     "kickoff": 1782529200
   },
   {
@@ -241,9 +241,9 @@
   },
   {
     "group": "G",
-    "home": "Egypt",
-    "away": "New Zealand",
-    "kickoff": 1782068400
+    "home": "New Zealand",
+    "away": "Egypt",
+    "kickoff": 1782090000
   },
   {
     "group": "G",
@@ -265,8 +265,8 @@
   },
   {
     "group": "H",
-    "home": "Spain",
-    "away": "Uruguay",
+    "home": "Uruguay",
+    "away": "Spain",
     "kickoff": 1782518400
   },
   {
@@ -277,9 +277,9 @@
   },
   {
     "group": "H",
-    "home": "Cape Verde",
-    "away": "Uruguay",
-    "kickoff": 1782057600
+    "home": "Uruguay",
+    "away": "Cape Verde",
+    "kickoff": 1782079200
   },
   {
     "group": "H",
@@ -301,8 +301,8 @@
   },
   {
     "group": "I",
-    "home": "France",
-    "away": "Norway",
+    "home": "Norway",
+    "away": "France",
     "kickoff": 1782500400
   },
   {
@@ -313,9 +313,9 @@
   },
   {
     "group": "I",
-    "home": "Senegal",
-    "away": "Norway",
-    "kickoff": 1782162000
+    "home": "Norway",
+    "away": "Senegal",
+    "kickoff": 1782172800
   },
   {
     "group": "I",
@@ -337,8 +337,8 @@
   },
   {
     "group": "J",
-    "home": "Argentina",
-    "away": "Jordan",
+    "home": "Jordan",
+    "away": "Argentina",
     "kickoff": 1782612000
   },
   {
@@ -349,9 +349,9 @@
   },
   {
     "group": "J",
-    "home": "Algeria",
-    "away": "Jordan",
-    "kickoff": 1782147600
+    "home": "Jordan",
+    "away": "Algeria",
+    "kickoff": 1782183600
   },
   {
     "group": "J",
@@ -363,7 +363,7 @@
     "group": "K",
     "home": "Portugal",
     "away": "DR Congo",
-    "kickoff": 1781748000
+    "kickoff": 1781715600
   },
   {
     "group": "K",
@@ -373,21 +373,21 @@
   },
   {
     "group": "K",
-    "home": "Portugal",
-    "away": "Colombia",
-    "kickoff": 1782838800
+    "home": "Colombia",
+    "away": "Portugal",
+    "kickoff": 1782603000
   },
   {
     "group": "K",
     "home": "DR Congo",
     "away": "Uzbekistan",
-    "kickoff": 1782838800
+    "kickoff": 1782603000
   },
   {
     "group": "K",
-    "home": "DR Congo",
-    "away": "Colombia",
-    "kickoff": 1782234000
+    "home": "Colombia",
+    "away": "DR Congo",
+    "kickoff": 1782266400
   },
   {
     "group": "K",
@@ -409,8 +409,8 @@
   },
   {
     "group": "L",
-    "home": "England",
-    "away": "Panama",
+    "home": "Panama",
+    "away": "England",
     "kickoff": 1782594000
   },
   {
@@ -421,9 +421,9 @@
   },
   {
     "group": "L",
-    "home": "Croatia",
-    "away": "Panama",
-    "kickoff": 1782244800
+    "home": "Panama",
+    "away": "Croatia",
+    "kickoff": 1782255600
   },
   {
     "group": "L",

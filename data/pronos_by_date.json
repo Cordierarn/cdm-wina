@@ -119,40 +119,40 @@
     "pick_mean": "2-1",
     "confidence": "moyenne",
     "top_p": 10.7,
-    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
+    "strat": "Avantage domicile — viser 1-0 ou 2-1",
     "kickoff": 1781830800
   },
   {
     "group": "A",
-    "home": "Mexique",
-    "away": "Rép. Tchèque",
-    "flag_h": "🇲🇽",
-    "flag_a": "🇨🇿",
-    "eg_h": 1.8,
-    "eg_a": 1.02,
-    "p1": 0.548,
-    "px": 0.237,
-    "p2": 0.215,
+    "home": "Rép. Tchèque",
+    "away": "Mexique",
+    "flag_h": "🇨🇿",
+    "flag_a": "🇲🇽",
+    "eg_h": 1.69,
+    "eg_a": 1.08,
+    "p1": 0.508,
+    "px": 0.247,
+    "p2": 0.245,
     "scores": [
       {
         "score": "1-1",
-        "p": 11.0
+        "p": 11.5
       },
       {
         "score": "1-0",
-        "p": 10.6
+        "p": 10.4
       },
       {
         "score": "2-1",
-        "p": 9.9
-      },
-      {
-        "score": "2-0",
         "p": 9.7
       },
       {
-        "score": "0-0",
-        "p": 6.1
+        "score": "2-0",
+        "p": 8.9
+      },
+      {
+        "score": "0-1",
+        "p": 6.6
       }
     ],
     "scores_raw": [
@@ -161,15 +161,15 @@
         "p": 12.9
       },
       {
-        "score": "1-0",
+        "score": "0-1",
         "p": 10.2
       },
       {
-        "score": "0-1",
+        "score": "1-0",
         "p": 9.6
       },
       {
-        "score": "2-1",
+        "score": "1-2",
         "p": 8.3
       },
       {
@@ -178,8 +178,8 @@
       }
     ],
     "pick_mean": "2-1",
-    "confidence": "moyenne",
-    "top_p": 11.0,
+    "confidence": "faible",
+    "top_p": 11.5,
     "strat": "Avantage modéré — prendre le favori à domicile",
     "kickoff": 1782349200
   },
@@ -246,35 +246,35 @@
   },
   {
     "group": "A",
-    "home": "Afrique du Sud",
-    "away": "Rép. Tchèque",
-    "flag_h": "🇿🇦",
-    "flag_a": "🇨🇿",
-    "eg_h": 1.35,
-    "eg_a": 1.37,
-    "p1": 0.365,
-    "px": 0.263,
-    "p2": 0.372,
+    "home": "Rép. Tchèque",
+    "away": "Afrique du Sud",
+    "flag_h": "🇨🇿",
+    "flag_a": "🇿🇦",
+    "eg_h": 2.27,
+    "eg_a": 0.81,
+    "p1": 0.69,
+    "px": 0.186,
+    "p2": 0.123,
     "scores": [
       {
-        "score": "1-1",
-        "p": 12.3
-      },
-      {
-        "score": "0-1",
-        "p": 8.9
+        "score": "2-0",
+        "p": 11.8
       },
       {
         "score": "1-0",
-        "p": 8.8
-      },
-      {
-        "score": "1-2",
-        "p": 8.3
+        "p": 10.3
       },
       {
         "score": "2-1",
-        "p": 8.2
+        "p": 9.6
+      },
+      {
+        "score": "3-0",
+        "p": 9.0
+      },
+      {
+        "score": "1-1",
+        "p": 8.5
       }
     ],
     "scores_raw": [
@@ -283,15 +283,15 @@
         "p": 11.8
       },
       {
-        "score": "0-1",
+        "score": "1-0",
         "p": 11.8
       },
       {
-        "score": "0-2",
+        "score": "2-0",
         "p": 9.8
       },
       {
-        "score": "1-2",
+        "score": "2-1",
         "p": 9.6
       },
       {
@@ -299,11 +299,11 @@
         "p": 7.3
       }
     ],
-    "pick_mean": "1-1",
-    "confidence": "faible",
-    "top_p": 12.3,
-    "strat": "Match équilibré — nul très probable",
-    "kickoff": 1781830800
+    "pick_mean": "2-1",
+    "confidence": "haute",
+    "top_p": 11.8,
+    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
+    "kickoff": 1781798400
   },
   {
     "group": "A",
@@ -492,35 +492,35 @@
   },
   {
     "group": "B",
-    "home": "Canada",
-    "away": "Suisse",
-    "flag_h": "🇨🇦",
-    "flag_a": "🇨🇭",
-    "eg_h": 1.63,
-    "eg_a": 1.13,
-    "p1": 0.48,
-    "px": 0.252,
-    "p2": 0.267,
+    "home": "Suisse",
+    "away": "Canada",
+    "flag_h": "🇨🇭",
+    "flag_a": "🇨🇦",
+    "eg_h": 1.89,
+    "eg_a": 0.98,
+    "p1": 0.576,
+    "px": 0.229,
+    "p2": 0.195,
     "scores": [
       {
-        "score": "1-1",
-        "p": 11.8
+        "score": "1-0",
+        "p": 10.6
       },
       {
-        "score": "1-0",
+        "score": "1-1",
+        "p": 10.6
+      },
+      {
+        "score": "2-0",
         "p": 10.2
       },
       {
         "score": "2-1",
-        "p": 9.5
+        "p": 9.9
       },
       {
-        "score": "2-0",
-        "p": 8.4
-      },
-      {
-        "score": "0-1",
-        "p": 7.0
+        "score": "3-0",
+        "p": 6.4
       }
     ],
     "scores_raw": [
@@ -529,15 +529,15 @@
         "p": 12.8
       },
       {
-        "score": "0-1",
+        "score": "1-0",
         "p": 10.6
       },
       {
-        "score": "1-0",
+        "score": "0-1",
         "p": 9.1
       },
       {
-        "score": "1-2",
+        "score": "2-1",
         "p": 8.6
       },
       {
@@ -546,9 +546,9 @@
       }
     ],
     "pick_mean": "2-1",
-    "confidence": "faible",
-    "top_p": 11.8,
-    "strat": "Avantage modéré — prendre le favori à domicile",
+    "confidence": "moyenne",
+    "top_p": 10.6,
+    "strat": "Avantage domicile — viser 1-0 ou 2-1",
     "kickoff": 1782327600
   },
   {
@@ -614,40 +614,40 @@
   },
   {
     "group": "B",
-    "home": "Bosnie-Herz.",
-    "away": "Suisse",
-    "flag_h": "🇧🇦",
-    "flag_a": "🇨🇭",
-    "eg_h": 1.24,
-    "eg_a": 1.49,
-    "p1": 0.315,
-    "px": 0.26,
-    "p2": 0.425,
+    "home": "Suisse",
+    "away": "Bosnie-Herz.",
+    "flag_h": "🇨🇭",
+    "flag_a": "🇧🇦",
+    "eg_h": 2.48,
+    "eg_a": 0.75,
+    "p1": 0.74,
+    "px": 0.164,
+    "p2": 0.097,
     "scores": [
       {
-        "score": "1-1",
+        "score": "2-0",
         "p": 12.2
       },
       {
-        "score": "0-1",
-        "p": 9.6
-      },
-      {
-        "score": "1-2",
-        "p": 9.0
+        "score": "3-0",
+        "p": 10.1
       },
       {
         "score": "1-0",
-        "p": 8.0
+        "p": 9.8
       },
       {
         "score": "2-1",
+        "p": 9.1
+      },
+      {
+        "score": "3-1",
         "p": 7.5
       }
     ],
     "scores_raw": [
       {
-        "score": "0-1",
+        "score": "1-0",
         "p": 12.0
       },
       {
@@ -655,11 +655,11 @@
         "p": 11.0
       },
       {
-        "score": "0-2",
+        "score": "2-0",
         "p": 10.9
       },
       {
-        "score": "1-2",
+        "score": "2-1",
         "p": 9.8
       },
       {
@@ -667,11 +667,11 @@
         "p": 6.8
       }
     ],
-    "pick_mean": "1-1",
-    "confidence": "faible",
+    "pick_mean": "2-1",
+    "confidence": "haute",
     "top_p": 12.2,
-    "strat": "Avantage modéré — prendre le favori à domicile",
-    "kickoff": 1781820000
+    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
+    "kickoff": 1781809200
   },
   {
     "group": "B",
@@ -856,44 +856,44 @@
     "confidence": "haute",
     "top_p": 12.5,
     "strat": "Favori clair domicile — viser 2-0 ou 2-1",
-    "kickoff": 1781915400
+    "kickoff": 1781917200
   },
   {
     "group": "C",
-    "home": "Brésil",
-    "away": "Écosse",
-    "flag_h": "🇧🇷",
-    "flag_a": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
-    "eg_h": 2.33,
-    "eg_a": 0.79,
-    "p1": 0.706,
-    "px": 0.18,
-    "p2": 0.115,
+    "home": "Écosse",
+    "away": "Brésil",
+    "flag_h": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+    "flag_a": "🇧🇷",
+    "eg_h": 1.31,
+    "eg_a": 1.4,
+    "p1": 0.349,
+    "px": 0.263,
+    "p2": 0.389,
     "scores": [
       {
-        "score": "2-0",
-        "p": 12.0
+        "score": "1-1",
+        "p": 12.3
+      },
+      {
+        "score": "0-1",
+        "p": 9.2
       },
       {
         "score": "1-0",
-        "p": 10.2
+        "p": 8.6
+      },
+      {
+        "score": "1-2",
+        "p": 8.5
       },
       {
         "score": "2-1",
-        "p": 9.5
-      },
-      {
-        "score": "3-0",
-        "p": 9.3
-      },
-      {
-        "score": "1-1",
-        "p": 8.2
+        "p": 8.0
       }
     ],
     "scores_raw": [
       {
-        "score": "1-0",
+        "score": "0-1",
         "p": 11.9
       },
       {
@@ -901,11 +901,11 @@
         "p": 11.6
       },
       {
-        "score": "2-0",
+        "score": "0-2",
         "p": 10.2
       },
       {
-        "score": "2-1",
+        "score": "1-2",
         "p": 9.7
       },
       {
@@ -913,10 +913,10 @@
         "p": 7.3
       }
     ],
-    "pick_mean": "2-1",
-    "confidence": "haute",
-    "top_p": 12.0,
-    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
+    "pick_mean": "1-1",
+    "confidence": "faible",
+    "top_p": 12.3,
+    "strat": "Match équilibré — nul très probable",
     "kickoff": 1782338400
   },
   {
@@ -982,35 +982,35 @@
   },
   {
     "group": "C",
-    "home": "Maroc",
-    "away": "Écosse",
-    "flag_h": "🇲🇦",
-    "flag_a": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
-    "eg_h": 2.01,
-    "eg_a": 0.91,
-    "p1": 0.618,
-    "px": 0.215,
-    "p2": 0.167,
+    "home": "Écosse",
+    "away": "Maroc",
+    "flag_h": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+    "flag_a": "🇲🇦",
+    "eg_h": 1.52,
+    "eg_a": 1.21,
+    "p1": 0.438,
+    "px": 0.259,
+    "p2": 0.303,
     "scores": [
       {
-        "score": "2-0",
-        "p": 10.9
+        "score": "1-1",
+        "p": 12.2
       },
       {
         "score": "1-0",
-        "p": 10.7
-      },
-      {
-        "score": "1-1",
-        "p": 10.0
+        "p": 9.8
       },
       {
         "score": "2-1",
-        "p": 9.9
+        "p": 9.1
       },
       {
-        "score": "3-0",
-        "p": 7.3
+        "score": "0-1",
+        "p": 7.8
+      },
+      {
+        "score": "2-0",
+        "p": 7.5
       }
     ],
     "scores_raw": [
@@ -1019,27 +1019,27 @@
         "p": 12.6
       },
       {
-        "score": "1-0",
+        "score": "0-1",
         "p": 11.1
       },
       {
-        "score": "2-1",
+        "score": "1-2",
         "p": 9.1
       },
       {
-        "score": "0-1",
+        "score": "1-0",
         "p": 8.4
       },
       {
-        "score": "2-0",
+        "score": "0-2",
         "p": 8.2
       }
     ],
     "pick_mean": "2-1",
-    "confidence": "moyenne",
-    "top_p": 10.9,
-    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
-    "kickoff": 1781915400
+    "confidence": "faible",
+    "top_p": 12.2,
+    "strat": "Avantage modéré — prendre le favori à domicile",
+    "kickoff": 1781906400
   },
   {
     "group": "C",
@@ -1228,35 +1228,35 @@
   },
   {
     "group": "D",
-    "home": "États-Unis",
-    "away": "Turquie",
-    "flag_h": "🇺🇸",
-    "flag_a": "🇹🇷",
-    "eg_h": 1.47,
-    "eg_a": 1.25,
-    "p1": 0.419,
-    "px": 0.26,
-    "p2": 0.321,
+    "home": "Turquie",
+    "away": "États-Unis",
+    "flag_h": "🇹🇷",
+    "flag_a": "🇺🇸",
+    "eg_h": 2.08,
+    "eg_a": 0.89,
+    "p1": 0.637,
+    "px": 0.208,
+    "p2": 0.155,
     "scores": [
       {
-        "score": "1-1",
-        "p": 12.2
+        "score": "2-0",
+        "p": 11.1
       },
       {
         "score": "1-0",
-        "p": 9.5
+        "p": 10.6
       },
       {
         "score": "2-1",
-        "p": 8.9
+        "p": 9.9
       },
       {
-        "score": "0-1",
-        "p": 8.1
+        "score": "1-1",
+        "p": 9.6
       },
       {
-        "score": "1-2",
-        "p": 7.6
+        "score": "3-0",
+        "p": 7.7
       }
     ],
     "scores_raw": [
@@ -1265,26 +1265,26 @@
         "p": 12.4
       },
       {
-        "score": "0-1",
+        "score": "1-0",
         "p": 11.3
       },
       {
-        "score": "1-2",
+        "score": "2-1",
         "p": 9.2
       },
       {
-        "score": "0-2",
+        "score": "2-0",
         "p": 8.6
       },
       {
-        "score": "1-0",
+        "score": "0-1",
         "p": 8.0
       }
     ],
-    "pick_mean": "1-1",
-    "confidence": "faible",
-    "top_p": 12.2,
-    "strat": "Avantage modéré — prendre le favori à domicile",
+    "pick_mean": "2-1",
+    "confidence": "moyenne",
+    "top_p": 11.1,
+    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
     "kickoff": 1782439200
   },
   {
@@ -1350,48 +1350,48 @@
   },
   {
     "group": "D",
-    "home": "Paraguay",
-    "away": "Turquie",
-    "flag_h": "🇵🇾",
-    "flag_a": "🇹🇷",
-    "eg_h": 1.06,
-    "eg_a": 1.73,
-    "p1": 0.235,
-    "px": 0.244,
-    "p2": 0.521,
+    "home": "Turquie",
+    "away": "Paraguay",
+    "flag_h": "🇹🇷",
+    "flag_a": "🇵🇾",
+    "eg_h": 2.88,
+    "eg_a": 0.64,
+    "p1": 0.816,
+    "px": 0.123,
+    "p2": 0.06,
     "scores": [
       {
-        "score": "1-1",
-        "p": 11.4
+        "score": "2-0",
+        "p": 12.3
       },
       {
-        "score": "0-1",
-        "p": 10.5
+        "score": "3-0",
+        "p": 11.8
       },
       {
-        "score": "1-2",
-        "p": 9.7
-      },
-      {
-        "score": "0-2",
-        "p": 9.2
+        "score": "4-0",
+        "p": 8.5
       },
       {
         "score": "1-0",
-        "p": 6.4
+        "p": 8.5
+      },
+      {
+        "score": "2-1",
+        "p": 7.8
       }
     ],
     "scores_raw": [
       {
-        "score": "0-2",
+        "score": "2-0",
         "p": 12.5
       },
       {
-        "score": "0-1",
+        "score": "1-0",
         "p": 11.9
       },
       {
-        "score": "1-2",
+        "score": "2-1",
         "p": 9.6
       },
       {
@@ -1399,15 +1399,15 @@
         "p": 9.3
       },
       {
-        "score": "0-3",
+        "score": "3-0",
         "p": 8.7
       }
     ],
-    "pick_mean": "1-2",
-    "confidence": "moyenne",
-    "top_p": 11.4,
-    "strat": "Avantage modéré — prendre le favori à domicile",
-    "kickoff": 1781895600
+    "pick_mean": "3-1",
+    "confidence": "haute",
+    "top_p": 12.3,
+    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
+    "kickoff": 1781928000
   },
   {
     "group": "D",
@@ -1591,40 +1591,40 @@
     "pick_mean": "2-1",
     "confidence": "moyenne",
     "top_p": 10.7,
-    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
+    "strat": "Avantage domicile — viser 1-0 ou 2-1",
     "kickoff": 1781985600
   },
   {
     "group": "E",
-    "home": "Allemagne",
-    "away": "Équateur",
-    "flag_h": "🇩🇪",
-    "flag_a": "🇪🇨",
-    "eg_h": 2.19,
-    "eg_a": 0.84,
-    "p1": 0.668,
-    "px": 0.196,
-    "p2": 0.137,
+    "home": "Équateur",
+    "away": "Allemagne",
+    "flag_h": "🇪🇨",
+    "flag_a": "🇩🇪",
+    "eg_h": 1.41,
+    "eg_a": 1.32,
+    "p1": 0.388,
+    "px": 0.262,
+    "p2": 0.349,
     "scores": [
       {
-        "score": "2-0",
-        "p": 11.5
+        "score": "1-1",
+        "p": 12.3
       },
       {
         "score": "1-0",
-        "p": 10.4
+        "p": 9.1
       },
       {
         "score": "2-1",
-        "p": 9.7
+        "p": 8.5
       },
       {
-        "score": "1-1",
-        "p": 9.0
+        "score": "0-1",
+        "p": 8.5
       },
       {
-        "score": "3-0",
-        "p": 8.4
+        "score": "1-2",
+        "p": 8.0
       }
     ],
     "scores_raw": [
@@ -1633,15 +1633,15 @@
         "p": 12.1
       },
       {
-        "score": "1-0",
+        "score": "0-1",
         "p": 11.6
       },
       {
-        "score": "2-1",
+        "score": "1-2",
         "p": 9.5
       },
       {
-        "score": "2-0",
+        "score": "0-2",
         "p": 9.3
       },
       {
@@ -1649,10 +1649,10 @@
         "p": 7.5
       }
     ],
-    "pick_mean": "2-1",
-    "confidence": "haute",
-    "top_p": 11.5,
-    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
+    "pick_mean": "1-1",
+    "confidence": "faible",
+    "top_p": 12.3,
+    "strat": "Match équilibré — nul très probable",
     "kickoff": 1782417600
   },
   {
@@ -1718,52 +1718,52 @@
   },
   {
     "group": "E",
-    "home": "Curaçao",
-    "away": "Équateur",
-    "flag_h": "🇨🇼",
-    "flag_a": "🇪🇨",
-    "eg_h": 1.01,
-    "eg_a": 1.82,
-    "p1": 0.21,
-    "px": 0.235,
-    "p2": 0.555,
+    "home": "Équateur",
+    "away": "Curaçao",
+    "flag_h": "🇪🇨",
+    "flag_a": "🇨🇼",
+    "eg_h": 3.03,
+    "eg_a": 0.6,
+    "p1": 0.839,
+    "px": 0.11,
+    "p2": 0.051,
     "scores": [
       {
-        "score": "1-1",
-        "p": 11.0
+        "score": "3-0",
+        "p": 12.2
       },
       {
-        "score": "0-1",
-        "p": 10.7
+        "score": "2-0",
+        "p": 12.1
       },
       {
-        "score": "1-2",
-        "p": 9.9
+        "score": "4-0",
+        "p": 9.3
       },
       {
-        "score": "0-2",
-        "p": 9.8
+        "score": "1-0",
+        "p": 7.9
       },
       {
-        "score": "0-0",
-        "p": 6.0
+        "score": "3-1",
+        "p": 7.4
       }
     ],
     "scores_raw": [
       {
-        "score": "0-2",
+        "score": "2-0",
         "p": 12.9
       },
       {
-        "score": "0-1",
+        "score": "1-0",
         "p": 11.7
       },
       {
-        "score": "0-3",
+        "score": "3-0",
         "p": 9.5
       },
       {
-        "score": "1-2",
+        "score": "2-1",
         "p": 9.4
       },
       {
@@ -1771,11 +1771,11 @@
         "p": 8.7
       }
     ],
-    "pick_mean": "1-2",
-    "confidence": "moyenne",
-    "top_p": 11.0,
-    "strat": "Favori clair extérieur — viser 0-2 ou 1-2",
-    "kickoff": 1781985600
+    "pick_mean": "3-1",
+    "confidence": "haute",
+    "top_p": 12.2,
+    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
+    "kickoff": 1782000000
   },
   {
     "group": "E",
@@ -1897,7 +1897,7 @@
     "pick_mean": "2-1",
     "confidence": "moyenne",
     "top_p": 10.7,
-    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
+    "strat": "Avantage domicile — viser 1-0 ou 2-1",
     "played": "2-2",
     "kickoff": 1781467200
   },
@@ -1964,48 +1964,48 @@
   },
   {
     "group": "F",
-    "home": "Pays-Bas",
-    "away": "Tunisie",
-    "flag_h": "🇳🇱",
-    "flag_a": "🇹🇳",
-    "eg_h": 2.87,
-    "eg_a": 0.65,
-    "p1": 0.813,
-    "px": 0.125,
-    "p2": 0.062,
+    "home": "Tunisie",
+    "away": "Pays-Bas",
+    "flag_h": "🇹🇳",
+    "flag_a": "🇳🇱",
+    "eg_h": 1.07,
+    "eg_a": 1.72,
+    "p1": 0.239,
+    "px": 0.245,
+    "p2": 0.516,
     "scores": [
       {
-        "score": "2-0",
-        "p": 12.3
+        "score": "1-1",
+        "p": 11.4
       },
       {
-        "score": "3-0",
-        "p": 11.7
+        "score": "0-1",
+        "p": 10.4
+      },
+      {
+        "score": "1-2",
+        "p": 9.7
+      },
+      {
+        "score": "0-2",
+        "p": 9.0
       },
       {
         "score": "1-0",
-        "p": 8.5
-      },
-      {
-        "score": "4-0",
-        "p": 8.4
-      },
-      {
-        "score": "2-1",
-        "p": 7.9
+        "p": 6.4
       }
     ],
     "scores_raw": [
       {
-        "score": "2-0",
+        "score": "0-2",
         "p": 12.4
       },
       {
-        "score": "1-0",
+        "score": "0-1",
         "p": 11.8
       },
       {
-        "score": "2-1",
+        "score": "1-2",
         "p": 9.7
       },
       {
@@ -2013,14 +2013,14 @@
         "p": 9.4
       },
       {
-        "score": "3-0",
+        "score": "0-3",
         "p": 8.6
       }
     ],
-    "pick_mean": "3-1",
-    "confidence": "haute",
-    "top_p": 12.3,
-    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
+    "pick_mean": "1-2",
+    "confidence": "faible",
+    "top_p": 11.4,
+    "strat": "Avantage modéré — prendre le favori à domicile",
     "kickoff": 1782428400
   },
   {
@@ -2086,44 +2086,44 @@
   },
   {
     "group": "F",
-    "home": "Japon",
-    "away": "Tunisie",
-    "flag_h": "🇯🇵",
-    "flag_a": "🇹🇳",
-    "eg_h": 2.64,
-    "eg_a": 0.7,
-    "p1": 0.775,
-    "px": 0.146,
-    "p2": 0.079,
+    "home": "Tunisie",
+    "away": "Japon",
+    "flag_h": "🇹🇳",
+    "flag_a": "🇯🇵",
+    "eg_h": 1.16,
+    "eg_a": 1.59,
+    "p1": 0.279,
+    "px": 0.255,
+    "p2": 0.467,
     "scores": [
       {
-        "score": "2-0",
-        "p": 12.4
+        "score": "1-1",
+        "p": 11.9
       },
       {
-        "score": "3-0",
-        "p": 10.9
+        "score": "0-1",
+        "p": 10.1
+      },
+      {
+        "score": "1-2",
+        "p": 9.4
+      },
+      {
+        "score": "0-2",
+        "p": 8.1
       },
       {
         "score": "1-0",
-        "p": 9.3
-      },
-      {
-        "score": "2-1",
-        "p": 8.6
-      },
-      {
-        "score": "3-1",
-        "p": 7.6
+        "p": 7.3
       }
     ],
     "scores_raw": [
       {
-        "score": "1-0",
+        "score": "0-1",
         "p": 12.0
       },
       {
-        "score": "2-0",
+        "score": "0-2",
         "p": 11.7
       },
       {
@@ -2131,19 +2131,19 @@
         "p": 10.3
       },
       {
-        "score": "2-1",
+        "score": "1-2",
         "p": 9.8
       },
       {
-        "score": "3-0",
+        "score": "0-3",
         "p": 7.5
       }
     ],
-    "pick_mean": "3-1",
-    "confidence": "haute",
-    "top_p": 12.4,
-    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
-    "kickoff": 1781974800
+    "pick_mean": "1-2",
+    "confidence": "faible",
+    "top_p": 11.9,
+    "strat": "Avantage modéré — prendre le favori à domicile",
+    "kickoff": 1782014400
   },
   {
     "group": "F",
@@ -2332,52 +2332,52 @@
   },
   {
     "group": "G",
-    "home": "Belgique",
-    "away": "Nv.-Zélande",
-    "flag_h": "🇧🇪",
-    "flag_a": "🇳🇿",
-    "eg_h": 2.98,
-    "eg_a": 0.62,
-    "p1": 0.83,
-    "px": 0.115,
-    "p2": 0.054,
+    "home": "Nv.-Zélande",
+    "away": "Belgique",
+    "flag_h": "🇳🇿",
+    "flag_a": "🇧🇪",
+    "eg_h": 1.03,
+    "eg_a": 1.79,
+    "p1": 0.22,
+    "px": 0.239,
+    "p2": 0.541,
     "scores": [
       {
-        "score": "2-0",
-        "p": 12.1
+        "score": "1-1",
+        "p": 11.1
       },
       {
-        "score": "3-0",
-        "p": 12.0
+        "score": "0-1",
+        "p": 10.5
       },
       {
-        "score": "4-0",
-        "p": 9.0
+        "score": "1-2",
+        "p": 9.8
       },
       {
-        "score": "1-0",
-        "p": 8.1
+        "score": "0-2",
+        "p": 9.5
       },
       {
-        "score": "2-1",
-        "p": 7.5
+        "score": "0-0",
+        "p": 6.1
       }
     ],
     "scores_raw": [
       {
-        "score": "2-0",
+        "score": "0-2",
         "p": 12.7
       },
       {
-        "score": "1-0",
+        "score": "0-1",
         "p": 11.7
       },
       {
-        "score": "2-1",
+        "score": "1-2",
         "p": 9.5
       },
       {
-        "score": "3-0",
+        "score": "0-3",
         "p": 9.1
       },
       {
@@ -2385,10 +2385,10 @@
         "p": 8.9
       }
     ],
-    "pick_mean": "3-1",
-    "confidence": "haute",
-    "top_p": 12.1,
-    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
+    "pick_mean": "1-2",
+    "confidence": "moyenne",
+    "top_p": 11.1,
+    "strat": "Avantage modéré — prendre le favori à domicile",
     "kickoff": 1782529200
   },
   {
@@ -2454,40 +2454,40 @@
   },
   {
     "group": "G",
-    "home": "Égypte",
-    "away": "Nv.-Zélande",
-    "flag_h": "🇪🇬",
-    "flag_a": "🇳🇿",
-    "eg_h": 2.3,
-    "eg_a": 0.8,
-    "p1": 0.697,
-    "px": 0.183,
-    "p2": 0.12,
+    "home": "Nv.-Zélande",
+    "away": "Égypte",
+    "flag_h": "🇳🇿",
+    "flag_a": "🇪🇬",
+    "eg_h": 1.34,
+    "eg_a": 1.38,
+    "p1": 0.359,
+    "px": 0.262,
+    "p2": 0.379,
     "scores": [
       {
-        "score": "2-0",
-        "p": 11.9
+        "score": "1-1",
+        "p": 12.3
+      },
+      {
+        "score": "0-1",
+        "p": 9.0
       },
       {
         "score": "1-0",
-        "p": 10.2
+        "p": 8.7
+      },
+      {
+        "score": "1-2",
+        "p": 8.4
       },
       {
         "score": "2-1",
-        "p": 9.5
-      },
-      {
-        "score": "3-0",
-        "p": 9.1
-      },
-      {
-        "score": "1-1",
-        "p": 8.4
+        "p": 8.1
       }
     ],
     "scores_raw": [
       {
-        "score": "1-0",
+        "score": "0-1",
         "p": 11.8
       },
       {
@@ -2495,11 +2495,11 @@
         "p": 11.7
       },
       {
-        "score": "2-0",
+        "score": "0-2",
         "p": 10.0
       },
       {
-        "score": "2-1",
+        "score": "1-2",
         "p": 9.7
       },
       {
@@ -2507,11 +2507,11 @@
         "p": 7.3
       }
     ],
-    "pick_mean": "2-1",
-    "confidence": "haute",
-    "top_p": 11.9,
-    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
-    "kickoff": 1782068400
+    "pick_mean": "1-1",
+    "confidence": "faible",
+    "top_p": 12.3,
+    "strat": "Match équilibré — nul très probable",
+    "kickoff": 1782090000
   },
   {
     "group": "G",
@@ -2700,40 +2700,40 @@
   },
   {
     "group": "H",
-    "home": "Espagne",
-    "away": "Uruguay",
-    "flag_h": "🇪🇸",
-    "flag_a": "🇺🇾",
-    "eg_h": 2.38,
-    "eg_a": 0.77,
-    "p1": 0.719,
-    "px": 0.174,
-    "p2": 0.108,
+    "home": "Uruguay",
+    "away": "Espagne",
+    "flag_h": "🇺🇾",
+    "flag_a": "🇪🇸",
+    "eg_h": 1.28,
+    "eg_a": 1.43,
+    "p1": 0.336,
+    "px": 0.262,
+    "p2": 0.402,
     "scores": [
       {
-        "score": "2-0",
-        "p": 12.1
+        "score": "1-1",
+        "p": 12.3
+      },
+      {
+        "score": "0-1",
+        "p": 9.4
+      },
+      {
+        "score": "1-2",
+        "p": 8.7
       },
       {
         "score": "1-0",
-        "p": 10.1
-      },
-      {
-        "score": "3-0",
-        "p": 9.6
+        "p": 8.4
       },
       {
         "score": "2-1",
-        "p": 9.3
-      },
-      {
-        "score": "1-1",
-        "p": 7.9
+        "p": 7.8
       }
     ],
     "scores_raw": [
       {
-        "score": "1-0",
+        "score": "0-1",
         "p": 12.0
       },
       {
@@ -2741,11 +2741,11 @@
         "p": 11.4
       },
       {
-        "score": "2-0",
+        "score": "0-2",
         "p": 10.5
       },
       {
-        "score": "2-1",
+        "score": "1-2",
         "p": 9.7
       },
       {
@@ -2753,10 +2753,10 @@
         "p": 7.1
       }
     ],
-    "pick_mean": "2-1",
-    "confidence": "haute",
-    "top_p": 12.1,
-    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
+    "pick_mean": "1-1",
+    "confidence": "faible",
+    "top_p": 12.3,
+    "strat": "Match équilibré — nul très probable",
     "kickoff": 1782518400
   },
   {
@@ -2822,40 +2822,40 @@
   },
   {
     "group": "H",
-    "home": "Cap-Vert",
-    "away": "Uruguay",
-    "flag_h": "🇨🇻",
-    "flag_a": "🇺🇾",
-    "eg_h": 1.32,
-    "eg_a": 1.39,
-    "p1": 0.354,
-    "px": 0.263,
-    "p2": 0.384,
+    "home": "Uruguay",
+    "away": "Cap-Vert",
+    "flag_h": "🇺🇾",
+    "flag_a": "🇨🇻",
+    "eg_h": 2.31,
+    "eg_a": 0.79,
+    "p1": 0.701,
+    "px": 0.182,
+    "p2": 0.117,
     "scores": [
       {
-        "score": "1-1",
-        "p": 12.3
-      },
-      {
-        "score": "0-1",
-        "p": 9.1
+        "score": "2-0",
+        "p": 12.0
       },
       {
         "score": "1-0",
-        "p": 8.6
-      },
-      {
-        "score": "1-2",
-        "p": 8.5
+        "p": 10.2
       },
       {
         "score": "2-1",
-        "p": 8.1
+        "p": 9.5
+      },
+      {
+        "score": "3-0",
+        "p": 9.2
+      },
+      {
+        "score": "1-1",
+        "p": 8.3
       }
     ],
     "scores_raw": [
       {
-        "score": "0-1",
+        "score": "1-0",
         "p": 11.9
       },
       {
@@ -2863,11 +2863,11 @@
         "p": 11.6
       },
       {
-        "score": "0-2",
+        "score": "2-0",
         "p": 10.1
       },
       {
-        "score": "1-2",
+        "score": "2-1",
         "p": 9.7
       },
       {
@@ -2875,11 +2875,11 @@
         "p": 7.3
       }
     ],
-    "pick_mean": "1-1",
-    "confidence": "faible",
-    "top_p": 12.3,
-    "strat": "Match équilibré — nul très probable",
-    "kickoff": 1782057600
+    "pick_mean": "2-1",
+    "confidence": "haute",
+    "top_p": 12.0,
+    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
+    "kickoff": 1782079200
   },
   {
     "group": "H",
@@ -3068,35 +3068,35 @@
   },
   {
     "group": "I",
-    "home": "France",
-    "away": "Norvège",
-    "flag_h": "🇫🇷",
-    "flag_a": "🇳🇴",
-    "eg_h": 2.14,
-    "eg_a": 0.86,
-    "p1": 0.654,
-    "px": 0.202,
-    "p2": 0.145,
+    "home": "Norvège",
+    "away": "France",
+    "flag_h": "🇳🇴",
+    "flag_a": "🇫🇷",
+    "eg_h": 1.43,
+    "eg_a": 1.28,
+    "p1": 0.402,
+    "px": 0.262,
+    "p2": 0.336,
     "scores": [
       {
-        "score": "2-0",
-        "p": 11.4
+        "score": "1-1",
+        "p": 12.3
       },
       {
         "score": "1-0",
-        "p": 10.6
-      },
-      {
-        "score": "2-1",
-        "p": 9.8
-      },
-      {
-        "score": "1-1",
         "p": 9.3
       },
       {
-        "score": "3-0",
-        "p": 8.1
+        "score": "2-1",
+        "p": 8.7
+      },
+      {
+        "score": "0-1",
+        "p": 8.4
+      },
+      {
+        "score": "1-2",
+        "p": 7.8
       }
     ],
     "scores_raw": [
@@ -3105,26 +3105,26 @@
         "p": 12.2
       },
       {
-        "score": "1-0",
+        "score": "0-1",
         "p": 11.5
       },
       {
-        "score": "2-1",
+        "score": "1-2",
         "p": 9.4
       },
       {
-        "score": "2-0",
+        "score": "0-2",
         "p": 9.0
       },
       {
-        "score": "0-1",
+        "score": "1-0",
         "p": 7.7
       }
     ],
-    "pick_mean": "2-1",
-    "confidence": "haute",
-    "top_p": 11.4,
-    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
+    "pick_mean": "1-1",
+    "confidence": "faible",
+    "top_p": 12.3,
+    "strat": "Match équilibré — nul très probable",
     "kickoff": 1782500400
   },
   {
@@ -3190,35 +3190,35 @@
   },
   {
     "group": "I",
-    "home": "Sénégal",
-    "away": "Norvège",
-    "flag_h": "🇸🇳",
-    "flag_a": "🇳🇴",
-    "eg_h": 1.83,
-    "eg_a": 1.01,
-    "p1": 0.556,
-    "px": 0.234,
-    "p2": 0.209,
+    "home": "Norvège",
+    "away": "Sénégal",
+    "flag_h": "🇳🇴",
+    "flag_a": "🇸🇳",
+    "eg_h": 1.68,
+    "eg_a": 1.1,
+    "p1": 0.501,
+    "px": 0.248,
+    "p2": 0.251,
     "scores": [
       {
         "score": "1-1",
-        "p": 10.9
+        "p": 11.6
       },
       {
         "score": "1-0",
-        "p": 10.6
+        "p": 10.3
       },
       {
         "score": "2-1",
-        "p": 9.9
+        "p": 9.6
       },
       {
         "score": "2-0",
-        "p": 9.8
+        "p": 8.7
       },
       {
-        "score": "3-1",
-        "p": 6.0
+        "score": "0-1",
+        "p": 6.7
       }
     ],
     "scores_raw": [
@@ -3227,15 +3227,15 @@
         "p": 12.8
       },
       {
-        "score": "1-0",
+        "score": "0-1",
         "p": 10.2
       },
       {
-        "score": "0-1",
+        "score": "1-0",
         "p": 9.4
       },
       {
-        "score": "2-1",
+        "score": "1-2",
         "p": 8.4
       },
       {
@@ -3244,10 +3244,10 @@
       }
     ],
     "pick_mean": "2-1",
-    "confidence": "moyenne",
-    "top_p": 10.9,
-    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
-    "kickoff": 1782162000
+    "confidence": "faible",
+    "top_p": 11.6,
+    "strat": "Avantage modéré — prendre le favori à domicile",
+    "kickoff": 1782172800
   },
   {
     "group": "I",
@@ -3307,7 +3307,7 @@
     "pick_mean": "1-2",
     "confidence": "moyenne",
     "top_p": 11.0,
-    "strat": "Favori clair extérieur — viser 0-2 ou 1-2",
+    "strat": "Avantage extérieur — viser 0-1 ou 1-2",
     "played": "1-4",
     "kickoff": 1781647200
   },
@@ -3436,63 +3436,63 @@
   },
   {
     "group": "J",
-    "home": "Argentine",
-    "away": "Jordanie",
-    "flag_h": "🇦🇷",
-    "flag_a": "🇯🇴",
-    "eg_h": 4.06,
-    "eg_a": 0.46,
-    "p1": 0.933,
-    "px": 0.048,
-    "p2": 0.019,
+    "home": "Jordanie",
+    "away": "Argentine",
+    "flag_h": "🇯🇴",
+    "flag_a": "🇦🇷",
+    "eg_h": 0.76,
+    "eg_a": 2.44,
+    "p1": 0.101,
+    "px": 0.168,
+    "p2": 0.731,
     "scores": [
       {
-        "score": "4-0",
-        "p": 12.4
-      },
-      {
-        "score": "3-0",
+        "score": "0-2",
         "p": 12.2
       },
       {
-        "score": "5-0",
-        "p": 10.1
+        "score": "0-3",
+        "p": 9.9
       },
       {
-        "score": "2-0",
-        "p": 9.0
+        "score": "0-1",
+        "p": 9.9
       },
       {
-        "score": "6-0",
-        "p": 6.8
+        "score": "1-2",
+        "p": 9.2
+      },
+      {
+        "score": "1-1",
+        "p": 7.6
       }
     ],
     "scores_raw": [
       {
-        "score": "2-0",
+        "score": "0-2",
         "p": 13.1
       },
       {
-        "score": "3-0",
+        "score": "0-3",
         "p": 12.9
       },
       {
-        "score": "4-0",
+        "score": "0-4",
         "p": 9.5
       },
       {
-        "score": "1-0",
+        "score": "0-1",
         "p": 8.9
       },
       {
-        "score": "2-1",
+        "score": "1-2",
         "p": 7.2
       }
     ],
-    "pick_mean": "4-0",
+    "pick_mean": "1-2",
     "confidence": "haute",
-    "top_p": 12.4,
-    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
+    "top_p": 12.2,
+    "strat": "Favori clair extérieur — viser 0-2 ou 1-2",
     "kickoff": 1782612000
   },
   {
@@ -3558,40 +3558,40 @@
   },
   {
     "group": "J",
-    "home": "Algérie",
-    "away": "Jordanie",
-    "flag_h": "🇩🇿",
-    "flag_a": "🇯🇴",
-    "eg_h": 2.3,
-    "eg_a": 0.79,
-    "p1": 0.699,
-    "px": 0.183,
-    "p2": 0.118,
+    "home": "Jordanie",
+    "away": "Algérie",
+    "flag_h": "🇯🇴",
+    "flag_a": "🇩🇿",
+    "eg_h": 1.32,
+    "eg_a": 1.38,
+    "p1": 0.355,
+    "px": 0.263,
+    "p2": 0.382,
     "scores": [
       {
-        "score": "2-0",
-        "p": 12.0
+        "score": "1-1",
+        "p": 12.4
+      },
+      {
+        "score": "0-1",
+        "p": 9.1
       },
       {
         "score": "1-0",
-        "p": 10.3
+        "p": 8.7
+      },
+      {
+        "score": "1-2",
+        "p": 8.5
       },
       {
         "score": "2-1",
-        "p": 9.5
-      },
-      {
-        "score": "3-0",
-        "p": 9.2
-      },
-      {
-        "score": "1-1",
-        "p": 8.4
+        "p": 8.1
       }
     ],
     "scores_raw": [
       {
-        "score": "1-0",
+        "score": "0-1",
         "p": 11.9
       },
       {
@@ -3599,11 +3599,11 @@
         "p": 11.7
       },
       {
-        "score": "2-0",
+        "score": "0-2",
         "p": 10.1
       },
       {
-        "score": "2-1",
+        "score": "1-2",
         "p": 9.6
       },
       {
@@ -3611,11 +3611,11 @@
         "p": 7.3
       }
     ],
-    "pick_mean": "2-1",
-    "confidence": "haute",
-    "top_p": 12.0,
-    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
-    "kickoff": 1782147600
+    "pick_mean": "1-1",
+    "confidence": "faible",
+    "top_p": 12.4,
+    "strat": "Match équilibré — nul très probable",
+    "kickoff": 1782183600
   },
   {
     "group": "J",
@@ -3738,7 +3738,7 @@
     "confidence": "haute",
     "top_p": 12.6,
     "strat": "Favori clair domicile — viser 2-0 ou 2-1",
-    "kickoff": 1781748000
+    "kickoff": 1781715600
   },
   {
     "group": "K",
@@ -3803,10 +3803,10 @@
   },
   {
     "group": "K",
-    "home": "Portugal",
-    "away": "Colombie",
-    "flag_h": "🇵🇹",
-    "flag_a": "🇨🇴",
+    "home": "Colombie",
+    "away": "Portugal",
+    "flag_h": "🇨🇴",
+    "flag_a": "🇵🇹",
     "eg_h": 1.75,
     "eg_a": 1.05,
     "p1": 0.528,
@@ -3860,7 +3860,7 @@
     "confidence": "moyenne",
     "top_p": 11.3,
     "strat": "Avantage modéré — prendre le favori à domicile",
-    "kickoff": 1782838800
+    "kickoff": 1782603000
   },
   {
     "group": "K",
@@ -3921,56 +3921,56 @@
     "confidence": "faible",
     "top_p": 12.2,
     "strat": "Avantage modéré — prendre le favori à domicile",
-    "kickoff": 1782838800
+    "kickoff": 1782603000
   },
   {
     "group": "K",
-    "home": "RD Congo",
-    "away": "Colombie",
-    "flag_h": "🇨🇩",
-    "flag_a": "🇨🇴",
-    "eg_h": 0.94,
-    "eg_a": 1.96,
-    "p1": 0.178,
-    "px": 0.221,
-    "p2": 0.601,
+    "home": "Colombie",
+    "away": "RD Congo",
+    "flag_h": "🇨🇴",
+    "flag_a": "🇨🇩",
+    "eg_h": 3.26,
+    "eg_a": 0.56,
+    "p1": 0.869,
+    "px": 0.092,
+    "p2": 0.039,
     "scores": [
       {
-        "score": "0-1",
-        "p": 10.7
+        "score": "3-0",
+        "p": 12.6
       },
       {
-        "score": "0-2",
-        "p": 10.6
+        "score": "2-0",
+        "p": 11.6
       },
       {
-        "score": "1-1",
-        "p": 10.2
+        "score": "4-0",
+        "p": 10.3
       },
       {
-        "score": "1-2",
-        "p": 9.9
+        "score": "3-1",
+        "p": 7.1
       },
       {
-        "score": "0-3",
-        "p": 6.9
+        "score": "1-0",
+        "p": 7.1
       }
     ],
     "scores_raw": [
       {
-        "score": "0-2",
+        "score": "2-0",
         "p": 13.3
       },
       {
-        "score": "0-1",
+        "score": "1-0",
         "p": 11.1
       },
       {
-        "score": "0-3",
+        "score": "3-0",
         "p": 10.5
       },
       {
-        "score": "1-2",
+        "score": "2-1",
         "p": 9.0
       },
       {
@@ -3978,11 +3978,11 @@
         "p": 7.7
       }
     ],
-    "pick_mean": "1-2",
-    "confidence": "moyenne",
-    "top_p": 10.7,
-    "strat": "Favori clair extérieur — viser 0-2 ou 1-2",
-    "kickoff": 1782234000
+    "pick_mean": "3-1",
+    "confidence": "haute",
+    "top_p": 12.6,
+    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
+    "kickoff": 1782266400
   },
   {
     "group": "K",
@@ -4169,63 +4169,63 @@
   },
   {
     "group": "L",
-    "home": "Angleterre",
-    "away": "Panama",
-    "flag_h": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-    "flag_a": "🇵🇦",
-    "eg_h": 3.46,
-    "eg_a": 0.53,
-    "p1": 0.889,
-    "px": 0.079,
-    "p2": 0.032,
+    "home": "Panama",
+    "away": "Angleterre",
+    "flag_h": "🇵🇦",
+    "flag_a": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+    "eg_h": 0.88,
+    "eg_a": 2.08,
+    "p1": 0.154,
+    "px": 0.208,
+    "p2": 0.638,
     "scores": [
       {
-        "score": "3-0",
-        "p": 12.8
+        "score": "0-2",
+        "p": 11.2
       },
       {
-        "score": "2-0",
-        "p": 11.1
+        "score": "0-1",
+        "p": 10.7
       },
       {
-        "score": "4-0",
-        "p": 11.1
+        "score": "1-2",
+        "p": 9.9
       },
       {
-        "score": "5-0",
-        "p": 7.6
+        "score": "1-1",
+        "p": 9.6
       },
       {
-        "score": "3-1",
-        "p": 6.8
+        "score": "0-3",
+        "p": 7.8
       }
     ],
     "scores_raw": [
       {
-        "score": "2-0",
+        "score": "0-2",
         "p": 13.5
       },
       {
-        "score": "3-0",
+        "score": "0-3",
         "p": 11.3
       },
       {
-        "score": "1-0",
+        "score": "0-1",
         "p": 10.7
       },
       {
-        "score": "2-1",
+        "score": "1-2",
         "p": 8.6
       },
       {
-        "score": "3-1",
+        "score": "1-3",
         "p": 7.2
       }
     ],
-    "pick_mean": "3-1",
-    "confidence": "haute",
-    "top_p": 12.8,
-    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
+    "pick_mean": "1-2",
+    "confidence": "moyenne",
+    "top_p": 11.2,
+    "strat": "Favori clair extérieur — viser 0-2 ou 1-2",
     "kickoff": 1782594000
   },
   {
@@ -4291,52 +4291,52 @@
   },
   {
     "group": "L",
-    "home": "Croatie",
-    "away": "Panama",
-    "flag_h": "🇭🇷",
-    "flag_a": "🇵🇦",
-    "eg_h": 2.95,
-    "eg_a": 0.62,
-    "p1": 0.827,
-    "px": 0.117,
-    "p2": 0.055,
+    "home": "Panama",
+    "away": "Croatie",
+    "flag_h": "🇵🇦",
+    "flag_a": "🇭🇷",
+    "eg_h": 1.03,
+    "eg_a": 1.77,
+    "p1": 0.223,
+    "px": 0.24,
+    "p2": 0.537,
     "scores": [
       {
-        "score": "2-0",
-        "p": 12.3
+        "score": "1-1",
+        "p": 11.2
       },
       {
-        "score": "3-0",
-        "p": 12.0
+        "score": "0-1",
+        "p": 10.6
       },
       {
-        "score": "4-0",
-        "p": 8.9
+        "score": "1-2",
+        "p": 9.8
       },
       {
-        "score": "1-0",
-        "p": 8.3
+        "score": "0-2",
+        "p": 9.5
       },
       {
-        "score": "2-1",
-        "p": 7.6
+        "score": "0-0",
+        "p": 6.2
       }
     ],
     "scores_raw": [
       {
-        "score": "2-0",
+        "score": "0-2",
         "p": 12.7
       },
       {
-        "score": "1-0",
+        "score": "0-1",
         "p": 11.8
       },
       {
-        "score": "2-1",
+        "score": "1-2",
         "p": 9.5
       },
       {
-        "score": "3-0",
+        "score": "0-3",
         "p": 9.1
       },
       {
@@ -4344,11 +4344,11 @@
         "p": 9.0
       }
     ],
-    "pick_mean": "3-1",
-    "confidence": "haute",
-    "top_p": 12.3,
-    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
-    "kickoff": 1782244800
+    "pick_mean": "1-2",
+    "confidence": "moyenne",
+    "top_p": 11.2,
+    "strat": "Avantage modéré — prendre le favori à domicile",
+    "kickoff": 1782255600
   },
   {
     "group": "L",

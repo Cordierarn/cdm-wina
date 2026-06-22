@@ -189,9 +189,13 @@ def pick_strategy(p1, px, p2, lh, la):
     eg_h = lh * BOOST_H
     eg_a = la * BOOST_A
     if p1 > 0.55:
-        return "Favori clair domicile — viser 2-0 ou 2-1"
+        if eg_h >= 2.0:
+            return "Favori clair domicile — viser 2-0 ou 2-1"
+        return "Avantage domicile — viser 1-0 ou 2-1"
     if p2 > 0.55:
-        return "Favori clair extérieur — viser 0-2 ou 1-2"
+        if eg_a >= 2.0:
+            return "Favori clair extérieur — viser 0-2 ou 1-2"
+        return "Avantage extérieur — viser 0-1 ou 1-2"
     if abs(p1 - p2) < 0.08:
         return "Match équilibré — nul très probable"
     if eg_h + eg_a > 3.0:
