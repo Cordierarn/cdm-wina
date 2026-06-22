@@ -4,6 +4,7 @@ Génère rapport.pdf — CdM 2026, modèle statistique
 """
 
 import io
+from pathlib import Path
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -468,7 +469,7 @@ def draw_page2(c):
 #  BUILD
 # ═══════════════════════════════════════════════════════════
 
-output = '/workspaces/cdm-wina/rapport_cdm2026.pdf'
+output = str(Path(__file__).parent / 'rapport_cdm2026.pdf')
 c = canvas.Canvas(output, pagesize=A4)
 
 draw_page1(c)

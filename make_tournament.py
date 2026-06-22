@@ -53,6 +53,26 @@ def load_model():
     return model, sd
 
 
+def load_played() -> dict[frozenset, dict[str, int]]:
+    """Resultats de groupe deja joues -> {frozenset(home,away): {team: buts}}."""
+    path = DATA / "cdm_results.json"
+    if not path.exists():
+        return {}
+    played = {}
+    for r in json.loads(path.read_text(encoding="utf-8")):
+        played[frozenset((r["home"], r["away"]))] = {
+            r["home"]: r["goals_home"], r["away"]: r["goals_away"]}
+    return played
+
+
+def played_goals(played: dict, h: str, a: str):
+    """Buts reels orientes (buts_h, buts_a) si la paire a ete jouee, sinon None."""
+    g = played.get(frozenset((h, a)))
+    if g is None or h not in g or a not in g:
+        return None
+    return g[h], g[a]
+
+
 class Pricer:
     """Probas de match avec cache, depuis les forces calibrees."""
 
@@ -125,21 +145,29 @@ def rank_thirds(entries: list[tuple]) -> list[tuple]:
 
 # ── Bracket deterministe (favori gagne toujours) ───────────────────────
 
-def expected_group_ranking(pricer: Pricer, teams: list[str]) -> list[str]:
+def expected_group_ranking(pricer: Pricer, teams: list[str], played: dict) -> list[str]:
     ep = {t: 0.0 for t in teams}
     gd = {t: 0.0 for t in teams}
     for i, h in enumerate(teams):
         for a in teams[i + 1:]:
-            m = pricer.match(h, a)
-            ep[h] += 3 * m["p1"] + m["px"]
-            ep[a] += 3 * m["p2"] + m["px"]
-            gd[h] += m["eg_h"] - m["eg_a"]
-            gd[a] += m["eg_a"] - m["eg_h"]
+            pg = played_goals(played, h, a)
+            if pg is not None:
+                vh, va = pg
+                ep[h] += 3 if vh > va else 1 if vh == va else 0
+                ep[a] += 3 if va > vh else 1 if vh == va else 0
+                gd[h] += vh - va
+                gd[a] += va - vh
+            else:
+                m = pricer.match(h, a)
+                ep[h] += 3 * m["p1"] + m["px"]
+                ep[a] += 3 * m["p2"] + m["px"]
+                gd[h] += m["eg_h"] - m["eg_a"]
+                gd[a] += m["eg_a"] - m["eg_h"]
     return sorted(teams, key=lambda t: (-ep[t], -gd[t]))
 
 
-def deterministic_bracket(pricer: Pricer, groups: dict) -> dict:
-    rankings = {g: expected_group_ranking(pricer, ts) for g, ts in groups.items()}
+def deterministic_bracket(pricer: Pricer, groups: dict, played: dict) -> dict:
+    rankings = {g: expected_group_ranking(pricer, ts, played) for g, ts in groups.items()}
 
     # 3es attendus, classes par points esperes (approx force)
     thirds = []
@@ -150,8 +178,13 @@ def deterministic_bracket(pricer: Pricer, groups: dict) -> dict:
         for opp in groups[g]:
             if opp == t:
                 continue
-            m = pricer.match(t, opp)
-            ep += 3 * m["p1"] + m["px"]
+            pg = played_goals(played, t, opp)
+            if pg is not None:
+                vh, va = pg
+                ep += 3 if vh > va else 1 if vh == va else 0
+            else:
+                m = pricer.match(t, opp)
+                ep += 3 * m["p1"] + m["px"]
         thirds.append((ep, 0.0, 0.0, pricer.strengths.get(t, 0.3), t, g))
     ranked = rank_thirds(thirds)
     best8 = ranked[:8]
@@ -216,7 +249,7 @@ def deterministic_bracket(pricer: Pricer, groups: dict) -> dict:
 
 # ── Monte Carlo avec bracket officiel ──────────────────────────────────
 
-def run_monte_carlo(pricer: Pricer, groups: dict, n: int) -> dict:
+def run_monte_carlo(pricer: Pricer, groups: dict, n: int, played: dict) -> dict:
     wins = defaultdict(int)
     finals = defaultdict(int)
     semis = defaultdict(int)
@@ -245,6 +278,18 @@ def run_monte_carlo(pricer: Pricer, groups: dict, n: int) -> dict:
             ga = {t: 0.0 for t in ts}
             for i, h in enumerate(ts):
                 for a in ts[i + 1:]:
+                    pg = played_goals(played, h, a)
+                    if pg is not None:
+                        vh, va = pg
+                        gf[h] += vh; ga[h] += va
+                        gf[a] += va; ga[a] += vh
+                        if vh > va:
+                            pts[h] += 3
+                        elif vh == va:
+                            pts[h] += 1; pts[a] += 1
+                        else:
+                            pts[a] += 3
+                        continue
                     m = pricer.match(h, a)
                     r = random.random()
                     gf[h] += m["eg_h"]; ga[h] += m["eg_a"]
@@ -341,16 +386,21 @@ def main() -> None:
     model, sd = load_model()
     groups = model["groups"]
     pricer = Pricer(sd, model)
+    played = load_played()
+    n_group_played = sum(
+        1 for ts in groups.values() for i, h in enumerate(ts)
+        for a in ts[i + 1:] if played_goals(played, h, a) is not None)
+    print(f"Resultats de groupe figes : {n_group_played}/72")
 
     t0 = time.time()
-    bracket = deterministic_bracket(pricer, groups)
+    bracket = deterministic_bracket(pricer, groups, played)
     (DATA / "bracket.json").write_text(
         json.dumps(bracket, indent=1, ensure_ascii=False), encoding="utf-8")
     print(f"Bracket deterministe (officiel) : champion = {bracket['champion']}")
     print(f"  Finale : {bracket['final']['home']} vs {bracket['final']['away']} "
           f"{bracket['final']['score']}")
 
-    sim = run_monte_carlo(pricer, groups, N_SIMS)
+    sim = run_monte_carlo(pricer, groups, N_SIMS, played)
     (DATA / "tournament_sim.json").write_text(
         json.dumps(sim, indent=1, ensure_ascii=False), encoding="utf-8")
     print(f"Monte Carlo {N_SIMS} sims en {time.time() - t0:.1f}s")

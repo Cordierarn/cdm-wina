@@ -19,7 +19,7 @@ TOURNAMENT_START = date(2026, 6, 11)
 ALIASES = {
     "USA": "United States", "Czechia": "Czech Republic",
     "Türkiye": "Turkey", "Bosnia-Herzegovina": "Bosnia and Herzegovina",
-    "Cabo Verde": "Cape Verde", "DR Congo": "DR Congo",
+    "Cabo Verde": "Cape Verde", "Congo DR": "DR Congo", "DR Congo": "DR Congo",
     "Côte d'Ivoire": "Ivory Coast", "Curaçao": "Curacao",
 }
 

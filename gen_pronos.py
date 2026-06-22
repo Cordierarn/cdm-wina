@@ -91,27 +91,12 @@ KICKOFFS = _load_kickoffs()
 PLAYED = {}
 results_file = Path("data/cdm_results.json")
 if results_file.exists():
-    _res_map = {
-        "Mexico": "Mexico", "South Africa": "South Africa", "South Korea": "South Korea",
-        "Czech Republic": "Czech Republic", "Canada": "Canada",
-        "Bosnia and Herzegovina": "Bosnia and Herzegovina", "United States": "United States",
-        "Paraguay": "Paraguay", "Qatar": "Qatar", "Switzerland": "Switzerland",
-        "Brazil": "Brazil", "Morocco": "Morocco", "Haiti": "Haiti", "Scotland": "Scotland",
-        "Australia": "Australia", "Turkey": "Turkey", "Germany": "Germany",
-        "Curacao": "Curacao", "Ivory Coast": "Ivory Coast", "Ecuador": "Ecuador",
-        "Netherlands": "Netherlands", "Japan": "Japan", "Sweden": "Sweden",
-        "Tunisia": "Tunisia", "Spain": "Spain", "Cape Verde": "Cape Verde",
-        "Belgium": "Belgium", "Egypt": "Egypt", "Saudi Arabia": "Saudi Arabia",
-        "Uruguay": "Uruguay", "France": "France", "Senegal": "Senegal",
-        "Iraq": "Iraq", "Norway": "Norway", "Argentina": "Argentina",
-        "Algeria": "Algeria", "Austria": "Austria", "Jordan": "Jordan",
-        "Iran": "Iran", "New Zealand": "New Zealand",
-    }
-    for r in json.loads(results_file.read_text()):
-        h = _res_map.get(r["home"])
-        a = _res_map.get(r["away"])
-        if h and a:
-            PLAYED[(h, a)] = f"{r['goals_home']}-{r['goals_away']}"
+    for r in json.loads(results_file.read_text(encoding="utf-8")):
+        h, a = r["home"], r["away"]
+        gh, ga = r["goals_home"], r["goals_away"]
+        # les deux orientations : le calendrier MPP peut inverser domicile/exterieur
+        PLAYED[(h, a)] = f"{gh}-{ga}"
+        PLAYED[(a, h)] = f"{ga}-{gh}"
 
 
 # ---------------------------------------------------------------------------
@@ -273,7 +258,7 @@ def build_mpp_list():
 def inject_into_dashboard(mpp):
     """Remplace MPP_LIST dans dashboard/index.html."""
     html_path = Path("dashboard/index.html")
-    content = html_path.read_text()
+    content = html_path.read_text(encoding="utf-8")
 
     new_data = json.dumps(mpp, ensure_ascii=False, separators=(",", ":"))
     new_line = f"const MPP_LIST = {new_data};"
@@ -305,7 +290,7 @@ def inject_into_dashboard(mpp):
                 break
 
     new_content = content[:start] + new_line + content[end:]
-    html_path.write_text(new_content)
+    html_path.write_text(new_content, encoding="utf-8")
     print(f"MPP_LIST injectée: {len(mpp)} matchs ({len(new_line)} chars)")
 
 
@@ -328,5 +313,5 @@ if __name__ == "__main__":
 
     # Sauvegarde optionnelle JSON
     out = Path("data/pronos_by_date.json")
-    out.write_text(json.dumps(mpp, ensure_ascii=False, indent=2))
+    out.write_text(json.dumps(mpp, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Sauvegardé: {out}")

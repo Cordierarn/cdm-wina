@@ -1,79 +1,74 @@
 {
- "checked_at": 1781450022,
+ "checked_at": 1782145517,
  "lineups": {
-  "Australia|Turkey": {
-   "kickoff": "2026-06-14T04:00Z",
+  "Argentina|Austria": {
+   "kickoff": "2026-06-22T17:00Z",
    "teams": {
-    "Australia": {
+    "Argentina": {
      "starters": [
-      "Patrick Beach",
-      "Harry Souttar",
-      "Cameron Burgess",
-      "Alessandro Circati",
-      "Jordan Bos",
-      "Jacob Italiano",
-      "Paul Okon-Engstler",
-      "Aiden O'Neill",
-      "Nestory Irankunda",
-      "Connor Metcalfe",
-      "Mohamed Toure"
+      "Emiliano Martínez",
+      "Cristian Romero",
+      "Lisandro Martínez",
+      "Facundo Medina",
+      "Nahuel Molina",
+      "Thiago Almada",
+      "Enzo Fernández",
+      "Alexis Mac Allister",
+      "Rodrigo De Paul",
+      "Lionel Messi",
+      "Lautaro Martínez"
      ]
     },
-    "Turkey": {
+    "Austria": {
      "starters": [
-      "Ugurcan Çakir",
-      "Abdülkerim Bardakçi",
-      "Merih Demiral",
-      "Ferdi Kadioglu",
-      "Zeki Çelik",
-      "Orkun Kökçü",
-      "Hakan Çalhanoglu",
-      "Ismail Yüksek",
-      "Kerem Aktürkoglu",
-      "Baris Alper Yilmaz",
-      "Arda Güler"
+      "Alexander Schlager",
+      "Konrad Laimer",
+      "David Alaba",
+      "Kevin Danso",
+      "Stefan Posch",
+      "Marcel Sabitzer",
+      "Paul Wanner",
+      "Nicolas Seiwald",
+      "Romano Schmid",
+      "Xaver Schlager",
+      "Michael Gregoritsch"
      ]
     }
    },
    "confirmed": true
   },
-  "Germany|Curacao": {
-   "kickoff": "2026-06-14T17:00Z",
+  "France|Iraq": {
+   "kickoff": "2026-06-22T21:00Z",
    "teams": {},
    "confirmed": false
   },
-  "Netherlands|Japan": {
-   "kickoff": "2026-06-14T20:00Z",
+  "Norway|Senegal": {
+   "kickoff": "2026-06-23T00:00Z",
    "teams": {},
    "confirmed": false
   },
-  "Ivory Coast|Ecuador": {
-   "kickoff": "2026-06-14T23:00Z",
+  "Jordan|Algeria": {
+   "kickoff": "2026-06-23T03:00Z",
    "teams": {},
    "confirmed": false
   },
-  "Sweden|Tunisia": {
-   "kickoff": "2026-06-15T02:00Z",
+  "Portugal|Uzbekistan": {
+   "kickoff": "2026-06-23T17:00Z",
    "teams": {},
    "confirmed": false
   },
-  "Spain|Cape Verde": {
-   "kickoff": "2026-06-15T16:00Z",
+  "England|Ghana": {
+   "kickoff": "2026-06-23T20:00Z",
    "teams": {},
    "confirmed": false
   },
-  "Belgium|Egypt": {
-   "kickoff": "2026-06-15T19:00Z",
+  "Panama|Croatia": {
+   "kickoff": "2026-06-23T23:00Z",
    "teams": {},
    "confirmed": false
   },
-  "Saudi Arabia|Uruguay": {
-   "kickoff": "2026-06-15T22:00Z",
-   "teams": {},
-   "confirmed": false
-  },
-  "Iran|New Zealand": {
-   "kickoff": "2026-06-16T01:00Z",
+  "Colombia|Congo DR": {
+   "kickoff": "2026-06-24T02:00Z",
    "teams": {},
    "confirmed": false
   }
