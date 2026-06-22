@@ -181,7 +181,8 @@
     "pick_mean": "2-1",
     "confidence": "moyenne",
     "top_p": 10.9,
-    "strat": "Avantage domicile — viser 1-0 ou 2-1"
+    "strat": "Avantage domicile — viser 1-0 ou 2-1",
+    "kickoff": 1782349200
   },
   {
     "group": "A",
@@ -303,7 +304,8 @@
     "confidence": "faible",
     "top_p": 12.4,
     "strat": "Match équilibré — nul très probable",
-    "played": "1-1"
+    "played": "1-1",
+    "kickoff": 1781798400
   },
   {
     "group": "A",
@@ -549,7 +551,8 @@
     "pick_mean": "2-1",
     "confidence": "faible",
     "top_p": 11.8,
-    "strat": "Avantage modéré — prendre le favori à domicile"
+    "strat": "Avantage modéré — prendre le favori à domicile",
+    "kickoff": 1782327600
   },
   {
     "group": "B",
@@ -671,7 +674,8 @@
     "confidence": "faible",
     "top_p": 12.2,
     "strat": "Avantage modéré — prendre le favori à domicile",
-    "played": "1-4"
+    "played": "1-4",
+    "kickoff": 1781809200
   },
   {
     "group": "B",
@@ -917,7 +921,8 @@
     "pick_mean": "2-1",
     "confidence": "haute",
     "top_p": 11.9,
-    "strat": "Favori clair domicile — viser 2-0 ou 2-1"
+    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
+    "kickoff": 1782338400
   },
   {
     "group": "C",
@@ -1039,7 +1044,8 @@
     "confidence": "moyenne",
     "top_p": 11.0,
     "strat": "Favori clair domicile — viser 2-0 ou 2-1",
-    "played": "1-0"
+    "played": "1-0",
+    "kickoff": 1781906400
   },
   {
     "group": "C",
@@ -1285,7 +1291,8 @@
     "pick_mean": "2-1",
     "confidence": "faible",
     "top_p": 12.1,
-    "strat": "Avantage modéré — prendre le favori à domicile"
+    "strat": "Avantage modéré — prendre le favori à domicile",
+    "kickoff": 1782439200
   },
   {
     "group": "D",
@@ -1407,7 +1414,8 @@
     "confidence": "faible",
     "top_p": 11.8,
     "strat": "Avantage modéré — prendre le favori à domicile",
-    "played": "1-0"
+    "played": "1-0",
+    "kickoff": 1781928000
   },
   {
     "group": "D",
@@ -1653,7 +1661,8 @@
     "pick_mean": "2-1",
     "confidence": "haute",
     "top_p": 11.6,
-    "strat": "Favori clair domicile — viser 2-0 ou 2-1"
+    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
+    "kickoff": 1782417600
   },
   {
     "group": "E",
@@ -1775,7 +1784,8 @@
     "confidence": "faible",
     "top_p": 11.5,
     "strat": "Avantage modéré — prendre le favori à domicile",
-    "played": "0-0"
+    "played": "0-0",
+    "kickoff": 1782000000
   },
   {
     "group": "E",
@@ -2021,7 +2031,8 @@
     "pick_mean": "3-1",
     "confidence": "haute",
     "top_p": 12.3,
-    "strat": "Favori clair domicile — viser 2-0 ou 2-1"
+    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
+    "kickoff": 1782428400
   },
   {
     "group": "F",
@@ -2143,7 +2154,8 @@
     "confidence": "haute",
     "top_p": 12.4,
     "strat": "Favori clair domicile — viser 2-0 ou 2-1",
-    "played": "4-0"
+    "played": "4-0",
+    "kickoff": 1782014400
   },
   {
     "group": "F",
@@ -2389,7 +2401,8 @@
     "pick_mean": "3-1",
     "confidence": "haute",
     "top_p": 12.2,
-    "strat": "Favori clair domicile — viser 2-0 ou 2-1"
+    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
+    "kickoff": 1782529200
   },
   {
     "group": "G",
@@ -2511,7 +2524,8 @@
     "confidence": "haute",
     "top_p": 12.1,
     "strat": "Favori clair domicile — viser 2-0 ou 2-1",
-    "played": "3-1"
+    "played": "3-1",
+    "kickoff": 1782090000
   },
   {
     "group": "G",
@@ -2757,7 +2771,8 @@
     "pick_mean": "2-1",
     "confidence": "haute",
     "top_p": 12.1,
-    "strat": "Favori clair domicile — viser 2-0 ou 2-1"
+    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
+    "kickoff": 1782518400
   },
   {
     "group": "H",
@@ -2879,7 +2894,8 @@
     "confidence": "faible",
     "top_p": 12.3,
     "strat": "Match équilibré — nul très probable",
-    "played": "2-2"
+    "played": "2-2",
+    "kickoff": 1782079200
   },
   {
     "group": "H",
@@ -3124,7 +3140,8 @@
     "pick_mean": "2-1",
     "confidence": "moyenne",
     "top_p": 11.3,
-    "strat": "Favori clair domicile — viser 2-0 ou 2-1"
+    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
+    "kickoff": 1782500400
   },
   {
     "group": "I",
@@ -3245,7 +3262,8 @@
     "pick_mean": "2-1",
     "confidence": "moyenne",
     "top_p": 10.9,
-    "strat": "Avantage domicile — viser 1-0 ou 2-1"
+    "strat": "Avantage domicile — viser 1-0 ou 2-1",
+    "kickoff": 1782172800
   },
   {
     "group": "I",
@@ -3490,7 +3508,8 @@
     "pick_mean": "4-0",
     "confidence": "haute",
     "top_p": 12.5,
-    "strat": "Favori clair domicile — viser 2-0 ou 2-1"
+    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
+    "kickoff": 1782612000
   },
   {
     "group": "J",
@@ -3611,7 +3630,8 @@
     "pick_mean": "2-1",
     "confidence": "haute",
     "top_p": 11.8,
-    "strat": "Favori clair domicile — viser 2-0 ou 2-1"
+    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
+    "kickoff": 1782183600
   },
   {
     "group": "J",
@@ -3856,7 +3876,8 @@
     "pick_mean": "2-1",
     "confidence": "faible",
     "top_p": 11.5,
-    "strat": "Avantage modéré — prendre le favori à domicile"
+    "strat": "Avantage modéré — prendre le favori à domicile",
+    "kickoff": 1782603000
   },
   {
     "group": "K",
@@ -3977,7 +3998,8 @@
     "pick_mean": "1-2",
     "confidence": "moyenne",
     "top_p": 10.7,
-    "strat": "Avantage extérieur — viser 0-1 ou 1-2"
+    "strat": "Avantage extérieur — viser 0-1 ou 1-2",
+    "kickoff": 1782266400
   },
   {
     "group": "K",
@@ -4222,7 +4244,8 @@
     "pick_mean": "3-1",
     "confidence": "haute",
     "top_p": 12.7,
-    "strat": "Favori clair domicile — viser 2-0 ou 2-1"
+    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
+    "kickoff": 1782594000
   },
   {
     "group": "L",
@@ -4343,7 +4366,8 @@
     "pick_mean": "3-1",
     "confidence": "haute",
     "top_p": 12.1,
-    "strat": "Favori clair domicile — viser 2-0 ou 2-1"
+    "strat": "Favori clair domicile — viser 2-0 ou 2-1",
+    "kickoff": 1782255600
   },
   {
     "group": "L",

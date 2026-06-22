@@ -78,8 +78,13 @@ def _load_kickoffs() -> dict[tuple[str, str], int]:
         return {}
     try:
         data = json.loads(path.read_text())
-        return {(m["home"], m["away"]): m["kickoff"]
-                for m in data if m.get("kickoff")}
+        ko = {}
+        for m in data:
+            if m.get("kickoff"):
+                # les 2 orientations : le calendrier MPP peut inverser dom/ext
+                ko[(m["home"], m["away"])] = m["kickoff"]
+                ko[(m["away"], m["home"])] = m["kickoff"]
+        return ko
     except Exception:
         return {}
 
