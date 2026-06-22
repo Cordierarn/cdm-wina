@@ -13,6 +13,7 @@ from pathlib import Path
 
 DATA_DIR = Path(__file__).parent / "data"
 BACKTEST_FILE = DATA_DIR / "backtest.json"
+CALIBRATION_FILE = DATA_DIR / "calibration.json"
 
 MODEL_WEIGHT_FALLBACK = 0.40
 MODEL_WEIGHTS = {"1n2": MODEL_WEIGHT_FALLBACK, "totals": MODEL_WEIGHT_FALLBACK,
@@ -70,6 +71,38 @@ def market_weight_key(marche_norm: str) -> str:
     if marche_norm == "nombre de buts" or marche_norm.startswith("nombre de buts de "):
         return "totals"
     return "default"
+
+
+_CALIBRATION_CACHE: dict | None = None
+
+
+def load_calibration(cal_file: Path | None = None) -> dict:
+    """Charge les paramètres de calibration (temperature + tournament boosts)."""
+    global _CALIBRATION_CACHE
+    if cal_file is None and _CALIBRATION_CACHE is not None:
+        return _CALIBRATION_CACHE
+    path = cal_file or CALIBRATION_FILE
+    if not path.exists():
+        return {}
+    try:
+        result = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+    if cal_file is None:
+        _CALIBRATION_CACHE = result
+    return result
+
+
+def temperature_scale_1x2(p1: float, px: float, p2: float,
+                           T: float = 1.0) -> tuple[float, float, float]:
+    """Temperature scaling pour la calibration 1X2 (réduit la confiance si T>1)."""
+    if abs(T - 1.0) < 1e-6:
+        return p1, px, p2
+    logs = [math.log(max(p, 1e-15)) / T for p in (p1, px, p2)]
+    mx = max(logs)
+    exps = [math.exp(l - mx) for l in logs]
+    s = sum(exps)
+    return tuple(e / s for e in exps)  # type: ignore[return-value]
 
 
 def load_model_weights(backtest_file: Path | None = None) -> dict[str, float]:
@@ -143,16 +176,31 @@ def _bvpois_pmf(h: int, a: int, l1: float, l2: float, l3: float) -> float:
     return total
 
 
+def _cmp_pmf_vector(lam: float, nu: float) -> list[float]:
+    """PMF Conway-Maxwell-Poisson tronquée à MAX_GOALS.
+
+    P(X=k; λ, ν) = λ^k / (k!^ν · Z(λ,ν))
+    ν < 1 → sur-dispersé (queues lourdes) ; ν > 1 → sous-dispersé.
+    Validé hors-échantillon sur 1 591 matchs intl : ν=0.85 gagne +0.029 LL/match
+    vs Poisson standard.
+    """
+    MAX_NORM = 15
+    Z = sum(lam**k / math.factorial(k)**nu for k in range(MAX_NORM + 1))
+    if Z <= 0:
+        Z = 1.0
+    return [lam**k / math.factorial(k)**nu / Z for k in range(MAX_GOALS + 1)]
+
+
 def score_matrix(lh: float, la: float, rho: float = 0.0,
-                 pi_zero: float = 0.0, lambda3: float = 0.0) -> list[list[float]]:
+                 pi_zero: float = 0.0, lambda3: float = 0.0,
+                 nu: float = 1.0) -> list[list[float]]:
     """Matrice de probabilités de scores (h, a) = 0..MAX_GOALS.
 
     Modèle combiné :
-    1. Bivariate Poisson (Karlis & Ntzoufras) si lambda3 > 0 — remplace le
-       Poisson indépendant de base et capture la corrélation entre buts.
-    2. Correction Dixon-Coles τ sur les scores (0,0),(1,0),(0,1),(1,1).
-    3. Zero-Inflated Poisson : masse supplémentaire pi_zero sur le 0-0 (matchs
-       défensifs structurels non capturés par le niveau des équipes seul).
+    1. Conway-Maxwell-Poisson si nu != 1.0 (sur-dispersé pour nu < 1).
+    2. Bivariate Poisson (Karlis & Ntzoufras) si lambda3 > 0.
+    3. Correction Dixon-Coles τ sur les scores (0,0),(1,0),(0,1),(1,1).
+    4. Zero-Inflated Poisson : masse supplémentaire pi_zero sur le 0-0.
     """
     if lambda3 > 0.0:
         # Bivariate Poisson : l1 = lh - l3, l2 = la - l3 (marginales identiques)
@@ -160,6 +208,12 @@ def score_matrix(lh: float, la: float, rho: float = 0.0,
         l1 = max(lh - l3, 1e-9)
         l2 = max(la - l3, 1e-9)
         mat = [[_bvpois_pmf(h, a, l1, l2, l3) * dc_tau(h, a, lh, la, rho)
+                for a in range(MAX_GOALS + 1)] for h in range(MAX_GOALS + 1)]
+    elif nu != 1.0:
+        # Conway-Maxwell-Poisson (ν≠1)
+        ph = _cmp_pmf_vector(lh, nu)
+        pa = _cmp_pmf_vector(la, nu)
+        mat = [[ph[h] * pa[a] * dc_tau(h, a, lh, la, rho)
                 for a in range(MAX_GOALS + 1)] for h in range(MAX_GOALS + 1)]
     else:
         ph = [math.exp(-lh) * lh**k / math.factorial(k) for k in range(MAX_GOALS + 1)]
@@ -200,9 +254,13 @@ def price_bet(marche: str, issues: list[dict], mat, home_fr: str, away_fr: str):
     out = []
 
     if t == "resultat" and len(issues) == 3:
-        return [(p_sum(mat, lambda h, a: h > a), 0.0),
-                (p_sum(mat, lambda h, a: h == a), 0.0),
-                (p_sum(mat, lambda h, a: h < a), 0.0)]
+        cal = load_calibration()
+        T = cal.get("temperature", 1.0)
+        rp1, rpx, rp2 = (p_sum(mat, lambda h, a: h > a),
+                         p_sum(mat, lambda h, a: h == a),
+                         p_sum(mat, lambda h, a: h < a))
+        rp1, rpx, rp2 = temperature_scale_1x2(rp1, rpx, rp2, T)
+        return [(rp1, 0.0), (rpx, 0.0), (rp2, 0.0)]
 
     if t == "double chance" and len(issues) == 3:
         return [(p_sum(mat, lambda h, a: h >= a), 0.0),

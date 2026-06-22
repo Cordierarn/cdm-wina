@@ -1,0 +1,434 @@
+[
+  {
+    "group": "A",
+    "home": "Mexico",
+    "away": "South Africa",
+    "kickoff": 1781204400
+  },
+  {
+    "group": "A",
+    "home": "Mexico",
+    "away": "South Korea",
+    "kickoff": 1781830800
+  },
+  {
+    "group": "A",
+    "home": "Czech Republic",
+    "away": "Mexico",
+    "kickoff": 1782349200
+  },
+  {
+    "group": "A",
+    "home": "South Africa",
+    "away": "South Korea",
+    "kickoff": 1782349200
+  },
+  {
+    "group": "A",
+    "home": "Czech Republic",
+    "away": "South Africa",
+    "kickoff": 1781798400
+  },
+  {
+    "group": "A",
+    "home": "South Korea",
+    "away": "Czech Republic",
+    "kickoff": 1781229600
+  },
+  {
+    "group": "B",
+    "home": "Canada",
+    "away": "Bosnia and Herzegovina",
+    "kickoff": 1781290800
+  },
+  {
+    "group": "B",
+    "home": "Canada",
+    "away": "Qatar",
+    "kickoff": 1781820000
+  },
+  {
+    "group": "B",
+    "home": "Switzerland",
+    "away": "Canada",
+    "kickoff": 1782327600
+  },
+  {
+    "group": "B",
+    "home": "Bosnia and Herzegovina",
+    "away": "Qatar",
+    "kickoff": 1782327600
+  },
+  {
+    "group": "B",
+    "home": "Switzerland",
+    "away": "Bosnia and Herzegovina",
+    "kickoff": 1781809200
+  },
+  {
+    "group": "B",
+    "home": "Qatar",
+    "away": "Switzerland",
+    "kickoff": 1781377200
+  },
+  {
+    "group": "C",
+    "home": "Brazil",
+    "away": "Morocco",
+    "kickoff": 1781388000
+  },
+  {
+    "group": "C",
+    "home": "Brazil",
+    "away": "Haiti",
+    "kickoff": 1781917200
+  },
+  {
+    "group": "C",
+    "home": "Scotland",
+    "away": "Brazil",
+    "kickoff": 1782338400
+  },
+  {
+    "group": "C",
+    "home": "Morocco",
+    "away": "Haiti",
+    "kickoff": 1782338400
+  },
+  {
+    "group": "C",
+    "home": "Scotland",
+    "away": "Morocco",
+    "kickoff": 1781906400
+  },
+  {
+    "group": "C",
+    "home": "Haiti",
+    "away": "Scotland",
+    "kickoff": 1781398800
+  },
+  {
+    "group": "D",
+    "home": "United States",
+    "away": "Paraguay",
+    "kickoff": 1781312400
+  },
+  {
+    "group": "D",
+    "home": "United States",
+    "away": "Australia",
+    "kickoff": 1781895600
+  },
+  {
+    "group": "D",
+    "home": "Turkey",
+    "away": "United States",
+    "kickoff": 1782439200
+  },
+  {
+    "group": "D",
+    "home": "Paraguay",
+    "away": "Australia",
+    "kickoff": 1782439200
+  },
+  {
+    "group": "D",
+    "home": "Turkey",
+    "away": "Paraguay",
+    "kickoff": 1781928000
+  },
+  {
+    "group": "D",
+    "home": "Australia",
+    "away": "Turkey",
+    "kickoff": 1781409600
+  },
+  {
+    "group": "E",
+    "home": "Germany",
+    "away": "Curacao",
+    "kickoff": 1781456400
+  },
+  {
+    "group": "E",
+    "home": "Germany",
+    "away": "Ivory Coast",
+    "kickoff": 1781985600
+  },
+  {
+    "group": "E",
+    "home": "Ecuador",
+    "away": "Germany",
+    "kickoff": 1782417600
+  },
+  {
+    "group": "E",
+    "home": "Curacao",
+    "away": "Ivory Coast",
+    "kickoff": 1782417600
+  },
+  {
+    "group": "E",
+    "home": "Ecuador",
+    "away": "Curacao",
+    "kickoff": 1782000000
+  },
+  {
+    "group": "E",
+    "home": "Ivory Coast",
+    "away": "Ecuador",
+    "kickoff": 1781478000
+  },
+  {
+    "group": "F",
+    "home": "Netherlands",
+    "away": "Japan",
+    "kickoff": 1781467200
+  },
+  {
+    "group": "F",
+    "home": "Netherlands",
+    "away": "Sweden",
+    "kickoff": 1781974800
+  },
+  {
+    "group": "F",
+    "home": "Tunisia",
+    "away": "Netherlands",
+    "kickoff": 1782428400
+  },
+  {
+    "group": "F",
+    "home": "Japan",
+    "away": "Sweden",
+    "kickoff": 1782428400
+  },
+  {
+    "group": "F",
+    "home": "Tunisia",
+    "away": "Japan",
+    "kickoff": 1782014400
+  },
+  {
+    "group": "F",
+    "home": "Sweden",
+    "away": "Tunisia",
+    "kickoff": 1781488800
+  },
+  {
+    "group": "G",
+    "home": "Belgium",
+    "away": "Egypt",
+    "kickoff": 1781550000
+  },
+  {
+    "group": "G",
+    "home": "Belgium",
+    "away": "Iran",
+    "kickoff": 1782068400
+  },
+  {
+    "group": "G",
+    "home": "New Zealand",
+    "away": "Belgium",
+    "kickoff": 1782529200
+  },
+  {
+    "group": "G",
+    "home": "Egypt",
+    "away": "Iran",
+    "kickoff": 1782529200
+  },
+  {
+    "group": "G",
+    "home": "New Zealand",
+    "away": "Egypt",
+    "kickoff": 1782090000
+  },
+  {
+    "group": "G",
+    "home": "Iran",
+    "away": "New Zealand",
+    "kickoff": 1781571600
+  },
+  {
+    "group": "H",
+    "home": "Spain",
+    "away": "Cape Verde",
+    "kickoff": 1781539200
+  },
+  {
+    "group": "H",
+    "home": "Spain",
+    "away": "Saudi Arabia",
+    "kickoff": 1782057600
+  },
+  {
+    "group": "H",
+    "home": "Uruguay",
+    "away": "Spain",
+    "kickoff": 1782518400
+  },
+  {
+    "group": "H",
+    "home": "Cape Verde",
+    "away": "Saudi Arabia",
+    "kickoff": 1782518400
+  },
+  {
+    "group": "H",
+    "home": "Uruguay",
+    "away": "Cape Verde",
+    "kickoff": 1782079200
+  },
+  {
+    "group": "H",
+    "home": "Saudi Arabia",
+    "away": "Uruguay",
+    "kickoff": 1781560800
+  },
+  {
+    "group": "I",
+    "home": "France",
+    "away": "Senegal",
+    "kickoff": 1781636400
+  },
+  {
+    "group": "I",
+    "home": "France",
+    "away": "Iraq",
+    "kickoff": 1782162000
+  },
+  {
+    "group": "I",
+    "home": "Norway",
+    "away": "France",
+    "kickoff": 1782500400
+  },
+  {
+    "group": "I",
+    "home": "Senegal",
+    "away": "Iraq",
+    "kickoff": 1782500400
+  },
+  {
+    "group": "I",
+    "home": "Norway",
+    "away": "Senegal",
+    "kickoff": 1782172800
+  },
+  {
+    "group": "I",
+    "home": "Iraq",
+    "away": "Norway",
+    "kickoff": 1781647200
+  },
+  {
+    "group": "J",
+    "home": "Argentina",
+    "away": "Algeria",
+    "kickoff": 1781658000
+  },
+  {
+    "group": "J",
+    "home": "Argentina",
+    "away": "Austria",
+    "kickoff": 1782147600
+  },
+  {
+    "group": "J",
+    "home": "Jordan",
+    "away": "Argentina",
+    "kickoff": 1782612000
+  },
+  {
+    "group": "J",
+    "home": "Algeria",
+    "away": "Austria",
+    "kickoff": 1782612000
+  },
+  {
+    "group": "J",
+    "home": "Jordan",
+    "away": "Algeria",
+    "kickoff": 1782183600
+  },
+  {
+    "group": "J",
+    "home": "Austria",
+    "away": "Jordan",
+    "kickoff": 1781668800
+  },
+  {
+    "group": "K",
+    "home": "Portugal",
+    "away": "DR Congo",
+    "kickoff": 1781715600
+  },
+  {
+    "group": "K",
+    "home": "Portugal",
+    "away": "Uzbekistan",
+    "kickoff": 1782234000
+  },
+  {
+    "group": "K",
+    "home": "Colombia",
+    "away": "Portugal",
+    "kickoff": 1782603000
+  },
+  {
+    "group": "K",
+    "home": "DR Congo",
+    "away": "Uzbekistan",
+    "kickoff": 1782603000
+  },
+  {
+    "group": "K",
+    "home": "Colombia",
+    "away": "DR Congo",
+    "kickoff": 1782266400
+  },
+  {
+    "group": "K",
+    "home": "Uzbekistan",
+    "away": "Colombia",
+    "kickoff": 1781748000
+  },
+  {
+    "group": "L",
+    "home": "England",
+    "away": "Croatia",
+    "kickoff": 1781726400
+  },
+  {
+    "group": "L",
+    "home": "England",
+    "away": "Ghana",
+    "kickoff": 1782244800
+  },
+  {
+    "group": "L",
+    "home": "Panama",
+    "away": "England",
+    "kickoff": 1782594000
+  },
+  {
+    "group": "L",
+    "home": "Croatia",
+    "away": "Ghana",
+    "kickoff": 1782594000
+  },
+  {
+    "group": "L",
+    "home": "Panama",
+    "away": "Croatia",
+    "kickoff": 1782255600
+  },
+  {
+    "group": "L",
+    "home": "Ghana",
+    "away": "Panama",
+    "kickoff": 1781737200
+  }
+]
