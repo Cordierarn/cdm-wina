@@ -477,4 +477,4 @@ c.showPage()
 draw_page2(c)
 c.save()
 
-print(f'✓ PDF généré : {output}')
+print(f'PDF genere : {output}')
